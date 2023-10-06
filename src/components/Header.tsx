@@ -3,8 +3,8 @@ import { Link } from "./Link";
 
 const Header = () => {
   return (
-    <header className="w-full max-w-230">
-      <div className="w-full max-w-81 h-81 hidden lg:block group relative p-5 mb-2 -ml-1 rounded-full border bg-background border-gray-2 ease-in-out duration-500"></div>
+    <header className="w-full max-w-230 sticky top-0 z-10 h-20 lg:w-1/2 lg:py-8">
+      <div className="w-full max-w-81 h-81 hidden lg:block group relative p-5 mb-2 -ml-1 rounded-full border border-solid border-gray-2 ease-in-out duration-500"></div>
 
       <div className="w-full">
         <h1 className="text-gray-1 text-md lg:text-xl">Rodrigo Silva</h1>

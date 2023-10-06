@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Project = ({ project }: IProject) => {
   return (
-    <div className="w-full max-w-366 h-auto p-2 border border-solid border-gray-7 rounded-def duration-300 hover:bg-gray-8">
+    <div className="w-full p-2 border border-solid border-gray-7 rounded-def duration-300 hover:bg-gray-8">
       <Image src={project.img} alt={project.title} className="rounded-def" />
 
       <div className="py-4 px-2">
