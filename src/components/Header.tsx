@@ -24,6 +24,7 @@ const Header = () => {
 
       <nav className="hidden lg:flex flex-col gap-1">
         <Link
+          href=""
           Icon={
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -40,6 +41,7 @@ const Header = () => {
           text="Home"
         />
         <Link
+          href="about"
           Icon={
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -56,6 +58,7 @@ const Header = () => {
           text="About"
         />
         <Link
+          href="projects"
           Icon={
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -72,6 +75,7 @@ const Header = () => {
           text="Projects"
         />
         <Link
+          href="contact"
           Icon={
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -92,6 +96,7 @@ const Header = () => {
           text="Contact"
         />
         <Link
+          href="experiences"
           Icon={
             <svg
               xmlns="http://www.w3.org/2000/svg"

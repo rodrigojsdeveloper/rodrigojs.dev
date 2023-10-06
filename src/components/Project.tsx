@@ -9,7 +9,7 @@ const Project = ({ project }: IProject) => {
       <div className="py-4 px-2">
         <h3 className="font-normal text-xl text-gray-1">{project.title}</h3>
 
-        <p className="w-full font-normal text-gray-3 text-sm leading-[1.8] mt-2">
+        <p className="w-full font-normal text-gray-3 text-sm leading-1.8 mt-2">
           {project.description}
         </p>
 

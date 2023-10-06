@@ -3,6 +3,7 @@ import { StaticImageData } from "next/image";
 export interface ILink {
   Icon: any;
   text: string;
+  href: string;
 }
 
 export interface IProjectProps {

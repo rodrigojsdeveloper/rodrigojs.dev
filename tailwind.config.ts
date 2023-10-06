@@ -30,19 +30,27 @@ const config: Config = {
       maxWidth: {
         81: "81.4px",
         121: "121px",
+        152: "152px",
         230: "230px",
+        340: "340px",
         366: "366px",
+        456: "456px",
         800: "800px",
         1440: "1440px",
       },
       height: {
         40: "40px",
         44: "44px",
+        45: "45px",
         81: "81.4px",
+        315: "315px",
         408: "408px",
       },
       borderRadius: {
         "def": "6px",
+      },
+      lineHeight: {
+        1.8: "1.8rem",
       },
     },
   },
