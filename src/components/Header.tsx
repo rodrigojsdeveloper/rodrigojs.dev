@@ -1,3 +1,4 @@
+import { Line } from "./Line";
 import { Link } from "./Link";
 
 const Header = () => {
@@ -19,7 +20,7 @@ const Header = () => {
         </p>
       </div>
 
-      <div className="w-full h-px bg-gray-5 my-3 hidden lg:block"></div>
+      <Line />
 
       <nav className="hidden lg:flex flex-col gap-1">
         <Link
@@ -112,7 +113,7 @@ const Header = () => {
         />
       </nav>
 
-      <div className="w-full h-px bg-gray-5 my-3 hidden lg:block"></div>
+      <Line />
 
       <div className="flex row justify-between items-center">
         <small className="text-gray-3 text-xs font-medium">

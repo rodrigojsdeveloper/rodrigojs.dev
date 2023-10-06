@@ -1,48 +1,82 @@
-import Image from "next/image";
-import { Link } from "@/components/Link";
 import { Header } from "@/components/Header";
+import { Line } from "@/components/Line";
+import { Project } from "@/components/Project";
+import { projects } from "@/utils/projects";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <main className="w-full max-w-5xl min-h-screen flex flex-row items-center justify-between m-auto p-24">
+      <div className="mt-12 relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
+        <div className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert" />
+      </div>
+
+      <Header />
+
+      <div className="w-full max-w-800">
+        <h2 className="font-title text-4xl">Rodrigo Silva</h2>
+        <div className="flex items-center gap-2 my-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
           >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
+            <g
+              fill="none"
+              stroke="#0141ff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+            >
+              <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0-18 0m.6-3h16.8M3.6 15h16.8" />
+              <path d="M11.5 3a17 17 0 0 0 0 18m1-18a17 17 0 0 1 0 18" />
+            </g>
+          </svg>
+
+          <p className="font-medium text-sm text-gray-3">São Paulo - Brazil</p>
+        </div>
+
+        <p className="text-gray-4 font-normal text-md leading-relaxed my-6">
+          As a full-stack developer, my goal is to craft digital experiences
+          that seamlessly blend elegant aesthetics with exceptional
+          functionality, both on the front-end and back-end. I{"'"}m passionate
+          about translating ideas into intuitive, visually appealing user
+          interfaces while ensuring the technical aspects of the system are
+          robust and efficient.
+        </p>
+
+        <Line />
+
+        <div className="w-full flex justify-between items-center">
+          <p className="font-title text-xl">Recent projects</p>
+
+          <a className="flex items-center gap-1 text-gray-4 text-xs font-medium hover:text-primary duration-300 cursor-pointer">
+            See all{" "}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="#d4d4d4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M4 12h16m0 0l-6-6m6 6l-6 6"
+              />
+            </svg>
           </a>
         </div>
-      </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+        <div className="grid md:grid-cols-2 place-items-center gap-4 my-6">
+          {projects.map((project, key) => (
+            <Project project={project} key={key} />
+          ))}
+        </div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <Header />
+        <Line />
       </div>
     </main>
   );
