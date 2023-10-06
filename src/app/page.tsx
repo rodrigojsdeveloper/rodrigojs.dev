@@ -3,6 +3,7 @@ import { Header } from "@/components/Header";
 import { projects } from "@/utils/projects";
 import { Line } from "@/components/Line";
 import { Work } from "@/components/Work";
+import { Paragraphy } from "@/components/Paragraphy";
 
 export default function Home() {
   return (
@@ -34,7 +35,7 @@ export default function Home() {
             </g>
           </svg>
 
-          <p className="font-medium text-sm text-gray-3">São Paulo - Brazil</p>
+          <Paragraphy text="São Paulo - Brazil" style="text-sm" />
         </div>
 
         <p className="text-gray-4 font-normal text-md leading-relaxed my-6">

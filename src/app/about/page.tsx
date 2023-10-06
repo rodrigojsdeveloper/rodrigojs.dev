@@ -2,6 +2,8 @@ import { Header } from "@/components/Header";
 import my from "../../assets/my.jpg";
 import Image from "next/image";
 import { Line } from "@/components/Line";
+import { Paragraphy } from "@/components/Paragraphy";
+import { stacks } from "@/utils/stacks";
 
 export default function About() {
   return (
@@ -17,40 +19,44 @@ export default function About() {
 
         <div className="flex my-6 sm:flex-col md:flex-row lg:items-center justify-between gap-12">
           <div className="w-full max-w-456 leading-1.8 space-y-3">
-            <p className="text-md text-gray-3">
-              I have a specialization in creating and optimizing user
+            <Paragraphy
+              text="I have a specialization in creating and optimizing user
               experiences within the scope of interface development. My
               expertise encompasses the conception, design and implementation of
               visual elements that provide intuitive and engaging interactions.
               My advanced skills focus on requirements analysis, creating
               innovative design solutions, and seamlessly integrating front-end
-              components.
-            </p>
+              components."
+              style="text-md"
+            />
 
-            <p className="text-md text-gray-3">
-              My trajectory includes front-end projects using technologies such
+            <Paragraphy
+              text="My trajectory includes front-end projects using technologies such
               as HTML, CSS, JavaScript, TypeScript, React and etc. Which are
               essential pillars in the development of interactive applications.
               These tools enable me to build dynamic and responsive interfaces,
-              offering users a fluid experience across devices and browsers.
-            </p>
+              offering users a fluid experience across devices and browsers."
+              style="text-md"
+            />
 
-            <p className="text-md text-gray-3">
-              In addition to my focus on front-end development, I also have
+            <Paragraphy
+              text="In addition to my focus on front-end development, I also have
               valuable knowledge of the VTEX platform, which allows me to
               implement scalable and efficient e-commerce solutions. My
               overarching view includes DevOps practices such as continuous
               integration and continuous delivery, as well as automating
-              infrastructure processes.
-            </p>
+              infrastructure processes."
+              style="text-md"
+            />
 
-            <p className="text-md text-gray-3">
-              I am continually dedicated to improving my technical skills to
+            <Paragraphy
+              text="I am continually dedicated to improving my technical skills to
               ensure that the projects I lead result in attractive, functional
               and high-performance interfaces. My goal is always to deliver
               excellent results, providing end users with a memorable and
-              effective digital experience.
-            </p>
+              effective digital experience."
+              style="text-md"
+            />
           </div>
 
           <Image
@@ -65,6 +71,18 @@ export default function About() {
         </button>
 
         <Line />
+
+        <div className="w-full my-6">
+          <p className="font-medium text-xl gap-2">Skills</p>
+
+          <Paragraphy text="My technical knowledge." style="gap-2" />
+
+          <div className="flex flex-wrap items-center gap-3 my-3.5">
+            {stacks.map((Icon, index) => (
+              <Icon key={index} size={30} color="#D4D4D4" />
+            ))}
+          </div>
+        </div>
       </div>
     </main>
   );

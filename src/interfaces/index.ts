@@ -16,3 +16,8 @@ export interface IProjectProps {
 export interface IProject {
   project: IProjectProps;
 }
+
+export interface IParagraphy {
+  text: string;
+  style?: string;
+}
