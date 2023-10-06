@@ -1,9 +1,9 @@
+import { Paragraphy } from "@/components/Paragraphy";
 import { Header } from "@/components/Header";
+import { Line } from "@/components/Line";
+import { stacks } from "@/utils/stacks";
 import my from "../../assets/my.jpg";
 import Image from "next/image";
-import { Line } from "@/components/Line";
-import { Paragraphy } from "@/components/Paragraphy";
-import { stacks } from "@/utils/stacks";
 
 export default function About() {
   return (
@@ -15,7 +15,7 @@ export default function About() {
       <Header />
 
       <div className="w-full max-w-800">
-        <h2 className="font-title text-4xl">About</h2>
+        <h2 className="font-bold text-4xl">About</h2>
 
         <div className="flex my-6 sm:flex-col md:flex-row lg:items-center justify-between gap-12">
           <div className="w-full max-w-456 leading-1.8 space-y-3">

@@ -1,6 +1,6 @@
 import { Project } from "@/components/Project";
 import { Header } from "@/components/Header";
-import { projects } from "@/utils/projects";
+import { TwoProjects } from "@/utils/projects";
 import { Line } from "@/components/Line";
 import { Work } from "@/components/Work";
 import { Paragraphy } from "@/components/Paragraphy";
@@ -73,7 +73,7 @@ export default function Home() {
         </div>
 
         <div className="grid md:grid-cols-2 place-items-center gap-4 my-6">
-          {projects.map((project, key) => (
+          {TwoProjects.map((project, key) => (
             <Project project={project} key={key} />
           ))}
         </div>

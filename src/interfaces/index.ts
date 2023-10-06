@@ -10,6 +10,7 @@ export interface IProjectProps {
   img: StaticImageData;
   title: string;
   description: string;
+  link: string;
   stacks: Array<any>;
 }
 
