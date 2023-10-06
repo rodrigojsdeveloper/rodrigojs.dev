@@ -22,3 +22,11 @@ export interface IParagraphy {
   text: string;
   style?: string;
 }
+
+export interface InputProps {
+  label: string;
+  type: string;
+  name: string;
+  htmlFor: string;
+  id: string;
+}

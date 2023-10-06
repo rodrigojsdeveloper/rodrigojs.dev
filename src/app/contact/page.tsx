@@ -1,6 +1,7 @@
 import { Paragraphy } from "@/components/Paragraphy";
 import { Header } from "@/components/Header";
 import { Line } from "@/components/Line";
+import { Form } from "@/components/Form";
 
 export default function Contact() {
   return (
@@ -99,8 +100,10 @@ export default function Contact() {
           text="I really enjoy interacting with programmers, creators and technology
           students. If you are interested in my work or want to give feedback
           about this site, let's chat."
-          style="text-md mt-3"
+          style="text-md mt-3 mb-6"
         />
+
+        <Form />
       </div>
     </main>
   );
