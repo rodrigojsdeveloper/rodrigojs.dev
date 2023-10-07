@@ -163,23 +163,17 @@ const projects: Array<IProjectProps> = [
 
 const TwoProjects: Array<IProjectProps> = [
   {
-    img: motorsShop,
-    title: "Motors Shop",
-    description: "Motors Shop is a car sales website project.",
-    link: "https://github.com/rodrigojsdeveloper/motors-shop/",
+    img: geography,
+    title: "Geography",
+    description:
+      "Geography, where users can explore and have fun with countries around the world.",
+    link: "https://github.com/rodrigojsdeveloper/geography/",
     stacks: [
       SiJavascript,
       SiTypescript,
       FaReact,
       SiStyledcomponents,
-      FaNodeJs,
-      SiExpress,
-      VscJson,
-      SiJsonwebtokens,
-      SiJest,
-      SiPostgresql,
-      SiSwagger,
-      FaDocker,
+      SiTailwindcss,
     ],
   },
   {
