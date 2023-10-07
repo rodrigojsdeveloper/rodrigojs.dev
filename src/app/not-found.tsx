@@ -13,7 +13,7 @@ export default function NotFound() {
       <Header />
       <HeaderMobile />
 
-      <div className="w-full max-w-800 flex flex-col justify-center items-center gap-4 text-center max-lg:max-w-none max-lg:mt-6">
+      <div className="w-full max-w-800 flex flex-col justify-center items-center gap-4 text-center animate-up max-lg:max-w-none max-lg:mt-6">
         <Paragraphy
           text="The page you are trying to access does not exist."
           style="text-md"

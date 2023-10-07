@@ -16,7 +16,7 @@ export default function Contact() {
       <Header />
       <HeaderMobile />
 
-      <div className="w-full max-w-800 max-lg:max-w-none max-lg:mt-6">
+      <div className="w-full max-w-800 animate-up max-lg:max-w-none max-lg:mt-6">
         <Title title="Contact" />
 
         <Paragraphy

@@ -62,6 +62,15 @@ const config: Config = {
       lineHeight: {
         1.8: "1.8rem",
       },
+      keyframes: {
+        up: {
+          from: { opacity: "0", transform: "translateY(20px)" },
+          to: { opacity: "1", transform: "translateY(0px)" },
+        },
+      },
+      animation: {
+        up: "up 0.3s",
+      },
     },
   },
   plugins: [],

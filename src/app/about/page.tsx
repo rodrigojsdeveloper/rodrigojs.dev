@@ -28,7 +28,7 @@ export default function About() {
       <Header />
       <HeaderMobile />
 
-      <div className="w-full max-w-800 max-lg:max-w-none max-lg:mt-6">
+      <div className="w-full max-w-800 animate-up max-lg:max-w-none max-lg:mt-6">
         <Title title="About" />
 
         <div className="flex my-6 max-md:flex-col-reverse lg:items-center justify-between gap-12">
