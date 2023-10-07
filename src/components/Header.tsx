@@ -3,7 +3,7 @@ import { Link } from "./Link";
 
 const Header = () => {
   return (
-    <header className="w-full max-w-230 sticky top-0 z-10 h-20 mr-12 lg:w-1/2 lg:py-8 max-lg:hidden max-lg:mr-0">
+    <header className="w-full max-w-230 sticky top-0 z-10 h-20 mr-12 pt-8 max-lg:hidden max-lg:mr-0">
       <div className="w-full max-w-81 h-81 group relative p-5 mb-2 -ml-1 rounded-full border border-solid border-gray-2 ease-in-out duration-500"></div>
 
       <div className="w-full">

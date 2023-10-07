@@ -1,6 +1,5 @@
 import { FaDocker, FaNodeJs, FaReact } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
-import { AiOutlineApi } from "react-icons/ai";
 import { VscJson } from "react-icons/vsc";
 import {
   SiJavascript,
@@ -12,7 +11,6 @@ import {
   SiJest,
   SiExpress,
   SiJsonwebtokens,
-  SiDocker,
   SiTailwindcss,
 } from "react-icons/si";
 
@@ -38,7 +36,6 @@ const projects: Array<IProjectProps> = [
       SiTypescript,
       FaReact,
       SiStyledcomponents,
-      AiOutlineApi,
       FaNodeJs,
       SiExpress,
       VscJson,
@@ -62,13 +59,7 @@ const projects: Array<IProjectProps> = [
     title: "Nu Kenzie",
     description: "Nu Kenzie is a cost control platform.",
     link: "https://github.com/rodrigojsdeveloper/refactoring-nukenzie/",
-    stacks: [
-      SiJavascript,
-      SiTypescript,
-      FaReact,
-      SiStyledcomponents,
-      AiOutlineApi,
-    ],
+    stacks: [SiJavascript, SiTypescript, FaReact, SiStyledcomponents],
   },
   {
     img: ngCash,
@@ -81,7 +72,6 @@ const projects: Array<IProjectProps> = [
       SiTypescript,
       FaReact,
       SiStyledcomponents,
-      AiOutlineApi,
       FaNodeJs,
       SiExpress,
       VscJson,
@@ -97,13 +87,7 @@ const projects: Array<IProjectProps> = [
     title: "Burger Kenzie",
     description: "Burger Kenzie is an 'e-commerce', with fictitious products.",
     link: "https://github.com/rodrigojsdeveloper/refactoring-burger-kenzie/",
-    stacks: [
-      SiJavascript,
-      SiTypescript,
-      FaReact,
-      SiStyledcomponents,
-      AiOutlineApi,
-    ],
+    stacks: [SiJavascript, SiTypescript, FaReact, SiStyledcomponents],
   },
   {
     img: secretaryNaty,
@@ -118,13 +102,7 @@ const projects: Array<IProjectProps> = [
     title: "Kenzie Hub",
     description: "Kenzie Hub is a skills management app.",
     link: "https://github.com/rodrigojsdeveloper/refactoring-kenzie-hub/",
-    stacks: [
-      SiJavascript,
-      SiTypescript,
-      FaReact,
-      SiStyledcomponents,
-      AiOutlineApi,
-    ],
+    stacks: [SiJavascript, SiTypescript, FaReact, SiStyledcomponents],
   },
   {
     img: api,
@@ -163,20 +141,6 @@ const projects: Array<IProjectProps> = [
 
 const TwoProjects: Array<IProjectProps> = [
   {
-    img: geography,
-    title: "Geography",
-    description:
-      "Geography, where users can explore and have fun with countries around the world.",
-    link: "https://github.com/rodrigojsdeveloper/geography/",
-    stacks: [
-      SiJavascript,
-      SiTypescript,
-      FaReact,
-      SiStyledcomponents,
-      SiTailwindcss,
-    ],
-  },
-  {
     img: motorsShop,
     title: "Motors Shop",
     description: "Motors Shop is a car sales website project.",
@@ -186,6 +150,25 @@ const TwoProjects: Array<IProjectProps> = [
       SiTypescript,
       FaReact,
       SiStyledcomponents,
+      FaNodeJs,
+      SiExpress,
+      VscJson,
+      SiJsonwebtokens,
+      SiJest,
+      SiPostgresql,
+      SiSwagger,
+      FaDocker,
+    ],
+  },
+  {
+    img: api,
+    title: "API",
+    description:
+      "This API handles the creation of properties and reservation of visits or purchase.",
+    link: "https://github.com/rodrigojsdeveloper/api-nodejs/",
+    stacks: [
+      SiJavascript,
+      SiTypescript,
       FaNodeJs,
       SiExpress,
       VscJson,

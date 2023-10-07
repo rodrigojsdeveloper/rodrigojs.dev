@@ -1,6 +1,5 @@
 import { DiDjango, DiMysql } from "react-icons/di";
 import { TbBrandNextjs } from "react-icons/tb";
-import { AiOutlineApi } from "react-icons/ai";
 import { VscJson } from "react-icons/vsc";
 import { BsGit } from "react-icons/bs";
 import {
@@ -37,7 +36,6 @@ const stacks = [
   TbBrandNextjs,
   SiStyledcomponents,
   SiTailwindcss,
-  AiOutlineApi,
   SiRedux,
   FaNodeJs,
   SiExpress,

@@ -7,7 +7,7 @@ const Project = ({ project }: IProject) => {
     <a
       href={project.link}
       target="_blank"
-      className="w-full h-408 p-2 border border-solid border-gray-7 rounded-def duration-300 hover:bg-gray-8"
+      className="w-full h-408 p-2 border border-solid border-gray-7 rounded-def duration-300 hover:bg-gray-8 hover:border-gray-8"
     >
       <Image
         priority
@@ -21,7 +21,7 @@ const Project = ({ project }: IProject) => {
 
         <Paragraphy
           text={project.description}
-          style="w-full h-58 leading-1.8 text-sm mt-2"
+          style="w-full min-h-58 leading-1.8 text-sm mt-2"
         />
 
         <div className="flex flex-wrap gap-3 pt-5 pb-3">
