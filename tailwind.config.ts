@@ -12,8 +12,8 @@ const config: Config = {
         gray: {
           1: "#FFFFFF",
           2: "#D4D4D4",
-          3: "#A3A3A3",
-          4: "#262626",
+          3: "#8C8C8C",
+          4: "#2F2F2F",
           5: "#27272A",
           6: "#1E1B1B",
           7: "#171717",
@@ -27,8 +27,8 @@ const config: Config = {
           2: "hsla(0,0%,100%,.4)",
         },
         borderButton: {
-          1: "rgba(38, 38, 38, 0.08)",
-          2: "rgba(38, 38, 38, 0.12)",
+          1: "rgba(38, 38, 38, 0.10)",
+          2: "rgba(38, 38, 38, 0.20)",
         },
       },
       backgroundImage: {
@@ -61,7 +61,7 @@ const config: Config = {
         58: "58px",
       },
       borderRadius: {
-        "def": "6px",
+        "def": "4.5px",
       },
       lineHeight: {
         1.8: "1.8rem",

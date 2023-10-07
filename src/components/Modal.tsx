@@ -1,25 +1,20 @@
+"use client";
+import { useEffect, useState } from "react";
 import { CustomLink } from "./CustomLink";
 
 const Modal = () => {
+  const [currentUrl, setCurrentUrl] = useState<string>(
+    typeof window !== "undefined" ? window.location.href.split("/")[3] : ""
+  );
+
+  useEffect(() => {
+    setCurrentUrl(
+      typeof window !== "undefined" ? window.location.href.split("/")[3] : ""
+    );
+  }, []);
+
   return (
     <nav className="w-full max-w-140 fixed top-16 right-6 z-10 bg-black border border-solid border-gray-4 rounded-def">
-      <CustomLink
-        href=""
-        Icon={
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <path
-              fill="#D4D4D4"
-              d="M11.03 2.59a1.501 1.501 0 0 1 1.94 0l7.5 6.363a1.5 1.5 0 0 1 .53 1.144V19.5a1.5 1.5 0 0 1-1.5 1.5h-5.75a.75.75 0 0 1-.75-.75V14h-2v6.25a.75.75 0 0 1-.75.75H4.5A1.5 1.5 0 0 1 3 19.5v-9.403c0-.44.194-.859.53-1.144ZM12 3.734l-7.5 6.363V19.5h5v-6.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v6.25h5v-9.403Z"
-            />
-          </svg>
-        }
-        text="Home"
-      />
       <CustomLink
         href="about"
         Icon={
@@ -36,6 +31,11 @@ const Modal = () => {
           </svg>
         }
         text="About"
+        activeLink={
+          currentUrl === "about"
+            ? "bg-link-1 text-gray-1"
+            : "bg-transparent text-gray-2"
+        }
       />
       <CustomLink
         href="projects"
@@ -57,6 +57,11 @@ const Modal = () => {
           </svg>
         }
         text="Projects"
+        activeLink={
+          currentUrl === "projects"
+            ? "bg-link-1 text-gray-1"
+            : "bg-transparent text-gray-2"
+        }
       />
       <CustomLink
         href="contact"
@@ -78,6 +83,11 @@ const Modal = () => {
           </svg>
         }
         text="Contact"
+        activeLink={
+          currentUrl === "contact"
+            ? "bg-link-1 text-gray-1"
+            : "bg-transparent text-gray-2"
+        }
       />
       <CustomLink
         href="experiences"
@@ -99,6 +109,11 @@ const Modal = () => {
           </svg>
         }
         text="Experiences"
+        activeLink={
+          currentUrl === "experiences"
+            ? "bg-link-1 text-gray-1"
+            : "bg-transparent text-gray-2"
+        }
       />
     </nav>
   );

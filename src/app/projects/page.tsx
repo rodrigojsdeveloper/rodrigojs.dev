@@ -20,7 +20,7 @@ export default function Projects() {
 
         <Paragraphy
           text="I'm a fanatic about creating new projects, as it's the biggest key to acquiring knowledge. On this page you can browse more than 10 websites that I have developed."
-          style="text-md leading-relaxed my-6"
+          style="text-md my-6"
         />
 
         <menu className="grid md:grid-cols-2 place-items-center gap-4 my-6">

@@ -43,9 +43,9 @@ const HeaderMobile = () => {
             <path
               fill="none"
               stroke="#d4d4d4"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="1.5"
               d="m7 7l10 10M7 17L17 7"
             />
           </svg>

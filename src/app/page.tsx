@@ -21,7 +21,7 @@ export default function Home() {
       <div className="w-full max-w-800 animate-up max-lg:max-w-none max-lg:mt-6">
         <Title title="Rodrigo Silva" />
 
-        <div className="flex items-center gap-2 my-2">
+        <div className="flex items-center gap-1.5 my-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -30,7 +30,7 @@ export default function Home() {
           >
             <g
               fill="none"
-              stroke="#A3A3A3"
+              stroke="#d4d4d4"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="1.5"
@@ -40,17 +40,18 @@ export default function Home() {
             </g>
           </svg>
 
-          <Paragraphy text="São Paulo - Brazil" style="text-sm" />
+          <p className="font-normal text-sm text-gray-2">São Paulo - Brazil</p>
         </div>
 
-        <p className="text-gray-2 font-normal text-md leading-relaxed my-6">
-          As a full-stack developer, my goal is to craft digital experiences
+        <Paragraphy
+          text="As a full-stack developer, my goal is to craft digital experiences
           that seamlessly blend elegant aesthetics with exceptional
-          functionality, both on the front-end and back-end. I{"'"}m passionate
+          functionality, both on the front-end and back-end. I'm passionate
           about translating ideas into intuitive, visually appealing user
           interfaces while ensuring the technical aspects of the system are
-          robust and efficient.
-        </p>
+          robust and efficient."
+          style="text-md my-6"
+        />
 
         <Line />
 
@@ -59,7 +60,7 @@ export default function Home() {
 
           <Link
             href="/projects"
-            className="flex items-center gap-1 text-gray-2 text-xs font-medium hover:text-primary active:opacity-50"
+            className="flex items-center gap-1 font-medium text-gray-2 text-xs  hover:text-primary active:opacity-50"
           >
             See all{" "}
             <svg

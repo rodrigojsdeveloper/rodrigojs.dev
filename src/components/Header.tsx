@@ -5,7 +5,7 @@ import { Line } from "./Line";
 import Link from "next/link";
 
 const Header = () => {
-  const [currentUrl, setCurrentUrl] = useState(
+  const [currentUrl, setCurrentUrl] = useState<string>(
     typeof window !== "undefined" ? window.location.href.split("/")[3] : ""
   );
 
@@ -20,7 +20,7 @@ const Header = () => {
       <div className="w-full max-w-81 h-81 group relative p-5 mb-2 -ml-1 rounded-full border border-solid border-gray-4 ease-in-out duration-300"></div>
 
       <div className="w-full">
-        <h1 className="text-gray-1 text-md lg:text-xl">Rodrigo Silva</h1>
+        <h1 className="text-xl">Rodrigo Silva</h1>
         <Link
           target="_blank"
           href="https://github.com/rodrigojsdeveloper"
@@ -28,14 +28,12 @@ const Header = () => {
         >
           @rodrigojsdeveloper
         </Link>
-        <p className="text-gray-1 font-normal mt-2.5 text-sm">
-          Full Stack Developer
-        </p>
+        <p className="font-normal mt-2.5 text-sm">Full Stack Developer</p>
       </div>
 
       <Line />
 
-      <nav className="hidden lg:flex flex-col gap-1">
+      <nav className="flex flex-col gap-1">
         <CustomLink
           href=""
           Icon={

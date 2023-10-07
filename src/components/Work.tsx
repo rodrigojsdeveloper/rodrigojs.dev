@@ -1,14 +1,16 @@
 import Link from "next/link";
+import { Paragraphy } from "./Paragraphy";
 
 const Work = () => {
   return (
     <div className="w-full flex flex-col gap-4 p-5 bg-gray-7 border border-gray-4 rounded-def my-6">
       <p className="font-title text-xl">Let{"'"}s work together!</p>
 
-      <p className="text-gray-2 font-normal text-md leading-relaxed">
-        If you are interested in my work or want to give feedback about this
-        website, let{"'"}s have a chat.
-      </p>
+      <Paragraphy
+        text="If you are interested in my work or want to give feedback about this
+        website, let's have a chat."
+        style="text-md"
+      />
 
       <Link
         href="/contact"
