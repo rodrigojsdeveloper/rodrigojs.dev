@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         gray: {
-          1: "rgb(255 255 255/1)",
+          1: "#FFFFFF",
           2: "#262626",
           3: "#A3A3A3",
           4: "#D4D4D4",
@@ -31,7 +31,7 @@ const config: Config = {
         45: "45px",
         81: "81.4px",
         121: "121px",
-        128: "128px",
+        140: "140px",
         152: "152px",
         230: "230px",
         340: "340px",

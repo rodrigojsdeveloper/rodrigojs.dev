@@ -8,6 +8,7 @@ import { stacks } from "@/utils/stacks";
 import my from "../../assets/my.jpg";
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function About() {
   const [copy, setCopy] = useState<boolean>(false);
@@ -80,13 +81,13 @@ export default function About() {
         </div>
 
         <div className="w-full flex items-center gap-2 mt-4 mb-8">
-          <a
+          <Link
             href="/curriculo-rodrigo.pdf"
             download="Rodrigo Silva.pdf"
             className="w-full max-w-152 h-45 flex justify-center items-center border border-solid border-gray-5 font-medium text-sm text-gray-3 duration-300 rounded-def p-3 hover:bg-gray-2 active:bg-gray-6 active:border-gray-6"
           >
             CV Download
-          </a>
+          </Link>
           <button
             onClick={copyLink}
             className="w-full max-w-152 h-45 bg-gray-1 text-gray-9 font-medium text-sm rounded-def duration-300 hover:bg-gray-10"

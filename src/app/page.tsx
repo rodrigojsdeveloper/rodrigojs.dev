@@ -6,6 +6,7 @@ import { Header } from "@/components/Header";
 import { Title } from "@/components/Title";
 import { Line } from "@/components/Line";
 import { Work } from "@/components/Work";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -56,7 +57,7 @@ export default function Home() {
         <div className="w-full flex justify-between items-center">
           <p className="font-title text-xl">Recent projects</p>
 
-          <a
+          <Link
             href="/projects"
             className="flex items-center gap-1 text-gray-4 text-xs font-medium hover:text-primary duration-300"
           >
@@ -76,7 +77,7 @@ export default function Home() {
                 d="M4 12h16m0 0l-6-6m6 6l-6 6"
               />
             </svg>
-          </a>
+          </Link>
         </div>
 
         <div className="grid md:grid-cols-2 place-items-center gap-4 my-6">

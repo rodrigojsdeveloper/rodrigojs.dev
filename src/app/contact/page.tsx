@@ -4,6 +4,7 @@ import { Header } from "@/components/Header";
 import { Title } from "@/components/Title";
 import { Line } from "@/components/Line";
 import { Form } from "@/components/Form";
+import Link from "next/link";
 
 export default function Contact() {
   return (
@@ -28,7 +29,7 @@ export default function Contact() {
         </h3>
 
         <nav className="flex flex-wrap gap-3 mt-4 mb-6">
-          <a
+          <Link
             target="_blank"
             href="https://github.com/rodrigojsdeveloper/"
             className="w-full max-w-fit flex items-center gap-1.5 py-2 px-2.5 border border-solid border-gray-5 font-medium text-sm text-gray-3 duration-300 rounded-def hover:bg-gray-2 active:bg-gray-6 active:border-gray-6"
@@ -51,8 +52,8 @@ export default function Contact() {
               </g>
             </svg>
             GitHub
-          </a>
-          <a
+          </Link>
+          <Link
             target="_blank"
             href="https://www.linkedin.com/in/rodrigo-de-jesus-silva/"
             className="w-full max-w-fit flex items-center gap-1.5 py-2 px-2.5 border border-solid border-gray-5 font-medium text-sm text-gray-3 duration-300 rounded-def hover:bg-gray-2 active:bg-gray-6 active:border-gray-6"
@@ -72,8 +73,8 @@ export default function Contact() {
               />
             </svg>
             LinkedIn
-          </a>
-          <a
+          </Link>
+          <Link
             target="_blank"
             href="https://www.instagram.com/eurodrigojs/"
             className="w-full max-w-fit flex items-center gap-1.5 py-2 px-2.5 border border-solid border-gray-5 font-medium text-sm text-gray-3 duration-300 rounded-def hover:bg-gray-2 active:bg-gray-6 active:border-gray-6"
@@ -90,7 +91,7 @@ export default function Contact() {
               />
             </svg>
             Instagram
-          </a>
+          </Link>
         </nav>
 
         <Line />

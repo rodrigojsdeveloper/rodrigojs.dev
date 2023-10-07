@@ -1,20 +1,33 @@
+"use client";
+import { useEffect, useState } from "react";
+import { CustomLink } from "./CustomLink";
 import { Line } from "./Line";
-import { Link } from "./Link";
+import Link from "next/link";
 
 const Header = () => {
+  const [currentUrl, setCurrentUrl] = useState(
+    typeof window !== "undefined" ? window.location.href.split("/")[3] : ""
+  );
+
+  useEffect(() => {
+    setCurrentUrl(
+      typeof window !== "undefined" ? window.location.href.split("/")[3] : ""
+    );
+  }, []);
+
   return (
     <header className="w-full max-w-230 sticky top-0 z-10 h-20 mr-12 pt-8 max-lg:hidden max-lg:mr-0">
       <div className="w-full max-w-81 h-81 group relative p-5 mb-2 -ml-1 rounded-full border border-solid border-gray-2 ease-in-out duration-500"></div>
 
       <div className="w-full">
         <h1 className="text-gray-1 text-md lg:text-xl">Rodrigo Silva</h1>
-        <a
+        <Link
           target="_blank"
           href="https://github.com/rodrigojsdeveloper"
           className="text-gray-3 font-medium text-sm hover:text-gray-4 duration-300"
         >
           @rodrigojsdeveloper
-        </a>
+        </Link>
         <p className="text-gray-1 font-normal mt-2.5 text-sm">
           Full Stack Developer
         </p>
@@ -23,7 +36,7 @@ const Header = () => {
       <Line />
 
       <nav className="hidden lg:flex flex-col gap-1">
-        <Link
+        <CustomLink
           href=""
           Icon={
             <svg
@@ -39,8 +52,13 @@ const Header = () => {
             </svg>
           }
           text="Home"
+          activeLink={
+            currentUrl === ""
+              ? "bg-gray-2 text-gray-1"
+              : "bg-transparent text-gray-4"
+          }
         />
-        <Link
+        <CustomLink
           href="about"
           Icon={
             <svg
@@ -56,8 +74,13 @@ const Header = () => {
             </svg>
           }
           text="About"
+          activeLink={
+            currentUrl === "about"
+              ? "bg-gray-2 text-gray-1"
+              : "bg-transparent text-gray-4"
+          }
         />
-        <Link
+        <CustomLink
           href="projects"
           Icon={
             <svg
@@ -67,14 +90,23 @@ const Header = () => {
               viewBox="0 0 24 24"
             >
               <path
-                fill="#D4D4D4"
-                d="M11.03 2.59a1.501 1.501 0 0 1 1.94 0l7.5 6.363a1.5 1.5 0 0 1 .53 1.144V19.5a1.5 1.5 0 0 1-1.5 1.5h-5.75a.75.75 0 0 1-.75-.75V14h-2v6.25a.75.75 0 0 1-.75.75H4.5A1.5 1.5 0 0 1 3 19.5v-9.403c0-.44.194-.859.53-1.144ZM12 3.734l-7.5 6.363V19.5h5v-6.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v6.25h5v-9.403Z"
+                fill="#d4d4d4"
+                d="M7.25 6a.75.75 0 0 0-.75.75v7.5a.75.75 0 0 0 1.5 0v-7.5A.75.75 0 0 0 7.25 6ZM12 6a.75.75 0 0 0-.75.75v4.5a.75.75 0 0 0 1.5 0v-4.5A.75.75 0 0 0 12 6Zm4 .75a.75.75 0 0 1 1.5 0v9.5a.75.75 0 0 1-1.5 0v-9.5Z"
+              />
+              <path
+                fill="#d4d4d4"
+                d="M3.75 2h16.5c.966 0 1.75.784 1.75 1.75v16.5A1.75 1.75 0 0 1 20.25 22H3.75A1.75 1.75 0 0 1 2 20.25V3.75C2 2.784 2.784 2 3.75 2ZM3.5 3.75v16.5c0 .138.112.25.25.25h16.5a.25.25 0 0 0 .25-.25V3.75a.25.25 0 0 0-.25-.25H3.75a.25.25 0 0 0-.25.25Z"
               />
             </svg>
           }
           text="Projects"
+          activeLink={
+            currentUrl === "projects"
+              ? "bg-gray-2 text-gray-1"
+              : "bg-transparent text-gray-4"
+          }
         />
-        <Link
+        <CustomLink
           href="contact"
           Icon={
             <svg
@@ -94,8 +126,13 @@ const Header = () => {
             </svg>
           }
           text="Contact"
+          activeLink={
+            currentUrl === "contact"
+              ? "bg-gray-2 text-gray-1"
+              : "bg-transparent text-gray-4"
+          }
         />
-        <Link
+        <CustomLink
           href="experiences"
           Icon={
             <svg
@@ -115,35 +152,26 @@ const Header = () => {
             </svg>
           }
           text="Experiences"
+          activeLink={
+            currentUrl === "experiences"
+              ? "bg-gray-2 text-gray-1"
+              : "bg-transparent text-gray-4"
+          }
         />
       </nav>
 
       <Line />
 
-      <div className="flex row justify-between items-center">
-        <small className="text-gray-3 text-xs font-medium">
-          © 2023 -{" "}
-          <a
-            target="_blank"
-            className="duration-300 hover:text-gray-4"
-            href="https://github.com/rodrigojsdeveloper/rodrigojsdeveloper.com"
-          >
-            rodrigojsdeveloper
-          </a>
-        </small>
-
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
-          viewBox="0 0 256 256"
+      <small className="text-gray-3 text-xs font-medium">
+        © 2023 -{" "}
+        <Link
+          target="_blank"
+          className="duration-300 hover:text-gray-4"
+          href="https://github.com/rodrigojsdeveloper/rodrigojsdeveloper.com"
         >
-          <path
-            fill="#A3A3A3"
-            d="M128 24a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24Zm0 192a88 88 0 1 1 88-88a88.1 88.1 0 0 1-88 88Zm64-88a8 8 0 0 1-8 8h-56a8 8 0 0 1-8-8V72a8 8 0 0 1 16 0v48h48a8 8 0 0 1 8 8Z"
-          />
-        </svg>
-      </div>
+          rodrigojsdeveloper
+        </Link>
+      </small>
     </header>
   );
 };

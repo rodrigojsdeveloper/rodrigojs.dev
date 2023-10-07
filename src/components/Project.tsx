@@ -1,10 +1,11 @@
+import { Paragraphy } from "./Paragraphy";
 import { IProject } from "@/interfaces";
 import Image from "next/image";
-import { Paragraphy } from "./Paragraphy";
+import Link from "next/link";
 
 const Project = ({ project }: IProject) => {
   return (
-    <a
+    <Link
       href={project.link}
       target="_blank"
       className="w-full h-408 p-2 border border-solid border-gray-7 rounded-def duration-300 hover:bg-gray-8 hover:border-gray-8"
@@ -30,7 +31,7 @@ const Project = ({ project }: IProject) => {
           ))}
         </div>
       </div>
-    </a>
+    </Link>
   );
 };
 

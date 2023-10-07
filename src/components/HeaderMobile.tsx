@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { Modal } from "./Modal";
+import Link from "next/link";
 
 const HeaderMobile = () => {
   const [openModa, setOpenModal] = useState<boolean>(false);
@@ -9,10 +10,10 @@ const HeaderMobile = () => {
     <>
       {openModa ? <Modal /> : null}
       <header className="w-full h-81 hidden flex-row justify-between items-center bg-black border-b border-solid border-gray-6 fixed top-0 pt-2 px-8 max-lg:flex">
-        <a
+        <Link
           href="/"
           className="w-full max-w-45 h-45 group relative p-5 mb-2 -ml-1 rounded-full border border-solid border-gray-2 ease-in-out duration-500"
-        ></a>
+        ></Link>
 
         {!openModa ? (
           <svg

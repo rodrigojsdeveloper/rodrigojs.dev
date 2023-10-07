@@ -4,6 +4,8 @@ export interface ILink {
   Icon: any;
   text: string;
   href: string;
+  activeLink?: string;
+  onClick?: any;
 }
 
 export interface IProjectProps {
