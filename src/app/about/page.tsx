@@ -1,3 +1,4 @@
+import { HeaderMobile } from "@/components/HeaderMobile";
 import { Paragraphy } from "@/components/Paragraphy";
 import { Header } from "@/components/Header";
 import { Title } from "@/components/Title";
@@ -14,8 +15,9 @@ export default function About() {
       </div>
 
       <Header />
+      <HeaderMobile />
 
-      <div className="w-full max-w-800">
+      <div className="w-full max-w-800 max-lg:max-w-none max-lg:mt-6">
         <Title title="About" />
 
         <div className="flex my-6 max-md:flex-col-reverse lg:items-center justify-between gap-12">
