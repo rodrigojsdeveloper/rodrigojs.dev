@@ -4,36 +4,14 @@ import { Link } from "./Link";
 const Header = () => {
   return (
     <header className="w-full max-w-230 sticky top-0 z-10 h-20 mr-12 lg:w-1/2 lg:py-8 max-lg:hidden max-lg:mr-0">
-      <svg
-        width="81"
-        height="81"
-        viewBox="0 0 44 44"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className="mb-2"
-      >
-        <circle cx="22" cy="22" r="22" fill="url(#paint0_linear_147_168)" />
-        <defs>
-          <linearGradient
-            id="paint0_linear_147_168"
-            x1="22"
-            y1="0"
-            x2="22"
-            y2="40"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop stopColor="#0141ff" />
-            <stop offset="1" stopColor="#000000" />
-          </linearGradient>
-        </defs>
-      </svg>
+      <div className="w-full max-w-81 h-81 group relative p-5 mb-2 -ml-1 rounded-full border border-solid border-gray-2 ease-in-out duration-500"></div>
 
       <div className="w-full">
         <h1 className="text-gray-1 text-md lg:text-xl">Rodrigo Silva</h1>
         <a
           target="_blank"
           href="https://github.com/rodrigojsdeveloper"
-          className="text-gray-3 font-medium text-sm cursor-pointer hover:text-gray-4 duration-300"
+          className="text-gray-3 font-medium text-sm hover:text-gray-4 duration-300"
         >
           @rodrigojsdeveloper
         </a>
