@@ -54,7 +54,7 @@ const Header = () => {
           text="Home"
           activeLink={
             currentUrl === ""
-              ? "bg-gray-2 text-gray-1"
+              ? "bg-link-1 text-gray-1"
               : "bg-transparent text-gray-4"
           }
         />
@@ -76,7 +76,7 @@ const Header = () => {
           text="About"
           activeLink={
             currentUrl === "about"
-              ? "bg-gray-2 text-gray-1"
+              ? "bg-link-1 text-gray-1"
               : "bg-transparent text-gray-4"
           }
         />
@@ -102,7 +102,7 @@ const Header = () => {
           text="Projects"
           activeLink={
             currentUrl === "projects"
-              ? "bg-gray-2 text-gray-1"
+              ? "bg-link-1 text-gray-1"
               : "bg-transparent text-gray-4"
           }
         />
@@ -128,7 +128,7 @@ const Header = () => {
           text="Contact"
           activeLink={
             currentUrl === "contact"
-              ? "bg-gray-2 text-gray-1"
+              ? "bg-link-1 text-gray-1"
               : "bg-transparent text-gray-4"
           }
         />
@@ -154,7 +154,7 @@ const Header = () => {
           text="Experiences"
           activeLink={
             currentUrl === "experiences"
-              ? "bg-gray-2 text-gray-1"
+              ? "bg-link-1 text-gray-1"
               : "bg-transparent text-gray-4"
           }
         />
