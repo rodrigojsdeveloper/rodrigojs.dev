@@ -1,5 +1,6 @@
 import { Paragraphy } from "@/components/Paragraphy";
 import { Header } from "@/components/Header";
+import { Title } from "@/components/Title";
 import { Line } from "@/components/Line";
 import { Form } from "@/components/Form";
 
@@ -13,7 +14,7 @@ export default function Contact() {
       <Header />
 
       <div className="w-full max-w-800">
-        <h2 className="font-bold text-4xl">Contact</h2>
+        <Title title="Contact" />
 
         <Paragraphy
           text="Feel free to get in touch and we'll talk about how we can work together."
@@ -39,9 +40,9 @@ export default function Contact() {
               <g
                 fill="none"
                 stroke="#A3A3A3"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
               >
                 <path d="M16 22.027v-2.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7a5.44 5.44 0 0 0-1.5-3.75a5.07 5.07 0 0 0-.09-3.77s-1.18-.35-3.91 1.48a13.38 13.38 0 0 0-7 0c-2.73-1.83-3.91-1.48-3.91-1.48A5.07 5.07 0 0 0 5 5.797a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7a3.37 3.37 0 0 0-.94 2.58v2.87" />
                 <path d="M9 20.027c-3 .973-5.5 0-7-3" />
@@ -63,8 +64,8 @@ export default function Contact() {
               <path
                 fill="none"
                 stroke="#A3A3A3"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 d="M3.54 1.71a1.33 1.33 0 0 1-1.3 1.34A1.36 1.36 0 0 1 .93 1.71A1.34 1.34 0 0 1 2.24.43a1.33 1.33 0 0 1 1.3 1.28ZM1.07 5.43c0-.77.49-.65 1.17-.65s1.16-.12 1.16.65v7.5c0 .78-.49.62-1.16.62s-1.17.16-1.17-.62Zm4.35 0c0-.43.16-.59.41-.64s1.11 0 1.41 0s.42.49.41.86a2.51 2.51 0 0 1 2.24-1a3 3 0 0 1 3.18 3.13v5.12c0 .78-.48.62-1.16.62s-1.16.16-1.16-.62v-4a1.44 1.44 0 0 0-1.52-1.56a1.45 1.45 0 0 0-1.48 1.59v4c0 .78-.49.62-1.17.62s-1.16.16-1.16-.62Z"
               />
             </svg>

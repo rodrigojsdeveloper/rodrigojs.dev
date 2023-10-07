@@ -1,7 +1,8 @@
-import { Header } from "@/components/Header";
 import { Paragraphy } from "@/components/Paragraphy";
 import { Project } from "@/components/Project";
+import { Header } from "@/components/Header";
 import { projects } from "@/utils/projects";
+import { Title } from "@/components/Title";
 
 export default function Projects() {
   return (
@@ -13,7 +14,7 @@ export default function Projects() {
       <Header />
 
       <div className="w-full max-w-800">
-        <h2 className="font-bold text-4xl">Projects</h2>
+        <Title title="Projects" />
 
         <Paragraphy
           text="I'm a fanatic about creating new projects, as it's the biggest key to acquiring knowledge. On this page you can browse more than 10 websites that I have developed."

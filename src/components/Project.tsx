@@ -9,7 +9,12 @@ const Project = ({ project }: IProject) => {
       target="_blank"
       className="w-full h-408 p-2 border border-solid border-gray-7 rounded-def duration-300 hover:bg-gray-8"
     >
-      <Image src={project.img} alt={project.title} className="rounded-def" />
+      <Image
+        priority
+        src={project.img}
+        alt={project.title}
+        className="rounded-def"
+      />
 
       <div className="py-4 px-2">
         <h3 className="font-normal text-xl text-gray-1">{project.title}</h3>

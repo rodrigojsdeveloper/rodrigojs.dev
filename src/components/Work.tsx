@@ -8,9 +8,12 @@ const Work = () => {
         website, let{"'"}s have a chat.
       </p>
 
-      <button className="w-full max-w-121 h-44 bg-gray-1 text-gray-9 font-normal text-md rounded-def duration-300 hover:bg-gray-10">
+      <a
+        href="/contact"
+        className="w-full max-w-121 h-44 flex justify-center items-center bg-gray-1 text-gray-9 font-normal text-md rounded-def duration-300 hover:bg-gray-10"
+      >
         Contact me
-      </button>
+      </a>
     </div>
   );
 };

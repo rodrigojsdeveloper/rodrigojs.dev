@@ -41,3 +41,7 @@ export interface IJobProps {
 export interface IJob {
   job: IJobProps;
 }
+
+export interface ITitle {
+  title: string;
+}

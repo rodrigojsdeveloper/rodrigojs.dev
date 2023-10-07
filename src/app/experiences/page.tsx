@@ -1,7 +1,7 @@
 import { Paragraphy } from "@/components/Paragraphy";
 import { Header } from "@/components/Header";
+import { Title } from "@/components/Title";
 import { Line } from "@/components/Line";
-import { projects } from "@/utils/projects";
 import { Job } from "@/components/Job";
 import { jobs } from "@/utils/jobs";
 
@@ -15,7 +15,7 @@ export default function Contact() {
       <Header />
 
       <div className="w-full max-w-800">
-        <h2 className="font-bold text-4xl">Experiences</h2>
+        <Title title="Experiences" />
 
         <Paragraphy
           text="Discover my professional journey and the skills I've gained along the way, as well as the courses that have helped me grow and excel."

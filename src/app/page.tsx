@@ -1,9 +1,10 @@
+import { Paragraphy } from "@/components/Paragraphy";
 import { Project } from "@/components/Project";
-import { Header } from "@/components/Header";
 import { TwoProjects } from "@/utils/projects";
+import { Header } from "@/components/Header";
+import { Title } from "@/components/Title";
 import { Line } from "@/components/Line";
 import { Work } from "@/components/Work";
-import { Paragraphy } from "@/components/Paragraphy";
 
 export default function Home() {
   return (
@@ -15,7 +16,8 @@ export default function Home() {
       <Header />
 
       <div className="w-full max-w-800">
-        <h2 className="font-title text-4xl">Rodrigo Silva</h2>
+        <Title title="Rodrigo Silva" />
+
         <div className="flex items-center gap-2 my-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -26,9 +28,9 @@ export default function Home() {
             <g
               fill="none"
               stroke="#0141ff"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="1.5"
             >
               <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0-18 0m.6-3h16.8M3.6 15h16.8" />
               <path d="M11.5 3a17 17 0 0 0 0 18m1-18a17 17 0 0 1 0 18" />
@@ -52,7 +54,10 @@ export default function Home() {
         <div className="w-full flex justify-between items-center">
           <p className="font-title text-xl">Recent projects</p>
 
-          <a className="flex items-center gap-1 text-gray-4 text-xs font-medium hover:text-primary duration-300 cursor-pointer">
+          <a
+            href="/projects"
+            className="flex items-center gap-1 text-gray-4 text-xs font-medium hover:text-primary duration-300 cursor-pointer"
+          >
             See all{" "}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -63,9 +68,9 @@ export default function Home() {
               <path
                 fill="none"
                 stroke="#d4d4d4"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
                 d="M4 12h16m0 0l-6-6m6 6l-6 6"
               />
             </svg>

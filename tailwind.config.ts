@@ -43,11 +43,13 @@ const config: Config = {
         40: "40px",
         44: "44px",
         45: "45px",
-        58: "58px",
         81: "81.4px",
         286: "286px",
         315: "315px",
         408: "408px",
+      },
+      minHeight: {
+        58: "58px",
       },
       borderRadius: {
         "def": "6px",

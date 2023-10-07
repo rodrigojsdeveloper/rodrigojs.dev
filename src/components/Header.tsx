@@ -3,7 +3,7 @@ import { Link } from "./Link";
 
 const Header = () => {
   return (
-    <header className="w-full max-w-230 sticky top-0 z-10 h-20 lg:w-1/2 lg:py-8">
+    <header className="w-full max-w-230 sticky top-0 z-10 h-20 mr-12 lg:w-1/2 lg:py-8 max-lg:hidden max-lg:mr-0">
       <div className="w-full max-w-81 h-81 hidden lg:block group relative p-5 mb-2 -ml-1 rounded-full border border-solid border-gray-2 ease-in-out duration-500"></div>
 
       <div className="w-full">
@@ -86,9 +86,9 @@ const Header = () => {
               <path
                 fill="none"
                 stroke="#D4D4D4"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
                 d="M4 21V8a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3H8l-4 4m8-10v.01M8 11v.01m8-.01v.01"
               />
             </svg>
@@ -107,9 +107,9 @@ const Header = () => {
               <path
                 fill="none"
                 stroke="#D4D4D4"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
                 d="M8 8H6.2c-1.12 0-1.68 0-2.108.218a1.999 1.999 0 0 0-.874.874C3 9.52 3 10.08 3 11.2v5.6c0 1.12 0 1.68.218 2.108a2 2 0 0 0 .874.874c.427.218.987.218 2.105.218h11.606c1.118 0 1.677 0 2.104-.218c.377-.192.683-.498.875-.874c.218-.428.218-.986.218-2.104v-5.607c0-1.118 0-1.678-.218-2.105a2.001 2.001 0 0 0-.875-.874C19.48 8 18.92 8 17.8 8H16M8 8h8M8 8a4 4 0 1 1 8 0"
               />
             </svg>

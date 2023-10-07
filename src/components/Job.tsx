@@ -7,7 +7,7 @@ const Job = ({ job }: IJob) => {
 
       <h3 className="text-gray-1 text-md mt-4">{job.position}</h3>
 
-      <p className="h-286 text-gray-3 text-md leading-relaxed mt-6 mb-8">
+      <p className="min-h-286 text-gray-3 text-md leading-relaxed mt-6 mb-8">
         {job.description}
       </p>
 

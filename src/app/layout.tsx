@@ -1,5 +1,16 @@
+import { Poppins, Kanit } from "next/font/google";
 import type { Metadata } from "next";
 import "./globals.css";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+});
+
+const kanit = Kanit({
+  subsets: ["latin"],
+  weight: ["400"],
+});
 
 export const metadata: Metadata = {
   title: "rodrigojsdeveloper",
@@ -13,7 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={(poppins.className, kanit.className)}>{children}</body>
     </html>
   );
 }
