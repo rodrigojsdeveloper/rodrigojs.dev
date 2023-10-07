@@ -32,7 +32,7 @@ export default function Contact() {
           <Link
             target="_blank"
             href="https://github.com/rodrigojsdeveloper/"
-            className="w-full max-w-fit flex items-center gap-1.5 py-2 px-2.5 border border-solid border-gray-5 font-medium text-sm text-gray-3 duration-300 rounded-def hover:bg-gray-2 active:bg-gray-6 active:border-gray-6"
+            className="w-full max-w-fit flex items-center gap-1.5 py-2 px-2.5 border border-solid border-gray-4 font-medium text-sm text-gray-3 rounded-def hover:bg-borderButton-1 active:bg-borderButton-2"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +56,7 @@ export default function Contact() {
           <Link
             target="_blank"
             href="https://www.linkedin.com/in/rodrigo-de-jesus-silva/"
-            className="w-full max-w-fit flex items-center gap-1.5 py-2 px-2.5 border border-solid border-gray-5 font-medium text-sm text-gray-3 duration-300 rounded-def hover:bg-gray-2 active:bg-gray-6 active:border-gray-6"
+            className="w-full max-w-fit flex items-center gap-1.5 py-2 px-2.5 border border-solid border-gray-4 font-medium text-sm text-gray-3 rounded-def hover:bg-borderButton-1 active:bg-borderButton-2"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -77,7 +77,7 @@ export default function Contact() {
           <Link
             target="_blank"
             href="https://www.instagram.com/eurodrigojs/"
-            className="w-full max-w-fit flex items-center gap-1.5 py-2 px-2.5 border border-solid border-gray-5 font-medium text-sm text-gray-3 duration-300 rounded-def hover:bg-gray-2 active:bg-gray-6 active:border-gray-6"
+            className="w-full max-w-fit flex items-center gap-1.5 py-2 px-2.5 border border-solid border-gray-4 font-medium text-sm text-gray-3 rounded-def hover:bg-borderButton-1 active:bg-borderButton-2"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

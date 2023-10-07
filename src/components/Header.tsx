@@ -17,14 +17,14 @@ const Header = () => {
 
   return (
     <header className="w-full max-w-230 sticky top-0 z-10 h-20 mr-12 pt-8 max-lg:hidden max-lg:mr-0">
-      <div className="w-full max-w-81 h-81 group relative p-5 mb-2 -ml-1 rounded-full border border-solid border-gray-2 ease-in-out duration-500"></div>
+      <div className="w-full max-w-81 h-81 group relative p-5 mb-2 -ml-1 rounded-full border border-solid border-gray-4 ease-in-out duration-300"></div>
 
       <div className="w-full">
         <h1 className="text-gray-1 text-md lg:text-xl">Rodrigo Silva</h1>
         <Link
           target="_blank"
           href="https://github.com/rodrigojsdeveloper"
-          className="text-gray-3 font-medium text-sm hover:text-gray-4 duration-300"
+          className="text-gray-3 font-medium text-sm hover:text-gray-2"
         >
           @rodrigojsdeveloper
         </Link>
@@ -55,7 +55,7 @@ const Header = () => {
           activeLink={
             currentUrl === ""
               ? "bg-link-1 text-gray-1"
-              : "bg-transparent text-gray-4"
+              : "bg-transparent text-gray-2"
           }
         />
         <CustomLink
@@ -77,7 +77,7 @@ const Header = () => {
           activeLink={
             currentUrl === "about"
               ? "bg-link-1 text-gray-1"
-              : "bg-transparent text-gray-4"
+              : "bg-transparent text-gray-2"
           }
         />
         <CustomLink
@@ -103,7 +103,7 @@ const Header = () => {
           activeLink={
             currentUrl === "projects"
               ? "bg-link-1 text-gray-1"
-              : "bg-transparent text-gray-4"
+              : "bg-transparent text-gray-2"
           }
         />
         <CustomLink
@@ -129,7 +129,7 @@ const Header = () => {
           activeLink={
             currentUrl === "contact"
               ? "bg-link-1 text-gray-1"
-              : "bg-transparent text-gray-4"
+              : "bg-transparent text-gray-2"
           }
         />
         <CustomLink
@@ -155,7 +155,7 @@ const Header = () => {
           activeLink={
             currentUrl === "experiences"
               ? "bg-link-1 text-gray-1"
-              : "bg-transparent text-gray-4"
+              : "bg-transparent text-gray-2"
           }
         />
       </nav>
@@ -166,7 +166,7 @@ const Header = () => {
         © 2023 -{" "}
         <Link
           target="_blank"
-          className="duration-300 hover:text-gray-4"
+          className="hover:text-gray-2"
           href="https://github.com/rodrigojsdeveloper/rodrigojsdeveloper.com"
         >
           rodrigojsdeveloper

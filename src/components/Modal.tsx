@@ -2,7 +2,7 @@ import { CustomLink } from "./CustomLink";
 
 const Modal = () => {
   return (
-    <nav className="w-full max-w-140 fixed top-16 right-6 z-10 bg-black border border-solid border-gray-2 rounded-def">
+    <nav className="w-full max-w-140 fixed top-16 right-6 z-10 bg-black border border-solid border-gray-4 rounded-def">
       <CustomLink
         href=""
         Icon={

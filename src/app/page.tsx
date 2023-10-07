@@ -43,7 +43,7 @@ export default function Home() {
           <Paragraphy text="São Paulo - Brazil" style="text-sm" />
         </div>
 
-        <p className="text-gray-4 font-normal text-md leading-relaxed my-6">
+        <p className="text-gray-2 font-normal text-md leading-relaxed my-6">
           As a full-stack developer, my goal is to craft digital experiences
           that seamlessly blend elegant aesthetics with exceptional
           functionality, both on the front-end and back-end. I{"'"}m passionate
@@ -59,7 +59,7 @@ export default function Home() {
 
           <Link
             href="/projects"
-            className="flex items-center gap-1 text-gray-4 text-xs font-medium hover:text-primary duration-300"
+            className="flex items-center gap-1 text-gray-2 text-xs font-medium hover:text-primary active:opacity-50"
           >
             See all{" "}
             <svg

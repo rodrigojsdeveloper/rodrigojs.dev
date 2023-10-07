@@ -2,7 +2,7 @@ import { IJob } from "@/interfaces";
 
 const Job = ({ job }: IJob) => {
   return (
-    <div className="w-full border border-solid border-gray-5 rounded-def p-5">
+    <div className="w-full border border-solid border-gray-4 rounded-def p-5">
       <h2 className="text-gray-1 text-2xl">{job.company}</h2>
 
       <h3 className="text-gray-1 text-md mt-4">{job.position}</h3>

@@ -11,13 +11,12 @@ const config: Config = {
       colors: {
         gray: {
           1: "#FFFFFF",
-          2: "#262626",
+          2: "#D4D4D4",
           3: "#A3A3A3",
-          4: "#D4D4D4",
-          5: "#262626",
-          6: "rgba(30, 27, 27, 1)",
-          7: "#27272A",
-          9: "#171717",
+          4: "#262626",
+          5: "#27272A",
+          6: "#1E1B1B",
+          7: "#171717",
         },
         link: {
           1: "rgba(255, 255, 255, 0.1)",
@@ -26,7 +25,11 @@ const config: Config = {
         button: {
           1: "hsla(0,0%,100%,.7)",
           2: "hsla(0,0%,100%,.4)",
-        }
+        },
+        borderButton: {
+          1: "rgba(38, 38, 38, 0.08)",
+          2: "rgba(38, 38, 38, 0.12)",
+        },
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -41,11 +44,9 @@ const config: Config = {
         152: "152px",
         230: "230px",
         340: "340px",
-        366: "366px",
         448: "488px",
         456: "456px",
         800: "800px",
-        1440: "1440px",
       },
       height: {
         40: "40px",
