@@ -66,3 +66,7 @@ body {
   border-radius: 0.5px;
   background-color: #262626;
 }
+
+::selection {
+  background-color: rgba(1, 65, 255, 0.1);
+}
