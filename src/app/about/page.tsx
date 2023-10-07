@@ -90,7 +90,7 @@ export default function About() {
           </Link>
           <button
             onClick={copyLink}
-            className="w-full max-w-152 h-45 bg-gray-1 text-gray-9 font-medium text-sm rounded-def duration-300 hover:bg-gray-10"
+            className="w-full max-w-152 h-45 bg-gray-1 text-gray-9 font-medium text-sm rounded-def duration-300 hover:bg-button-1 active:bg-button-2"
           >
             {copy ? "Copied!" : "Copy email"}
           </button>

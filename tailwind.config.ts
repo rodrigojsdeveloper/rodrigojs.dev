@@ -18,12 +18,15 @@ const config: Config = {
           6: "rgba(30, 27, 27, 1)",
           7: "#27272A",
           9: "#171717",
-          10: "hsla(0,0%,100%,.7)",
         },
         link: {
           1: "rgba(255, 255, 255, 0.1)",
           2: "rgba(255, 255, 255, 0.2)",
         },
+        button: {
+          1: "hsla(0,0%,100%,.7)",
+          2: "hsla(0,0%,100%,.4)",
+        }
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
