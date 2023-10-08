@@ -8,7 +8,7 @@ const Project = ({ project }: IProject) => {
     <Link
       href={project.link}
       target="_blank"
-      className="w-full h-408 p-2 border border-solid border-gray-5 rounded-def hover:bg-link-1 hover:border-link-1 active:bg-link-2"
+      className="w-full min-h-408 p-2 border border-solid border-gray-5 rounded-def hover:bg-link-1 hover:border-link-1 active:bg-link-2"
     >
       <Image
         priority

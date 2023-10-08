@@ -55,10 +55,10 @@ const config: Config = {
         81: "81.4px",
         286: "286px",
         315: "315px",
-        408: "408px",
       },
       minHeight: {
         58: "58px",
+        408: "408px",
       },
       borderRadius: {
         "def": "4.5px",
