@@ -11,7 +11,7 @@ const Project = ({ project }: IProject) => {
       className="w-full min-h-408 p-2 border border-solid border-gray-5 rounded-def hover:bg-link-1 hover:border-link-1 active:bg-link-2"
     >
       <Image
-        priority
+        priority={true}
         src={project.img}
         alt={project.title}
         className="rounded-def"

@@ -50,13 +50,14 @@ export default function About() {
             src={my}
             alt="Rodrigo Silva"
             className="w-full max-w-340 h-315 rounded-def object-cover"
+            priority={true}
           />
         </div>
 
         <div className="w-full flex items-center gap-2 mt-4 mb-8">
           <Link
-            href="/curriculo-rodrigo.pdf"
-            download="Rodrigo Silva.pdf"
+            href="/pdfs/curriculo-rodrigo.pdf"
+            download
             className="w-full max-w-152 h-45 flex justify-center items-center border border-solid border-gray-4 font-medium text-sm text-gray-3 rounded-def p-3 hover:bg-borderButton-1 active:bg-borderButton-2"
           >
             CV Download

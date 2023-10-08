@@ -173,14 +173,7 @@ const Header = () => {
       <Line />
 
       <small className="text-gray-3 text-xs font-medium">
-        © 2023 -{" "}
-        <Link
-          target="_blank"
-          className="hover:text-gray-2"
-          href="https://github.com/rodrigojsdeveloper/rodrigojsdeveloper.com"
-        >
-          rodrigojsdeveloper
-        </Link>
+        © 2023 - rodrigojsdeveloper
       </small>
     </header>
   );
