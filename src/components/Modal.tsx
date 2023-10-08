@@ -1,17 +1,9 @@
 "use client";
-import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import { CustomLink } from "./CustomLink";
 
 const Modal = () => {
-  const [currentUrl, setCurrentUrl] = useState<string>(
-    typeof window !== "undefined" ? window.location.href.split("/")[3] : ""
-  );
-
-  useEffect(() => {
-    setCurrentUrl(
-      typeof window !== "undefined" ? window.location.href.split("/")[3] : ""
-    );
-  }, []);
+  const pathname = usePathname();
 
   return (
     <nav className="w-full max-w-140 fixed top-16 right-6 z-10 bg-black border border-solid border-gray-4 rounded-def animate-down">
@@ -32,7 +24,7 @@ const Modal = () => {
         }
         text="About"
         activeLink={
-          currentUrl === "about"
+          pathname === "/about"
             ? "bg-link-1 text-gray-1"
             : "bg-transparent text-gray-2"
         }
@@ -58,7 +50,7 @@ const Modal = () => {
         }
         text="Projects"
         activeLink={
-          currentUrl === "projects"
+          pathname === "/projects"
             ? "bg-link-1 text-gray-1"
             : "bg-transparent text-gray-2"
         }
@@ -84,7 +76,7 @@ const Modal = () => {
         }
         text="Contact"
         activeLink={
-          currentUrl === "contact"
+          pathname === "/contact"
             ? "bg-link-1 text-gray-1"
             : "bg-transparent text-gray-2"
         }
@@ -110,7 +102,7 @@ const Modal = () => {
         }
         text="Experiences"
         activeLink={
-          currentUrl === "experiences"
+          pathname === "/experiences"
             ? "bg-link-1 text-gray-1"
             : "bg-transparent text-gray-2"
         }

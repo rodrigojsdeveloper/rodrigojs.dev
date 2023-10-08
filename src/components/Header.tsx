@@ -1,19 +1,11 @@
 "use client";
-import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import { CustomLink } from "./CustomLink";
 import { Line } from "./Line";
 import Link from "next/link";
 
 const Header = () => {
-  const [currentUrl, setCurrentUrl] = useState<string>(
-    typeof window !== "undefined" ? window.location.href.split("/")[3] : ""
-  );
-
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      setCurrentUrl(window.location.href.split("/")[3]);
-    }
-  }, [window]);
+  const pathname = usePathname();
 
   return (
     <header className="w-full max-w-230 sticky top-0 z-10 h-20 mr-12 pt-8 max-lg:hidden max-lg:mr-0">
@@ -63,7 +55,7 @@ const Header = () => {
           }
           text="Home"
           activeLink={
-            currentUrl === ""
+            pathname === "/"
               ? "bg-link-1 text-gray-1"
               : "bg-transparent text-gray-2"
           }
@@ -85,7 +77,7 @@ const Header = () => {
           }
           text="About"
           activeLink={
-            currentUrl === "about"
+            pathname === "/about"
               ? "bg-link-1 text-gray-1"
               : "bg-transparent text-gray-2"
           }
@@ -111,7 +103,7 @@ const Header = () => {
           }
           text="Projects"
           activeLink={
-            currentUrl === "projects"
+            pathname === "/projects"
               ? "bg-link-1 text-gray-1"
               : "bg-transparent text-gray-2"
           }
@@ -137,7 +129,7 @@ const Header = () => {
           }
           text="Contact"
           activeLink={
-            currentUrl === "contact"
+            pathname === "/contact"
               ? "bg-link-1 text-gray-1"
               : "bg-transparent text-gray-2"
           }
@@ -163,7 +155,7 @@ const Header = () => {
           }
           text="Experiences"
           activeLink={
-            currentUrl === "experiences"
+            pathname === "/experiences"
               ? "bg-link-1 text-gray-1"
               : "bg-transparent text-gray-2"
           }
