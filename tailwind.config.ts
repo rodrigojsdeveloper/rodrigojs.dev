@@ -71,9 +71,14 @@ const config: Config = {
           from: { opacity: "0", transform: "translateY(20px)" },
           to: { opacity: "1", transform: "translateY(0px)" },
         },
+        down: {
+          from: { opacity: "0", transform: "translateY(-20px)" },
+          to: { opacity: "1", transform: "translateY(0px)" },
+        },
       },
       animation: {
         up: "up 0.3s",
+        down: "down 0.3s",
       },
     },
   },

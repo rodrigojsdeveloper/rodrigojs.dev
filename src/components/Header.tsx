@@ -17,7 +17,19 @@ const Header = () => {
 
   return (
     <header className="w-full max-w-230 sticky top-0 z-10 h-20 mr-12 pt-8 max-lg:hidden max-lg:mr-0">
-      <div className="w-full max-w-81 h-81 group relative p-5 mb-2 -ml-1 rounded-full border border-solid border-gray-4 ease-in-out duration-300"></div>
+      <div className="w-full max-w-81 h-81 flex justify-center items-center p-2.5 mb-2 -ml-1 rounded-full border border-solid border-gray-4 ease-in-out duration-300">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="45"
+          height="45"
+          viewBox="0 0 32 32"
+        >
+          <path
+            fill="#8C8C8C"
+            d="M16 5C8.268 5 2 9.253 2 14.5c0 4.785 5.218 8.733 12 9.393V26h4v-2.107a19.13 19.13 0 0 0 3.764-.743L23.33 26H28l-2.7-4.414c2.878-1.74 4.7-4.265 4.7-7.086C30 9.253 23.732 5 16 5zm1.5 3C23.299 8 28 11.134 28 15c0 2.13-1.432 4.034-3.684 5.318a3.064 3.064 0 0 0-.75-.459A4.493 4.493 0 0 0 27 15.5a4.5 4.5 0 0 0-4.5-4.5H14v10.594C9.924 20.632 7 18.047 7 15c0-3.866 4.701-7 10.5-7zm.5 6h3.5a1.5 1.5 0 0 1 0 3H18v-3zm0 6h1.129c.558 0 1.07.304 1.338.793l.451.82c-.922.212-1.9.337-2.918.37V20z"
+          />
+        </svg>
+      </div>
 
       <div className="w-full">
         <h1 className="text-xl">Rodrigo Silva</h1>
