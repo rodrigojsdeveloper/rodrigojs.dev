@@ -28,8 +28,9 @@ const config: Config = {
         },
         borderButton: {
           1: "rgba(38, 38, 38, 0.10)",
-          2: "rgba(38, 38, 38, 0.20)",
+          2: "rgba(38, 38, 38, 0.30)",
         },
+        backgroundHeader: "rgba(0,0,0,.8)",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
