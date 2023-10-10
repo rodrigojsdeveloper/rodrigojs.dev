@@ -1,5 +1,6 @@
+import { TbBrandNextjs, TbBrandReactNative } from "react-icons/tb";
 import { DiDjango, DiMysql } from "react-icons/di";
-import { TbBrandNextjs } from "react-icons/tb";
+import { BiLogoNetlify } from "react-icons/bi";
 import { VscJson } from "react-icons/vsc";
 import { BsGit } from "react-icons/bs";
 import {
@@ -18,6 +19,8 @@ import {
   SiTailwindcss,
   SiJsonwebtokens,
   SiAmazonaws,
+  SiNestjs,
+  SiMui,
 } from "react-icons/si";
 import {
   FaReact,
@@ -32,12 +35,14 @@ const stacks = [
   SiJavascript,
   SiTypescript,
   FaReact,
-  FaReact,
   TbBrandNextjs,
   SiStyledcomponents,
   SiTailwindcss,
+  SiMui,
   SiRedux,
+  TbBrandReactNative,
   FaNodeJs,
+  SiNestjs,
   SiExpress,
   SiPrisma,
   VscJson,
@@ -45,14 +50,15 @@ const stacks = [
   SiJest,
   FaPython,
   DiDjango,
-  DiMysql,
   SiPostgresql,
+  DiMysql,
   SiMongodb,
   FaDocker,
   SiSwagger,
-  BsGit,
   SiVercel,
+  BiLogoNetlify,
   SiAmazonaws,
+  BsGit,
   SiJirasoftware,
   FaFigma,
   FaUbuntu,

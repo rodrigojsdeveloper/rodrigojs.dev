@@ -95,7 +95,7 @@ const projects: Array<IProjectProps> = [
     description:
       "This test aims to develop several CRUD operations through the user interface (frontend).",
     link: "https://github.com/rodrigojsdeveloper/test-secretarianaty/",
-    stacks: [SiJavascript, SiTypescript, TbBrandNextjs, FaReact, SiMui],
+    stacks: [SiJavascript, SiTypescript, TbBrandNextjs, SiMui],
   },
   {
     img: kenzieHub,
