@@ -1,9 +1,9 @@
-import Link from "next/link";
-import { Paragraphy } from "./Paragraphy";
+import { Paragraphy } from './Paragraphy'
+import Link from 'next/link'
 
 const Work = () => {
   return (
-    <div className="w-full flex flex-col gap-4 p-5 bg-gray-7 border border-gray-4 rounded-def my-6">
+    <div className="my-6 flex w-full flex-col gap-4 rounded-def border border-gray-4 bg-gray-7 p-5">
       <p className="font-title text-xl">Let{"'"}s work together!</p>
 
       <Paragraphy
@@ -14,12 +14,12 @@ const Work = () => {
 
       <Link
         href="/contact"
-        className="w-full max-w-121 h-44 flex justify-center items-center bg-gray-1 text-gray-7 font-normal text-md rounded-def hover:bg-button-1 active:bg-button-2"
+        className="text-md flex h-44 w-full max-w-121 items-center justify-center rounded-def bg-gray-1 font-normal text-gray-7 hover:bg-button-1 active:bg-button-2"
       >
         Contact me
       </Link>
     </div>
-  );
-};
+  )
+}
 
-export { Work };
+export { Work }

@@ -1,8 +1,9 @@
-import { TbBrandNextjs, TbBrandReactNative } from "react-icons/tb";
-import { DiDjango, DiMysql } from "react-icons/di";
-import { BiLogoNetlify } from "react-icons/bi";
-import { VscJson } from "react-icons/vsc";
-import { BsGit } from "react-icons/bs";
+import { TbBrandNextjs, TbBrandReactNative } from 'react-icons/tb'
+import { DiDjango, DiMysql } from 'react-icons/di'
+import { BiLogoNetlify } from 'react-icons/bi'
+import { VscJson } from 'react-icons/vsc'
+import { IconType } from 'react-icons'
+import { BsGit } from 'react-icons/bs'
 import {
   SiJavascript,
   SiStyledcomponents,
@@ -21,7 +22,7 @@ import {
   SiAmazonaws,
   SiNestjs,
   SiMui,
-} from "react-icons/si";
+} from 'react-icons/si'
 import {
   FaReact,
   FaPython,
@@ -29,9 +30,9 @@ import {
   FaNodeJs,
   FaFigma,
   FaUbuntu,
-} from "react-icons/fa";
+} from 'react-icons/fa'
 
-const stacks = [
+const stacks: IconType[] = [
   SiJavascript,
   SiTypescript,
   FaReact,
@@ -62,6 +63,6 @@ const stacks = [
   SiJirasoftware,
   FaFigma,
   FaUbuntu,
-];
+]
 
-export { stacks };
+export { stacks }

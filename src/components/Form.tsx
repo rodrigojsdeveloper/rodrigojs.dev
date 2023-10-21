@@ -1,27 +1,27 @@
-"use client";
-import { Input } from "./Input";
-import { Textarea } from "./Textarea";
+'use client'
+import { Textarea } from './Textarea'
+import { Input } from './Input'
 
 const Form = () => {
   const handleSubmit = async (event: any) => {
-    event.preventDefault();
-    const form = event.target;
-    const data = new FormData(form);
+    event.preventDefault()
+    const form = event.target
+    const data = new FormData(form)
     try {
       const response = await fetch(form.action, {
         method: form.method,
         body: data,
         headers: {
-          Accept: "application/json",
+          Accept: 'application/json',
         },
-      });
+      })
       if (response.ok) {
-        form.reset();
+        form.reset()
       }
     } catch (error) {
-      console.log(error);
+      console.log(error)
     }
-  };
+  }
 
   return (
     <form
@@ -31,7 +31,7 @@ const Form = () => {
       onSubmit={handleSubmit}
       className="w-full max-w-448"
     >
-      <div className="flex flex-row justify-between items-center gap-2">
+      <div className="flex flex-row items-center justify-between gap-2">
         <Input label="Name" type="text" name="name" htmlFor="name" id="name" />
         <Input
           label="Email"
@@ -58,12 +58,12 @@ const Form = () => {
 
       <button
         type="submit"
-        className="w-full h-44 bg-gray-1 text-gray-7 font-normal text-md rounded-def hover:bg-button-1 active:bg-button-2"
+        className="text-md h-44 w-full rounded-def bg-gray-1 font-normal text-gray-7 hover:bg-button-1 active:bg-button-2"
       >
         Send
       </button>
     </form>
-  );
-};
+  )
+}
 
-export { Form };
+export { Form }

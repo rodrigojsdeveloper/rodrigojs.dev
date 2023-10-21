@@ -1,25 +1,25 @@
-"use client";
-import { useState } from "react";
-import my from "@/assets/my.jpg";
-import { Modal } from "./Modal";
-import Image from "next/image";
-import Link from "next/link";
+'use client'
+import { useState } from 'react'
+import my from '@/assets/my.jpg'
+import { Modal } from './Modal'
+import Image from 'next/image'
+import Link from 'next/link'
 
 const HeaderMobile = () => {
-  const [openModa, setOpenModal] = useState<boolean>(false);
+  const [openModa, setOpenModal] = useState<boolean>(false)
 
   return (
     <>
       {openModa ? <Modal /> : null}
-      <header className="w-full h-81 hidden flex-row justify-between items-center bg-backgroundHeader border-b border-solid border-gray-6 backdrop-blur-sm fixed top-0 pt-2 px-8 max-lg:flex">
+      <header className="fixed top-0 hidden h-81 w-full flex-row items-center justify-between border-b border-solid border-gray-6 bg-backgroundHeader px-8 pt-2 backdrop-blur-sm max-lg:flex">
         <Link
           href="/"
-          className="w-full max-w-45 h-45 flex justify-center items-center mb-2 -ml-1 rounded-full ease-in-out duration-300"
+          className="-ml-1 mb-2 flex h-45 w-full max-w-45 items-center justify-center rounded-full duration-300 ease-in-out"
         >
           <Image
             src={my}
             alt="Rodrigo Silva"
-            className="w-full max-w-45 h-45 rounded-full border border-solid border-gray-4 object-cover"
+            className="h-45 w-full max-w-45 rounded-full border border-solid border-gray-4 object-cover"
           />
         </Link>
 
@@ -60,7 +60,7 @@ const HeaderMobile = () => {
         )}
       </header>
     </>
-  );
-};
+  )
+}
 
-export { HeaderMobile };
+export { HeaderMobile }

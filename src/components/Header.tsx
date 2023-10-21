@@ -1,21 +1,21 @@
-"use client";
-import { usePathname } from "next/navigation";
-import { CustomLink } from "./CustomLink";
-import my from "@/assets/my.jpg";
-import Image from "next/image";
-import { Line } from "./Line";
-import Link from "next/link";
+'use client'
+import { usePathname } from 'next/navigation'
+import { CustomLink } from './CustomLink'
+import my from '@/assets/my.jpg'
+import Image from 'next/image'
+import { Line } from './Line'
+import Link from 'next/link'
 
 const Header = () => {
-  const pathname = usePathname();
+  const pathname = usePathname()
 
   return (
-    <header className="w-full max-w-230 sticky top-0 z-10 h-20 mr-12 pt-8 max-lg:hidden max-lg:mr-0">
-      <figure className="w-full max-w-81 h-81 flex justify-center items-center mb-2 -ml-1 rounded-full ease-in-out duration-300">
+    <header className="sticky top-0 z-10 h-20 w-full max-w-230 pt-8 max-lg:mr-0 max-lg:hidden">
+      <figure className="-ml-1 mb-2 flex h-81 w-full max-w-81 items-center justify-center rounded-full duration-300 ease-in-out">
         <Image
           src={my}
           alt="Rodrigo Silva"
-          className="w-full max-w-81 h-81 rounded-full border border-solid border-gray-4 object-cover"
+          className="h-81 w-full max-w-81 rounded-full border border-solid border-gray-4 object-cover"
         />
       </figure>
 
@@ -24,11 +24,11 @@ const Header = () => {
         <Link
           target="_blank"
           href="https://github.com/rodrigojsdeveloper"
-          className="text-gray-3 font-medium text-sm hover:text-gray-2"
+          className="text-sm font-medium text-gray-3 hover:text-gray-2"
         >
           @rodrigojsdeveloper
         </Link>
-        <p className="font-normal mt-2.5 text-sm">Full Stack Developer</p>
+        <p className="mt-2.5 text-sm font-normal">Full Stack Developer</p>
       </div>
 
       <Line />
@@ -51,9 +51,9 @@ const Header = () => {
           }
           text="Home"
           activeLink={
-            pathname === "/"
-              ? "bg-link-1 text-gray-1"
-              : "bg-transparent text-gray-2"
+            pathname === '/'
+              ? 'bg-link-1 text-gray-1'
+              : 'bg-transparent text-gray-2'
           }
         />
         <CustomLink
@@ -73,9 +73,9 @@ const Header = () => {
           }
           text="About"
           activeLink={
-            pathname === "/about"
-              ? "bg-link-1 text-gray-1"
-              : "bg-transparent text-gray-2"
+            pathname === '/about'
+              ? 'bg-link-1 text-gray-1'
+              : 'bg-transparent text-gray-2'
           }
         />
         <CustomLink
@@ -99,9 +99,9 @@ const Header = () => {
           }
           text="Projects"
           activeLink={
-            pathname === "/projects"
-              ? "bg-link-1 text-gray-1"
-              : "bg-transparent text-gray-2"
+            pathname === '/projects'
+              ? 'bg-link-1 text-gray-1'
+              : 'bg-transparent text-gray-2'
           }
         />
         <CustomLink
@@ -125,9 +125,9 @@ const Header = () => {
           }
           text="Contact"
           activeLink={
-            pathname === "/contact"
-              ? "bg-link-1 text-gray-1"
-              : "bg-transparent text-gray-2"
+            pathname === '/contact'
+              ? 'bg-link-1 text-gray-1'
+              : 'bg-transparent text-gray-2'
           }
         />
         <CustomLink
@@ -151,20 +151,20 @@ const Header = () => {
           }
           text="Experiences"
           activeLink={
-            pathname === "/experiences"
-              ? "bg-link-1 text-gray-1"
-              : "bg-transparent text-gray-2"
+            pathname === '/experiences'
+              ? 'bg-link-1 text-gray-1'
+              : 'bg-transparent text-gray-2'
           }
         />
       </nav>
 
       <Line />
 
-      <small className="text-gray-3 text-xs font-medium">
+      <small className="text-xs font-medium text-gray-3">
         © 2023 - rodrigojsdeveloper
       </small>
     </header>
-  );
-};
+  )
+}
 
-export { Header };
+export { Header }

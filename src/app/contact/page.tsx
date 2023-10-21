@@ -1,11 +1,11 @@
-import { HeaderMobile } from "@/components/HeaderMobile";
-import { Paragraphy } from "@/components/Paragraphy";
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
-import { Title } from "@/components/Title";
-import { Line } from "@/components/Line";
-import { Form } from "@/components/Form";
-import Link from "next/link";
+import { HeaderMobile } from '@/components/HeaderMobile'
+import { Paragraphy } from '@/components/Paragraphy'
+import { Header } from '@/components/Header'
+import { Footer } from '@/components/Footer'
+import { Title } from '@/components/Title'
+import { Line } from '@/components/Line'
+import { Form } from '@/components/Form'
+import Link from 'next/link'
 
 export default function Contact() {
   return (
@@ -13,22 +13,22 @@ export default function Contact() {
       <Header />
       <HeaderMobile />
 
-      <main className="w-full max-w-800 animate-up max-lg:max-w-none max-lg:mt-6">
+      <main className="w-full max-w-800 animate-up max-lg:mt-6 max-lg:max-w-none">
         <Title title="Contact" />
         <Paragraphy
           text="Feel free to get in touch and we'll talk about how we can work together."
           style="text-md my-6"
         />
 
-        <h3 className="text-gray-1 font-normal text-md leading-relaxed">
+        <h3 className="text-md font-normal leading-relaxed text-gray-1">
           My social networks
         </h3>
 
-        <nav className="flex flex-wrap gap-3 mt-4 mb-6">
+        <nav className="mb-6 mt-4 flex flex-wrap gap-3">
           <Link
             target="_blank"
             href="https://github.com/rodrigojsdeveloper/"
-            className="w-full max-w-fit flex items-center gap-1.5 py-2 px-2.5 border border-solid border-gray-4 font-medium text-sm text-gray-3 rounded-def hover:bg-borderButton-1 active:bg-borderButton-2"
+            className="flex w-full max-w-fit items-center gap-1.5 rounded-def border border-solid border-gray-4 px-2.5 py-2 text-sm font-medium text-gray-3 hover:bg-borderButton-1 active:bg-borderButton-2"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +52,7 @@ export default function Contact() {
           <Link
             target="_blank"
             href="https://www.linkedin.com/in/rodrigo-de-jesus-silva/"
-            className="w-full max-w-fit flex items-stretch gap-1.5 py-2 px-2.5 border border-solid border-gray-4 font-medium text-sm text-gray-3 rounded-def hover:bg-borderButton-1 active:bg-borderButton-2"
+            className="flex w-full max-w-fit items-stretch gap-1.5 rounded-def border border-solid border-gray-4 px-2.5 py-2 text-sm font-medium text-gray-3 hover:bg-borderButton-1 active:bg-borderButton-2"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +73,7 @@ export default function Contact() {
           <Link
             target="_blank"
             href="https://www.instagram.com/eurodrigojs/"
-            className="w-full max-w-fit flex items-center gap-1.5 py-2 px-2.5 border border-solid border-gray-4 font-medium text-sm text-gray-3 rounded-def hover:bg-borderButton-1 active:bg-borderButton-2"
+            className="flex w-full max-w-fit items-center gap-1.5 rounded-def border border-solid border-gray-4 px-2.5 py-2 text-sm font-medium text-gray-3 hover:bg-borderButton-1 active:bg-borderButton-2"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -92,7 +92,7 @@ export default function Contact() {
 
         <Line />
 
-        <h3 className="text-gray-1 font-normal text-md leading-relaxed">
+        <h3 className="text-md font-normal leading-relaxed text-gray-1">
           Send me an email
         </h3>
 
@@ -107,5 +107,5 @@ export default function Contact() {
         <Footer />
       </main>
     </>
-  );
+  )
 }

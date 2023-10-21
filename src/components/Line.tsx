@@ -1,5 +1,5 @@
 const Line = () => {
-  return <div className="w-full h-px bg-gray-4 my-3 block"></div>;
-};
+  return <div className="my-3 block h-px w-full bg-gray-4" />
+}
 
-export { Line };
+export { Line }

@@ -1,13 +1,13 @@
-import { IJob } from "@/interfaces";
+import { IJob } from '@/interfaces'
 
 const Job = ({ job }: IJob) => {
   return (
-    <div className="w-full border border-solid border-gray-4 rounded-def p-5">
-      <h2 className="text-gray-1 text-2xl">{job.company}</h2>
+    <div className="w-full rounded-def border border-solid border-gray-4 p-5">
+      <h2 className="text-2xl text-gray-1">{job.company}</h2>
 
-      <h3 className="text-gray-1 text-md mt-4">{job.position}</h3>
+      <h3 className="text-md mt-4 text-gray-1">{job.position}</h3>
 
-      <p className="min-h-286 text-gray-3 text-md leading-relaxed mt-6 mb-8">
+      <p className="min-h-286 text-md mb-8 mt-6 leading-relaxed text-gray-3">
         {job.description}
       </p>
 
@@ -24,10 +24,10 @@ const Job = ({ job }: IJob) => {
           />
         </svg>
 
-        <span className="text-gray-3 text-sm ml-3">{job.date}</span>
+        <span className="ml-3 text-sm text-gray-3">{job.date}</span>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export { Job };
+export { Job }

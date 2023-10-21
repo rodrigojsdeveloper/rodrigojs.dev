@@ -1,12 +1,12 @@
-"use client";
-import { usePathname } from "next/navigation";
-import { CustomLink } from "./CustomLink";
+'use client'
+import { usePathname } from 'next/navigation'
+import { CustomLink } from './CustomLink'
 
 const Modal = () => {
-  const pathname = usePathname();
+  const pathname = usePathname()
 
   return (
-    <nav className="w-full max-w-140 fixed top-16 right-6 z-10 bg-black border border-solid border-gray-4 rounded-def animate-down">
+    <nav className="fixed right-6 top-16 z-10 w-full max-w-140 animate-down rounded-def border border-solid border-gray-4 bg-black">
       <CustomLink
         href="about"
         Icon={
@@ -24,9 +24,9 @@ const Modal = () => {
         }
         text="About"
         activeLink={
-          pathname === "/about"
-            ? "bg-link-1 text-gray-1"
-            : "bg-transparent text-gray-2"
+          pathname === '/about'
+            ? 'bg-link-1 text-gray-1'
+            : 'bg-transparent text-gray-2'
         }
       />
       <CustomLink
@@ -50,9 +50,9 @@ const Modal = () => {
         }
         text="Projects"
         activeLink={
-          pathname === "/projects"
-            ? "bg-link-1 text-gray-1"
-            : "bg-transparent text-gray-2"
+          pathname === '/projects'
+            ? 'bg-link-1 text-gray-1'
+            : 'bg-transparent text-gray-2'
         }
       />
       <CustomLink
@@ -76,9 +76,9 @@ const Modal = () => {
         }
         text="Contact"
         activeLink={
-          pathname === "/contact"
-            ? "bg-link-1 text-gray-1"
-            : "bg-transparent text-gray-2"
+          pathname === '/contact'
+            ? 'bg-link-1 text-gray-1'
+            : 'bg-transparent text-gray-2'
         }
       />
       <CustomLink
@@ -102,13 +102,13 @@ const Modal = () => {
         }
         text="Experiences"
         activeLink={
-          pathname === "/experiences"
-            ? "bg-link-1 text-gray-1"
-            : "bg-transparent text-gray-2"
+          pathname === '/experiences'
+            ? 'bg-link-1 text-gray-1'
+            : 'bg-transparent text-gray-2'
         }
       />
     </nav>
-  );
-};
+  )
+}
 
-export { Modal };
+export { Modal }

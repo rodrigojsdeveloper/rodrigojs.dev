@@ -1,13 +1,13 @@
-import { HeaderMobile } from "@/components/HeaderMobile";
-import { Paragraphy } from "@/components/Paragraphy";
-import { Project } from "@/components/Project";
-import { TwoProjects } from "@/utils/projects";
-import { Footer } from "@/components/Footer";
-import { Header } from "@/components/Header";
-import { Title } from "@/components/Title";
-import { Line } from "@/components/Line";
-import { Work } from "@/components/Work";
-import Link from "next/link";
+import { HeaderMobile } from '@/components/HeaderMobile'
+import { Paragraphy } from '@/components/Paragraphy'
+import { Project } from '@/components/Project'
+import { TwoProjects } from '@/utils/projects'
+import { Footer } from '@/components/Footer'
+import { Header } from '@/components/Header'
+import { Title } from '@/components/Title'
+import { Line } from '@/components/Line'
+import { Work } from '@/components/Work'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -15,10 +15,10 @@ export default function Home() {
       <Header />
       <HeaderMobile />
 
-      <main className="w-full max-w-800 animate-up max-lg:max-w-none max-lg:mt-6">
+      <main className="w-full max-w-800 animate-up max-lg:mt-6 max-lg:max-w-none">
         <Title title="Rodrigo Silva" />
 
-        <div className="flex items-center gap-1.5 my-2">
+        <div className="my-2 flex items-center gap-1.5">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -37,7 +37,7 @@ export default function Home() {
             </g>
           </svg>
 
-          <p className="font-normal text-sm text-gray-2">São Paulo - Brazil</p>
+          <p className="text-sm font-normal text-gray-2">São Paulo - Brazil</p>
         </div>
 
         <Paragraphy
@@ -52,14 +52,14 @@ export default function Home() {
 
         <Line />
 
-        <div className="w-full flex justify-between items-center">
+        <div className="flex w-full items-center justify-between">
           <p className="font-title text-xl">Recent projects</p>
 
           <Link
             href="/projects"
-            className="flex items-center gap-1 font-medium text-gray-2 text-xs  hover:text-primary active:opacity-50"
+            className="hover:text-primary flex items-center gap-1 text-xs font-medium  text-gray-2 active:opacity-50"
           >
-            See all{" "}
+            See all{' '}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="18"
@@ -78,7 +78,7 @@ export default function Home() {
           </Link>
         </div>
 
-        <div className="grid sm:grid-cols-2 place-items-center gap-4 my-6">
+        <div className="my-6 grid place-items-center gap-4 sm:grid-cols-2">
           {TwoProjects.map((project, key) => (
             <Project project={project} key={key} />
           ))}
@@ -90,5 +90,5 @@ export default function Home() {
         <Footer />
       </main>
     </>
-  );
+  )
 }
