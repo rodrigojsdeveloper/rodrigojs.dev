@@ -6,4 +6,4 @@ const Paragraphy = ({ text, style }: IParagraphy) => {
   )
 }
 
-export { Paragraphy }
+export default Paragraphy

@@ -18,4 +18,4 @@ const Textarea = ({ label, type, name, htmlFor, id }: InputProps) => {
   )
 }
 
-export { Textarea }
+export default Textarea

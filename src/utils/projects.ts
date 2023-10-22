@@ -139,7 +139,7 @@ const projects: IProjectProps[] = [
   },
 ]
 
-const TwoProjects: Array<IProjectProps> = [
+const initialHomeProjects: IProjectProps[] = [
   {
     img: motorsShop,
     title: 'Motors Shop',
@@ -181,4 +181,4 @@ const TwoProjects: Array<IProjectProps> = [
   },
 ]
 
-export { projects, TwoProjects }
+export { projects, initialHomeProjects }

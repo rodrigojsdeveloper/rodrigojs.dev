@@ -30,4 +30,4 @@ const Job = ({ job }: IJob) => {
   )
 }
 
-export { Job }
+export default Job

@@ -14,4 +14,4 @@ const CustomLink = ({ Icon, text, href, activeLink, onClick }: ILink) => {
   )
 }
 
-export { CustomLink }
+export default CustomLink

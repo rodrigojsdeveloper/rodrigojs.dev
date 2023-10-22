@@ -1,9 +1,9 @@
 'use client'
 import { useState } from 'react'
 import my from '@/assets/my.jpg'
-import { Modal } from './Modal'
 import Image from 'next/image'
 import Link from 'next/link'
+import Modal from './Modal'
 
 const HeaderMobile = () => {
   const [openModa, setOpenModal] = useState<boolean>(false)
@@ -63,4 +63,4 @@ const HeaderMobile = () => {
   )
 }
 
-export { HeaderMobile }
+export default HeaderMobile

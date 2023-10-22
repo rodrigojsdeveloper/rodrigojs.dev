@@ -1,7 +1,7 @@
-import { HeaderMobile } from '@/components/HeaderMobile'
-import { Paragraphy } from '@/components/Paragraphy'
-import { CustomLink } from '@/components/CustomLink'
-import { Header } from '@/components/Header'
+import HeaderMobile from '@/components/HeaderMobile'
+import Paragraphy from '@/components/Paragraphy'
+import CustomLink from '@/components/CustomLink'
+import Header from '@/components/Header'
 
 export default function NotFound() {
   return (

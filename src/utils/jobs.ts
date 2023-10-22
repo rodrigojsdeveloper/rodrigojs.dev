@@ -1,6 +1,6 @@
 import { IJobProps } from '@/interfaces'
 
-const jobs: Array<IJobProps> = [
+const jobs: IJobProps[] = [
   {
     company: 'CoreLab',
     position: 'Full Stack Developer',
@@ -24,4 +24,4 @@ const jobs: Array<IJobProps> = [
   },
 ]
 
-export { jobs }
+export default jobs

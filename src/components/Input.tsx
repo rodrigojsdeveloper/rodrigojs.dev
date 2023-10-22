@@ -19,4 +19,4 @@ const Input = ({ label, type, name, htmlFor, id }: InputProps) => {
   )
 }
 
-export { Input }
+export default Input

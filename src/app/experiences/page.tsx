@@ -1,11 +1,11 @@
-import { HeaderMobile } from '@/components/HeaderMobile'
-import { Paragraphy } from '@/components/Paragraphy'
-import { Header } from '@/components/Header'
-import { Footer } from '@/components/Footer'
-import { Title } from '@/components/Title'
-import { Line } from '@/components/Line'
-import { Job } from '@/components/Job'
-import { jobs } from '@/utils/jobs'
+import HeaderMobile from '@/components/HeaderMobile'
+import Paragraphy from '@/components/Paragraphy'
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
+import Title from '@/components/Title'
+import Line from '@/components/Line'
+import Job from '@/components/Job'
+import jobs from '@/utils/jobs'
 
 export default function Contact() {
   return (

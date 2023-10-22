@@ -1,5 +1,5 @@
-import { Paragraphy } from './Paragraphy'
 import { IProject } from '@/interfaces'
+import Paragraphy from './Paragraphy'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -35,4 +35,4 @@ const Project = ({ project }: IProject) => {
   )
 }
 
-export { Project }
+export default Project

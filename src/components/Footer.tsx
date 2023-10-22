@@ -1,4 +1,4 @@
-import { Line } from './Line'
+import Line from './Line'
 
 const Footer = () => {
   return (
@@ -12,4 +12,4 @@ const Footer = () => {
   )
 }
 
-export { Footer }
+export default Footer

@@ -1,12 +1,12 @@
-import { HeaderMobile } from '@/components/HeaderMobile'
-import { Paragraphy } from '@/components/Paragraphy'
-import { Project } from '@/components/Project'
-import { TwoProjects } from '@/utils/projects'
-import { Footer } from '@/components/Footer'
-import { Header } from '@/components/Header'
-import { Title } from '@/components/Title'
-import { Line } from '@/components/Line'
-import { Work } from '@/components/Work'
+import { initialHomeProjects } from '@/utils/projects'
+import HeaderMobile from '@/components/HeaderMobile'
+import Paragraphy from '@/components/Paragraphy'
+import Project from '@/components/Project'
+import Footer from '@/components/Footer'
+import Header from '@/components/Header'
+import Title from '@/components/Title'
+import Line from '@/components/Line'
+import Work from '@/components/Work'
 import Link from 'next/link'
 
 export default function Home() {
@@ -79,7 +79,7 @@ export default function Home() {
         </div>
 
         <div className="my-6 grid place-items-center gap-4 sm:grid-cols-2">
-          {TwoProjects.map((project, key) => (
+          {initialHomeProjects.map((project, key) => (
             <Project project={project} key={key} />
           ))}
         </div>

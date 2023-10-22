@@ -1,4 +1,5 @@
 import { Poppins, Kanit } from 'next/font/google'
+import { PropsWithChildren } from 'react'
 import type { Metadata } from 'next'
 import './globals.css'
 
@@ -18,11 +19,7 @@ export const metadata: Metadata = {
     'Professional portfolio highlighting technical skills and problem solving in a simple, modern and intuitive interface.',
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en">
       <body

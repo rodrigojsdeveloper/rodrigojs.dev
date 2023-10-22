@@ -1,9 +1,10 @@
 'use client'
-import { Textarea } from './Textarea'
-import { Input } from './Input'
+import { ChangeEvent } from 'react'
+import Textarea from './Textarea'
+import Input from './Input'
 
 const Form = () => {
-  const handleSubmit = async (event: any) => {
+  const handleSubmit = async (event: ChangeEvent<HTMLFormElement>) => {
     event.preventDefault()
     const form = event.target
     const data = new FormData(form)
@@ -66,4 +67,4 @@ const Form = () => {
   )
 }
 
-export { Form }
+export default Form

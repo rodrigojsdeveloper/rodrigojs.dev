@@ -65,4 +65,4 @@ const stacks: IconType[] = [
   FaUbuntu,
 ]
 
-export { stacks }
+export default stacks

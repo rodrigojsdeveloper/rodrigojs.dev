@@ -1,6 +1,6 @@
 'use client'
 import { usePathname } from 'next/navigation'
-import { CustomLink } from './CustomLink'
+import CustomLink from './CustomLink'
 
 const Modal = () => {
   const pathname = usePathname()
@@ -111,4 +111,4 @@ const Modal = () => {
   )
 }
 
-export { Modal }
+export default Modal

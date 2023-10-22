@@ -1,10 +1,10 @@
-import { HeaderMobile } from '@/components/HeaderMobile'
-import { Paragraphy } from '@/components/Paragraphy'
-import { Header } from '@/components/Header'
-import { Footer } from '@/components/Footer'
-import { Title } from '@/components/Title'
-import { Line } from '@/components/Line'
-import { Form } from '@/components/Form'
+import HeaderMobile from '@/components/HeaderMobile'
+import Paragraphy from '@/components/Paragraphy'
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
+import Title from '@/components/Title'
+import Line from '@/components/Line'
+import Form from '@/components/Form'
 import Link from 'next/link'
 
 export default function Contact() {

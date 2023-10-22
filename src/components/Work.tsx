@@ -1,4 +1,4 @@
-import { Paragraphy } from './Paragraphy'
+import Paragraphy from './Paragraphy'
 import Link from 'next/link'
 
 const Work = () => {
@@ -22,4 +22,4 @@ const Work = () => {
   )
 }
 
-export { Work }
+export default Work

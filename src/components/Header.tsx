@@ -1,10 +1,10 @@
 'use client'
 import { usePathname } from 'next/navigation'
-import { CustomLink } from './CustomLink'
+import CustomLink from './CustomLink'
 import my from '@/assets/my.jpg'
 import Image from 'next/image'
-import { Line } from './Line'
 import Link from 'next/link'
+import Line from './Line'
 
 const Header = () => {
   const pathname = usePathname()
@@ -167,4 +167,4 @@ const Header = () => {
   )
 }
 
-export { Header }
+export default Header

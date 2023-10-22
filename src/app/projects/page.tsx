@@ -1,10 +1,10 @@
-import { HeaderMobile } from '@/components/HeaderMobile'
-import { Paragraphy } from '@/components/Paragraphy'
-import { Project } from '@/components/Project'
-import { Footer } from '@/components/Footer'
-import { Header } from '@/components/Header'
+import HeaderMobile from '@/components/HeaderMobile'
+import Paragraphy from '@/components/Paragraphy'
 import { projects } from '@/utils/projects'
-import { Title } from '@/components/Title'
+import Project from '@/components/Project'
+import Footer from '@/components/Footer'
+import Header from '@/components/Header'
+import Title from '@/components/Title'
 
 export default function Projects() {
   return (
