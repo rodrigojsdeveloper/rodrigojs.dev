@@ -12,18 +12,29 @@ import {
   SiExpress,
   SiJsonwebtokens,
   SiTailwindcss,
+  SiReactrouter,
+  SiZod,
+  SiPrettier,
+  SiEslint,
+  SiDotenv,
+  SiReacthookform,
+  SiVite,
 } from 'react-icons/si'
 
-import secretaryNaty from '../assets/secretary-naty.png'
-import burgerKenzie from '../assets/burger-kenzie.png'
-import motorsShop from '../assets/motors-shop.png'
-import kenzieHub from '../assets/kenzie-hub.png'
-import gitSearch from '../assets/git-search.png'
-import geography from '../assets/geography.png'
-import nuKenzie from '../assets/nu-kenzie.png'
+import secretaryNaty from '@/assets/secretary-naty.png'
+import burgerKenzie from '@/assets/burger-kenzie.png'
+import motorsShop from '@/assets/motors-shop.png'
+import kenzieHub from '@/assets/kenzie-hub.png'
+import gitSearch from '@/assets/git-search.png'
+import geography from '@/assets/geography.png'
+import nuKenzie from '@/assets/nu-kenzie.png'
+import iweather from '@/assets/iweather.png'
+import dtMoney from '@/assets/dt-money.png'
+import ngCash from '@/assets/ng-cash.png'
+import todo from '@/assets/todo.png'
+import api from '@/assets/api.png'
+
 import { IProjectProps } from '@/interfaces'
-import ngCash from '../assets/ng-cash.png'
-import api from '../assets/api.png'
 
 const projects: IProjectProps[] = [
   {
@@ -133,8 +144,62 @@ const projects: IProjectProps[] = [
       SiJavascript,
       SiTypescript,
       FaReact,
-      SiStyledcomponents,
       SiTailwindcss,
+      SiReactrouter,
+      SiReacthookform,
+      SiZod,
+      SiPrettier,
+      SiEslint,
+      SiVite,
+    ],
+  },
+  {
+    img: dtMoney,
+    title: 'DT Money',
+    description:
+      'DT Money is a financial management, offering users efficiency in managing their income.',
+    link: 'https://github.com/rodrigojsdeveloper/dt-money',
+    stacks: [
+      SiJavascript,
+      SiTypescript,
+      TbBrandNextjs,
+      SiTailwindcss,
+      SiReacthookform,
+      SiZod,
+      SiPrettier,
+      SiEslint,
+    ],
+  },
+  {
+    img: iweather,
+    title: 'iWeather',
+    description:
+      'iWeather is a precise and intuitive weather forecast app to plan your day.',
+    link: 'https://github.com/rodrigojsdeveloper/iweather',
+    stacks: [
+      SiJavascript,
+      SiTypescript,
+      TbBrandNextjs,
+      SiTailwindcss,
+      SiDotenv,
+      SiPrettier,
+      SiEslint,
+    ],
+  },
+  {
+    img: todo,
+    title: 'ToDo',
+    description: 'ToDo streamlines task management with marking and deletion.',
+    link: 'https://github.com/rodrigojsdeveloper/todo',
+    stacks: [
+      SiJavascript,
+      SiTypescript,
+      TbBrandNextjs,
+      SiTailwindcss,
+      SiReacthookform,
+      SiZod,
+      SiPrettier,
+      SiEslint,
     ],
   },
 ]
