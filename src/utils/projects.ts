@@ -19,6 +19,7 @@ import {
   SiDotenv,
   SiReacthookform,
   SiVite,
+  SiEditorconfig,
 } from 'react-icons/si'
 
 import secretaryNaty from '@/assets/secretary-naty.png'
@@ -28,9 +29,9 @@ import kenzieHub from '@/assets/kenzie-hub.png'
 import gitSearch from '@/assets/git-search.png'
 import geography from '@/assets/geography.png'
 import nuKenzie from '@/assets/nu-kenzie.png'
+import coreNote from '@/assets/corenote.png'
 import iweather from '@/assets/iweather.png'
 import dtMoney from '@/assets/dt-money.png'
-import ngCash from '@/assets/ng-cash.png'
 import todo from '@/assets/todo.png'
 import api from '@/assets/api.png'
 
@@ -41,7 +42,7 @@ const projects: IProjectProps[] = [
     img: motorsShop,
     title: 'Motors Shop',
     description: 'Motors Shop is a car sales website project.',
-    link: 'https://github.com/rodrigojsdeveloper/motors-shop/',
+    link: 'https://github.com/rodrigojsdeveloper/motors-shop',
     stacks: [
       SiJavascript,
       SiTypescript,
@@ -62,22 +63,22 @@ const projects: IProjectProps[] = [
     title: 'Git Search',
     description:
       'Git Search makes it easy to find GitHub users and their repositories.',
-    link: 'https://github.com/rodrigojsdeveloper/git-search/',
+    link: 'https://github.com/rodrigojsdeveloper/git-search',
     stacks: [SiJavascript, SiTypescript, FaReact, SiStyledcomponents],
   },
   {
     img: nuKenzie,
     title: 'Nu Kenzie',
     description: 'Nu Kenzie is a cost control platform.',
-    link: 'https://github.com/rodrigojsdeveloper/refactoring-nukenzie/',
+    link: 'https://github.com/rodrigojsdeveloper/refactoring-nukenzie',
     stacks: [SiJavascript, SiTypescript, FaReact, SiStyledcomponents],
   },
   {
-    img: ngCash,
-    title: 'NG.CASH',
+    img: coreNote,
+    title: 'CoreNote',
     description:
-      'NG.CASH allows users to make international transfers between each other.',
-    link: 'https://github.com/rodrigojsdeveloper/ngcash/',
+      'CoreNote is a web application for creating and managing to-do lists.',
+    link: 'https://github.com/rodrigojsdeveloper/corenote',
     stacks: [
       SiJavascript,
       SiTypescript,
@@ -97,7 +98,7 @@ const projects: IProjectProps[] = [
     img: burgerKenzie,
     title: 'Burger Kenzie',
     description: "Burger Kenzie is an 'e-commerce', with fictitious products.",
-    link: 'https://github.com/rodrigojsdeveloper/refactoring-burger-kenzie/',
+    link: 'https://github.com/rodrigojsdeveloper/refactoring-burger-kenzie',
     stacks: [SiJavascript, SiTypescript, FaReact, SiStyledcomponents],
   },
   {
@@ -105,14 +106,14 @@ const projects: IProjectProps[] = [
     title: 'Secretary Naty',
     description:
       'This test aims to develop several CRUD operations through the user interface (frontend).',
-    link: 'https://github.com/rodrigojsdeveloper/test-secretarianaty/',
+    link: 'https://github.com/rodrigojsdeveloper/test-secretarianaty',
     stacks: [SiJavascript, SiTypescript, TbBrandNextjs, SiMui],
   },
   {
     img: kenzieHub,
     title: 'Kenzie Hub',
     description: 'Kenzie Hub is a skills management app.',
-    link: 'https://github.com/rodrigojsdeveloper/refactoring-kenzie-hub/',
+    link: 'https://github.com/rodrigojsdeveloper/refactoring-kenzie-hub',
     stacks: [SiJavascript, SiTypescript, FaReact, SiStyledcomponents],
   },
   {
@@ -120,7 +121,7 @@ const projects: IProjectProps[] = [
     title: 'API',
     description:
       'This API handles the creation of properties and reservation of visits or purchase.',
-    link: 'https://github.com/rodrigojsdeveloper/api-nodejs/',
+    link: 'https://github.com/rodrigojsdeveloper/api-nodejs',
     stacks: [
       SiJavascript,
       SiTypescript,
@@ -139,7 +140,7 @@ const projects: IProjectProps[] = [
     title: 'Geography',
     description:
       'Geography, where users can explore and have fun with countries around the world.',
-    link: 'https://github.com/rodrigojsdeveloper/geography/',
+    link: 'https://github.com/rodrigojsdeveloper/geography',
     stacks: [
       SiJavascript,
       SiTypescript,
@@ -148,6 +149,7 @@ const projects: IProjectProps[] = [
       SiReactrouter,
       SiReacthookform,
       SiZod,
+      SiEditorconfig,
       SiPrettier,
       SiEslint,
       SiVite,
@@ -166,6 +168,7 @@ const projects: IProjectProps[] = [
       SiTailwindcss,
       SiReacthookform,
       SiZod,
+      SiEditorconfig,
       SiPrettier,
       SiEslint,
     ],
@@ -182,6 +185,7 @@ const projects: IProjectProps[] = [
       TbBrandNextjs,
       SiTailwindcss,
       SiDotenv,
+      SiEditorconfig,
       SiPrettier,
       SiEslint,
     ],
@@ -198,6 +202,7 @@ const projects: IProjectProps[] = [
       SiTailwindcss,
       SiReacthookform,
       SiZod,
+      SiEditorconfig,
       SiPrettier,
       SiEslint,
     ],

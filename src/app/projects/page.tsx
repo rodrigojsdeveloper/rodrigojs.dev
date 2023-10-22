@@ -19,7 +19,7 @@ export default function Projects() {
           style="text-md my-6"
         />
 
-        <menu className="my-6 grid place-items-center gap-4 md:grid-cols-2">
+        <menu className="my-6 grid gap-4 md:grid-cols-2">
           {projects.map((project, index) => (
             <Project project={project} key={index} />
           ))}
