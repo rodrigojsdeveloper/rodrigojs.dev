@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        kanit: ['var(--font-kanit)'],
+      },
       colors: {
         gray: {
           1: '#FFFFFF',

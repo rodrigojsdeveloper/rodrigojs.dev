@@ -258,6 +258,8 @@ const initialHomeProjects: IProjectProps[] = [
       SiPrettier,
       SiEslint,
       SiVite,
+      SiVercel,
+      BiLogoNetlify,
     ],
   },
 ]
