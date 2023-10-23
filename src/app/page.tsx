@@ -78,7 +78,7 @@ export default function Home() {
           </Link>
         </div>
 
-        <div className="my-6 grid place-items-center gap-4 sm:grid-cols-2">
+        <div className="my-6 grid gap-4 sm:grid-cols-2">
           {initialHomeProjects.map((project, key) => (
             <Project project={project} key={key} />
           ))}

@@ -18,10 +18,8 @@ import {
   SiPrisma,
   SiJirasoftware,
   SiTailwindcss,
-  SiJsonwebtokens,
   SiAmazonaws,
   SiNestjs,
-  SiMui,
 } from 'react-icons/si'
 import {
   FaReact,
@@ -39,7 +37,6 @@ const stacks: IconType[] = [
   TbBrandNextjs,
   SiStyledcomponents,
   SiTailwindcss,
-  SiMui,
   SiRedux,
   TbBrandReactNative,
   FaNodeJs,
@@ -47,7 +44,6 @@ const stacks: IconType[] = [
   SiExpress,
   SiPrisma,
   VscJson,
-  SiJsonwebtokens,
   SiJest,
   FaPython,
   DiDjango,

@@ -20,6 +20,7 @@ import {
   SiReacthookform,
   SiVite,
   SiEditorconfig,
+  SiVercel,
 } from 'react-icons/si'
 
 import secretaryNaty from '@/assets/secretary-naty.png'
@@ -36,6 +37,7 @@ import todo from '@/assets/todo.png'
 import api from '@/assets/api.png'
 
 import { IProjectProps } from '@/interfaces'
+import { BiLogoNetlify } from 'react-icons/bi'
 
 const projects: IProjectProps[] = [
   {
@@ -64,14 +66,14 @@ const projects: IProjectProps[] = [
     description:
       'Git Search makes it easy to find GitHub users and their repositories.',
     link: 'https://github.com/rodrigojsdeveloper/git-search',
-    stacks: [SiJavascript, SiTypescript, FaReact, SiStyledcomponents],
+    stacks: [SiJavascript, SiTypescript, FaReact, SiStyledcomponents, SiVercel],
   },
   {
     img: nuKenzie,
     title: 'Nu Kenzie',
     description: 'Nu Kenzie is a cost control platform.',
     link: 'https://github.com/rodrigojsdeveloper/refactoring-nukenzie',
-    stacks: [SiJavascript, SiTypescript, FaReact, SiStyledcomponents],
+    stacks: [SiJavascript, SiTypescript, FaReact, SiStyledcomponents, SiVercel],
   },
   {
     img: coreNote,
@@ -99,7 +101,7 @@ const projects: IProjectProps[] = [
     title: 'Burger Kenzie',
     description: "Burger Kenzie is an 'e-commerce', with fictitious products.",
     link: 'https://github.com/rodrigojsdeveloper/refactoring-burger-kenzie',
-    stacks: [SiJavascript, SiTypescript, FaReact, SiStyledcomponents],
+    stacks: [SiJavascript, SiTypescript, FaReact, SiStyledcomponents, SiVercel],
   },
   {
     img: secretaryNaty,
@@ -107,14 +109,14 @@ const projects: IProjectProps[] = [
     description:
       'This test aims to develop several CRUD operations through the user interface (frontend).',
     link: 'https://github.com/rodrigojsdeveloper/test-secretarianaty',
-    stacks: [SiJavascript, SiTypescript, TbBrandNextjs, SiMui],
+    stacks: [SiJavascript, SiTypescript, TbBrandNextjs, SiMui, SiVercel],
   },
   {
     img: kenzieHub,
     title: 'Kenzie Hub',
     description: 'Kenzie Hub is a skills management app.',
     link: 'https://github.com/rodrigojsdeveloper/refactoring-kenzie-hub',
-    stacks: [SiJavascript, SiTypescript, FaReact, SiStyledcomponents],
+    stacks: [SiJavascript, SiTypescript, FaReact, SiStyledcomponents, SiVercel],
   },
   {
     img: api,
@@ -153,6 +155,8 @@ const projects: IProjectProps[] = [
       SiPrettier,
       SiEslint,
       SiVite,
+      SiVercel,
+      BiLogoNetlify,
     ],
   },
   {
@@ -171,6 +175,8 @@ const projects: IProjectProps[] = [
       SiEditorconfig,
       SiPrettier,
       SiEslint,
+      SiVercel,
+      BiLogoNetlify,
     ],
   },
   {
@@ -188,6 +194,8 @@ const projects: IProjectProps[] = [
       SiEditorconfig,
       SiPrettier,
       SiEslint,
+      SiVercel,
+      BiLogoNetlify,
     ],
   },
   {
@@ -205,6 +213,8 @@ const projects: IProjectProps[] = [
       SiEditorconfig,
       SiPrettier,
       SiEslint,
+      SiVercel,
+      BiLogoNetlify,
     ],
   },
 ]
@@ -231,22 +241,23 @@ const initialHomeProjects: IProjectProps[] = [
     ],
   },
   {
-    img: api,
-    title: 'API',
+    img: geography,
+    title: 'Geography',
     description:
-      'This API handles the creation of properties and reservation of visits or purchase.',
-    link: 'https://github.com/rodrigojsdeveloper/api-nodejs/',
+      'Geography, where users can explore and have fun with countries around the world.',
+    link: 'https://github.com/rodrigojsdeveloper/geography',
     stacks: [
       SiJavascript,
       SiTypescript,
-      FaNodeJs,
-      SiExpress,
-      VscJson,
-      SiJsonwebtokens,
-      SiJest,
-      SiPostgresql,
-      SiSwagger,
-      FaDocker,
+      FaReact,
+      SiTailwindcss,
+      SiReactrouter,
+      SiReacthookform,
+      SiZod,
+      SiEditorconfig,
+      SiPrettier,
+      SiEslint,
+      SiVite,
     ],
   },
 ]
