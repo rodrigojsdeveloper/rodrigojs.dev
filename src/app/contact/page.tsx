@@ -16,7 +16,7 @@ export default function Contact() {
       <main className="w-full max-w-800 animate-up max-lg:mt-6 max-lg:max-w-none">
         <Title title="Contact" />
         <Paragraphy
-          text="Feel free to get in touch and we'll talk about how we can work together."
+          text="Feel free to get in touch, and we can discuss how we can work together."
           style="text-md my-6"
         />
 
@@ -97,9 +97,7 @@ export default function Contact() {
         </h3>
 
         <Paragraphy
-          text="I really enjoy interacting with programmers, creators and technology
-          students. If you are interested in my work or want to give feedback
-          about this site, let's chat."
+          text="I greatly enjoy interacting with programmers, creators, and technology students. If you're interested in my work or would like to provide feedback on this site, let's have a chat."
           style="text-md mt-3 mb-6"
         />
 

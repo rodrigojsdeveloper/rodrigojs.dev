@@ -22,7 +22,7 @@ const Project = ({ project }: IProject) => {
 
         <Paragraphy
           text={project.description}
-          style="w-full min-h-58 leading-1.8 text-sm mt-2 font-light"
+          style="w-full min-h-58 leading-1.8 text-sm mt-2"
         />
 
         <div className="flex flex-wrap gap-3 pb-3 pt-5">

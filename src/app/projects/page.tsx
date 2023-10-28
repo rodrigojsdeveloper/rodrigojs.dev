@@ -15,7 +15,7 @@ export default function Projects() {
       <main className="w-full max-w-800 animate-up max-lg:mt-6 max-lg:max-w-none">
         <Title title="Projects" />
         <Paragraphy
-          text="I'm a fanatic about creating new projects, as it's the biggest key to acquiring knowledge. On this page you can browse more than 10 websites that I have developed."
+          text="I'm passionate about creating new projects as it's the prime way to acquire knowledge. On this page, you can browse through several sites I've developed."
           style="text-md my-6"
         />
 

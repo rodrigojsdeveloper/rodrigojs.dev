@@ -7,8 +7,7 @@ const Work = () => {
       <p className="font-title text-xl">Let{"'"}s work together!</p>
 
       <Paragraphy
-        text="If you are interested in my work or want to give feedback about this
-        website, let's have a chat."
+        text="If you're interested in my work or want to provide feedback on this site, let's have a chat."
         style="text-md"
       />
 

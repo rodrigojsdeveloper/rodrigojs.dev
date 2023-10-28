@@ -24,13 +24,9 @@ import {
 } from 'react-icons/si'
 
 import secretaryNaty from '@/assets/secretary-naty.png'
-import burgerKenzie from '@/assets/burger-kenzie.png'
 import motorsShop from '@/assets/motors-shop.png'
-import kenzieHub from '@/assets/kenzie-hub.png'
-import gitSearch from '@/assets/git-search.png'
 import geography from '@/assets/geography.png'
 import nuKenzie from '@/assets/nu-kenzie.png'
-import coreNote from '@/assets/corenote.png'
 import iweather from '@/assets/iweather.png'
 import dtMoney from '@/assets/dt-money.png'
 import todo from '@/assets/todo.png'
@@ -61,46 +57,10 @@ const projects: IProjectProps[] = [
     ],
   },
   {
-    img: gitSearch,
-    title: 'Git Search',
-    description:
-      'Git Search makes it easy to find GitHub users and their repositories.',
-    link: 'https://github.com/rodrigojsdeveloper/git-search',
-    stacks: [SiJavascript, SiTypescript, FaReact, SiStyledcomponents, SiVercel],
-  },
-  {
     img: nuKenzie,
     title: 'Nu Kenzie',
     description: 'Nu Kenzie is a cost control platform.',
     link: 'https://github.com/rodrigojsdeveloper/refactoring-nukenzie',
-    stacks: [SiJavascript, SiTypescript, FaReact, SiStyledcomponents, SiVercel],
-  },
-  {
-    img: coreNote,
-    title: 'CoreNote',
-    description:
-      'CoreNote is a web application for creating and managing to-do lists.',
-    link: 'https://github.com/rodrigojsdeveloper/corenote',
-    stacks: [
-      SiJavascript,
-      SiTypescript,
-      FaReact,
-      SiStyledcomponents,
-      FaNodeJs,
-      SiExpress,
-      VscJson,
-      SiJsonwebtokens,
-      SiJest,
-      SiPostgresql,
-      SiSwagger,
-      FaDocker,
-    ],
-  },
-  {
-    img: burgerKenzie,
-    title: 'Burger Kenzie',
-    description: "Burger Kenzie is an 'e-commerce', with fictitious products.",
-    link: 'https://github.com/rodrigojsdeveloper/refactoring-burger-kenzie',
     stacks: [SiJavascript, SiTypescript, FaReact, SiStyledcomponents, SiVercel],
   },
   {
@@ -110,13 +70,6 @@ const projects: IProjectProps[] = [
       'This test aims to develop several CRUD operations through the user interface (frontend).',
     link: 'https://github.com/rodrigojsdeveloper/test-secretarianaty',
     stacks: [SiJavascript, SiTypescript, TbBrandNextjs, SiMui, SiVercel],
-  },
-  {
-    img: kenzieHub,
-    title: 'Kenzie Hub',
-    description: 'Kenzie Hub is a skills management app.',
-    link: 'https://github.com/rodrigojsdeveloper/refactoring-kenzie-hub',
-    stacks: [SiJavascript, SiTypescript, FaReact, SiStyledcomponents, SiVercel],
   },
   {
     img: api,
