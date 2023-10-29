@@ -8,11 +8,11 @@ import Title from '@/components/Title'
 
 export default function Projects() {
   return (
-    <>
+    <main className="m-auto flex w-full max-w-6xl flex-row justify-between gap-x-12 px-8 pb-8 pt-28 max-lg:min-h-0 max-lg:justify-center max-lg:pb-5">
       <Header />
       <HeaderMobile />
 
-      <main className="w-full max-w-800 animate-up max-lg:mt-6 max-lg:max-w-none">
+      <section className="w-full max-w-800 animate-up max-lg:mt-6 max-lg:max-w-none">
         <Title title="Projects" />
         <Paragraphy
           text="I'm passionate about creating new projects as it's the prime way to acquire knowledge. On this page, you can browse through several sites I've developed."
@@ -26,7 +26,7 @@ export default function Projects() {
         </menu>
 
         <Footer />
-      </main>
-    </>
+      </section>
+    </main>
   )
 }

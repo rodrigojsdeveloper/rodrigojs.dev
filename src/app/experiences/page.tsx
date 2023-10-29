@@ -9,11 +9,11 @@ import jobs from '@/utils/jobs'
 
 export default function Contact() {
   return (
-    <>
+    <main className="m-auto flex w-full max-w-6xl flex-row justify-between gap-x-12 px-8 pb-8 pt-28 max-lg:min-h-0 max-lg:justify-center max-lg:pb-5">
       <Header />
       <HeaderMobile />
 
-      <main className="w-full max-w-800 animate-up max-lg:mt-6 max-lg:max-w-none">
+      <section className="w-full max-w-800 animate-up max-lg:mt-6 max-lg:max-w-none">
         <Title title="Experiences" />
         <Paragraphy
           text="Discover my professional journey and the skills I've gained along the way, as well as the courses that have helped me grow and excel."
@@ -29,7 +29,7 @@ export default function Contact() {
         </menu>
 
         <Footer />
-      </main>
-    </>
+      </section>
+    </main>
   )
 }

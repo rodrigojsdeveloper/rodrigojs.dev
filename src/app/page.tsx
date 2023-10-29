@@ -11,11 +11,11 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <>
+    <main className="m-auto flex w-full max-w-6xl flex-row justify-between gap-x-12 px-8 pb-8 pt-28 max-lg:min-h-0 max-lg:justify-center max-lg:pb-5">
       <Header />
       <HeaderMobile />
 
-      <main className="w-full max-w-800 animate-up max-lg:mt-6 max-lg:max-w-none">
+      <section className="w-full max-w-800 animate-up max-lg:mt-6 max-lg:max-w-none">
         <Title title="Rodrigo Silva" />
 
         <div className="my-2 flex items-center gap-1.5">
@@ -88,7 +88,7 @@ export default function Home() {
 
         <Work />
         <Footer />
-      </main>
-    </>
+      </section>
+    </main>
   )
 }

@@ -21,11 +21,11 @@ export default function About() {
   }
 
   return (
-    <>
+    <main className="m-auto flex w-full max-w-6xl flex-row justify-between gap-x-12 px-8 pb-8 pt-28 max-lg:min-h-0 max-lg:justify-center max-lg:pb-5">
       <Header />
       <HeaderMobile />
 
-      <main className="w-full max-w-800 animate-up max-lg:mt-6 max-lg:max-w-none">
+      <section className="w-full max-w-800 animate-up max-lg:mt-6 max-lg:max-w-none">
         <Title title="About" />
 
         <div className="my-6 flex justify-between gap-12 max-md:flex-col-reverse lg:items-center">
@@ -85,7 +85,7 @@ export default function About() {
         </div>
 
         <Footer />
-      </main>
-    </>
+      </section>
+    </main>
   )
 }
