@@ -65,7 +65,7 @@ const config: Config = {
         408: '408px',
       },
       borderRadius: {
-        def: '4.5px',
+        def: '0.375rem',
       },
       lineHeight: {
         1.8: '1.8rem',
