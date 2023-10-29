@@ -73,11 +73,11 @@ const config: Config = {
       keyframes: {
         up: {
           from: { opacity: '0', transform: 'translateY(20px)' },
-          to: { opacity: '1', transform: 'translateY(0px)' },
+          to: { opacity: '1', transform: 'translateY(0)' },
         },
         down: {
           from: { opacity: '0', transform: 'translateY(-20px)' },
-          to: { opacity: '1', transform: 'translateY(0px)' },
+          to: { opacity: '1', transform: 'translateY(0)' },
         },
       },
       animation: {
