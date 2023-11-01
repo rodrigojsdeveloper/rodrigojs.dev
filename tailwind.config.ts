@@ -13,7 +13,6 @@ const config: Config = {
       },
       colors: {
         gray: {
-          1: '#FFFFFF',
           2: '#D4D4D4',
           3: '#8C8C8C',
           4: '#2F2F2F',
@@ -57,7 +56,6 @@ const config: Config = {
       },
       minHeight: {
         47: '2.938rem',
-        408: '25.5rem',
       },
       borderRadius: {
         def: '0.375rem',

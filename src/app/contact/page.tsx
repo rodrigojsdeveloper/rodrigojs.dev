@@ -20,7 +20,7 @@ export default function Contact() {
           style="text-md my-6"
         />
 
-        <h3 className="text-md font-normal leading-relaxed text-gray-1">
+        <h3 className="text-md font-normal leading-relaxed text-white">
           My social networks
         </h3>
 
@@ -92,7 +92,7 @@ export default function Contact() {
 
         <Line />
 
-        <h3 className="text-md font-normal leading-relaxed text-gray-1">
+        <h3 className="text-md font-normal leading-relaxed text-white">
           Send me an email
         </h3>
 

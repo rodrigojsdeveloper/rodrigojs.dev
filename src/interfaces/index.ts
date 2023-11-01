@@ -1,6 +1,5 @@
 import { StaticImageData } from 'next/image'
 import { MouseEventHandler } from 'react'
-import { IconType } from 'react-icons'
 
 export interface ILink {
   Icon: React.ReactNode
@@ -10,12 +9,17 @@ export interface ILink {
   onClick?: MouseEventHandler<HTMLElement>
 }
 
+export interface IStack {
+  src: StaticImageData
+  name: string
+}
+
 export interface IProjectProps {
   img: StaticImageData
   title: string
   description: string
   link: string
-  stacks: IconType[]
+  stacks: IStack[]
 }
 
 export interface IProject {

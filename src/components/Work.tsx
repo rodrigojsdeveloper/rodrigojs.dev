@@ -13,7 +13,7 @@ const Work = () => {
 
       <Link
         href="/contact"
-        className="text-md flex h-44 w-full max-w-121 items-center justify-center rounded-def bg-gray-1 font-normal text-gray-7 hover:bg-button-1 active:bg-button-2"
+        className="text-md flex h-44 w-full max-w-121 items-center justify-center rounded-def bg-white font-normal text-gray-7 hover:bg-button-1 active:bg-button-2"
       >
         Contact me
       </Link>

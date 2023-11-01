@@ -3,9 +3,9 @@ import { IJob } from '@/interfaces'
 const Job = ({ job }: IJob) => {
   return (
     <div className="w-full rounded-def border border-solid border-gray-4 p-5">
-      <h2 className="text-2xl text-gray-1">{job.company}</h2>
+      <h2 className="text-2xl text-white">{job.company}</h2>
 
-      <h3 className="text-md mt-4 text-gray-1">{job.position}</h3>
+      <h3 className="text-md mt-4 text-white">{job.position}</h3>
 
       <p className="min-h-286 text-md mb-8 mt-6 font-light leading-relaxed text-gray-3">
         {job.description}

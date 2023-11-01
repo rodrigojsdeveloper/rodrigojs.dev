@@ -25,7 +25,7 @@ const Modal = () => {
         text="About"
         activeLink={
           pathname === '/about'
-            ? 'bg-link-1 text-gray-1'
+            ? 'bg-link-1 text-white'
             : 'bg-transparent text-gray-2'
         }
       />
@@ -51,7 +51,7 @@ const Modal = () => {
         text="Projects"
         activeLink={
           pathname === '/projects'
-            ? 'bg-link-1 text-gray-1'
+            ? 'bg-link-1 text-white'
             : 'bg-transparent text-gray-2'
         }
       />
@@ -77,7 +77,7 @@ const Modal = () => {
         text="Contact"
         activeLink={
           pathname === '/contact'
-            ? 'bg-link-1 text-gray-1'
+            ? 'bg-link-1 text-white'
             : 'bg-transparent text-gray-2'
         }
       />
@@ -103,7 +103,7 @@ const Modal = () => {
         text="Experiences"
         activeLink={
           pathname === '/experiences'
-            ? 'bg-link-1 text-gray-1'
+            ? 'bg-link-1 text-white'
             : 'bg-transparent text-gray-2'
         }
       />

@@ -3,6 +3,7 @@ import HeaderMobile from '@/components/HeaderMobile'
 import Paragraphy from '@/components/Paragraphy'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import Stack from '@/components/Stack'
 import Title from '@/components/Title'
 import Line from '@/components/Line'
 import stacks from '@/utils/stacks'
@@ -53,7 +54,7 @@ export default function About() {
           </Link>
           <button
             onClick={copyLink}
-            className="h-45 w-full max-w-152 rounded-def bg-gray-1 text-sm font-medium text-gray-7 hover:bg-button-1 active:bg-button-2"
+            className="h-45 w-full max-w-152 rounded-def bg-white text-sm font-medium text-gray-7 hover:bg-button-1 active:bg-button-2"
           >
             {copy ? 'Copied!' : 'Copy email'}
           </button>
@@ -66,11 +67,11 @@ export default function About() {
 
           <Paragraphy text="My technical knowledge." style="gap-2" />
 
-          <div className="my-3.5 flex flex-wrap items-center gap-3">
-            {stacks.map((Icon, index) => (
-              <Icon key={index} size={30} color="#D4D4D4" />
+          <ul className="my-3.5 flex flex-wrap items-center gap-3">
+            {stacks.map((stack, index) => (
+              <Stack src={stack.src} name={stack.name} key={index} />
             ))}
-          </div>
+          </ul>
         </div>
 
         <Footer />
