@@ -22,10 +22,10 @@ const Project = ({ project }: IProject) => {
 
         <Paragraphy
           text={project.description}
-          style="w-full min-h-58 leading-1.8 text-sm mt-2"
+          style="w-full min-h-47 leading-1.8 text-sm mt-2"
         />
 
-        <div className="flex flex-wrap gap-3 pb-3 pt-5">
+        <div className="flex flex-wrap gap-3 pt-5">
           {project.stacks.map((Icon, index) => (
             <Icon key={index} size={22} color="#D4D4D4" />
           ))}

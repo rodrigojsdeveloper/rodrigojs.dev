@@ -11,7 +11,7 @@ const HeaderMobile = () => {
   return (
     <>
       {openModa ? <Modal /> : null}
-      <header className="fixed top-0 hidden h-81 w-full flex-row items-center justify-between border-b border-solid border-gray-6 bg-backgroundHeader px-8 pt-2 backdrop-blur-sm max-lg:flex">
+      <header className="fixed top-0 hidden h-81 w-full flex-row items-center justify-between bg-black px-8 pt-2 max-lg:flex">
         <Link
           href="/"
           className="-ml-1 mb-2 flex h-45 w-full max-w-45 items-center justify-center rounded-full duration-300 ease-in-out"
@@ -19,7 +19,7 @@ const HeaderMobile = () => {
           <Image
             src={my}
             alt="Rodrigo Silva"
-            className="h-45 w-full max-w-45 rounded-full border border-solid border-gray-4 object-cover"
+            className="h-10 w-10 rounded-full border border-solid border-gray-4 object-cover"
           />
         </Link>
 

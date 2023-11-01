@@ -4,11 +4,9 @@ import Paragraphy from '@/components/Paragraphy'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Title from '@/components/Title'
-import my from '../../assets/my.jpg'
 import Line from '@/components/Line'
 import stacks from '@/utils/stacks'
 import { useState } from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
 
 export default function About() {
@@ -21,36 +19,27 @@ export default function About() {
   }
 
   return (
-    <main className="m-auto flex w-full max-w-6xl flex-row justify-between gap-x-12 px-8 pb-8 pt-28 max-lg:min-h-0 max-lg:justify-center max-lg:pb-5">
+    <main className="m-auto flex w-full max-w-6xl flex-row gap-x-10 px-8 pb-8 pt-28 max-lg:min-h-0 max-lg:justify-center max-lg:pb-5 max-lg:pt-24">
       <Header />
       <HeaderMobile />
 
       <section className="w-full max-w-800 animate-up max-lg:mt-6 max-lg:max-w-none">
         <Title title="About" />
 
-        <div className="my-6 flex justify-between gap-12 max-md:flex-col-reverse lg:items-center">
-          <div className="w-full max-w-456 space-y-3 leading-1.8">
-            <Paragraphy
-              text="I specialize in creating and optimizing user experiences in interface development. My expertise covers the conception, design, and implementation of visual elements for intuitive interactions. My advanced skills include requirements analysis, innovative design solutions, and seamless integration of front-end components."
-              style="text-md"
-            />
+        <div className="my-6 space-y-3 leading-1.8">
+          <Paragraphy
+            text="I specialize in creating and optimizing user experiences in interface development. My expertise covers the conception, design, and implementation of visual elements for intuitive interactions. My advanced skills include requirements analysis, innovative design solutions, and seamless integration of front-end components."
+            style="text-md"
+          />
 
-            <Paragraphy
-              text="I have experience in front-end projects using technologies such as HTML, CSS, JavaScript, TypeScript, and React, which are essential for interactive and responsive applications across various devices and browsers."
-              style="text-md"
-            />
+          <Paragraphy
+            text="I have experience in front-end projects using technologies such as HTML, CSS, JavaScript, TypeScript, and React, which are essential for interactive and responsive applications across various devices and browsers."
+            style="text-md"
+          />
 
-            <Paragraphy
-              text="Additionally, I possess knowledge in DevOps, including continuous integration and delivery, and infrastructure process automation. I am committed to enhancing my technical skills to lead projects that result in attractive, functional, high-performance interfaces, aiming to provide users with an effective and memorable digital experience."
-              style="text-md"
-            />
-          </div>
-
-          <Image
-            src={my}
-            alt="Rodrigo Silva"
-            className="h-315 w-full max-w-340 rounded-def object-cover"
-            priority={true}
+          <Paragraphy
+            text="Additionally, I possess knowledge in DevOps, including continuous integration and delivery, and infrastructure process automation. I am committed to enhancing my technical skills to lead projects that result in attractive, functional, high-performance interfaces, aiming to provide users with an effective and memorable digital experience."
+            style="text-md"
           />
         </div>
 

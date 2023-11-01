@@ -3,7 +3,7 @@ import { InputProps } from '@/interfaces'
 const Textarea = ({ label, type, name, htmlFor, id }: InputProps) => {
   return (
     <div className="relative mb-5">
-      <label className="text-md font-medium" htmlFor={htmlFor}>
+      <label className="text-md select-none font-medium" htmlFor={htmlFor}>
         {label}
       </label>
 

@@ -38,6 +38,7 @@ button,
 a {
   transition: 0.5s;
   cursor: pointer;
+  user-select: none;
 }
 
 a {
@@ -64,5 +65,6 @@ a {
 }
 
 ::selection {
+  color: rgb(1, 65, 255);
   background-color: rgba(1, 65, 255, 0.1);
 }

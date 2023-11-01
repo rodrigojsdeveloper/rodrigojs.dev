@@ -30,7 +30,7 @@ const Form = () => {
       action="https://formspree.io/f/mlekpwdz"
       method="POST"
       onSubmit={handleSubmit}
-      className="w-full max-w-448"
+      className="max-w-488 w-full"
     >
       <div className="flex flex-row items-center justify-between gap-2">
         <Input label="Name" type="text" name="name" htmlFor="name" id="name" />

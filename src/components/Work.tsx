@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const Work = () => {
   return (
-    <div className="my-6 flex w-full flex-col gap-4 rounded-def border border-gray-4 bg-gray-7 p-5">
+    <div className="my-6 flex w-full flex-col gap-4 rounded-def border border-solid border-gray-4 bg-gray-7 p-5">
       <p className="font-title text-xl">Let{"'"}s work together!</p>
 
       <Paragraphy
