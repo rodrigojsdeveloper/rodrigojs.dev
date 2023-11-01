@@ -1,4 +1,5 @@
 'use client'
+
 import { usePathname } from 'next/navigation'
 import CustomLink from './CustomLink'
 import my from '@/assets/my.jpg'
@@ -28,7 +29,6 @@ const Header = () => {
         >
           @rodrigojsdeveloper
         </Link>
-        <p className="mt-2.5 text-sm font-normal">Full Stack Developer</p>
       </div>
 
       <Line />
@@ -160,7 +160,7 @@ const Header = () => {
 
       <Line />
 
-      <small className="text-xs font-medium text-gray-3">
+      <small className="select-none text-xs font-medium text-gray-3">
         © 2023 - rodrigojsdeveloper
       </small>
     </header>

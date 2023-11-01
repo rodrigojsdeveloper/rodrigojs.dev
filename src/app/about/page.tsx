@@ -1,4 +1,5 @@
 'use client'
+
 import HeaderMobile from '@/components/HeaderMobile'
 import Paragraphy from '@/components/Paragraphy'
 import Header from '@/components/Header'
