@@ -13,7 +13,7 @@ const Input = ({ label, type, name, htmlFor, id }: InputProps) => {
         name={name}
         required={true}
         autoComplete="off"
-        className="mt-1.5 h-10 w-full rounded-def border border-solid border-gray-4 bg-transparent p-2.5 text-sm duration-300 focus:border-gray-1"
+        className="focus:border-gray-1 mt-1.5 h-10 w-full rounded-def border border-solid border-gray-4 bg-transparent p-2.5 text-sm duration-300"
       />
     </div>
   )
