@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="mt-6 hidden w-full flex-col max-lg:flex">
       <Line />
 
-      <small className="text-gray-1 select-none text-center text-xs font-medium">
+      <small className="select-none text-center text-xs font-medium text-gray-1">
         © 2023 - rodrigojsdeveloper
       </small>
     </footer>

@@ -49,7 +49,7 @@ export default function About() {
           <Link
             href="/pdfs/curriculo-rodrigo.pdf"
             download
-            className="text-gray-1 flex h-11 w-full max-w-152 items-center justify-center rounded-def border border-solid border-gray-2 p-3 text-sm font-medium hover:bg-gray-2"
+            className="flex h-11 w-full max-w-152 items-center justify-center rounded-def border border-solid border-gray-2 p-3 text-sm font-medium text-gray-1 hover:bg-gray-2"
           >
             CV Download
           </Link>

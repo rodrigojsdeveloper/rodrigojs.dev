@@ -25,7 +25,7 @@ const Header = () => {
         <Link
           target="_blank"
           href="https://github.com/rodrigojsdeveloper"
-          className="text-gray-1 text-sm font-medium hover:text-neutral-300"
+          className="text-sm font-medium text-gray-1 hover:text-neutral-300"
         >
           @rodrigojsdeveloper
         </Link>
@@ -160,7 +160,7 @@ const Header = () => {
 
       <Line />
 
-      <small className="text-gray-1 select-none text-xs font-medium">
+      <small className="select-none text-xs font-medium text-gray-1">
         © 2023 - rodrigojsdeveloper
       </small>
     </header>

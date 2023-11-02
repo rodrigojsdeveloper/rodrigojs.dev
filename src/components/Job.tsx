@@ -7,7 +7,7 @@ const Job = ({ job }: IJob) => {
 
       <h3 className="text-md mt-4 text-white">{job.position}</h3>
 
-      <p className="min-h-72 text-md text-gray-1 mb-8 mt-6 font-light leading-relaxed">
+      <p className="min-h-72 text-md mb-8 mt-6 font-light leading-relaxed text-gray-1">
         {job.description}
       </p>
 
@@ -24,7 +24,7 @@ const Job = ({ job }: IJob) => {
           />
         </svg>
 
-        <span className="text-gray-1 ml-3 text-sm">{job.date}</span>
+        <span className="ml-3 text-sm text-gray-1">{job.date}</span>
       </div>
     </div>
   )
