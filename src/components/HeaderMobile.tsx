@@ -12,7 +12,7 @@ const HeaderMobile = () => {
   return (
     <>
       {openModa ? <Modal /> : null}
-      <header className="fixed top-0 hidden h-20 w-full flex-row items-center justify-between bg-black px-8 pt-2 max-lg:flex">
+      <header className="fixed top-0 hidden h-20 w-full flex-row items-center justify-between bg-black px-8 pt-2 max-lg:flex max-sm:px-5">
         <Link
           href="/"
           className="flex h-11 w-11 items-center justify-center rounded-full duration-300 ease-in-out"

@@ -38,6 +38,9 @@ const config: Config = {
         488: '30.5rem',
         800: '50rem',
       },
+      height: {
+        1: '0.006rem',
+      },
       minHeight: {
         47: '2.938rem',
       },
