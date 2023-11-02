@@ -15,7 +15,6 @@ const config: Config = {
         gray: {
           1: '#8C8C8C',
           2: '#2F2F2F',
-          3: '#1E1B1B',
         },
         link: {
           1: 'rgba(255, 255, 255, .04)',
@@ -43,7 +42,7 @@ const config: Config = {
         47: '2.938rem',
       },
       borderRadius: {
-        def: '0.375rem',
+        def: '0.5rem',
       },
       keyframes: {
         up: {

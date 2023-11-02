@@ -16,7 +16,7 @@ export default function Home() {
       <HeaderMobile />
 
       <section className="w-full max-w-800 animate-up max-lg:mt-6 max-lg:max-w-none">
-        <Title title="Rodrigo Silva" />
+        <Title title="Full Stack Developer" />
 
         <div className="my-2 flex items-center gap-1.5">
           <svg
