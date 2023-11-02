@@ -13,12 +13,9 @@ const config: Config = {
       },
       colors: {
         gray: {
-          2: '#D4D4D4',
-          3: '#8C8C8C',
-          4: '#2F2F2F',
-          5: '#27272A',
-          6: '#1E1B1B',
-          7: '#171717',
+          1: '#8C8C8C',
+          2: '#2F2F2F',
+          3: '#1E1B1B',
         },
         link: {
           1: 'rgba(255, 255, 255, .04)',
@@ -28,10 +25,6 @@ const config: Config = {
           1: '#d9d9d9',
           2: 'hsla(0,0%,100%,.6)',
         },
-        borderButton: {
-          1: 'rgba(38, 38, 38, 0.10)',
-          2: 'rgba(38, 38, 38, 0.30)',
-        },
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -39,8 +32,6 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       maxWidth: {
-        45: '2.813rem',
-        81: '5.063rem',
         121: '7.563rem',
         140: '8.75rem',
         152: '9.5rem',
@@ -48,20 +39,11 @@ const config: Config = {
         488: '30.5rem',
         800: '50rem',
       },
-      height: {
-        44: '2.75rem',
-        45: '2.813rem',
-        81: '5.063rem',
-        286: '17.875rem',
-      },
       minHeight: {
         47: '2.938rem',
       },
       borderRadius: {
         def: '0.375rem',
-      },
-      lineHeight: {
-        1.8: '1.8rem',
       },
       keyframes: {
         up: {

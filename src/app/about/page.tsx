@@ -28,7 +28,7 @@ export default function About() {
       <section className="w-full max-w-800 animate-up max-lg:mt-6 max-lg:max-w-none">
         <Title title="About" />
 
-        <div className="my-6 space-y-3 leading-1.8">
+        <div className="my-6 space-y-3 leading-7">
           <Paragraphy
             text="I specialize in creating and optimizing user experiences in interface development. My expertise covers the conception, design, and implementation of visual elements for intuitive interactions. My advanced skills include requirements analysis, innovative design solutions, and seamless integration of front-end components."
             style="text-md"
@@ -49,13 +49,13 @@ export default function About() {
           <Link
             href="/pdfs/curriculo-rodrigo.pdf"
             download
-            className="flex h-45 w-full max-w-152 items-center justify-center rounded-def border border-solid border-gray-4 p-3 text-sm font-medium text-gray-3 hover:bg-gray-4 active:bg-borderButton-2"
+            className="text-gray-1 flex h-11 w-full max-w-152 items-center justify-center rounded-def border border-solid border-gray-2 p-3 text-sm font-medium hover:bg-gray-2"
           >
             CV Download
           </Link>
           <button
             onClick={copyLink}
-            className="h-45 w-full max-w-152 rounded-def bg-white text-sm font-medium text-gray-7 hover:bg-button-1 active:bg-button-2"
+            className="h-11 w-full max-w-152 rounded-def bg-white text-sm font-medium text-neutral-900 hover:bg-button-1 active:bg-button-2"
           >
             {copy ? 'Copied!' : 'Copy email'}
           </button>

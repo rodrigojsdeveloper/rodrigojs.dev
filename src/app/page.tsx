@@ -37,7 +37,9 @@ export default function Home() {
             </g>
           </svg>
 
-          <p className="text-sm font-normal text-gray-2">São Paulo - Brazil</p>
+          <p className="text-sm font-normal text-neutral-300">
+            São Paulo - Brazil
+          </p>
         </div>
 
         <Paragraphy
@@ -57,7 +59,7 @@ export default function Home() {
 
           <Link
             href="/projects"
-            className="hover:text-primary flex items-center gap-1 text-xs font-medium  text-gray-2 active:opacity-50"
+            className="hover:text-primary flex items-center gap-1 text-xs font-medium  text-neutral-300 active:opacity-50"
           >
             See all{' '}
             <svg

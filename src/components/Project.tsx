@@ -8,7 +8,7 @@ const Project = ({ project }: IProject) => {
     <Link
       href={project.link}
       target="_blank"
-      className="w-full rounded-def border border-solid border-gray-5 p-2 hover:border-link-1 hover:bg-link-1 active:bg-link-2"
+      className="w-full rounded-def border border-solid border-zinc-800 p-2 hover:border-link-1 hover:bg-link-1 active:bg-link-2"
     >
       <Image
         priority={true}
@@ -22,7 +22,7 @@ const Project = ({ project }: IProject) => {
 
         <Paragraphy
           text={project.description}
-          style="w-full min-h-47 leading-1.8 text-sm mt-2"
+          style="w-full min-h-47 leading-7 text-sm mt-2"
         />
       </div>
     </Link>

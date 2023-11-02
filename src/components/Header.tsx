@@ -12,11 +12,11 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-10 h-20 w-full max-w-230 pt-8 max-lg:mr-0 max-lg:hidden">
-      <figure className="-ml-1 mb-2 flex h-81 w-full max-w-81 items-center justify-center rounded-full duration-300 ease-in-out">
+      <figure className="mb-2 flex h-20 w-20 items-center justify-center rounded-full duration-300 ease-in-out">
         <Image
           src={my}
           alt="Rodrigo Silva"
-          className="h-81 w-full max-w-81 rounded-full border border-solid border-gray-4 object-cover"
+          className="h-20 w-20 rounded-full border border-solid border-gray-2 object-cover"
         />
       </figure>
 
@@ -25,7 +25,7 @@ const Header = () => {
         <Link
           target="_blank"
           href="https://github.com/rodrigojsdeveloper"
-          className="text-sm font-medium text-gray-3 hover:text-gray-2"
+          className="text-gray-1 text-sm font-medium hover:text-neutral-300"
         >
           @rodrigojsdeveloper
         </Link>
@@ -53,7 +53,7 @@ const Header = () => {
           activeLink={
             pathname === '/'
               ? 'bg-link-1 text-white'
-              : 'bg-transparent text-gray-2'
+              : 'bg-transparent text-neutral-300'
           }
         />
         <CustomLink
@@ -75,7 +75,7 @@ const Header = () => {
           activeLink={
             pathname === '/about'
               ? 'bg-link-1 text-white'
-              : 'bg-transparent text-gray-2'
+              : 'bg-transparent text-neutral-300'
           }
         />
         <CustomLink
@@ -101,7 +101,7 @@ const Header = () => {
           activeLink={
             pathname === '/projects'
               ? 'bg-link-1 text-white'
-              : 'bg-transparent text-gray-2'
+              : 'bg-transparent text-neutral-300'
           }
         />
         <CustomLink
@@ -127,7 +127,7 @@ const Header = () => {
           activeLink={
             pathname === '/contact'
               ? 'bg-link-1 text-white'
-              : 'bg-transparent text-gray-2'
+              : 'bg-transparent text-neutral-300'
           }
         />
         <CustomLink
@@ -153,14 +153,14 @@ const Header = () => {
           activeLink={
             pathname === '/experiences'
               ? 'bg-link-1 text-white'
-              : 'bg-transparent text-gray-2'
+              : 'bg-transparent text-neutral-300'
           }
         />
       </nav>
 
       <Line />
 
-      <small className="select-none text-xs font-medium text-gray-3">
+      <small className="text-gray-1 select-none text-xs font-medium">
         © 2023 - rodrigojsdeveloper
       </small>
     </header>

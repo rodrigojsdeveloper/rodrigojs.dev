@@ -31,7 +31,7 @@ export default function NotFound() {
             </svg>
           }
           text="Go back"
-          activeLink="max-w-121 text-gray-2 justify-center"
+          activeLink="max-w-121 text-neutral-300 justify-center"
         />
       </div>
     </main>

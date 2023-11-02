@@ -7,7 +7,7 @@ const Modal = () => {
   const pathname = usePathname()
 
   return (
-    <nav className="fixed right-6 top-16 z-10 w-full max-w-140 animate-down rounded-def border border-solid border-gray-4 bg-black">
+    <nav className="fixed right-6 top-16 z-10 w-full max-w-140 animate-down rounded-def border border-solid border-gray-2 bg-black">
       <CustomLink
         href="about"
         Icon={
@@ -27,7 +27,7 @@ const Modal = () => {
         activeLink={
           pathname === '/about'
             ? 'bg-link-1 text-white'
-            : 'bg-transparent text-gray-2'
+            : 'bg-transparent text-neutral-300'
         }
       />
       <CustomLink
@@ -53,7 +53,7 @@ const Modal = () => {
         activeLink={
           pathname === '/projects'
             ? 'bg-link-1 text-white'
-            : 'bg-transparent text-gray-2'
+            : 'bg-transparent text-neutral-300'
         }
       />
       <CustomLink
@@ -79,7 +79,7 @@ const Modal = () => {
         activeLink={
           pathname === '/contact'
             ? 'bg-link-1 text-white'
-            : 'bg-transparent text-gray-2'
+            : 'bg-transparent text-neutral-300'
         }
       />
       <CustomLink
@@ -105,7 +105,7 @@ const Modal = () => {
         activeLink={
           pathname === '/experiences'
             ? 'bg-link-1 text-white'
-            : 'bg-transparent text-gray-2'
+            : 'bg-transparent text-neutral-300'
         }
       />
     </nav>
