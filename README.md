@@ -4,7 +4,9 @@
 
 <br />
 
-<img src="./public/screenshot.png" alt="portfolio" />
+<a href="https://rodrigojs.dev" target="_blank">
+  <img src="./public/screenshot.png" alt="portfolio" />
+</a>
 
 <br/>
 <p align="center">Developed by <a href="https://www.linkedin.com/in/rodrigo-de-jesus-silva/">Rodrigo Silva</a>
