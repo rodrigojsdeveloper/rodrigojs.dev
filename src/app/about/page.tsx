@@ -26,10 +26,10 @@ export default function About() {
       <Header />
       <HeaderMobile />
 
-      <section className="w-full max-w-800 animate-up max-lg:mt-6 max-lg:max-w-none">
+      <section className="flex w-full max-w-800 animate-up flex-col gap-y-6 max-lg:mt-6 max-lg:max-w-none">
         <Title title="About" />
 
-        <div className="my-6 space-y-3 leading-7">
+        <div className="space-y-3 leading-7">
           <Paragraphy text="I specialize in creating and optimizing user experiences in interface development. My expertise covers the conception, design, and implementation of visual elements for intuitive interactions. My advanced skills include requirements analysis, innovative design solutions, and seamless integration of front-end components." />
 
           <Paragraphy text="I have experience in front-end projects using technologies such as HTML, CSS, JavaScript, TypeScript, and React, which are essential for interactive and responsive applications across various devices and browsers." />
@@ -37,7 +37,7 @@ export default function About() {
           <Paragraphy text="Additionally, I possess knowledge in DevOps, including continuous integration and delivery, and infrastructure process automation. I am committed to enhancing my technical skills to lead projects that result in attractive, functional, high-performance interfaces, aiming to provide users with an effective and memorable digital experience." />
         </div>
 
-        <div className="mb-8 mt-4 flex w-full items-center gap-2">
+        <div className="flex w-full items-center gap-2">
           <Link
             href="/pdfs/curriculo-rodrigo.pdf"
             download
@@ -55,12 +55,12 @@ export default function About() {
 
         <Line />
 
-        <div className="my-6 w-full">
+        <div className="flex flex-col gap-y-3">
           <SubTitle title="Skills" />
 
-          <Paragraphy text="My technical knowledge." style="gap-2" />
+          <Paragraphy text="My technical knowledge." />
 
-          <ul className="my-3.5 flex flex-wrap items-center gap-3">
+          <ul className="flex flex-wrap items-center gap-3">
             {stacks.map((stack, index) => (
               <Stack src={stack.src} name={stack.name} key={index} />
             ))}

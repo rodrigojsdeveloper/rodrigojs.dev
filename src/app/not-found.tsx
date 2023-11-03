@@ -9,7 +9,7 @@ export default function NotFound() {
       <Header />
       <HeaderMobile />
 
-      <div className="mt-64 flex w-full max-w-800 animate-up flex-col items-center gap-4 text-center max-lg:mt-6 max-lg:max-w-none">
+      <section className="mt-64 flex w-full max-w-800 animate-up flex-col items-center gap-4 text-center max-lg:mt-6 max-lg:max-w-none">
         <Paragraphy text="The page you are trying to access does not exist." />
 
         <CustomLink
@@ -30,7 +30,7 @@ export default function NotFound() {
           text="Go back"
           activeLink="max-w-121 text-neutral-300 justify-center"
         />
-      </div>
+      </section>
     </main>
   )
 }

@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const SocialMedia = () => {
   return (
-    <nav className="mb-6 mt-4 flex flex-wrap gap-3">
+    <nav className="flex flex-wrap gap-3">
       <Link
         target="_blank"
         href="https://github.com/rodrigojsdeveloper/"

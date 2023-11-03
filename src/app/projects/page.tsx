@@ -12,14 +12,11 @@ export default function Projects() {
       <Header />
       <HeaderMobile />
 
-      <section className="w-full max-w-800 animate-up max-lg:mt-6 max-lg:max-w-none">
+      <section className="flex w-full max-w-800 animate-up flex-col gap-y-6 max-lg:mt-6 max-lg:max-w-none">
         <Title title="Projects" />
-        <Paragraphy
-          text="I'm passionate about creating new projects as it's the prime way to acquire knowledge. On this page, you can browse through several sites I've developed."
-          style="my-6"
-        />
+        <Paragraphy text="I'm passionate about creating new projects as it's the prime way to acquire knowledge. On this page, you can browse through several sites I've developed." />
 
-        <menu className="my-6 grid gap-4 md:grid-cols-2">
+        <menu className="grid gap-4 md:grid-cols-2">
           {projects.map((project, index) => (
             <Project project={project} key={index} />
           ))}

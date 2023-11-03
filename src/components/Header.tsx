@@ -12,8 +12,8 @@ const Header = () => {
   const pathname = usePathname()
 
   return (
-    <header className="sticky top-0 z-10 h-20 w-full max-w-230 pt-8 max-lg:mr-0 max-lg:hidden">
-      <figure className="mb-2 flex h-20 w-20 items-center justify-center rounded-full duration-300 ease-in-out">
+    <header className="h-104 sticky top-0 flex w-full max-w-230 flex-col gap-y-3 pt-8 max-lg:hidden">
+      <figure className="flex h-20 w-20 items-center justify-center rounded-full duration-300 ease-in-out">
         <Image
           src={my}
           alt="Rodrigo Silva"

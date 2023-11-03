@@ -13,25 +13,22 @@ export default function Contact() {
       <Header />
       <HeaderMobile />
 
-      <section className="w-full max-w-800 animate-up max-lg:mt-6 max-lg:max-w-none">
+      <section className="flex w-full max-w-800 animate-up flex-col gap-y-6 max-lg:mt-6 max-lg:max-w-none">
         <Title title="Contact" />
-        <Paragraphy
-          text="Feel free to get in touch, and we can discuss how we can work together."
-          style="my-6"
-        />
+        <Paragraphy text="Feel free to get in touch, and we can discuss how we can work together." />
+        <div className="flex flex-col gap-y-3">
+          <h2 className="leading-relaxed">My social networks</h2>
 
-        <h2 className="leading-relaxed">My social networks</h2>
+          <SocialMedia />
+        </div>
 
-        <SocialMedia />
         <Line />
 
-        <h2 className="leading-relaxed">Send me an email</h2>
+        <div className="flex flex-col gap-y-3">
+          <h2 className="leading-relaxed">Send me an email</h2>
 
-        <Paragraphy
-          text="I greatly enjoy interacting with programmers, creators, and technology students. If you're interested in my work or would like to provide feedback on this site, let's have a chat."
-          style="mt-3 mb-6"
-        />
-
+          <Paragraphy text="I greatly enjoy interacting with programmers, creators, and technology students. If you're interested in my work or would like to provide feedback on this site, let's have a chat." />
+        </div>
         <Form />
         <Footer />
       </section>

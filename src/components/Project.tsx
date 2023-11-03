@@ -18,12 +18,12 @@ const Project = ({ project }: IProject) => {
         className="rounded-def"
       />
 
-      <div className="px-2 py-3">
+      <div className="flex flex-col gap-y-2 px-2 py-3">
         <SubTitle title={project.title} />
 
         <Paragraphy
           text={project.description}
-          style="w-full min-h-47 leading-7 text-sm mt-2"
+          style="w-full min-h-47 leading-7 text-sm"
         />
       </div>
     </Link>

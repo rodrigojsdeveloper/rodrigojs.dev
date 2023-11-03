@@ -2,7 +2,7 @@ import { InputProps } from '@/interfaces'
 
 const Input = ({ label, type, name, htmlFor, id }: InputProps) => {
   return (
-    <div className="relative mb-5">
+    <div className="flex w-full flex-col gap-y-1.5">
       <label className="select-none font-medium" htmlFor={htmlFor}>
         {label}
       </label>
@@ -13,7 +13,7 @@ const Input = ({ label, type, name, htmlFor, id }: InputProps) => {
         name={name}
         required={true}
         autoComplete="off"
-        className="mt-1.5 h-10 w-full rounded-def border border-solid border-gray-2 bg-transparent p-2.5 text-sm duration-300 focus:border-gray-1"
+        className="h-10 w-full rounded-def border border-solid border-gray-2 bg-transparent p-2.5 text-sm duration-300 focus:border-gray-1"
       />
     </div>
   )

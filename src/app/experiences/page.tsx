@@ -13,16 +13,13 @@ export default function Contact() {
       <Header />
       <HeaderMobile />
 
-      <section className="w-full max-w-800 animate-up max-lg:mt-6 max-lg:max-w-none">
+      <section className="flex w-full max-w-800 animate-up flex-col gap-y-6 max-lg:mt-6 max-lg:max-w-none">
         <Title title="Experiences" />
-        <Paragraphy
-          text="Discover my professional journey and the skills I've gained along the way, as well as the courses that have helped me grow and excel."
-          style="my-6"
-        />
+        <Paragraphy text="Discover my professional journey and the skills I've gained along the way, as well as the courses that have helped me grow and excel." />
 
         <Line />
 
-        <menu className="my-6 grid gap-4 md:grid-cols-2">
+        <menu className="grid gap-4 md:grid-cols-2">
           {jobs.map((job, index) => (
             <Job job={job} key={index} />
           ))}
