@@ -34,7 +34,7 @@ const HeaderMobile = () => {
             className="cursor-pointer"
           >
             <path
-              fill="#a3a3a3"
+              fill="rgb(214 211 209)"
               fillRule="evenodd"
               d="M19.75 12a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75Zm0-5a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75Zm0 10a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75Z"
               clipRule="evenodd"
@@ -51,7 +51,7 @@ const HeaderMobile = () => {
           >
             <path
               fill="none"
-              stroke="#d4d4d4"
+              stroke="rgb(214 211 209)"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="1.5"
