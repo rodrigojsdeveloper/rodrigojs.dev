@@ -2,6 +2,7 @@
 
 import HeaderMobile from '@/components/HeaderMobile'
 import Paragraphy from '@/components/Paragraphy'
+import SubTitle from '@/components/SubTitle'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Stack from '@/components/Stack'
@@ -29,20 +30,11 @@ export default function About() {
         <Title title="About" />
 
         <div className="my-6 space-y-3 leading-7">
-          <Paragraphy
-            text="I specialize in creating and optimizing user experiences in interface development. My expertise covers the conception, design, and implementation of visual elements for intuitive interactions. My advanced skills include requirements analysis, innovative design solutions, and seamless integration of front-end components."
-            style="text-md"
-          />
+          <Paragraphy text="I specialize in creating and optimizing user experiences in interface development. My expertise covers the conception, design, and implementation of visual elements for intuitive interactions. My advanced skills include requirements analysis, innovative design solutions, and seamless integration of front-end components." />
 
-          <Paragraphy
-            text="I have experience in front-end projects using technologies such as HTML, CSS, JavaScript, TypeScript, and React, which are essential for interactive and responsive applications across various devices and browsers."
-            style="text-md"
-          />
+          <Paragraphy text="I have experience in front-end projects using technologies such as HTML, CSS, JavaScript, TypeScript, and React, which are essential for interactive and responsive applications across various devices and browsers." />
 
-          <Paragraphy
-            text="Additionally, I possess knowledge in DevOps, including continuous integration and delivery, and infrastructure process automation. I am committed to enhancing my technical skills to lead projects that result in attractive, functional, high-performance interfaces, aiming to provide users with an effective and memorable digital experience."
-            style="text-md"
-          />
+          <Paragraphy text="Additionally, I possess knowledge in DevOps, including continuous integration and delivery, and infrastructure process automation. I am committed to enhancing my technical skills to lead projects that result in attractive, functional, high-performance interfaces, aiming to provide users with an effective and memorable digital experience." />
         </div>
 
         <div className="mb-8 mt-4 flex w-full items-center gap-2">
@@ -55,7 +47,7 @@ export default function About() {
           </Link>
           <button
             onClick={copyLink}
-            className="h-11 w-full max-w-152 rounded-def bg-white text-sm font-medium text-neutral-900 hover:bg-button-1 active:bg-button-2"
+            className="h-11 w-full max-w-152 rounded-def bg-white text-sm font-medium text-neutral-900 hover:opacity-80 active:opacity-50"
           >
             {copy ? 'Copied!' : 'Copy email'}
           </button>
@@ -64,7 +56,7 @@ export default function About() {
         <Line />
 
         <div className="my-6 w-full">
-          <p className="gap-2 text-xl font-medium">Skills</p>
+          <SubTitle title="Skills" />
 
           <Paragraphy text="My technical knowledge." style="gap-2" />
 

@@ -16,7 +16,7 @@ export default function Projects() {
         <Title title="Projects" />
         <Paragraphy
           text="I'm passionate about creating new projects as it's the prime way to acquire knowledge. On this page, you can browse through several sites I've developed."
-          style="text-md my-6"
+          style="my-6"
         />
 
         <menu className="my-6 grid gap-4 md:grid-cols-2">

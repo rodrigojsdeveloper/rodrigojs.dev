@@ -2,6 +2,7 @@
 
 import { usePathname } from 'next/navigation'
 import CustomLink from './CustomLink'
+import SubTitle from './SubTitle'
 import my from '@/assets/my.jpg'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -21,7 +22,7 @@ const Header = () => {
       </figure>
 
       <div className="w-full">
-        <h1 className="text-xl">Rodrigo Silva</h1>
+        <SubTitle title="Rodrigo Silva" />
         <Link
           target="_blank"
           href="https://github.com/rodrigojsdeveloper"

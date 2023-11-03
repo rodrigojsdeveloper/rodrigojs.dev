@@ -10,10 +10,7 @@ export default function NotFound() {
       <HeaderMobile />
 
       <div className="mt-64 flex w-full max-w-800 animate-up flex-col items-center gap-4 text-center max-lg:mt-6 max-lg:max-w-none">
-        <Paragraphy
-          text="The page you are trying to access does not exist."
-          style="text-md"
-        />
+        <Paragraphy text="The page you are trying to access does not exist." />
 
         <CustomLink
           href=""

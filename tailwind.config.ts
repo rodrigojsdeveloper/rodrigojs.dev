@@ -18,11 +18,6 @@ const config: Config = {
         },
         link: {
           1: 'rgba(255, 255, 255, .1)',
-          2: 'rgba(255, 255, 255, .12)',
-        },
-        button: {
-          1: '#d9d9d9',
-          2: 'hsla(0,0%,100%,.6)',
         },
       },
       backgroundImage: {

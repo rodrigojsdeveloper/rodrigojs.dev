@@ -17,7 +17,7 @@ export default function Contact() {
         <Title title="Experiences" />
         <Paragraphy
           text="Discover my professional journey and the skills I've gained along the way, as well as the courses that have helped me grow and excel."
-          style="text-md my-6"
+          style="my-6"
         />
 
         <Line />

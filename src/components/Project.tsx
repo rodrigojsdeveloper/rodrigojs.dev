@@ -1,5 +1,6 @@
 import { IProject } from '@/interfaces'
 import Paragraphy from './Paragraphy'
+import SubTitle from './SubTitle'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -8,7 +9,7 @@ const Project = ({ project }: IProject) => {
     <Link
       href={project.link}
       target="_blank"
-      className="w-full rounded-def border border-solid border-zinc-800 p-2 hover:border-link-1 hover:bg-link-1 active:bg-link-2"
+      className="w-full rounded-def border border-solid border-zinc-800 p-2 hover:border-link-1 hover:bg-link-1"
     >
       <Image
         priority={true}
@@ -18,7 +19,7 @@ const Project = ({ project }: IProject) => {
       />
 
       <div className="px-2 py-3">
-        <h3 className="text-xl font-normal text-white">{project.title}</h3>
+        <SubTitle title={project.title} />
 
         <Paragraphy
           text={project.description}

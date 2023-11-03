@@ -1,6 +1,7 @@
 import { initialHomeProjects } from '@/utils/projects'
 import HeaderMobile from '@/components/HeaderMobile'
 import Paragraphy from '@/components/Paragraphy'
+import SubTitle from '@/components/SubTitle'
 import Project from '@/components/Project'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
@@ -37,9 +38,7 @@ export default function Home() {
             </g>
           </svg>
 
-          <p className="text-sm font-normal text-neutral-300">
-            São Paulo - Brazil
-          </p>
+          <p className="text-sm text-neutral-300">São Paulo - Brazil</p>
         </div>
 
         <Paragraphy
@@ -49,13 +48,13 @@ export default function Home() {
           about translating ideas into intuitive, visually appealing user
           interfaces while ensuring the technical aspects of the system are
           robust and efficient."
-          style="text-md my-6"
+          style="my-6"
         />
 
         <Line />
 
         <div className="flex w-full items-center justify-between">
-          <p className="font-title text-xl">Recent projects</p>
+          <SubTitle title="Recent projects" />
 
           <Link
             href="/projects"
