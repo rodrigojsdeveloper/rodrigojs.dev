@@ -1,4 +1,4 @@
-import SocialMedia from '@/components/SocialMedia'
+import SocialNetworks from '@/components/SocialNetworks'
 import Paragraphy from '@/components/Paragraphy'
 import Footer from '@/components/Footer'
 import Title from '@/components/Title'
@@ -13,7 +13,7 @@ const Contact = () => {
       <div className="flex flex-col gap-y-3">
         <h2 className="leading-relaxed">My social networks</h2>
 
-        <SocialMedia />
+        <SocialNetworks />
       </div>
       <Line />
       <div className="flex flex-col gap-y-3">

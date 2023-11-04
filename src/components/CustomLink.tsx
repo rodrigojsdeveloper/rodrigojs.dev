@@ -1,7 +1,7 @@
-import { ILink } from '@/interfaces'
+import { ICustomLink } from '@/interfaces'
 import Link from 'next/link'
 
-const CustomLink = ({ Icon, text, href, activeLink, onClick }: ILink) => {
+const CustomLink = ({ Icon, text, href, activeLink, onClick }: ICustomLink) => {
   return (
     <Link
       href={'/' + href}

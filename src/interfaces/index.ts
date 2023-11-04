@@ -1,7 +1,7 @@
 import { StaticImageData } from 'next/image'
 import { MouseEventHandler } from 'react'
 
-export interface ILink {
+export interface ICustomLink {
   Icon: React.ReactNode
   text: string
   href: string
@@ -51,4 +51,14 @@ export interface IJob {
 
 export interface ITitle {
   title: string
+}
+
+export interface ILinkProps {
+  name: string
+  link: string
+  img: string
+}
+
+export interface ILink {
+  link: ILinkProps
 }

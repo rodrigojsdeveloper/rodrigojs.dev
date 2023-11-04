@@ -16,6 +16,7 @@ const Header = () => {
       <figure className="flex h-20 w-20 items-center justify-center rounded-full duration-300 ease-in-out">
         <Image
           src={my}
+          priority
           alt="Rodrigo Silva"
           className="h-20 w-20 rounded-full border border-solid border-gray-2 object-cover"
         />

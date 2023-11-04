@@ -1,3 +1,4 @@
+import GroupedItems from '@/components/GroupedItems'
 import Paragraphy from '@/components/Paragraphy'
 import ButtonCopy from '@/components/ButtonCopy'
 import SubTitle from '@/components/SubTitle'
@@ -35,11 +36,11 @@ const About = () => {
 
         <Paragraphy text="My technical knowledge." />
 
-        <ul className="flex flex-wrap items-center gap-3">
+        <GroupedItems>
           {stacks.map((stack, index) => (
             <Stack src={stack.src} name={stack.name} key={index} />
           ))}
-        </ul>
+        </GroupedItems>
       </div>
 
       <Footer />

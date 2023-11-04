@@ -35,7 +35,7 @@ body {
 }
 
 button,
-a {
+a, li {
   transition: 0.5s;
   cursor: pointer;
   user-select: none;
