@@ -36,7 +36,6 @@ const config: Config = {
         104: '30rem',
       },
       minHeight: {
-        1: '0.006rem',
         47: '2.938rem',
       },
       borderRadius: {
