@@ -1,15 +1,10 @@
-import HeaderMobile from '@/components/HeaderMobile'
 import Paragraphy from '@/components/Paragraphy'
 import CustomLink from '@/components/CustomLink'
-import Header from '@/components/Header'
 
-export default function NotFound() {
+const NotFound = () => {
   return (
-    <main className="relative m-auto flex w-full max-w-6xl flex-row gap-x-10 px-8 pb-16 max-lg:min-h-0 max-lg:justify-center max-lg:pb-5 max-lg:pt-24 max-sm:px-5">
-      <Header />
-      <HeaderMobile />
-
-      <section className="mt-64 flex w-full max-w-800 animate-up flex-col items-center gap-4 text-center max-lg:mt-6 max-lg:max-w-none">
+    <>
+      <div className="m-auto flex flex-col items-center gap-y-5">
         <Paragraphy text="The page you are trying to access does not exist." />
 
         <CustomLink
@@ -30,7 +25,9 @@ export default function NotFound() {
           text="Go back"
           activeLink="max-w-121 text-neutral-300 justify-center"
         />
-      </section>
-    </main>
+      </div>
+    </>
   )
 }
+
+export default NotFound

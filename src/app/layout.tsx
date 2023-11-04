@@ -1,4 +1,6 @@
+import HeaderMobile from '@/components/HeaderMobile'
 import { PropsWithChildren } from 'react'
+import Header from '@/components/Header'
 import { Kanit } from 'next/font/google'
 import type { Metadata } from 'next'
 import './globals.css'
@@ -11,11 +13,10 @@ const kanit = Kanit({
 
 export const metadata: Metadata = {
   title: 'rodrigojsdeveloper',
-  description:
-    'Professional portfolio highlighting technical skills and problem solving in a simple, modern and intuitive interface.',
+  description: 'My personal website.',
 }
 
-export default function RootLayout({ children }: PropsWithChildren) {
+const RootLayout = ({ children }: PropsWithChildren) => {
   return (
     <html lang="en" className={`${kanit.variable} font-kanit`}>
       <body className="m-auto flex min-h-screen w-full items-center">
@@ -23,8 +24,17 @@ export default function RootLayout({ children }: PropsWithChildren) {
           <div className="relative drop-shadow-[0_0_0.3rem_#0141ff3] invert" />
         </div>
 
-        {children}
+        <main className="m-auto flex w-full max-w-6xl flex-row gap-x-10 px-8 pb-8 pt-28 max-lg:min-h-0 max-lg:justify-center max-lg:pb-5 max-lg:pt-24 max-sm:px-5">
+          <Header />
+          <HeaderMobile />
+
+          <section className="flex w-full max-w-800 animate-up flex-col gap-y-6 max-lg:mt-6 max-lg:max-w-none">
+            {children}
+          </section>
+        </main>
       </body>
     </html>
   )
 }
+
+export default RootLayout
