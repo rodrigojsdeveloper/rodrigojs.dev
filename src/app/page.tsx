@@ -6,6 +6,7 @@ import Footer from '@/components/Footer'
 import Title from '@/components/Title'
 import Line from '@/components/Line'
 import Work from '@/components/Work'
+import List from '@/components/List'
 import Link from 'next/link'
 
 const Home = () => {
@@ -76,11 +77,11 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="grid gap-4 sm:grid-cols-2">
+      <List>
         {initialHomeProjects.map((project, key) => (
           <Project project={project} key={key} />
         ))}
-      </div>
+      </List>
 
       <Line />
 

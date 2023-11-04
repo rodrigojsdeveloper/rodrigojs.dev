@@ -19,7 +19,6 @@ export interface IProjectProps {
   title: string
   description: string
   link: string
-  stacks: IStack[]
 }
 
 export interface IProject {

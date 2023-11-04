@@ -8,7 +8,6 @@ import Form from '@/components/Form'
 const Contact = () => {
   return (
     <>
-      {' '}
       <Title title="Contact" />
       <Paragraphy text="Feel free to get in touch, and we can discuss how we can work together." />
       <div className="flex flex-col gap-y-3">
