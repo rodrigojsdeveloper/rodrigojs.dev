@@ -18,7 +18,7 @@ const Header = () => {
           src={my}
           priority
           alt="Rodrigo Silva"
-          className="h-20 w-20 rounded-full border border-solid border-gray-2 object-cover"
+          className="h-20 w-20 rounded-full border border-solid border-neutral-800 object-cover"
         />
       </figure>
 

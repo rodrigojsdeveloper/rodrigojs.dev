@@ -14,7 +14,6 @@ const config: Config = {
       colors: {
         gray: {
           1: '#8C8C8C',
-          2: '#2F2F2F',
         },
         link: {
           1: 'rgba(255, 255, 255, .1)',
@@ -37,6 +36,7 @@ const config: Config = {
         104: '30rem',
       },
       minHeight: {
+        1: '0.006rem',
         47: '2.938rem',
       },
       borderRadius: {

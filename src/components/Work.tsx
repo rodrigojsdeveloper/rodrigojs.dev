@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const Work = () => {
   return (
-    <div className="flex w-full flex-col gap-4 rounded-def border border-solid border-gray-2 bg-neutral-900 p-5">
+    <div className="flex w-full flex-col gap-4 rounded-def border border-solid border-neutral-800 bg-neutral-900 p-5">
       <SubTitle title="Let's work together!" />
 
       <Paragraphy text="If you're interested in my work or want to provide feedback on this site, let's have a chat." />

@@ -7,7 +7,7 @@ const Modal = () => {
   const pathname = usePathname()
 
   return (
-    <nav className="fixed right-6 top-16 z-10 w-full max-w-140 animate-down rounded-def border border-solid border-gray-2 bg-black">
+    <nav className="fixed right-6 top-16 z-10 w-full max-w-140 animate-down rounded-def border border-solid border-neutral-800 bg-black">
       <CustomLink
         href="about"
         Icon={

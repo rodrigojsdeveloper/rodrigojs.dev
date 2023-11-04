@@ -2,7 +2,7 @@ import { IJob } from '@/interfaces'
 
 const Job = ({ job }: IJob) => {
   return (
-    <li className="flex w-full flex-col gap-y-4 rounded-def border border-solid border-gray-2 p-5">
+    <li className="flex w-full flex-col gap-y-4 rounded-def border border-solid border-neutral-800 p-5">
       <h2 className="text-2xl">{job.company}</h2>
 
       <h3>{job.position}</h3>
