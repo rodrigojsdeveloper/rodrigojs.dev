@@ -23,7 +23,7 @@ const NotFound = () => {
             </svg>
           }
           text="Go back"
-          activeLink="max-w-121 text-neutral-300 justify-center"
+          activeLink="max-w-121 text-color-paragraphy justify-center"
         />
       </div>
     </>

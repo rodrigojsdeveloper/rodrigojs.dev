@@ -2,12 +2,12 @@ import { IJob } from '@/interfaces'
 
 const Job = ({ job }: IJob) => {
   return (
-    <li className="flex w-full flex-col gap-y-4 rounded-def border border-solid border-neutral-800 p-5">
+    <li className="flex w-full flex-col gap-y-4 rounded-def border border-solid border-line p-5">
       <h2 className="text-2xl">{job.company}</h2>
 
       <h3>{job.position}</h3>
 
-      <p className="min-h-72 font-light leading-relaxed text-gray-1">
+      <p className="min-h-72 font-light leading-relaxed text-color-paragraphy">
         {job.description}
       </p>
 
@@ -24,7 +24,7 @@ const Job = ({ job }: IJob) => {
           />
         </svg>
 
-        <span className="text-sm text-gray-1">{job.date}</span>
+        <span className="text-sm text-color-paragraphy">{job.date}</span>
       </div>
     </li>
   )

@@ -18,7 +18,7 @@ const Header = () => {
           src={my}
           priority
           alt="Rodrigo Silva"
-          className="h-20 w-20 rounded-full border border-solid border-neutral-800 object-cover"
+          className="h-20 w-20 rounded-full border border-solid border-line object-cover"
         />
       </figure>
 
@@ -27,7 +27,7 @@ const Header = () => {
         <Link
           target="_blank"
           href="https://github.com/rodrigojsdeveloper"
-          className="text-sm font-medium text-gray-1 hover:text-neutral-300"
+          className="text-color-paragraphy hover:text-color-paragraphy text-sm font-medium"
         >
           @rodrigojsdeveloper
         </Link>
@@ -46,9 +46,7 @@ const Header = () => {
               viewBox="0 0 24 24"
             >
               <path
-                fill={
-                  pathname === '/' ? 'rgb(255,255,255)' : 'rgb(214 211 209)'
-                }
+                fill={pathname === '/' ? 'rgb(255,255,255)' : '#8C8C8C'}
                 d="M11.03 2.59a1.501 1.501 0 0 1 1.94 0l7.5 6.363a1.5 1.5 0 0 1 .53 1.144V19.5a1.5 1.5 0 0 1-1.5 1.5h-5.75a.75.75 0 0 1-.75-.75V14h-2v6.25a.75.75 0 0 1-.75.75H4.5A1.5 1.5 0 0 1 3 19.5v-9.403c0-.44.194-.859.53-1.144ZM12 3.734l-7.5 6.363V19.5h5v-6.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v6.25h5v-9.403Z"
               />
             </svg>
@@ -56,8 +54,8 @@ const Header = () => {
           text="Home"
           activeLink={
             pathname === '/'
-              ? 'bg-link-1 text-white'
-              : 'bg-transparent text-neutral-300'
+              ? 'bg-link-hover text-white'
+              : 'bg-transparent text-color-paragraphy'
           }
         />
         <CustomLink
@@ -70,11 +68,7 @@ const Header = () => {
               viewBox="0 0 256 256"
             >
               <path
-                fill={
-                  pathname === '/about'
-                    ? 'rgb(255,255,255)'
-                    : 'rgb(214 211 209)'
-                }
+                fill={pathname === '/about' ? 'rgb(255,255,255)' : '#8C8C8C'}
                 d="M128 24a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24ZM74.08 197.5a64 64 0 0 1 107.84 0a87.83 87.83 0 0 1-107.84 0ZM96 120a32 32 0 1 1 32 32a32 32 0 0 1-32-32Zm97.76 66.41a79.66 79.66 0 0 0-36.06-28.75a48 48 0 1 0-59.4 0a79.66 79.66 0 0 0-36.06 28.75a88 88 0 1 1 131.52 0Z"
               />
             </svg>
@@ -82,8 +76,8 @@ const Header = () => {
           text="About"
           activeLink={
             pathname === '/about'
-              ? 'bg-link-1 text-white'
-              : 'bg-transparent text-neutral-300'
+              ? 'bg-link-hover text-white'
+              : 'bg-transparent text-color-paragraphy'
           }
         />
         <CustomLink
@@ -96,19 +90,11 @@ const Header = () => {
               viewBox="0 0 24 24"
             >
               <path
-                fill={
-                  pathname === '/projects'
-                    ? 'rgb(255,255,255)'
-                    : 'rgb(214 211 209)'
-                }
+                fill={pathname === '/projects' ? 'rgb(255,255,255)' : '#8C8C8C'}
                 d="M7.25 6a.75.75 0 0 0-.75.75v7.5a.75.75 0 0 0 1.5 0v-7.5A.75.75 0 0 0 7.25 6ZM12 6a.75.75 0 0 0-.75.75v4.5a.75.75 0 0 0 1.5 0v-4.5A.75.75 0 0 0 12 6Zm4 .75a.75.75 0 0 1 1.5 0v9.5a.75.75 0 0 1-1.5 0v-9.5Z"
               />
               <path
-                fill={
-                  pathname === '/projects'
-                    ? 'rgb(255,255,255)'
-                    : 'rgb(214 211 209)'
-                }
+                fill={pathname === '/projects' ? 'rgb(255,255,255)' : '#8C8C8C'}
                 d="M3.75 2h16.5c.966 0 1.75.784 1.75 1.75v16.5A1.75 1.75 0 0 1 20.25 22H3.75A1.75 1.75 0 0 1 2 20.25V3.75C2 2.784 2.784 2 3.75 2ZM3.5 3.75v16.5c0 .138.112.25.25.25h16.5a.25.25 0 0 0 .25-.25V3.75a.25.25 0 0 0-.25-.25H3.75a.25.25 0 0 0-.25.25Z"
               />
             </svg>
@@ -116,8 +102,8 @@ const Header = () => {
           text="Projects"
           activeLink={
             pathname === '/projects'
-              ? 'bg-link-1 text-white'
-              : 'bg-transparent text-neutral-300'
+              ? 'bg-link-hover text-white'
+              : 'bg-transparent text-color-paragraphy'
           }
         />
         <CustomLink
@@ -132,9 +118,7 @@ const Header = () => {
               <path
                 fill="none"
                 stroke={
-                  pathname === '/contact'
-                    ? 'rgb(255,255,255)'
-                    : 'rgb(214 211 209)'
+                  pathname === '/contact' ? 'rgb(255,255,255)' : '#8C8C8C'
                 }
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -146,8 +130,8 @@ const Header = () => {
           text="Contact"
           activeLink={
             pathname === '/contact'
-              ? 'bg-link-1 text-white'
-              : 'bg-transparent text-neutral-300'
+              ? 'bg-link-hover text-white'
+              : 'bg-transparent text-color-paragraphy'
           }
         />
         <CustomLink
@@ -162,9 +146,7 @@ const Header = () => {
               <path
                 fill="none"
                 stroke={
-                  pathname === '/experiences'
-                    ? 'rgb(255,255,255)'
-                    : 'rgb(214 211 209)'
+                  pathname === '/experiences' ? 'rgb(255,255,255)' : '#8C8C8C'
                 }
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -176,15 +158,15 @@ const Header = () => {
           text="Experiences"
           activeLink={
             pathname === '/experiences'
-              ? 'bg-link-1 text-white'
-              : 'bg-transparent text-neutral-300'
+              ? 'bg-link-hover text-white'
+              : 'bg-transparent text-color-paragraphy'
           }
         />
       </nav>
 
       <Line />
 
-      <small className="select-none text-xs font-medium text-gray-1">
+      <small className="text-color-paragraphy select-none text-xs font-medium">
         © 2023 - rodrigojsdeveloper
       </small>
     </aside>

@@ -24,7 +24,7 @@ const Home = () => {
           >
             <g
               fill="none"
-              stroke="#d4d4d4"
+              stroke="#8C8C8C"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="1.5"
@@ -34,7 +34,7 @@ const Home = () => {
             </g>
           </svg>
 
-          <p className="text-sm text-neutral-300">São Paulo - Brazil</p>
+          <p className="text-sm text-color-paragraphy">São Paulo - Brazil</p>
         </div>
       </div>
 
@@ -55,7 +55,7 @@ const Home = () => {
 
           <Link
             href="/projects"
-            className="hover:text-primary flex items-center gap-1 text-xs font-medium  text-neutral-300 active:opacity-50"
+            className="hover:text-primary flex items-center gap-1 text-xs font-medium  text-color-paragraphy active:opacity-50"
           >
             See all{' '}
             <svg

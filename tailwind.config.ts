@@ -12,12 +12,10 @@ const config: Config = {
         kanit: ['var(--font-kanit)'],
       },
       colors: {
-        gray: {
-          1: '#8C8C8C',
-        },
-        link: {
-          1: 'rgba(255, 255, 255, .1)',
-        },
+        line: 'rgb(38 38 38)',
+        'dark-grey': 'rgb(23 23 23)',
+        'color-paragraphy': '#8C8C8C',
+        'link-hover': 'rgba(255, 255, 255, .1)',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

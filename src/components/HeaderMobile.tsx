@@ -21,7 +21,7 @@ const HeaderMobile = () => {
             src={my}
             priority
             alt="Rodrigo Silva"
-            className="h-10 w-10 rounded-full border border-solid border-neutral-800 object-cover"
+            className="h-10 w-10 rounded-full border border-solid border-line object-cover"
           />
         </Link>
 
