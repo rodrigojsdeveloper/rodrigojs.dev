@@ -14,8 +14,9 @@ const config: Config = {
       colors: {
         line: 'rgb(38 38 38)',
         'dark-grey': 'rgb(23 23 23)',
-        'color-paragraphy': '#8C8C8C',
-        'link-hover': 'rgba(255, 255, 255, .1)',
+        'color-paragraphy': 'rgb(140, 140, 140)',
+        'link-hover': 'rgba(255, 255, 255, 0.04)',
+        'link-active': 'rgba(255, 255, 255, 0.12)',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

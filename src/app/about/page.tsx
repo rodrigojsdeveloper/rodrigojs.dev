@@ -1,6 +1,5 @@
 import GroupedItems from '@/components/GroupedItems'
 import Paragraphy from '@/components/Paragraphy'
-import ButtonCopy from '@/components/ButtonCopy'
 import SubTitle from '@/components/SubTitle'
 import Footer from '@/components/Footer'
 import Stack from '@/components/Stack'
@@ -24,11 +23,10 @@ const About = () => {
         <Link
           href="/pdfs/curriculo-rodrigo.pdf"
           download
-          className="flex h-11 w-full max-w-152 items-center justify-center rounded-def border border-solid border-line p-3 text-sm font-medium text-color-paragraphy hover:bg-line"
+          className="text-color-paragraphy flex h-11 w-full max-w-152 items-center justify-center rounded-def border border-solid border-line p-3 text-sm font-medium hover:bg-line"
         >
           CV Download
         </Link>
-        <ButtonCopy />
       </div>
       <Line />
       <div className="flex flex-col gap-y-3">
