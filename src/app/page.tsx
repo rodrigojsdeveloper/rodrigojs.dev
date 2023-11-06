@@ -34,7 +34,7 @@ const Home = () => {
             </g>
           </svg>
 
-          <p className="text-color-paragraphy text-sm">São Paulo - Brazil</p>
+          <p className="text-sm text-color-paragraphy">São Paulo - Brazil</p>
         </div>
       </div>
 
@@ -55,7 +55,7 @@ const Home = () => {
 
           <Link
             href="/projects"
-            className="hover:text-primary text-color-paragraphy flex items-center gap-1 text-xs  font-medium active:opacity-50"
+            className="hover:text-primary flex items-center gap-1 text-xs font-medium  text-color-paragraphy active:opacity-50"
           >
             See all{' '}
             <svg
