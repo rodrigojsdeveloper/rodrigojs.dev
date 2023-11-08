@@ -3,7 +3,7 @@ import CustomLink from '@/components/CustomLink'
 
 const NotFound = () => {
   return (
-    <>
+    <section className="flex w-full max-w-800 animate-up flex-col gap-y-6 max-lg:mt-6 max-lg:max-w-none">
       <div className="m-auto flex flex-col items-center gap-y-5">
         <Paragraphy text="The page you are trying to access does not exist." />
 
@@ -17,7 +17,7 @@ const NotFound = () => {
               viewBox="0 0 256 256"
             >
               <path
-                fill="#d4d4d4"
+                fill="rgb(140, 140, 140)"
                 d="M222 128a6 6 0 0 1-6 6H54.49l61.75 61.76a6 6 0 1 1-8.48 8.48l-72-72a6 6 0 0 1 0-8.48l72-72a6 6 0 0 1 8.48 8.48L54.49 122H216a6 6 0 0 1 6 6Z"
               />
             </svg>
@@ -26,7 +26,7 @@ const NotFound = () => {
           activeLink="max-w-121 text-color-paragraphy justify-center"
         />
       </div>
-    </>
+    </section>
   )
 }
 

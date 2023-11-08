@@ -11,7 +11,7 @@ import Link from 'next/link'
 
 const Home = () => {
   return (
-    <>
+    <section className="flex w-full max-w-800 animate-up flex-col gap-y-6 max-lg:mt-6 max-lg:max-w-none">
       <div className="flex flex-col gap-y-2">
         <Title title="Full Stack Developer" />
 
@@ -66,7 +66,7 @@ const Home = () => {
             >
               <path
                 fill="none"
-                stroke="#d4d4d4"
+                stroke="rgb(140, 140, 140)"
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="1.5"
@@ -87,7 +87,7 @@ const Home = () => {
 
       <Work />
       <Footer />
-    </>
+    </section>
   )
 }
 

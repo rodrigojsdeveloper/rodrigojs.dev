@@ -28,9 +28,7 @@ const RootLayout = ({ children }: PropsWithChildren) => {
           <Header />
           <HeaderMobile />
 
-          <section className="flex w-full max-w-800 animate-up flex-col gap-y-6 max-lg:mt-6 max-lg:max-w-none">
-            {children}
-          </section>
+          {children}
         </main>
       </body>
     </html>
