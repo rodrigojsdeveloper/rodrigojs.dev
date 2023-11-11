@@ -1,5 +1,5 @@
-import instagram from '@/assets/networks/instagram.svg'
 import linkedin from '@/assets/networks/linkedin.svg'
+import discord from '@/assets/networks/discord.svg'
 import github from '@/assets/networks/github.svg'
 
 import { ILinkProps } from '@/interfaces'
@@ -16,9 +16,9 @@ const links: ILinkProps[] = [
     img: linkedin,
   },
   {
-    name: 'Instagram',
-    link: 'https://www.instagram.com/eurodrigojs/',
-    img: instagram,
+    name: 'Discord',
+    link: 'https://discord.gg/QqFzbm6Prr',
+    img: discord,
   },
 ]
 
