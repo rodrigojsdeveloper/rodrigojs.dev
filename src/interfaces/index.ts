@@ -7,6 +7,7 @@ export interface ICustomLink {
   href: string
   activeLink?: string
   onClick?: MouseEventHandler<HTMLElement>
+  style?: string
 }
 
 export interface IStack {

@@ -1,4 +1,5 @@
 import { IJob } from '@/interfaces'
+import Paragraphy from './Paragraphy'
 
 const Job = ({ job }: IJob) => {
   return (
@@ -7,9 +8,7 @@ const Job = ({ job }: IJob) => {
 
       <h3>{job.position}</h3>
 
-      <p className="min-h-72 font-light leading-relaxed text-color-paragraphy">
-        {job.description}
-      </p>
+      <Paragraphy text={job.description} style="font-light" />
 
       <div className="flex flex-row items-center gap-x-4">
         <svg

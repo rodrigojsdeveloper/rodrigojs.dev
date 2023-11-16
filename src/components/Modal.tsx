@@ -29,6 +29,7 @@ const Modal = () => {
             ? 'bg-link-active text-white'
             : 'bg-transparent text-color-paragraphy'
         }
+        style="rounded-b-none"
       />
       <CustomLink
         href="projects"
@@ -55,6 +56,7 @@ const Modal = () => {
             ? 'bg-link-active text-white'
             : 'bg-transparent text-color-paragraphy'
         }
+        style="rounded-none"
       />
       <CustomLink
         href="contact"
@@ -81,6 +83,7 @@ const Modal = () => {
             ? 'bg-link-active text-white'
             : 'bg-transparent text-color-paragraphy'
         }
+        style="rounded-none"
       />
       <CustomLink
         href="experiences"
@@ -109,6 +112,7 @@ const Modal = () => {
             ? 'bg-link-active text-white'
             : 'bg-transparent text-color-paragraphy'
         }
+        style="rounded-t-none"
       />
     </nav>
   )
