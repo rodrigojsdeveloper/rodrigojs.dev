@@ -11,7 +11,7 @@ const Work = () => {
 
       <Link
         href="/contact"
-        className="flex h-11 w-full max-w-121 items-center justify-center rounded-def bg-white text-dark-grey hover:opacity-80 active:opacity-50"
+        className="flex h-11 w-full max-w-121 items-center justify-center rounded-def bg-link-active text-white hover:opacity-80 active:opacity-50"
       >
         Contact me
       </Link>
