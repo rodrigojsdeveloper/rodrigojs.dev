@@ -15,7 +15,7 @@ const About = () => {
       <div className="space-y-3 leading-7">
         <Paragraphy text="I specialize in creating and optimizing user experiences in interface development. My expertise covers the conception, design, and implementation of visual elements for intuitive interactions. My advanced skills include requirements analysis, innovative design solutions, and seamless integration of front-end components." />
 
-        <Paragraphy text="I have experience in front-end projects using technologies such as HTML, CSS, JavaScript, TypeScript, and React, which are essential for interactive and responsive applications across various devices and browsers." />
+        <Paragraphy text="I have experience in frontend projects, developing interactive and responsive applications for various devices. Additionally, I am familiar with backend development, creating efficient server-side solutions, and mobile app development for both Android and iOS platforms." />
 
         <Paragraphy text="Additionally, I possess knowledge in DevOps, including continuous integration and delivery, and infrastructure process automation. I am committed to enhancing my technical skills to lead projects that result in attractive, functional, high-performance interfaces, aiming to provide users with an effective and memorable digital experience." />
       </div>

@@ -2,7 +2,7 @@ import { IJobProps } from '@/interfaces'
 
 const jobs: IJobProps[] = [
   {
-    company: 'CoreLab',
+    company: 'Corelab',
     position: 'Full Stack Developer',
     description:
       'Broad experience as a full-stack developer, working on projects that encompass both the backend and frontend. Various languages and technologies, managing databases, and implementing DevOps and CI/CD.',

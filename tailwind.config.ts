@@ -38,7 +38,7 @@ const config: Config = {
         47: '2.938rem',
       },
       borderRadius: {
-        def: '0.5rem',
+        def: '0.4rem',
       },
       keyframes: {
         up: {
