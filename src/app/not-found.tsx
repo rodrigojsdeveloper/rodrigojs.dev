@@ -5,7 +5,10 @@ const NotFound = () => {
   return (
     <section className="flex w-full max-w-800 animate-up flex-col gap-y-6 max-lg:mt-6 max-lg:max-w-none">
       <div className="m-auto flex flex-col items-center gap-y-5">
-        <Paragraphy text="The page you are trying to access does not exist." />
+        <Paragraphy
+          text="The page you are trying to access does not exist."
+          style="text-center"
+        />
 
         <CustomLink
           href=""
