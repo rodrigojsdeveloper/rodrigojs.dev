@@ -2,6 +2,7 @@
 
 import { usePathname } from 'next/navigation'
 import CustomLink from './CustomLink'
+import Copyright from './Copyright'
 import SubTitle from './SubTitle'
 import my from '@/assets/my.jpg'
 import Image from 'next/image'
@@ -165,10 +166,7 @@ const Header = () => {
       </nav>
 
       <Line />
-
-      <small className="select-none text-xs font-medium text-color-paragraphy">
-        © 2023 - rodrigojsdeveloper
-      </small>
+      <Copyright />
     </aside>
   )
 }
