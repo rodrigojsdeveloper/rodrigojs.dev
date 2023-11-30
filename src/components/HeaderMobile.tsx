@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import my from '@/assets/my.jpg'
+import i from '@/assets/i.jpg'
 import Image from 'next/image'
 import Link from 'next/link'
 import Modal from './Modal'
@@ -18,7 +18,7 @@ const HeaderMobile = () => {
           className="flex h-11 w-11 items-center justify-center rounded-full ease-in-out"
         >
           <Image
-            src={my}
+            src={i}
             priority
             alt="Rodrigo Silva"
             className="h-10 w-10 rounded-full border border-solid border-line object-cover"

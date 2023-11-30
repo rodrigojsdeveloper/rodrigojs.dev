@@ -4,7 +4,7 @@ import { usePathname } from 'next/navigation'
 import CustomLink from './CustomLink'
 import Copyright from './Copyright'
 import SubTitle from './SubTitle'
-import my from '@/assets/my.jpg'
+import i from '@/assets/i.jpg'
 import Image from 'next/image'
 import Link from 'next/link'
 import Line from './Line'
@@ -16,7 +16,7 @@ const Header = () => {
     <aside className="sticky top-0 flex h-104 w-full max-w-230 flex-col gap-y-3 pt-8 max-lg:hidden">
       <figure className="flex h-20 w-20 items-center justify-center rounded-full duration-300 ease-in-out">
         <Image
-          src={my}
+          src={i}
           priority
           alt="Rodrigo Silva"
           className="h-20 w-20 rounded-full border border-solid border-line object-cover"
