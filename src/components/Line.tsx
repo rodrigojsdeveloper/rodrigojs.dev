@@ -1,5 +1,5 @@
 const Line = () => {
-  return <div className="block h-px w-full bg-line" />
+  return <hr className="block h-[0.9px] w-full bg-line" />
 }
 
 export default Line
