@@ -35,10 +35,13 @@ body {
 }
 
 button,
-a, li {
+a, li, img {
   transition: 0.5s;
-  cursor: pointer;
   user-select: none;
+}
+
+button, a {
+  cursor: pointer;
 }
 
 a {

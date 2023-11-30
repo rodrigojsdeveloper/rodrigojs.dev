@@ -54,12 +54,12 @@ export interface ITitle {
   title: string
 }
 
-export interface ILinkProps {
+export interface IMediaProps {
   name: string
   link: string
   img: string
 }
 
-export interface ILink {
-  link: ILinkProps
+export interface IMedia {
+  media: IMediaProps
 }

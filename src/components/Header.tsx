@@ -28,7 +28,7 @@ const Header = () => {
         <Link
           target="_blank"
           href="https://github.com/rodrigojsdeveloper"
-          className="text-sm font-medium text-color-paragraphy hover:text-color-paragraphy"
+          className="text-sm font-medium text-color-paragraphy active:opacity-50"
         >
           @rodrigojsdeveloper
         </Link>
