@@ -2,9 +2,9 @@ import instagram from '@/assets/networks/instagram.svg'
 import linkedin from '@/assets/networks/linkedin.svg'
 import github from '@/assets/networks/github.svg'
 
-import { ILinkProps } from '@/interfaces'
+import { IMediaProps } from '@/interfaces'
 
-const links: ILinkProps[] = [
+const links: IMediaProps[] = [
   {
     name: 'GitHub',
     link: 'https://github.com/rodrigojsdeveloper/',
