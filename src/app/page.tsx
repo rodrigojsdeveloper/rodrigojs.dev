@@ -39,12 +39,8 @@ const Home = () => {
       </div>
 
       <Paragraphy
-        text="As a full-stack developer, my goal is to craft digital experiences
-          that seamlessly blend elegant aesthetics with exceptional
-          functionality, both on the front-end and back-end. I'm passionate
-          about translating ideas into intuitive, visually appealing user
-          interfaces while ensuring the technical aspects of the system are
-          robust and efficient."
+        text="
+        Dedicated full-stack developer creating digital experiences that seamlessly blend elegant aesthetics and exceptional functionality on both front-end and back-end. Passionate about translating ideas into intuitive and visually appealing interfaces, ensuring robustness and efficiency in the technical aspects of the system."
       />
 
       <div className="flex flex-col gap-y-3">

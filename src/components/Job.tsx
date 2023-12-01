@@ -9,7 +9,7 @@ const Job = ({ job }: IJob) => {
       <div className="flex w-full flex-col gap-y-1.5">
         <h3>{job.position}</h3>
 
-        <Paragraphy text={job.description} />
+        <Paragraphy text={job.description} style="font-light" />
       </div>
 
       <div className="flex flex-row items-center gap-x-4">

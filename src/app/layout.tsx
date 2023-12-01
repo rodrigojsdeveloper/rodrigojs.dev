@@ -24,7 +24,7 @@ const RootLayout = ({ children }: PropsWithChildren) => {
           <div className="relative drop-shadow-[0_0_0.3rem_#0141ff3] invert" />
         </div>
 
-        <main className="m-auto flex w-full max-w-6xl flex-row gap-x-10 px-8 pb-8 pt-28 max-lg:min-h-0 max-lg:justify-center max-lg:pb-5 max-lg:pt-24 max-sm:px-5">
+        <main className="m-auto flex w-full max-w-6xl flex-row gap-x-10 px-8 pb-10 pt-28 max-lg:min-h-0 max-lg:justify-center max-lg:pb-5 max-lg:pt-24 max-sm:px-5">
           <Header />
           <HeaderMobile />
 
