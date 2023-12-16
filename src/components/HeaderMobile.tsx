@@ -4,15 +4,15 @@ import { useState } from 'react'
 import i from '@/assets/i.jpg'
 import Image from 'next/image'
 import Link from 'next/link'
-import Modal from './Modal'
+import Menu from './Menu'
 import Button from './Button'
 
 const HeaderMobile = () => {
-  const [openModa, setOpenModal] = useState<boolean>(false)
+  const [openModa, setOpenMenu] = useState<boolean>(false)
 
   return (
     <>
-      {openModa ? <Modal /> : null}
+      {openModa ? <Menu /> : null}
       <header className="fixed top-0 hidden h-20 w-full flex-row items-center justify-between bg-black px-8 pt-2 max-lg:flex max-sm:px-5">
         <Link
           href="/"
@@ -35,7 +35,7 @@ const HeaderMobile = () => {
               width="24"
               height="24"
               viewBox="0 0 24 24"
-              onClick={() => setOpenModal(true)}
+              onClick={() => setOpenMenu(true)}
               className="cursor-pointer"
             >
               <path
@@ -51,7 +51,7 @@ const HeaderMobile = () => {
               width="24"
               height="24"
               viewBox="0 0 24 24"
-              onClick={() => setOpenModal(false)}
+              onClick={() => setOpenMenu(false)}
               className="cursor-pointer"
             >
               <path
