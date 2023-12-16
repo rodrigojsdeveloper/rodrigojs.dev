@@ -11,7 +11,7 @@ import Link from 'next/link'
 
 const Home = () => {
   return (
-    <section className="flex w-full max-w-800 animate-up flex-col gap-y-6 max-lg:mt-6 max-lg:max-w-none">
+    <section className="mt-6 flex w-full max-w-none animate-up flex-col gap-y-6 lg:mt-0 lg:max-w-800">
       <div className="flex flex-col gap-y-2">
         <Title title="Full Stack Developer" />
 
@@ -51,7 +51,7 @@ const Home = () => {
 
           <Link
             href="/projects"
-            className="hover:text-primary flex items-center gap-1 text-xs font-medium  text-color-paragraphy active:opacity-50"
+            className="hover:text-primary flex items-center gap-1 text-xs font-medium text-color-paragraphy active:opacity-50"
           >
             See all{' '}
             <svg

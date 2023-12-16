@@ -26,7 +26,7 @@ const Header = () => {
   return (
     <>
       {openModal ? <Modal /> : null}
-      <aside className="sticky top-0 flex h-104 w-full max-w-230 flex-col gap-y-3 pt-8 max-lg:hidden">
+      <aside className="sticky top-0 hidden h-104 w-full max-w-230 flex-col gap-y-3 pt-8 lg:flex">
         <figure className="flex h-20 w-20 items-center justify-center rounded-full duration-300 ease-in-out">
           <Image
             src={i}

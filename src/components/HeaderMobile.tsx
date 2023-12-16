@@ -20,7 +20,7 @@ const HeaderMobile = () => {
     <>
       {openMenu ? <Menu /> : null}
       {openModal ? <Modal /> : null}
-      <header className="fixed top-0 hidden h-20 w-full flex-row items-center justify-between bg-black px-8 pt-2 max-lg:flex max-sm:px-5">
+      <header className="fixed top-0 flex h-20 w-full flex-row items-center justify-between bg-black px-5 pt-2 sm:px-8 lg:hidden">
         <Link
           href="/"
           className="flex h-11 w-11 items-center justify-center rounded-full ease-in-out"
