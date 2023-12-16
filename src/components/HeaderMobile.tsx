@@ -6,6 +6,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Menu from './Menu'
 import Button from './Button'
+import MenuHamburger from '@/svgs/MenuHamburger'
+import Close from '@/svgs/Close'
 
 const HeaderMobile = () => {
   const [openModa, setOpenMenu] = useState<boolean>(false)
@@ -30,39 +32,9 @@ const HeaderMobile = () => {
           <Button />
 
           {!openModa ? (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              onClick={() => setOpenMenu(true)}
-              className="cursor-pointer"
-            >
-              <path
-                fill="#8C8C8C"
-                fillRule="evenodd"
-                d="M19.75 12a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75Zm0-5a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75Zm0 10a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75Z"
-                clipRule="evenodd"
-              />
-            </svg>
+            <MenuHamburger setOpenMenu={setOpenMenu} />
           ) : (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              onClick={() => setOpenMenu(false)}
-              className="cursor-pointer"
-            >
-              <path
-                fill="none"
-                stroke="#8C8C8C"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="1.5"
-                d="m7 7l10 10M7 17L17 7"
-              />
-            </svg>
+            <Close setOpenMenu={setOpenMenu} />
           )}
         </div>
       </header>

@@ -1,5 +1,5 @@
+import { MouseEventHandler, SetStateAction } from 'react'
 import { StaticImageData } from 'next/image'
-import { MouseEventHandler } from 'react'
 
 export interface ICustomLink {
   Icon: React.ReactNode
@@ -62,4 +62,12 @@ export interface IMediaProps {
 
 export interface IMedia {
   media: IMediaProps
+}
+
+export interface IPathname {
+  pathname: string
+}
+
+export interface IHeaderMobile {
+  setOpenMenu: (value: SetStateAction<boolean>) => void
 }
