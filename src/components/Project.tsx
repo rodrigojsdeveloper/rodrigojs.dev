@@ -13,6 +13,7 @@ const Project = ({ project }: IProject) => {
           src={project.img}
           alt={project.title}
           className="rounded-def"
+          quality={100}
         />
 
         <div className="flex flex-col gap-y-2 px-2 py-3">
