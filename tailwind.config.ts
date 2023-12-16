@@ -17,6 +17,7 @@ const config: Config = {
         'color-paragraphy': 'rgb(140, 140, 140)',
         'link-hover': 'rgba(255, 255, 255, 0.04)',
         'link-active': 'rgba(255, 255, 255, 0.12)',
+        shadow: 'rgba(0, 0, 0, 0.5)',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -49,10 +50,15 @@ const config: Config = {
           from: { opacity: '0', transform: 'translateY(-20px)' },
           to: { opacity: '1', transform: 'translateY(0)' },
         },
+        modal: {
+          from: { opacity: '0' },
+          to: { opacity: '1' },
+        },
       },
       animation: {
         up: 'up 0.3s',
         down: 'down 0.3s',
+        modal: 'modal 0.2s',
       },
     },
   },

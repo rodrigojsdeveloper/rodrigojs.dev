@@ -15,19 +15,22 @@ import Line from './Line'
 import Link from '@/svgs/Link'
 import Code from '@/svgs/Code'
 import { IHandleState } from '@/interfaces'
+import Button from './Button'
 
 const Modal = ({ handleState }: IHandleState) => {
   return (
-    <div className="flex h-[350px] w-full max-w-488 flex-col rounded-def border border-solid border-line bg-black">
-      <div className="flex flex-row items-center justify-between p-4">
+    <div className="animate-modal flex h-[350px] w-full max-w-488 flex-col rounded-def border border-solid border-line bg-black duration-300">
+      <div className="flex flex-row items-center justify-between px-4 py-2.5">
         <h2>Menu</h2>
 
-        <Close handleState={handleState} />
+        <Button handleState={handleState}>
+          <Close />
+        </Button>
       </div>
 
       <Line />
 
-      <div className="overflow-y-auto px-4 py-1.5">
+      <div className="overflow-y-auto px-4 pb-2 pt-1.5">
         <Paragraphy text="Navegação" style="text-sm py-2" />
         <nav className="flex flex-col gap-1">
           <CustomLink href="" Icon={<Home />} text="Home" />
@@ -51,7 +54,11 @@ const Modal = ({ handleState }: IHandleState) => {
         <Paragraphy text="Sugestões" style="text-sm py-2" />
         <nav className="flex flex-col gap-1">
           <CustomLink href="link" Icon={<Link />} text="Copy link" />
-          <CustomLink href="code" Icon={<Code />} text="Source code" />
+          <CustomLink
+            href="https://github.com/rodrigojsdeveloper/rodrigojs.dev"
+            Icon={<Code />}
+            text="Source code"
+          />
         </nav>
       </div>
     </div>

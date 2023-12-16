@@ -10,6 +10,7 @@ import MenuHamburger from '@/svgs/MenuHamburger'
 import Close from '@/svgs/Close'
 import Modal from './Modal'
 import ModalBackground from './ModalBackground'
+import Links from '@/svgs/Links'
 
 const HeaderMobile = () => {
   const [openMenu, setOpenMenu] = useState<boolean>(false)
@@ -45,12 +46,18 @@ const HeaderMobile = () => {
         </Link>
 
         <div className="flex items-center gap-2">
-          <Button handleState={handleOpenModal} />
+          <Button handleState={handleOpenModal}>
+            <Links />
+          </Button>
 
           {!openMenu ? (
-            <MenuHamburger handleState={handleOpenMenu} />
+            <Button handleState={handleOpenMenu}>
+              <MenuHamburger />
+            </Button>
           ) : (
-            <Close handleState={handleOpenMenu} />
+            <Button handleState={handleOpenMenu}>
+              <Close />
+            </Button>
           )}
         </div>
       </header>

@@ -17,6 +17,7 @@ import Projects from '@/svgs/Projects'
 import { useState } from 'react'
 import ModalBackground from './ModalBackground'
 import Modal from './Modal'
+import Links from '@/svgs/Links'
 
 const Header = () => {
   const pathname = usePathname()
@@ -113,7 +114,9 @@ const Header = () => {
         <Line />
         <div className="flex items-center justify-between">
           <Copyright />
-          <Button handleState={handleOpenModal} />
+          <Button handleState={handleOpenModal}>
+            <Links />
+          </Button>
         </div>
       </aside>
     </>
