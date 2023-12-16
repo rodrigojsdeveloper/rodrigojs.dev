@@ -4,6 +4,7 @@ import Header from '@/components/Header'
 import { Kanit } from 'next/font/google'
 import type { Metadata } from 'next'
 import './globals.css'
+import Providers from '@/contexts'
 
 const kanit = Kanit({
   subsets: ['latin'],
@@ -18,18 +19,23 @@ export const metadata: Metadata = {
 
 const RootLayout = ({ children }: PropsWithChildren) => {
   return (
-    <html lang="en" className={`${kanit.variable} h-screen w-full font-kanit`}>
-      <body className="h-full overflow-x-hidden">
-        <div className="center"></div>
+    <Providers>
+      <html
+        lang="en"
+        className={`${kanit.variable} h-screen w-full font-kanit`}
+      >
+        <body className="h-full overflow-x-hidden">
+          <div className="center"></div>
 
-        <main className="m-auto flex w-full max-w-6xl flex-row gap-x-10 px-8 pb-10 pt-28 max-lg:min-h-0 max-lg:justify-center max-lg:pb-5 max-lg:pt-24 max-sm:px-5">
-          <Header />
-          <HeaderMobile />
+          <main className="m-auto flex w-full max-w-6xl flex-row gap-x-10 px-8 pb-10 pt-28 max-lg:min-h-0 max-lg:justify-center max-lg:pb-5 max-lg:pt-24 max-sm:px-5">
+            <Header />
+            <HeaderMobile />
 
-          {children}
-        </main>
-      </body>
-    </html>
+            {children}
+          </main>
+        </body>
+      </html>
+    </Providers>
   )
 }
 

@@ -14,25 +14,21 @@ import About from '@/svgs/About'
 import Contact from '@/svgs/Contact'
 import Experiences from '@/svgs/Experiences'
 import Projects from '@/svgs/Projects'
-import { useState } from 'react'
+import { useContext } from 'react'
 import ModalBackground from './ModalBackground'
 import Modal from './Modal'
 import Links from '@/svgs/Links'
+import { Context } from '@/contexts/context'
 
 const Header = () => {
+  const { openModal, handleOpenModal } = useContext(Context)
   const pathname = usePathname()
-
-  const [openModal, setOpenModal] = useState(false)
-
-  const handleOpenModal = () => {
-    setOpenModal(!openModal)
-  }
 
   return (
     <>
       {openModal ? (
         <ModalBackground>
-          <Modal handleState={handleOpenModal} />
+          <Modal />
         </ModalBackground>
       ) : null}
       <aside className="sticky top-0 flex h-104 w-full max-w-230 flex-col gap-y-3 pt-8 max-lg:hidden">

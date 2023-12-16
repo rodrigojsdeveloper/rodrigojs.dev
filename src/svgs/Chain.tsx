@@ -1,4 +1,4 @@
-const Link = () => {
+const Chain = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -14,4 +14,4 @@ const Link = () => {
   )
 }
 
-export default Link
+export default Chain

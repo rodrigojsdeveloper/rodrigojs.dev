@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useContext } from 'react'
 import i from '@/assets/i.jpg'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -11,18 +11,11 @@ import Close from '@/svgs/Close'
 import Modal from './Modal'
 import ModalBackground from './ModalBackground'
 import Links from '@/svgs/Links'
+import { Context } from '@/contexts/context'
 
 const HeaderMobile = () => {
-  const [openMenu, setOpenMenu] = useState<boolean>(false)
-  const [openModal, setOpenModal] = useState<boolean>(false)
-
-  const handleOpenMenu = () => {
-    setOpenMenu(!openMenu)
-  }
-
-  const handleOpenModal = () => {
-    setOpenModal(!openModal)
-  }
+  const { openMenu, openModal, handleOpenMenu, handleOpenModal } =
+    useContext(Context)
 
   return (
     <>

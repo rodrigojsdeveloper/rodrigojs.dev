@@ -1,4 +1,4 @@
-import { MouseEventHandler, SetStateAction } from 'react'
+import { Dispatch, MouseEventHandler, SetStateAction } from 'react'
 import { StaticImageData } from 'next/image'
 
 export interface ICustomLink {
@@ -70,4 +70,13 @@ export interface IPathname {
 
 export interface IHandleState {
   handleState: () => void
+}
+
+export interface IContextData {
+  openMenu: boolean
+  openModal: boolean
+  handleOpenMenu: () => void
+  handleOpenModal: () => void
+  setOpenMenu: Dispatch<SetStateAction<boolean>>
+  setOpenModal: Dispatch<SetStateAction<boolean>>
 }

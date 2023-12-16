@@ -12,18 +12,30 @@ import Instagram from '@/svgs/Instagram'
 import Paragraphy from './Paragraphy'
 import Close from '@/svgs/Close'
 import Line from './Line'
-import Link from '@/svgs/Link'
+import Chain from '@/svgs/Chain'
 import Code from '@/svgs/Code'
-import { IHandleState } from '@/interfaces'
 import Button from './Button'
+import { Context } from '@/contexts/context'
+import { useContext } from 'react'
+import Link from 'next/link'
+import SubTitle from './SubTitle'
 
-const Modal = ({ handleState }: IHandleState) => {
+const Modal = () => {
+  const { handleOpenModal } = useContext(Context)
+
+  const copyToClipboard = () => {
+    navigator.clipboard
+      .writeText('https://rodrigojs.dev/')
+      .then(() => alert('Texto copiado: https://rodrigojs.dev/'))
+      .catch((err) => console.error('Erro ao copiar texto: ', err))
+  }
+
   return (
-    <div className="animate-modal flex h-[350px] w-full max-w-488 flex-col rounded-def border border-solid border-line bg-black duration-300">
-      <div className="flex flex-row items-center justify-between px-4 py-2.5">
-        <h2>Menu</h2>
+    <div className="flex h-[350px] w-full max-w-488 animate-modal flex-col rounded-def border border-solid border-line bg-black duration-300">
+      <div className="flex flex-row items-center justify-between py-2.5 pl-4 pr-2">
+        <SubTitle title="Menu" />
 
-        <Button handleState={handleState}>
+        <Button handleState={handleOpenModal}>
           <Close />
         </Button>
       </div>
@@ -46,19 +58,48 @@ const Modal = ({ handleState }: IHandleState) => {
 
         <Paragraphy text="Redes sociais" style="text-sm py-2" />
         <nav className="flex flex-col gap-1">
-          <CustomLink href="github" Icon={<Github />} text="Github" />
-          <CustomLink href="linkedin" Icon={<Linkedin />} text="Linkedin" />
-          <CustomLink href="instagram" Icon={<Instagram />} text="Instagram" />
+          <Link
+            target="_blank"
+            href="https://github.com/rodrigojsdeveloper/"
+            suppressHydrationWarning={true}
+            className={`row flex h-10 w-full items-center gap-2 rounded-def px-2.5 py-2 text-sm hover:bg-link-hover active:bg-link-active`}
+          >
+            <Github /> GitHub
+          </Link>
+          <Link
+            target="_blank"
+            href="https://www.linkedin.com/in/rodrigo-de-jesus-silva/"
+            suppressHydrationWarning={true}
+            className={`row flex h-10 w-full items-center gap-2 rounded-def px-2.5 py-2 text-sm hover:bg-link-hover active:bg-link-active`}
+          >
+            <Linkedin /> LinkedIn
+          </Link>
+          <Link
+            target="_blank"
+            href="https://www.instagram.com/eurodrigojs/"
+            suppressHydrationWarning={true}
+            className={`row flex h-10 w-full items-center gap-2 rounded-def px-2.5 py-2 text-sm hover:bg-link-hover active:bg-link-active`}
+          >
+            <Instagram /> Instagram
+          </Link>
         </nav>
 
         <Paragraphy text="Sugestões" style="text-sm py-2" />
         <nav className="flex flex-col gap-1">
-          <CustomLink href="link" Icon={<Link />} text="Copy link" />
-          <CustomLink
-            href="https://github.com/rodrigojsdeveloper/rodrigojs.dev"
-            Icon={<Code />}
-            text="Source code"
-          />
+          <button
+            onClick={copyToClipboard}
+            className={`row flex h-10 w-full items-center gap-2 rounded-def px-2.5 py-2 text-sm hover:bg-link-hover active:bg-link-active`}
+          >
+            <Chain /> Copy link
+          </button>
+          <Link
+            target="_blank"
+            href="https://github.com/rodrigojsdeveloper/rodrigojs.dev/"
+            suppressHydrationWarning={true}
+            className={`row flex h-10 w-full items-center gap-2 rounded-def px-2.5 py-2 text-sm hover:bg-link-hover active:bg-link-active`}
+          >
+            <Code /> Source code
+          </Link>
         </nav>
       </div>
     </div>
