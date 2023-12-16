@@ -8,13 +8,29 @@ import Menu from './Menu'
 import Button from './Button'
 import MenuHamburger from '@/svgs/MenuHamburger'
 import Close from '@/svgs/Close'
+import Modal from './Modal'
+import ModalBackground from './ModalBackground'
 
 const HeaderMobile = () => {
-  const [openModa, setOpenMenu] = useState<boolean>(false)
+  const [openMenu, setOpenMenu] = useState<boolean>(false)
+  const [openModal, setOpenModal] = useState<boolean>(false)
+
+  const handleOpenMenu = () => {
+    setOpenMenu(!openMenu)
+  }
+
+  const handleOpenModal = () => {
+    setOpenModal(!openModal)
+  }
 
   return (
     <>
-      {openModa ? <Menu /> : null}
+      {openMenu ? <Menu /> : null}
+      {openModal ? (
+        <ModalBackground>
+          <Modal handleState={handleOpenModal} />
+        </ModalBackground>
+      ) : null}
       <header className="fixed top-0 hidden h-20 w-full flex-row items-center justify-between bg-black px-8 pt-2 max-lg:flex max-sm:px-5">
         <Link
           href="/"
@@ -29,12 +45,12 @@ const HeaderMobile = () => {
         </Link>
 
         <div className="flex items-center gap-2">
-          <Button />
+          <Button handleState={handleOpenModal} />
 
-          {!openModa ? (
-            <MenuHamburger setOpenMenu={setOpenMenu} />
+          {!openMenu ? (
+            <MenuHamburger handleState={handleOpenMenu} />
           ) : (
-            <Close setOpenMenu={setOpenMenu} />
+            <Close handleState={handleOpenMenu} />
           )}
         </div>
       </header>

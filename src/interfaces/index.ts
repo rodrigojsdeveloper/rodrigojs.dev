@@ -65,9 +65,9 @@ export interface IMedia {
 }
 
 export interface IPathname {
-  pathname: string
+  pathname?: string
 }
 
-export interface IHeaderMobile {
-  setOpenMenu: (value: SetStateAction<boolean>) => void
+export interface IHandleState {
+  handleState: () => void
 }

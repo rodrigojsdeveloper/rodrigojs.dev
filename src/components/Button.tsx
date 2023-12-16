@@ -1,6 +1,11 @@
-const Button = () => {
+import { IHandleState } from '@/interfaces'
+
+const Button = ({ handleState }: IHandleState) => {
   return (
-    <button className=" rounded-def p-1.5 hover:bg-link-hover active:bg-link-active">
+    <button
+      onClick={handleState}
+      className=" rounded-def p-1.5 hover:bg-link-hover active:bg-link-active"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"

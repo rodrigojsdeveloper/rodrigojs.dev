@@ -14,93 +14,109 @@ import About from '@/svgs/About'
 import Contact from '@/svgs/Contact'
 import Experiences from '@/svgs/Experiences'
 import Projects from '@/svgs/Projects'
+import { useState } from 'react'
+import ModalBackground from './ModalBackground'
+import Modal from './Modal'
 
 const Header = () => {
   const pathname = usePathname()
 
+  const [openModal, setOpenModal] = useState(false)
+
+  const handleOpenModal = () => {
+    setOpenModal(!openModal)
+  }
+
   return (
-    <aside className="sticky top-0 flex h-104 w-full max-w-230 flex-col gap-y-3 pt-8 max-lg:hidden">
-      <figure className="flex h-20 w-20 items-center justify-center rounded-full duration-300 ease-in-out">
-        <Image
-          src={i}
-          priority
-          alt="Rodrigo Silva"
-          className="h-20 w-20 rounded-full border border-solid border-line object-cover"
-        />
-      </figure>
+    <>
+      {openModal ? (
+        <ModalBackground>
+          <Modal handleState={handleOpenModal} />
+        </ModalBackground>
+      ) : null}
+      <aside className="sticky top-0 flex h-104 w-full max-w-230 flex-col gap-y-3 pt-8 max-lg:hidden">
+        <figure className="flex h-20 w-20 items-center justify-center rounded-full duration-300 ease-in-out">
+          <Image
+            src={i}
+            priority
+            alt="Rodrigo Silva"
+            className="h-20 w-20 rounded-full border border-solid border-line object-cover"
+          />
+        </figure>
 
-      <div className="w-full">
-        <SubTitle title="Rodrigo Silva" />
-        <Link
-          target="_blank"
-          href="https://github.com/rodrigojsdeveloper"
-          className="text-sm font-medium text-color-paragraphy active:opacity-50"
-        >
-          @rodrigojsdeveloper
-        </Link>
-      </div>
+        <div className="w-full">
+          <SubTitle title="Rodrigo Silva" />
+          <Link
+            target="_blank"
+            href="https://github.com/rodrigojsdeveloper"
+            className="text-sm font-medium text-color-paragraphy active:opacity-50"
+          >
+            @rodrigojsdeveloper
+          </Link>
+        </div>
 
-      <Line />
+        <Line />
 
-      <nav className="flex flex-col gap-1">
-        <CustomLink
-          href=""
-          Icon={<Home pathname={pathname} />}
-          text="Home"
-          activeLink={
-            pathname === '/'
-              ? 'bg-link-active text-white'
-              : 'bg-transparent text-color-paragraphy'
-          }
-        />
-        <CustomLink
-          href="about"
-          Icon={<About pathname={pathname} />}
-          text="About"
-          activeLink={
-            pathname === '/about'
-              ? 'bg-link-active text-white'
-              : 'bg-transparent text-color-paragraphy'
-          }
-        />
-        <CustomLink
-          href="projects"
-          Icon={<Projects pathname={pathname} />}
-          text="Projects"
-          activeLink={
-            pathname === '/projects'
-              ? 'bg-link-active text-white'
-              : 'bg-transparent text-color-paragraphy'
-          }
-        />
-        <CustomLink
-          href="contact"
-          Icon={<Contact pathname={pathname} />}
-          text="Contact"
-          activeLink={
-            pathname === '/contact'
-              ? 'bg-link-active text-white'
-              : 'bg-transparent text-color-paragraphy'
-          }
-        />
-        <CustomLink
-          href="experiences"
-          Icon={<Experiences pathname={pathname} />}
-          text="Experiences"
-          activeLink={
-            pathname === '/experiences'
-              ? 'bg-link-active text-white'
-              : 'bg-transparent text-color-paragraphy'
-          }
-        />
-      </nav>
+        <nav className="flex flex-col gap-1">
+          <CustomLink
+            href=""
+            Icon={<Home pathname={pathname} />}
+            text="Home"
+            activeLink={
+              pathname === '/'
+                ? 'bg-link-active text-white'
+                : 'bg-transparent text-color-paragraphy'
+            }
+          />
+          <CustomLink
+            href="about"
+            Icon={<About pathname={pathname} />}
+            text="About"
+            activeLink={
+              pathname === '/about'
+                ? 'bg-link-active text-white'
+                : 'bg-transparent text-color-paragraphy'
+            }
+          />
+          <CustomLink
+            href="projects"
+            Icon={<Projects pathname={pathname} />}
+            text="Projects"
+            activeLink={
+              pathname === '/projects'
+                ? 'bg-link-active text-white'
+                : 'bg-transparent text-color-paragraphy'
+            }
+          />
+          <CustomLink
+            href="contact"
+            Icon={<Contact pathname={pathname} />}
+            text="Contact"
+            activeLink={
+              pathname === '/contact'
+                ? 'bg-link-active text-white'
+                : 'bg-transparent text-color-paragraphy'
+            }
+          />
+          <CustomLink
+            href="experiences"
+            Icon={<Experiences pathname={pathname} />}
+            text="Experiences"
+            activeLink={
+              pathname === '/experiences'
+                ? 'bg-link-active text-white'
+                : 'bg-transparent text-color-paragraphy'
+            }
+          />
+        </nav>
 
-      <Line />
-      <div className="flex items-center justify-between">
-        <Copyright />
-        <Button />
-      </div>
-    </aside>
+        <Line />
+        <div className="flex items-center justify-between">
+          <Copyright />
+          <Button handleState={handleOpenModal} />
+        </div>
+      </aside>
+    </>
   )
 }
 
