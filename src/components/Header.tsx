@@ -8,6 +8,7 @@ import i from '@/assets/i.jpg'
 import Image from 'next/image'
 import Link from 'next/link'
 import Line from './Line'
+import Button from './Button'
 
 const Header = () => {
   const pathname = usePathname()
@@ -166,7 +167,10 @@ const Header = () => {
       </nav>
 
       <Line />
-      <Copyright />
+      <div className="flex items-center justify-between">
+        <Copyright />
+        <Button />
+      </div>
     </aside>
   )
 }
