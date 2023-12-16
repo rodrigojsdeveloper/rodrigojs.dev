@@ -63,7 +63,7 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-  border-radius: 0.5px;
+  border-radius: 0.4rem;
   background-color: #262626;
 }
 

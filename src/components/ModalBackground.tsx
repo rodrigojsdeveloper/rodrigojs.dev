@@ -7,7 +7,7 @@ const ModalBackground = ({ children }: PropsWithChildren) => {
   return (
     <div
       onClick={() => setOpenModal(false)}
-      className="fixed inset-0 z-50 flex h-screen w-full flex-row items-center justify-center bg-shadow px-5 backdrop-blur-sm"
+      className="fixed inset-0 z-50 flex h-screen w-full flex-row items-center justify-center bg-shadow px-3 backdrop-blur-sm"
     >
       {children}
     </div>

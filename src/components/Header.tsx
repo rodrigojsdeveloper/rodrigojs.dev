@@ -15,7 +15,6 @@ import Contact from '@/svgs/Contact'
 import Experiences from '@/svgs/Experiences'
 import Projects from '@/svgs/Projects'
 import { useContext } from 'react'
-import ModalBackground from './ModalBackground'
 import Modal from './Modal'
 import Links from '@/svgs/Links'
 import { Context } from '@/contexts/context'
@@ -26,11 +25,7 @@ const Header = () => {
 
   return (
     <>
-      {openModal ? (
-        <ModalBackground>
-          <Modal />
-        </ModalBackground>
-      ) : null}
+      {openModal ? <Modal /> : null}
       <aside className="sticky top-0 flex h-104 w-full max-w-230 flex-col gap-y-3 pt-8 max-lg:hidden">
         <figure className="flex h-20 w-20 items-center justify-center rounded-full duration-300 ease-in-out">
           <Image

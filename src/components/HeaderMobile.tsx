@@ -9,7 +9,6 @@ import Button from './Button'
 import MenuHamburger from '@/svgs/MenuHamburger'
 import Close from '@/svgs/Close'
 import Modal from './Modal'
-import ModalBackground from './ModalBackground'
 import Links from '@/svgs/Links'
 import { Context } from '@/contexts/context'
 
@@ -20,11 +19,7 @@ const HeaderMobile = () => {
   return (
     <>
       {openMenu ? <Menu /> : null}
-      {openModal ? (
-        <ModalBackground>
-          <Modal handleState={handleOpenModal} />
-        </ModalBackground>
-      ) : null}
+      {openModal ? <Modal /> : null}
       <header className="fixed top-0 hidden h-20 w-full flex-row items-center justify-between bg-black px-8 pt-2 max-lg:flex max-sm:px-5">
         <Link
           href="/"
