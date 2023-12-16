@@ -7,7 +7,7 @@ import Form from '@/components/Form'
 
 const Contact = () => {
   return (
-    <section className="mt-6 flex w-full max-w-none animate-up flex-col gap-y-6 lg:mt-0 lg:max-w-800">
+    <section className="z-10 mt-6 flex w-full max-w-none animate-up flex-col gap-y-6 lg:mt-0 lg:max-w-800">
       <Title title="Contact" />
       <Paragraphy text="Feel free to get in touch, and we can discuss how we can work together." />
       <div className="flex flex-col gap-y-3">

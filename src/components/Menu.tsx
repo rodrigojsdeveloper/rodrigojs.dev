@@ -11,7 +11,7 @@ const Menu = () => {
   const pathname = usePathname()
 
   return (
-    <nav className="fixed right-6 top-16 z-10 w-full max-w-140 animate-down rounded-def border border-solid border-line bg-black">
+    <nav className="fixed right-6 top-16 z-30 w-full max-w-140 animate-down rounded-def border border-solid border-line bg-black">
       <CustomLink
         href="about"
         Icon={<About pathname={pathname} />}
