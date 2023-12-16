@@ -45,7 +45,7 @@ const Modal = () => {
         <Line />
 
         <div className="overflow-y-auto px-4 pb-2 pt-1.5">
-          <Paragraphy text="Navegação" style="text-sm py-2" />
+          <Paragraphy text="Navigation" style="text-sm py-2" />
           <nav className="flex flex-col gap-1">
             <CustomLink href="" Icon={<Home />} text="Home" />
             <CustomLink href="about" Icon={<About />} text="About" />
@@ -58,7 +58,7 @@ const Modal = () => {
             />
           </nav>
 
-          <Paragraphy text="Redes sociais" style="text-sm py-2" />
+          <Paragraphy text="Social media" style="text-sm py-2" />
           <nav className="flex flex-col gap-1">
             <Link
               target="_blank"
@@ -86,7 +86,7 @@ const Modal = () => {
             </Link>
           </nav>
 
-          <Paragraphy text="Sugestões" style="text-sm py-2" />
+          <Paragraphy text="Suggestions" style="text-sm py-2" />
           <nav className="flex flex-col gap-1">
             <button
               onClick={copyToClipboard}
