@@ -6,9 +6,6 @@ import About from '@/svgs/About'
 import Projects from '@/svgs/Projects'
 import Contact from '@/svgs/Contact'
 import Experiences from '@/svgs/Experiences'
-import Github from '@/svgs/Github'
-import Linkedin from '@/svgs/Linkedin'
-import Instagram from '@/svgs/Instagram'
 import Paragraphy from './Paragraphy'
 import Close from '@/svgs/Close'
 import Line from './Line'
@@ -20,6 +17,8 @@ import { useContext } from 'react'
 import Link from 'next/link'
 import SubTitle from './SubTitle'
 import ModalBackground from './ModalBackground'
+import socialMedia from '@/utils/socialMedia'
+import Image from 'next/image'
 
 const Modal = () => {
   const { handleOpenModal } = useContext(Context)
@@ -33,7 +32,7 @@ const Modal = () => {
 
   return (
     <ModalBackground>
-      <div className="flex h-[350px] w-full max-w-488 animate-modal flex-col rounded-def border border-solid border-line bg-black duration-300">
+      <div className="flex h-[22.425rem] w-full max-w-[31.9rem] animate-modal flex-col rounded-def border border-solid border-line bg-black duration-300">
         <div className="flex flex-row items-center justify-between py-2.5 pl-4 pr-2">
           <SubTitle title="Menu" />
 
@@ -60,30 +59,22 @@ const Modal = () => {
 
           <Paragraphy text="Social media" style="text-sm py-2" />
           <nav className="flex flex-col gap-1">
-            <Link
-              target="_blank"
-              href="https://github.com/rodrigojsdeveloper/"
-              suppressHydrationWarning={true}
-              className={`row flex h-10 w-full items-center gap-2 rounded-def px-2.5 py-2 text-sm hover:bg-link-hover active:bg-link-active`}
-            >
-              <Github /> GitHub
-            </Link>
-            <Link
-              target="_blank"
-              href="https://www.linkedin.com/in/rodrigo-de-jesus-silva/"
-              suppressHydrationWarning={true}
-              className={`row flex h-10 w-full items-center gap-2 rounded-def px-2.5 py-2 text-sm hover:bg-link-hover active:bg-link-active`}
-            >
-              <Linkedin /> LinkedIn
-            </Link>
-            <Link
-              target="_blank"
-              href="https://www.instagram.com/eurodrigojs/"
-              suppressHydrationWarning={true}
-              className={`row flex h-10 w-full items-center gap-2 rounded-def px-2.5 py-2 text-sm hover:bg-link-hover active:bg-link-active`}
-            >
-              <Instagram /> Instagram
-            </Link>
+            {socialMedia.map((media, index) => (
+              <Link
+                key={index}
+                target="_blank"
+                href={media.link}
+                className="row flex h-10 w-full items-center gap-2 rounded-def px-2.5 py-2 text-sm hover:bg-link-hover active:bg-link-active"
+              >
+                <Image
+                  src={media.img}
+                  alt={`${media.name} social media`}
+                  priority
+                  className="h-[1.5rem] w-[1.5rem]"
+                />
+                {media.name}
+              </Link>
+            ))}
           </nav>
 
           <Paragraphy text="Suggestions" style="text-sm py-2" />
