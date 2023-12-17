@@ -7,6 +7,9 @@ import Line from '@/components/Line'
 import Work from '@/components/Work'
 import List from '@/components/List'
 import Link from 'next/link'
+import Image from 'next/image'
+import arrowRight from '@/assets/others/arrow-right.svg'
+import world from '@/assets/others/world.svg'
 
 const Home = () => {
   return (
@@ -15,23 +18,7 @@ const Home = () => {
         <Title title="Full Stack Developer" />
 
         <div className="flex items-center gap-x-1.5">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            viewBox="0 0 24 24"
-          >
-            <g
-              fill="none"
-              stroke="#8C8C8C"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="1.5"
-            >
-              <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0-18 0m.6-3h16.8M3.6 15h16.8" />
-              <path d="M11.5 3a17 17 0 0 0 0 18m1-18a17 17 0 0 1 0 18" />
-            </g>
-          </svg>
+          <Image src={world} alt="world" priority />
 
           <p className="text-sm text-color-paragraphy">São Paulo - Brazil</p>
         </div>
@@ -52,22 +39,7 @@ const Home = () => {
             href="/projects"
             className="hover:text-primary flex select-none items-center gap-1 text-xs font-medium text-color-paragraphy active:opacity-50"
           >
-            See all{' '}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill="none"
-                stroke="rgb(140, 140, 140)"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="1.5"
-                d="M4 12h16m0 0l-6-6m6 6l-6 6"
-              />
-            </svg>
+            See all <Image src={arrowRight} alt="arrow right" priority />
           </Link>
         </div>
       </div>
