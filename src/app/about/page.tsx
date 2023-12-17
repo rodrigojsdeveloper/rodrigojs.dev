@@ -1,7 +1,6 @@
 import GroupedItems from '@/components/GroupedItems'
 import Paragraphy from '@/components/Paragraphy'
 import SubTitle from '@/components/SubTitle'
-import Footer from '@/components/Footer'
 import Stack from '@/components/Stack'
 import Title from '@/components/Title'
 import Line from '@/components/Line'
@@ -10,7 +9,7 @@ import Link from 'next/link'
 
 const About = () => {
   return (
-    <section className="mt-6 flex w-full max-w-none animate-up flex-col gap-y-6 lg:mt-0 lg:max-w-800">
+    <>
       <Title title="About" />
       <div className="space-y-3 leading-7">
         <Paragraphy text="I specialize in creating and optimizing user experiences in interface development. My expertise covers the conception, design, and implementation of visual elements for intuitive interactions. My advanced skills include requirements analysis, innovative design solutions, and seamless integration of front-end components." />
@@ -40,9 +39,7 @@ const About = () => {
           ))}
         </GroupedItems>
       </div>
-
-      <Footer />
-    </section>
+    </>
   )
 }
 

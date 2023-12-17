@@ -2,9 +2,10 @@ import HeaderMobile from '@/components/HeaderMobile'
 import { PropsWithChildren } from 'react'
 import Header from '@/components/Header'
 import { Kanit } from 'next/font/google'
+import Footer from '@/components/Footer'
 import type { Metadata } from 'next'
-import './globals.css'
 import Providers from '@/contexts'
+import './globals.css'
 
 const kanit = Kanit({
   subsets: ['latin'],
@@ -31,7 +32,11 @@ const RootLayout = ({ children }: PropsWithChildren) => {
             <Header />
             <HeaderMobile />
 
-            {children}
+            <section className="mb-12 mt-6 flex w-full max-w-none animate-up flex-col gap-y-6 lg:mb-0 lg:mt-0 lg:max-w-800">
+              {children}
+
+              <Footer />
+            </section>
           </main>
         </body>
       </html>

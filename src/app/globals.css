@@ -123,3 +123,7 @@ a {
     height: 300px;
   }
 }
+
+.footer {
+  background: linear-gradient(to bottom,transparent 0,rgb(0,0,0) 40%);
+}

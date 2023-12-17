@@ -2,7 +2,6 @@ import { initialHomeProjects } from '@/utils/projects'
 import Paragraphy from '@/components/Paragraphy'
 import SubTitle from '@/components/SubTitle'
 import Project from '@/components/Project'
-import Footer from '@/components/Footer'
 import Title from '@/components/Title'
 import Line from '@/components/Line'
 import Work from '@/components/Work'
@@ -11,7 +10,7 @@ import Link from 'next/link'
 
 const Home = () => {
   return (
-    <section className="mt-6 flex w-full max-w-none animate-up flex-col gap-y-6 lg:mt-0 lg:max-w-800">
+    <>
       <div className="flex flex-col gap-y-2">
         <Title title="Full Stack Developer" />
 
@@ -80,10 +79,8 @@ const Home = () => {
       </List>
 
       <Line />
-
       <Work />
-      <Footer />
-    </section>
+    </>
   )
 }
 

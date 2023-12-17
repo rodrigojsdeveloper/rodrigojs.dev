@@ -3,7 +3,7 @@ import CustomLink from '@/components/CustomLink'
 
 const NotFound = () => {
   return (
-    <section className="mt-6 flex w-full max-w-none animate-up flex-col gap-y-6 lg:mt-0 lg:max-w-800">
+    <>
       <div className="m-auto flex flex-col items-center gap-y-5 pt-8 lg:pt-0">
         <Paragraphy
           text="The page you are trying to access does not exist."
@@ -29,7 +29,7 @@ const NotFound = () => {
           activeLink="max-w-121 text-color-paragraphy justify-center"
         />
       </div>
-    </section>
+    </>
   )
 }
 
