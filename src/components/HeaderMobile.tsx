@@ -6,11 +6,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Menu from './Menu'
 import Button from './Button'
-import MenuHamburger from '@/svgs/MenuHamburger'
-import Close from '@/svgs/Close'
 import Modal from './Modal'
-import Links from '@/svgs/Links'
 import { Context } from '@/contexts/context'
+import x from '@/assets/others/x.svg'
+import menu from '@/assets/others/menu.svg'
+import settings from '@/assets/others/settings.svg'
 
 const HeaderMobile = () => {
   const { openMenu, openModal, handleOpenMenu, handleOpenModal } =
@@ -35,16 +35,16 @@ const HeaderMobile = () => {
 
         <div className="flex items-center gap-1">
           <Button handleState={handleOpenModal}>
-            <Links />
+            <Image src={settings} alt="settings" priority />
           </Button>
 
           {!openMenu ? (
             <Button handleState={handleOpenMenu}>
-              <MenuHamburger />
+              <Image src={menu} alt="menu" priority />
             </Button>
           ) : (
             <Button handleState={handleOpenMenu}>
-              <Close />
+              <Image src={x} alt="close" priority />
             </Button>
           )}
         </div>

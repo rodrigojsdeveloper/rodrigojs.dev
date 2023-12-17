@@ -37,6 +37,9 @@ body {
 button,
 a, li, img {
   transition: 0.5s;
+}
+
+button, img {
   user-select: none;
 }
 

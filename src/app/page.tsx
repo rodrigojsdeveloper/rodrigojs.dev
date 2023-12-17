@@ -50,7 +50,7 @@ const Home = () => {
 
           <Link
             href="/projects"
-            className="hover:text-primary flex items-center gap-1 text-xs font-medium text-color-paragraphy active:opacity-50"
+            className="hover:text-primary flex select-none items-center gap-1 text-xs font-medium text-color-paragraphy active:opacity-50"
           >
             See all{' '}
             <svg

@@ -16,8 +16,8 @@ import Experiences from '@/svgs/Experiences'
 import Projects from '@/svgs/Projects'
 import { useContext } from 'react'
 import Modal from './Modal'
-import Links from '@/svgs/Links'
 import { Context } from '@/contexts/context'
+import settings from '@/assets/others/settings.svg'
 
 const Header = () => {
   const { openModal, handleOpenModal } = useContext(Context)
@@ -41,7 +41,7 @@ const Header = () => {
           <Link
             target="_blank"
             href="https://github.com/rodrigojsdeveloper"
-            className="text-sm font-medium text-color-paragraphy active:opacity-50"
+            className="select-none text-sm font-medium text-color-paragraphy active:opacity-50"
           >
             @rodrigojsdeveloper
           </Link>
@@ -106,7 +106,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <Copyright />
           <Button handleState={handleOpenModal}>
-            <Links />
+            <Image src={settings} alt="settings" priority />
           </Button>
         </div>
       </aside>

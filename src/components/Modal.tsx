@@ -7,10 +7,7 @@ import Projects from '@/svgs/Projects'
 import Contact from '@/svgs/Contact'
 import Experiences from '@/svgs/Experiences'
 import Paragraphy from './Paragraphy'
-import Close from '@/svgs/Close'
 import Line from './Line'
-import Chain from '@/svgs/Chain'
-import Code from '@/svgs/Code'
 import Button from './Button'
 import { Context } from '@/contexts/context'
 import { useContext } from 'react'
@@ -19,6 +16,9 @@ import SubTitle from './SubTitle'
 import ModalBackground from './ModalBackground'
 import socialMedia from '@/utils/socialMedia'
 import Image from 'next/image'
+import x from '@/assets/others/x.svg'
+import code from '@/assets/others/code.svg'
+import chain from '@/assets/others/chain.svg'
 
 const Modal = () => {
   const { handleOpenModal } = useContext(Context)
@@ -37,7 +37,7 @@ const Modal = () => {
           <SubTitle title="Menu" />
 
           <Button handleState={handleOpenModal}>
-            <Close />
+            <Image src={x} alt="close" />
           </Button>
         </div>
 
@@ -85,7 +85,7 @@ const Modal = () => {
                 key={index}
                 target="_blank"
                 href={media.link}
-                className="row flex h-10 w-full items-center gap-2 rounded-def px-2.5 py-2 text-sm text-color-paragraphy hover:bg-link-hover active:bg-link-active"
+                className="row flex h-10 w-full select-none items-center gap-2 rounded-def px-2.5 py-2 text-sm text-color-paragraphy hover:bg-link-hover active:bg-link-active"
               >
                 <Image
                   src={media.img}
@@ -104,15 +104,15 @@ const Modal = () => {
               onClick={copyToClipboard}
               className="row flex h-10 w-full items-center gap-2 rounded-def px-2.5 py-2 text-sm text-color-paragraphy hover:bg-link-hover active:bg-link-active"
             >
-              <Chain /> Copy link
+              <Image src={chain} alt="code" priority /> Copy link
             </button>
             <Link
               target="_blank"
               href="https://github.com/rodrigojsdeveloper/rodrigojs.dev/"
               suppressHydrationWarning={true}
-              className="row flex h-10 w-full items-center gap-2 rounded-def px-2.5 py-2 text-sm text-color-paragraphy hover:bg-link-hover active:bg-link-active"
+              className="row flex h-10 w-full select-none items-center gap-2 rounded-def px-2.5 py-2 text-sm text-color-paragraphy hover:bg-link-hover active:bg-link-active"
             >
-              <Code /> Source code
+              <Image src={code} alt="code" priority /> Source code
             </Link>
           </nav>
         </div>
