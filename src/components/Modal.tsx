@@ -46,14 +46,35 @@ const Modal = () => {
         <div className="overflow-y-auto px-4 pb-2 pt-1.5">
           <Paragraphy text="Navigation" style="text-sm py-2" />
           <nav className="flex flex-col gap-1">
-            <CustomLink href="" Icon={<Home />} text="Home" />
-            <CustomLink href="about" Icon={<About />} text="About" />
-            <CustomLink href="projects" Icon={<Projects />} text="Projects" />
-            <CustomLink href="contact" Icon={<Contact />} text="Contact" />
+            <CustomLink
+              href=""
+              Icon={<Home />}
+              text="Home"
+              style="text-color-paragraphy"
+            />
+            <CustomLink
+              href="about"
+              Icon={<About />}
+              text="About"
+              style="text-color-paragraphy"
+            />
+            <CustomLink
+              href="projects"
+              Icon={<Projects />}
+              text="Projects"
+              style="text-color-paragraphy"
+            />
+            <CustomLink
+              href="contact"
+              Icon={<Contact />}
+              text="Contact"
+              style="text-color-paragraphy"
+            />
             <CustomLink
               href="experiences"
               Icon={<Experiences />}
               text="Experiences"
+              style="text-color-paragraphy"
             />
           </nav>
 
@@ -64,7 +85,7 @@ const Modal = () => {
                 key={index}
                 target="_blank"
                 href={media.link}
-                className="row flex h-10 w-full items-center gap-2 rounded-def px-2.5 py-2 text-sm hover:bg-link-hover active:bg-link-active"
+                className="row flex h-10 w-full items-center gap-2 rounded-def px-2.5 py-2 text-sm text-color-paragraphy hover:bg-link-hover active:bg-link-active"
               >
                 <Image
                   src={media.img}
@@ -81,7 +102,7 @@ const Modal = () => {
           <nav className="flex flex-col gap-1">
             <button
               onClick={copyToClipboard}
-              className={`row flex h-10 w-full items-center gap-2 rounded-def px-2.5 py-2 text-sm hover:bg-link-hover active:bg-link-active`}
+              className="row flex h-10 w-full items-center gap-2 rounded-def px-2.5 py-2 text-sm text-color-paragraphy hover:bg-link-hover active:bg-link-active"
             >
               <Chain /> Copy link
             </button>
@@ -89,7 +110,7 @@ const Modal = () => {
               target="_blank"
               href="https://github.com/rodrigojsdeveloper/rodrigojs.dev/"
               suppressHydrationWarning={true}
-              className={`row flex h-10 w-full items-center gap-2 rounded-def px-2.5 py-2 text-sm hover:bg-link-hover active:bg-link-active`}
+              className="row flex h-10 w-full items-center gap-2 rounded-def px-2.5 py-2 text-sm text-color-paragraphy hover:bg-link-hover active:bg-link-active"
             >
               <Code /> Source code
             </Link>
