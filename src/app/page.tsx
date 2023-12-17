@@ -10,7 +10,7 @@ import Link from 'next/link'
 
 const Home = () => {
   return (
-    <>
+    <div className="flex animate-up flex-col gap-y-6">
       <div className="flex flex-col gap-y-2">
         <Title title="Full Stack Developer" />
 
@@ -80,7 +80,7 @@ const Home = () => {
 
       <Line />
       <Work />
-    </>
+    </div>
   )
 }
 

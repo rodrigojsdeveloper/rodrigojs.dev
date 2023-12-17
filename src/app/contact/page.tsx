@@ -6,7 +6,7 @@ import Form from '@/components/Form'
 
 const Contact = () => {
   return (
-    <>
+    <div className="flex animate-up flex-col gap-y-6">
       <Title title="Contact" />
       <Paragraphy text="Feel free to get in touch, and we can discuss how we can work together." />
       <div className="flex flex-col gap-y-3">
@@ -21,7 +21,7 @@ const Contact = () => {
         <Paragraphy text="I greatly enjoy interacting with programmers, creators, and technology students. If you're interested in my work or would like to provide feedback on this site, let's have a chat." />
       </div>
       <Form />
-    </>
+    </div>
   )
 }
 

@@ -6,7 +6,7 @@ import jobs from '@/utils/jobs'
 
 const Experiences = () => {
   return (
-    <>
+    <div className="flex animate-up flex-col gap-y-6">
       <Title title="Experiences" />
       <Paragraphy text="Discover my professional journey and the skills I've gained along the way, as well as the courses that have helped me grow and excel." />
       <List>
@@ -14,7 +14,7 @@ const Experiences = () => {
           <Job job={job} key={index} />
         ))}
       </List>
-    </>
+    </div>
   )
 }
 

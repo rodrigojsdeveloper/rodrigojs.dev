@@ -9,7 +9,7 @@ import Link from 'next/link'
 
 const About = () => {
   return (
-    <>
+    <div className="flex animate-up flex-col gap-y-6">
       <Title title="About" />
       <div className="space-y-3 leading-7">
         <Paragraphy text="I specialize in creating and optimizing user experiences in interface development. My expertise covers the conception, design, and implementation of visual elements for intuitive interactions. My advanced skills include requirements analysis, innovative design solutions, and seamless integration of front-end components." />
@@ -39,7 +39,7 @@ const About = () => {
           ))}
         </GroupedItems>
       </div>
-    </>
+    </div>
   )
 }
 
