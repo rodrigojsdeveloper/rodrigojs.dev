@@ -28,7 +28,7 @@ const RootLayout = ({ children }: PropsWithChildren) => {
         <body className="h-full overflow-x-hidden">
           <div className="center"></div>
 
-          <main className="m-auto flex w-full max-w-6xl flex-row justify-center gap-x-10 px-8 pb-8 pt-24 sm:px-8 lg:pb-10 lg:pt-28">
+          <main className="m-auto flex w-full max-w-6xl flex-row justify-center gap-x-10 px-5 pb-8 pt-24 sm:px-8 lg:pb-10 lg:pt-28">
             <Header />
             <HeaderMobile />
 

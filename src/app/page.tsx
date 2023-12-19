@@ -13,8 +13,8 @@ import world from '@/assets/others/world.svg'
 
 const Home = () => {
   return (
-    <div className="flex animate-up flex-col gap-y-6">
-      <div className="flex flex-col gap-y-2">
+    <div className="flex animate-up flex-col gap-y-4 sm:gap-y-6">
+      <div className="flex flex-col gap-y-1 sm:gap-y-2">
         <Title title="Full Stack Developer" />
 
         <div className="flex items-center gap-x-1.5">
