@@ -20,7 +20,10 @@ const Contact = () => {
       <div className="flex flex-col gap-y-1.5 sm:gap-y-3">
         <h2 className="leading-relaxed">Send me an email</h2>
 
-        <Paragraphy text="I greatly enjoy interacting with programmers, creators, and technology students. If you're interested in my work or would like to provide feedback on this site, let's have a chat." />
+        <Paragraphy
+          text="
+I enjoy interacting with programmers, creators, and technology students. Interested in my work or want to provide feedback on this site? Let's chat!"
+        />
       </div>
       <Form />
     </div>

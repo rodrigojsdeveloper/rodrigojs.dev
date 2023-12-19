@@ -12,7 +12,7 @@ const Project = ({ project }: IProject) => {
           priority
           src={project.img}
           alt={project.title}
-          className="rounded-def"
+          className="max-h-[20.753rem] rounded-def"
           quality={100}
         />
 
