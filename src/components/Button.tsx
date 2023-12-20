@@ -5,7 +5,7 @@ const Button = ({ handleState, children }: PropsWithChildren<IHandleState>) => {
   return (
     <button
       onClick={handleState}
-      className=" rounded-def p-1.5 hover:bg-link-hover active:bg-link-active"
+      className="group rounded-def p-1.5 hover:bg-link-hover active:bg-link-active"
     >
       {children}
     </button>

@@ -11,6 +11,7 @@ const Contact = ({ pathname }: IPathname) => {
       <path
         fill="none"
         stroke={pathname === '/contact' ? 'rgb(255,255,255)' : '#8C8C8C'}
+        className="duration-300 group-hover:stroke-white"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth="1.5"

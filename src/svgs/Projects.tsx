@@ -12,7 +12,7 @@ const Projects = ({ pathname }: IPathname) => {
       strokeWidth="1.5"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="lucide lucide-layout-grid"
+      className="lucide lucide-layout-grid duration-300 group-hover:stroke-white"
     >
       <rect width="7" height="7" x="3" y="3" rx="1"></rect>
       <rect width="7" height="7" x="14" y="3" rx="1"></rect>

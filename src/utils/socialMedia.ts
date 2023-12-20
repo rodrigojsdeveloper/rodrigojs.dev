@@ -1,24 +1,20 @@
-import instagram from '@/assets/networks/instagram.svg'
-import linkedin from '@/assets/networks/linkedin.svg'
-import github from '@/assets/networks/github.svg'
-
 import { IMediaProps } from '@/interfaces'
 
 const links: IMediaProps[] = [
   {
     name: 'GitHub',
     link: 'https://github.com/rodrigojsdeveloper/',
-    img: github,
+    svg: null,
   },
   {
     name: 'LinkedIn',
     link: 'https://www.linkedin.com/in/rodrigo-de-jesus-silva/',
-    img: linkedin,
+    svg: null,
   },
   {
     name: 'Instagram',
     link: 'https://www.instagram.com/eurodrigojs/',
-    img: instagram,
+    svg: null,
   },
 ]
 

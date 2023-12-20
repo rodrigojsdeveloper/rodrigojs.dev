@@ -57,7 +57,7 @@ export interface ITitle {
 export interface IMediaProps {
   name: string
   link: string
-  img: string
+  svg: JSX.Element | null
 }
 
 export interface IMedia {
