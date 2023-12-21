@@ -22,12 +22,12 @@ const RootLayout = ({ children }: PropsWithChildren) => {
   return (
     <Providers>
       <html lang="en" className={`${kanit.variable} w-full font-kanit`}>
-        <body className="m-auto flex w-full max-w-6xl flex-row justify-center gap-x-10 overflow-x-hidden px-6 pb-5 pt-20 sm:px-8 lg:pb-10 lg:pt-28">
+        <body className="m-auto flex w-full max-w-6xl flex-row justify-center gap-x-10 overflow-x-hidden px-6 pb-5 pt-24 sm:px-8 lg:pb-10 lg:pt-28">
           <div className="center"></div>
 
           <Header />
           <HeaderMobile />
-          <main className="flex w-full max-w-none flex-col gap-y-6 pt-6 lg:max-w-800 lg:pt-0">
+          <main className="flex w-full max-w-none flex-col gap-y-6 lg:max-w-800">
             {children}
             <Footer />
           </main>
