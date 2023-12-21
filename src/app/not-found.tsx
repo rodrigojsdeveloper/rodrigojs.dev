@@ -1,10 +1,10 @@
-import Paragraphy from '@/components/Paragraphy'
+import Paragraph from '@/components/Paragraph'
 import CustomLink from '@/components/CustomLink'
 
 const NotFound = () => {
   return (
     <div className="flex h-full animate-up flex-col items-center gap-y-5 pt-8 lg:h-[30rem] lg:justify-center lg:pt-0">
-      <Paragraphy
+      <Paragraph
         text="The page you are trying to access does not exist."
         style="text-center"
       />
@@ -26,7 +26,7 @@ const NotFound = () => {
           </svg>
         }
         text="Go back"
-        style="max-w-[7.563rem] text-color-paragraphy justify-center"
+        style="max-w-[7.563rem] text-color-paragraph justify-center"
       />
     </div>
   )

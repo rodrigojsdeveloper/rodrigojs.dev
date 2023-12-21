@@ -40,7 +40,7 @@ const Header = () => {
           <Link
             target="_blank"
             href="https://github.com/rodrigojsdeveloper"
-            className="select-none text-sm font-medium text-color-paragraphy active:opacity-50"
+            className="text-color-paragraph select-none text-sm font-medium active:opacity-50"
           >
             @rodrigojsdeveloper
           </Link>
@@ -56,7 +56,7 @@ const Header = () => {
             activeLink={
               pathname === '/'
                 ? 'bg-link-active text-zinc-50'
-                : 'bg-transparent text-color-paragraphy'
+                : 'bg-transparent text-color-paragraph'
             }
           />
           <CustomLink
@@ -66,7 +66,7 @@ const Header = () => {
             activeLink={
               pathname === '/about'
                 ? 'bg-link-active text-zinc-50'
-                : 'bg-transparent text-color-paragraphy'
+                : 'bg-transparent text-color-paragraph'
             }
           />
           <CustomLink
@@ -76,7 +76,7 @@ const Header = () => {
             activeLink={
               pathname === '/projects'
                 ? 'bg-link-active text-zinc-50'
-                : 'bg-transparent text-color-paragraphy'
+                : 'bg-transparent text-color-paragraph'
             }
           />
           <CustomLink
@@ -86,7 +86,7 @@ const Header = () => {
             activeLink={
               pathname === '/contact'
                 ? 'bg-link-active text-zinc-50'
-                : 'bg-transparent text-color-paragraphy'
+                : 'bg-transparent text-color-paragraph'
             }
           />
           <CustomLink
@@ -96,7 +96,7 @@ const Header = () => {
             activeLink={
               pathname === '/experiences'
                 ? 'bg-link-active text-zinc-50'
-                : 'bg-transparent text-color-paragraphy'
+                : 'bg-transparent text-color-paragraph'
             }
           />
         </nav>

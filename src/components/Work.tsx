@@ -1,4 +1,4 @@
-import Paragraphy from './Paragraphy'
+import Paragraph from './Paragraph'
 import SubTitle from './SubTitle'
 import Link from 'next/link'
 
@@ -7,7 +7,7 @@ const Work = () => {
     <div className="flex w-full flex-col gap-y-2 rounded-def border border-solid border-line bg-dark-grey p-5 sm:gap-y-4">
       <SubTitle title="Let's work together!" />
 
-      <Paragraphy text="If you're interested in my work or want to provide feedback on this site, let's have a chat." />
+      <Paragraph text="If you're interested in my work or want to provide feedback on this site, let's have a chat." />
 
       <Link
         href="/contact"

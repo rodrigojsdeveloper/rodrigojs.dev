@@ -1,5 +1,5 @@
 import { IProject } from '@/interfaces'
-import Paragraphy from './Paragraphy'
+import Paragraph from './Paragraph'
 import SubTitle from './SubTitle'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -19,7 +19,7 @@ const Project = ({ project }: IProject) => {
         <div className="flex flex-col gap-y-2 px-2 py-3">
           <SubTitle title={project.title} />
 
-          <Paragraphy
+          <Paragraph
             text={project.description}
             style="min-h-[2.938rem] leading-7 text-sm"
           />

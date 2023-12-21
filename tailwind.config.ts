@@ -14,7 +14,7 @@ const config: Config = {
       colors: {
         line: '#333333',
         'dark-grey': '#0A0A0A',
-        'color-paragraphy': '#888888',
+        'color-paragraph': '#888888',
         'link-hover': 'rgba(255, 255, 255, 0.04)',
         'link-active': 'rgba(255, 255, 255, 0.12)',
         shadow: 'rgba(0, 0, 0, 0.5)',

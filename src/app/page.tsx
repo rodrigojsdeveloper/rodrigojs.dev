@@ -1,6 +1,6 @@
 import arrowRight from '@/assets/others/arrow-right.svg'
 import { initialHomeProjects } from '@/utils/projects'
-import Paragraphy from '@/components/Paragraphy'
+import Paragraph from '@/components/Paragraph'
 import SubTitle from '@/components/SubTitle'
 import Project from '@/components/Project'
 import Title from '@/components/Title'
@@ -15,7 +15,7 @@ const Home = () => {
     <div className="flex animate-up flex-col gap-y-4 sm:gap-y-6">
       <Title title="Full Stack Developer" />
 
-      <Paragraphy
+      <Paragraph
         text="
         Dedicated full-stack developer creating digital experiences that seamlessly blend elegant aesthetics and exceptional functionality on both front-end and back-end. Passionate about translating ideas into intuitive and visually appealing interfaces, ensuring robustness and efficiency in the technical aspects of the system."
       />
@@ -28,7 +28,7 @@ const Home = () => {
 
           <Link
             href="/projects"
-            className="hover:text-primary flex select-none items-center gap-1 text-xs font-medium text-color-paragraphy active:opacity-50"
+            className="hover:text-primary text-color-paragraph flex select-none items-center gap-1 text-xs font-medium active:opacity-50"
           >
             See all <Image src={arrowRight} alt="arrow right" priority />
           </Link>

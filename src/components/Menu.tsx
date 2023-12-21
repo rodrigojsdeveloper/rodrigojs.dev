@@ -19,7 +19,7 @@ const Menu = () => {
         activeLink={
           pathname === '/about'
             ? 'bg-link-active text-zinc-50'
-            : 'bg-transparent text-color-paragraphy'
+            : 'bg-transparent text-color-paragraph'
         }
         style="rounded-b-none"
       />
@@ -30,7 +30,7 @@ const Menu = () => {
         activeLink={
           pathname === '/projects'
             ? 'bg-link-active text-zinc-50'
-            : 'bg-transparent text-color-paragraphy'
+            : 'bg-transparent text-color-paragraph'
         }
         style="rounded-none"
       />
@@ -41,7 +41,7 @@ const Menu = () => {
         activeLink={
           pathname === '/contact'
             ? 'bg-link-active text-zinc-50'
-            : 'bg-transparent text-color-paragraphy'
+            : 'bg-transparent text-color-paragraph'
         }
         style="rounded-none"
       />
@@ -52,7 +52,7 @@ const Menu = () => {
         activeLink={
           pathname === '/experiences'
             ? 'bg-link-active text-zinc-50'
-            : 'bg-transparent text-color-paragraphy'
+            : 'bg-transparent text-color-paragraph'
         }
         style="rounded-t-none"
       />

@@ -26,7 +26,7 @@ export interface IProject {
   project: IProjectProps
 }
 
-export interface IParagraphy {
+export interface IParagraph {
   text: string
   style?: string
 }

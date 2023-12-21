@@ -6,7 +6,7 @@ import About from '@/svgs/About'
 import Projects from '@/svgs/Projects'
 import Contact from '@/svgs/Contact'
 import Experiences from '@/svgs/Experiences'
-import Paragraphy from './Paragraphy'
+import Paragraph from './Paragraph'
 import Line from './Line'
 import Button from './Button'
 import { Context } from '@/contexts/context'
@@ -118,41 +118,41 @@ const Modal = () => {
         <Line />
 
         <div className="overflow-y-auto px-4 pb-2 pt-1.5">
-          <Paragraphy text="Navigation" style="text-sm py-2" />
+          <Paragraph text="Navigation" style="text-sm py-2" />
           <nav className="flex flex-col gap-1">
             <CustomLink
               href=""
               Icon={<Home />}
               text="Home"
-              style="text-color-paragraphy"
+              style="text-color-paragraph"
             />
             <CustomLink
               href="about"
               Icon={<About />}
               text="About"
-              style="text-color-paragraphy"
+              style="text-color-paragraph"
             />
             <CustomLink
               href="projects"
               Icon={<Projects />}
               text="Projects"
-              style="text-color-paragraphy"
+              style="text-color-paragraph"
             />
             <CustomLink
               href="contact"
               Icon={<Contact />}
               text="Contact"
-              style="text-color-paragraphy"
+              style="text-color-paragraph"
             />
             <CustomLink
               href="experiences"
               Icon={<Experiences />}
               text="Experiences"
-              style="text-color-paragraphy"
+              style="text-color-paragraph"
             />
           </nav>
 
-          <Paragraphy text="Social media" style="text-sm py-2" />
+          <Paragraph text="Social media" style="text-sm py-2" />
           <nav className="flex flex-col gap-1">
             {socialMedia.map((media, index) => {
               const newMedia = { ...media, svg: getSocialIcon(media.name) }
@@ -162,7 +162,7 @@ const Modal = () => {
                   key={index}
                   target="_blank"
                   href={newMedia.link}
-                  className="row group flex h-10 w-full select-none items-center gap-2 rounded-def px-2.5 py-2 text-sm text-color-paragraphy hover:bg-link-hover hover:text-zinc-50 active:bg-link-active"
+                  className="row text-color-paragraph group flex h-10 w-full select-none items-center gap-2 rounded-def px-2.5 py-2 text-sm hover:bg-link-hover hover:text-zinc-50 active:bg-link-active"
                 >
                   {newMedia.svg}
                   {newMedia.name}
@@ -171,11 +171,11 @@ const Modal = () => {
             })}
           </nav>
 
-          <Paragraphy text="Suggestions" style="text-sm py-2" />
+          <Paragraph text="Suggestions" style="text-sm py-2" />
           <nav className="flex flex-col gap-1">
             <button
               onClick={copyToClipboard}
-              className="row group flex h-10 w-full items-center gap-2 rounded-def px-2.5 py-2 text-sm text-color-paragraphy hover:bg-link-hover hover:text-zinc-50 active:bg-link-active"
+              className="row text-color-paragraph group flex h-10 w-full items-center gap-2 rounded-def px-2.5 py-2 text-sm hover:bg-link-hover hover:text-zinc-50 active:bg-link-active"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -200,7 +200,7 @@ const Modal = () => {
               target="_blank"
               href="https://github.com/rodrigojsdeveloper/rodrigojs.dev/"
               suppressHydrationWarning={true}
-              className="row group flex h-10 w-full select-none items-center gap-2 rounded-def px-2.5 py-2 text-sm text-color-paragraphy hover:bg-link-hover hover:text-zinc-50 active:bg-link-active"
+              className="row text-color-paragraph group flex h-10 w-full select-none items-center gap-2 rounded-def px-2.5 py-2 text-sm hover:bg-link-hover hover:text-zinc-50 active:bg-link-active"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
