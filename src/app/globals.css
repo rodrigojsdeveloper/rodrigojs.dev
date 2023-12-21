@@ -24,6 +24,16 @@
   --background-end-rgb: 0, 0, 0;
 }
 
+html {
+  height: -webkit-fill-available;
+}
+
+html, body {
+  min-height: 100%;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(

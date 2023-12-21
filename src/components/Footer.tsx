@@ -3,7 +3,7 @@ import Line from './Line'
 
 const Footer = () => {
   return (
-    <footer className="mt-8 flex w-full flex-col gap-y-4 lg:hidden">
+    <footer className="flex w-full flex-col gap-y-4 lg:hidden">
       <Line />
 
       <Copyright />

@@ -21,22 +21,15 @@ export const metadata: Metadata = {
 const RootLayout = ({ children }: PropsWithChildren) => {
   return (
     <Providers>
-      <html
-        lang="en"
-        className={`${kanit.variable} h-screen w-full font-kanit`}
-      >
-        <body className="h-full overflow-x-hidden">
+      <html lang="en" className={`${kanit.variable} w-full font-kanit`}>
+        <body className="m-auto flex w-full max-w-6xl flex-row justify-center gap-x-10 overflow-x-hidden px-6 pb-5 pt-20 sm:px-8 lg:pb-10 lg:pt-28">
           <div className="center"></div>
 
-          <main className="m-auto flex w-full max-w-6xl flex-row justify-center gap-x-10 px-6 pb-8 pt-20 sm:px-8 lg:pb-10 lg:pt-28">
-            <Header />
-            <HeaderMobile />
-
-            <section className="mt-6 w-full max-w-none lg:mb-0 lg:mt-0 lg:max-w-800">
-              {children}
-
-              <Footer />
-            </section>
+          <Header />
+          <HeaderMobile />
+          <main className="flex w-full max-w-none flex-col gap-y-6 pt-6 lg:max-w-800 lg:pt-0">
+            {children}
+            <Footer />
           </main>
         </body>
       </html>
