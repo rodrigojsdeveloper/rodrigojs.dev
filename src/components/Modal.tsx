@@ -162,7 +162,7 @@ const Modal = () => {
                   key={index}
                   target="_blank"
                   href={newMedia.link}
-                  className="row text-color-paragraph group flex h-10 w-full select-none items-center gap-2 rounded-def px-2.5 py-2 text-sm hover:bg-link-hover hover:text-zinc-50 active:bg-link-active"
+                  className="row group flex h-10 w-full select-none items-center gap-2 rounded-def px-2.5 py-2 text-sm text-color-paragraph hover:bg-link-hover hover:text-zinc-50 active:bg-link-active"
                 >
                   {newMedia.svg}
                   {newMedia.name}
@@ -175,7 +175,7 @@ const Modal = () => {
           <nav className="flex flex-col gap-1">
             <button
               onClick={copyToClipboard}
-              className="row text-color-paragraph group flex h-10 w-full items-center gap-2 rounded-def px-2.5 py-2 text-sm hover:bg-link-hover hover:text-zinc-50 active:bg-link-active"
+              className="row group flex h-10 w-full items-center gap-2 rounded-def px-2.5 py-2 text-sm text-color-paragraph hover:bg-link-hover hover:text-zinc-50 active:bg-link-active"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -200,7 +200,7 @@ const Modal = () => {
               target="_blank"
               href="https://github.com/rodrigojsdeveloper/rodrigojs.dev/"
               suppressHydrationWarning={true}
-              className="row text-color-paragraph group flex h-10 w-full select-none items-center gap-2 rounded-def px-2.5 py-2 text-sm hover:bg-link-hover hover:text-zinc-50 active:bg-link-active"
+              className="row group flex h-10 w-full select-none items-center gap-2 rounded-def px-2.5 py-2 text-sm text-color-paragraph hover:bg-link-hover hover:text-zinc-50 active:bg-link-active"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

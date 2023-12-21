@@ -40,7 +40,7 @@ const Header = () => {
           <Link
             target="_blank"
             href="https://github.com/rodrigojsdeveloper"
-            className="text-color-paragraph select-none text-sm font-medium active:opacity-50"
+            className="select-none text-sm font-medium text-color-paragraph active:opacity-50"
           >
             @rodrigojsdeveloper
           </Link>

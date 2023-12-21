@@ -12,7 +12,7 @@ const Textarea = ({ label, name, htmlFor, id }: InputProps) => {
         name={name}
         required={true}
         autoComplete="off"
-        className="focus:border-color-paragraph h-20 w-full resize-none rounded-def border border-solid border-line bg-transparent p-2.5 text-sm duration-300"
+        className="h-20 w-full resize-none rounded-def border border-solid border-line bg-transparent p-2.5 text-sm duration-300 focus:border-color-paragraph"
       />
     </div>
   )

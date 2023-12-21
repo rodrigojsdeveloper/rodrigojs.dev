@@ -17,7 +17,7 @@ const Job = ({ job }: IJob) => {
       <div className="flex flex-row items-center gap-x-4">
         <Image src={date} alt="date" priority />
 
-        <span className="text-color-paragraph text-sm">{job.date}</span>
+        <span className="text-sm text-color-paragraph">{job.date}</span>
       </div>
     </li>
   )

@@ -1,6 +1,6 @@
 const Copyright = () => {
   return (
-    <small className="text-color-paragraph text-center text-xs font-medium">
+    <small className="text-center text-xs font-medium text-color-paragraph">
       &copy; 2023 - rodrigojsdeveloper
     </small>
   )

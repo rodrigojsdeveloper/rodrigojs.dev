@@ -28,7 +28,7 @@ const Home = () => {
 
           <Link
             href="/projects"
-            className="hover:text-primary text-color-paragraph flex select-none items-center gap-1 text-xs font-medium active:opacity-50"
+            className="hover:text-primary flex select-none items-center gap-1 text-xs font-medium text-color-paragraph active:opacity-50"
           >
             See all <Image src={arrowRight} alt="arrow right" priority />
           </Link>

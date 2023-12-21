@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const SocialMedia = ({ media }: IMedia) => {
   return (
-    <li className="text-color-paragraph group w-full max-w-fit cursor-pointer select-none rounded-def text-sm font-medium hover:bg-line">
+    <li className="group w-full max-w-fit cursor-pointer select-none rounded-def text-sm font-medium text-color-paragraph hover:bg-line">
       <Link
         target="_blank"
         href={media.link}
