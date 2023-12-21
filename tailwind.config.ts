@@ -12,12 +12,13 @@ const config: Config = {
         kanit: ['var(--font-kanit)'],
       },
       colors: {
-        line: 'rgb(38 38 38)',
-        'dark-grey': 'rgb(23 23 23)',
-        'color-paragraphy': 'rgb(140, 140, 140)',
+        line: '#333333',
+        'dark-grey': '#0A0A0A',
+        'color-paragraphy': '#888888',
         'link-hover': 'rgba(255, 255, 255, 0.04)',
         'link-active': 'rgba(255, 255, 255, 0.12)',
         shadow: 'rgba(0, 0, 0, 0.5)',
+        'color-title': '#EDEDED',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

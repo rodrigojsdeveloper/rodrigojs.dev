@@ -15,6 +15,8 @@ import ubuntu from '@/assets/skills/ubuntu.svg'
 import react from '@/assets/skills/react.svg'
 import mysql from '@/assets/skills/mysql.svg'
 import figma from '@/assets/skills/figma.svg'
+import jest from '@/assets/skills/jest.svg'
+import sass from '@/assets/skills/sass.svg'
 import aws from '@/assets/skills/aws.svg'
 import git from '@/assets/skills/git.svg'
 
@@ -42,8 +44,8 @@ const stacks: IStack[] = [
     name: 'Tailwind CSS',
   },
   {
-    src: react,
-    name: 'React Native',
+    src: sass,
+    name: 'Sass',
   },
   {
     src: nodejs,
@@ -51,11 +53,15 @@ const stacks: IStack[] = [
   },
   {
     src: express,
-    name: 'Express',
+    name: 'Express.js',
   },
   {
     src: typeorm,
     name: 'TypeORM',
+  },
+  {
+    src: jest,
+    name: 'Jest',
   },
   {
     src: python,
@@ -76,6 +82,10 @@ const stacks: IStack[] = [
   {
     src: mongodb,
     name: 'MongoDB',
+  },
+  {
+    src: react,
+    name: 'React Native',
   },
   {
     src: docker,

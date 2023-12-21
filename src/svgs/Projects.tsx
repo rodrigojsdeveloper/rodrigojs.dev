@@ -8,11 +8,11 @@ const Projects = ({ pathname }: IPathname) => {
       height="24"
       viewBox="0 0 24 24"
       fill="none"
-      stroke={pathname === '/projects' ? 'rgb(255,255,255)' : '#8C8C8C'}
+      stroke={pathname === '/projects' ? '#FAFAFA' : '#888888'}
       strokeWidth="1.5"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="lucide lucide-layout-grid duration-300 group-hover:stroke-white"
+      className="lucide lucide-layout-grid duration-300 group-hover:stroke-zinc-50"
     >
       <rect width="7" height="7" x="3" y="3" rx="1"></rect>
       <rect width="7" height="7" x="14" y="3" rx="1"></rect>

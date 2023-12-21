@@ -76,7 +76,7 @@ a {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 0.4rem;
-  background-color: #262626;
+  background-color: #333333;
 }
 
 ::selection {

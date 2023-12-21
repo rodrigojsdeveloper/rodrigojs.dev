@@ -10,8 +10,8 @@ const Experiences = ({ pathname }: IPathname) => {
     >
       <path
         fill="none"
-        stroke={pathname === '/experiences' ? 'rgb(255,255,255)' : '#8C8C8C'}
-        className="duration-300 group-hover:stroke-white"
+        stroke={pathname === '/experiences' ? '#FAFAFA' : '#888888'}
+        className="duration-300 group-hover:stroke-zinc-50"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth="1.5"

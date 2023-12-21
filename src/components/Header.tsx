@@ -55,7 +55,7 @@ const Header = () => {
             text="Home"
             activeLink={
               pathname === '/'
-                ? 'bg-link-active text-white'
+                ? 'bg-link-active text-zinc-50'
                 : 'bg-transparent text-color-paragraphy'
             }
           />
@@ -65,7 +65,7 @@ const Header = () => {
             text="About"
             activeLink={
               pathname === '/about'
-                ? 'bg-link-active text-white'
+                ? 'bg-link-active text-zinc-50'
                 : 'bg-transparent text-color-paragraphy'
             }
           />
@@ -75,7 +75,7 @@ const Header = () => {
             text="Projects"
             activeLink={
               pathname === '/projects'
-                ? 'bg-link-active text-white'
+                ? 'bg-link-active text-zinc-50'
                 : 'bg-transparent text-color-paragraphy'
             }
           />
@@ -85,7 +85,7 @@ const Header = () => {
             text="Contact"
             activeLink={
               pathname === '/contact'
-                ? 'bg-link-active text-white'
+                ? 'bg-link-active text-zinc-50'
                 : 'bg-transparent text-color-paragraphy'
             }
           />
@@ -95,7 +95,7 @@ const Header = () => {
             text="Experiences"
             activeLink={
               pathname === '/experiences'
-                ? 'bg-link-active text-white'
+                ? 'bg-link-active text-zinc-50'
                 : 'bg-transparent text-color-paragraphy'
             }
           />
@@ -111,11 +111,11 @@ const Header = () => {
               height="21"
               viewBox="0 0 24 24"
               fill="none"
-              stroke="#8C8C8C"
+              stroke="#888888"
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="h-5 w-5 duration-300 group-hover:stroke-white"
+              className="h-5 w-5 duration-300 group-hover:stroke-zinc-50"
             >
               <path d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3"></path>
             </svg>
