@@ -27,7 +27,7 @@ const RootLayout = ({ children }: PropsWithChildren) => {
 
           <Header />
           <HeaderMobile />
-          <main className="flex w-full max-w-none flex-col gap-y-6 lg:max-w-800">
+          <main className="flex w-full max-w-none flex-col justify-between gap-y-6 lg:max-w-[50rem]">
             {children}
             <Footer />
           </main>

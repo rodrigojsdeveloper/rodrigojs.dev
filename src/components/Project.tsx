@@ -21,7 +21,7 @@ const Project = ({ project }: IProject) => {
 
           <Paragraphy
             text={project.description}
-            style="min-h-47 leading-7 text-sm"
+            style="min-h-[2.938rem] leading-7 text-sm"
           />
         </div>
       </Link>

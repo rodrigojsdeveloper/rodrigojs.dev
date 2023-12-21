@@ -24,20 +24,6 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
-      maxWidth: {
-        121: '7.563rem',
-        140: '8.75rem',
-        152: '9.5rem',
-        230: '14.375rem',
-        488: '30.5rem',
-        800: '50rem',
-      },
-      height: {
-        104: '30rem',
-      },
-      minHeight: {
-        47: '2.938rem',
-      },
       borderRadius: {
         def: '0.4rem',
       },
