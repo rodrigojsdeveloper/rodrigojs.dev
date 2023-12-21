@@ -32,7 +32,7 @@ const RootLayout = ({ children }: PropsWithChildren) => {
             <Header />
             <HeaderMobile />
 
-            <section className="mb-12 mt-6 w-full max-w-none lg:mb-0 lg:mt-0 lg:max-w-800">
+            <section className="mt-6 w-full max-w-none lg:mb-0 lg:mt-0 lg:max-w-800">
               {children}
 
               <Footer />

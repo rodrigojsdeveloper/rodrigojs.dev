@@ -1,10 +1,13 @@
 import Copyright from './Copyright'
+import Line from './Line'
 
 const Footer = () => {
   return (
-    <div className="footer pointer-events-none fixed inset-x-0 bottom-0 top-auto z-[0.063rem] flex h-[6.25rem] w-full items-end justify-center p-4 lg:hidden">
+    <footer className="mt-8 flex w-full flex-col gap-y-4 lg:hidden">
+      <Line />
+
       <Copyright />
-    </div>
+    </footer>
   )
 }
 

@@ -1,3 +1,4 @@
+import arrowRight from '@/assets/others/arrow-right.svg'
 import { initialHomeProjects } from '@/utils/projects'
 import Paragraphy from '@/components/Paragraphy'
 import SubTitle from '@/components/SubTitle'
@@ -8,21 +9,11 @@ import Work from '@/components/Work'
 import List from '@/components/List'
 import Link from 'next/link'
 import Image from 'next/image'
-import arrowRight from '@/assets/others/arrow-right.svg'
-import world from '@/assets/others/world.svg'
 
 const Home = () => {
   return (
     <div className="flex animate-up flex-col gap-y-4 sm:gap-y-6">
-      <div className="flex flex-col gap-y-1 sm:gap-y-2">
-        <Title title="Full Stack Developer" />
-
-        <div className="flex items-center gap-x-1.5">
-          <Image src={world} alt="world" priority />
-
-          <p className="text-sm text-color-paragraphy">São Paulo - Brazil</p>
-        </div>
-      </div>
+      <Title title="Full Stack Developer" />
 
       <Paragraphy
         text="
