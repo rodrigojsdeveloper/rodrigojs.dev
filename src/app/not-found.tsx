@@ -4,7 +4,7 @@ import CustomLink from '@/components/CustomLink'
 const NotFound = () => {
   return (
     <div className="flex h-full animate-up flex-col items-center gap-y-6">
-      <div className="flex flex-col items-center gap-y-5 pt-8 lg:pt-0">
+      <div className="m-auto flex flex-col items-center gap-y-5 pt-8 lg:pt-0">
         <Paragraphy
           text="The page you are trying to access does not exist."
           style="text-center"
