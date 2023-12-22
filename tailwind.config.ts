@@ -12,7 +12,7 @@ const config: Config = {
         kanit: ['var(--font-kanit)'],
       },
       colors: {
-        line: '#333333',
+        line: 'rgb(38 38 38)',
         'dark-grey': '#111111',
         'color-paragraph': '#888888',
         'link-hover': 'rgba(255, 255, 255, 0.04)',
