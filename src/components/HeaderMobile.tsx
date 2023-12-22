@@ -22,7 +22,12 @@ const HeaderMobile = () => {
           href="/"
           className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-full"
         >
-          <Image src={author} alt="Rodrigo Silva" zoomHover={true} />
+          <Image
+            src={author}
+            alt="Rodrigo Silva"
+            zoomHover={true}
+            className="rounded-full"
+          />
         </Link>
 
         <div className="flex items-center gap-1">
@@ -37,7 +42,7 @@ const HeaderMobile = () => {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="h-5 w-5 duration-300 group-hover:stroke-zinc-50"
+              className="h-4 w-4 duration-300 group-hover:stroke-zinc-50"
             >
               <path d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3"></path>
             </svg>
