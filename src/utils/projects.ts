@@ -25,42 +25,37 @@ const projects: IProjectProps[] = [
   {
     img: secretaryNaty,
     title: 'Secretary Naty',
-    description:
-      'Secretary Naty is to perform CRUD operations through the user interface.',
+    description: 'SN will perform operations through the interface.',
     link: 'https://github.com/rodrigojsdeveloper/test-secretarianaty',
   },
   {
     img: api,
     title: 'API',
-    description:
-      'This API handles the creation of properties and reservation of visits or purchase.',
+    description: 'API to create, reserve and buy properties.',
     link: 'https://github.com/rodrigojsdeveloper/api-nodejs',
   },
   {
     img: geography,
     title: 'Geography',
-    description:
-      'Geography, where users can explore and have fun with countries around the world.',
+    description: 'Geography explore and enjoy global countries.',
     link: 'https://github.com/rodrigojsdeveloper/geography',
   },
   {
     img: dtMoney,
     title: 'DT Money',
-    description:
-      'DT Money is a financial management, offering users efficiency in managing their income.',
+    description: 'DT Money efficient financial management.',
     link: 'https://github.com/rodrigojsdeveloper/dt-money',
   },
   {
     img: iweather,
     title: 'iWeather',
-    description:
-      'iWeather is a precise and intuitive weather forecast app to plan your day.',
+    description: 'iWeather intuitive and accurate weather forecast.',
     link: 'https://github.com/rodrigojsdeveloper/iweather',
   },
   {
     img: todo,
     title: 'ToDo',
-    description: 'ToDo streamlines task management with marking and deletion.',
+    description: 'ToDo simplifies with tags and deletion.',
     link: 'https://github.com/rodrigojsdeveloper/todo',
   },
 ]
@@ -75,8 +70,7 @@ const initialHomeProjects: IProjectProps[] = [
   {
     img: geography,
     title: 'Geography',
-    description:
-      'Geography, where users can explore and have fun with countries around the world.',
+    description: 'Geography explore and enjoy global countries.',
     link: 'https://github.com/rodrigojsdeveloper/geography',
   },
 ]

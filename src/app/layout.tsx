@@ -2,7 +2,6 @@ import { PropsWithChildren } from 'react'
 import HeaderMobile from '@/components/HeaderMobile'
 import Header from '@/components/Header'
 import { Kanit } from 'next/font/google'
-import Footer from '@/components/Footer'
 import type { Metadata } from 'next'
 import Providers from '@/contexts'
 import './globals.css'
@@ -27,9 +26,8 @@ const RootLayout = ({ children }: PropsWithChildren) => {
 
           <Header />
           <HeaderMobile />
-          <main className="flex w-full max-w-none flex-col justify-between gap-y-6 lg:max-w-[50rem]">
+          <main className="w-full max-w-none gap-y-6 lg:max-w-[50rem]">
             {children}
-            <Footer />
           </main>
         </body>
       </html>
