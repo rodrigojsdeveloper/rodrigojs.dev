@@ -25,9 +25,12 @@ const Header = () => {
     <>
       {openModal ? <Modal /> : null}
       <aside className="sticky top-0 hidden h-[30rem] w-full max-w-[14.375rem] flex-col gap-y-3 pt-8 lg:flex">
-        <div className="flex h-[6.25rem] w-[6.25rem] items-center justify-center overflow-hidden rounded-full">
-          <Image src={author} alt="Rodrigo Silva" zoomHover={true} />
-        </div>
+        <Image
+          src={author}
+          alt="Rodrigo Silva"
+          zoomHover={true}
+          className="h-20 w-20 rounded-full"
+        />
 
         <div className="w-full">
           <SubTitle title="Rodrigo Silva" />

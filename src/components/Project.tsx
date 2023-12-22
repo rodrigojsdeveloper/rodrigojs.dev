@@ -7,7 +7,7 @@ import Link from 'next/link'
 const Project = ({ project }: IProject) => {
   return (
     <li className="w-full rounded-def border border-solid border-line p-2 hover:border-link-hover hover:bg-link-hover">
-      <Link href={project.link} target="_blank">
+      <Link href={project.link} target="_blank" className="rounded-def">
         <Image
           src={project.img}
           alt={project.title}

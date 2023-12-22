@@ -20,13 +20,13 @@ const HeaderMobile = () => {
       <header className="fixed top-0 z-10 flex h-20 w-full flex-row items-center justify-between bg-black px-6 pt-2 sm:px-8 lg:hidden">
         <Link
           href="/"
-          className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-full"
+          className="flex items-center justify-center rounded-full"
         >
           <Image
             src={author}
             alt="Rodrigo Silva"
             zoomHover={true}
-            className="rounded-full"
+            className="h-11 w-11 rounded-full"
           />
         </Link>
 
