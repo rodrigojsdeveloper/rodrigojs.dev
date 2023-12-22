@@ -2,16 +2,15 @@ import tailwindcss from '@/assets/skills/tailwindcss.svg'
 import javascript from '@/assets/skills/javascript.svg'
 import typescript from '@/assets/skills/typescript.svg'
 import postgresql from '@/assets/skills/postgresql.svg'
+import bootstrap from '@/assets/skills/bootstrap.svg'
 import express from '@/assets/skills/express.svg'
 import swagger from '@/assets/skills/swagger.svg'
-import typeorm from '@/assets/skills/typeorm.svg'
 import mongodb from '@/assets/skills/mongodb.svg'
 import nodejs from '@/assets/skills/nodejs.svg'
 import nextjs from '@/assets/skills/nextjs.svg'
 import python from '@/assets/skills/python.svg'
 import django from '@/assets/skills/django.svg'
 import docker from '@/assets/skills/docker.svg'
-import ubuntu from '@/assets/skills/ubuntu.svg'
 import react from '@/assets/skills/react.svg'
 import mysql from '@/assets/skills/mysql.svg'
 import figma from '@/assets/skills/figma.svg'
@@ -33,7 +32,7 @@ const stacks: IStack[] = [
   },
   {
     src: react,
-    name: 'React',
+    name: 'React.js',
   },
   {
     src: nextjs,
@@ -48,6 +47,10 @@ const stacks: IStack[] = [
     name: 'Sass',
   },
   {
+    src: bootstrap,
+    name: 'Bootstrap',
+  },
+  {
     src: nodejs,
     name: 'Node.js',
   },
@@ -56,12 +59,12 @@ const stacks: IStack[] = [
     name: 'Express.js',
   },
   {
-    src: typeorm,
-    name: 'TypeORM',
-  },
-  {
     src: jest,
     name: 'Jest',
+  },
+  {
+    src: react,
+    name: 'React Native',
   },
   {
     src: python,
@@ -84,10 +87,6 @@ const stacks: IStack[] = [
     name: 'MongoDB',
   },
   {
-    src: react,
-    name: 'React Native',
-  },
-  {
     src: docker,
     name: 'Docker',
   },
@@ -106,10 +105,6 @@ const stacks: IStack[] = [
   {
     src: figma,
     name: 'Figma',
-  },
-  {
-    src: ubuntu,
-    name: 'Ubuntu',
   },
 ]
 

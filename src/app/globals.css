@@ -31,9 +31,7 @@ html {
 body {
   min-height: 100vh;
   min-height: -webkit-fill-available;
-}
 
-body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
