@@ -1,5 +1,5 @@
-import HeaderMobile from '@/components/HeaderMobile'
 import { PropsWithChildren } from 'react'
+import HeaderMobile from '@/components/HeaderMobile'
 import Header from '@/components/Header'
 import { Kanit } from 'next/font/google'
 import Footer from '@/components/Footer'

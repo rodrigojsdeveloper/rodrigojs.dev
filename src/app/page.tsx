@@ -1,4 +1,3 @@
-import arrowRight from '@/assets/others/arrow-right.svg'
 import { initialHomeProjects } from '@/utils/projects'
 import Paragraph from '@/components/Paragraph'
 import SubTitle from '@/components/SubTitle'
@@ -8,7 +7,6 @@ import Line from '@/components/Line'
 import Work from '@/components/Work'
 import List from '@/components/List'
 import Link from 'next/link'
-import Image from 'next/image'
 
 const Home = () => {
   return (
@@ -30,7 +28,22 @@ const Home = () => {
             href="/projects"
             className="hover:text-primary flex select-none items-center gap-1 text-xs font-medium text-color-paragraph active:opacity-50"
           >
-            See all <Image src={arrowRight} alt="arrow right" priority />
+            See all{' '}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="#888888"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
+                d="M4 12h16m0 0l-6-6m6 6l-6 6"
+              />
+            </svg>
           </Link>
         </div>
       </div>

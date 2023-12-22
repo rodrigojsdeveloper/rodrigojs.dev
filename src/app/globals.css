@@ -58,12 +58,6 @@ a {
   text-decoration: none;
 }
 
-.centralize-background {
-  position: fixed;
-  top: 45%;
-  left: 45%;
-}
-
 ::-webkit-scrollbar {
   width: 0.25rem;
 }

@@ -39,17 +39,6 @@ export interface InputProps {
   id: string
 }
 
-export interface IJobProps {
-  company: string
-  position: string
-  description: string
-  date: string
-}
-
-export interface IJob {
-  job: IJobProps
-}
-
 export interface ITitle {
   title: string
 }

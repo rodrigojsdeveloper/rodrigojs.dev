@@ -1,16 +1,15 @@
 'use client'
 
+import { useContext } from 'react'
 import Home from '@/svgs/Home'
 import CustomLink from './CustomLink'
 import About from '@/svgs/About'
 import Projects from '@/svgs/Projects'
 import Contact from '@/svgs/Contact'
-import Experiences from '@/svgs/Experiences'
 import Paragraph from './Paragraph'
 import Line from './Line'
 import Button from './Button'
 import { Context } from '@/contexts/context'
-import { useContext } from 'react'
 import Link from 'next/link'
 import SubTitle from './SubTitle'
 import ModalBackground from './ModalBackground'
@@ -92,7 +91,7 @@ const Modal = () => {
   return (
     <ModalBackground>
       <div className="flex h-[22.425rem] w-full max-w-[31.9rem] animate-modal flex-col rounded-def border border-solid border-line bg-black duration-300">
-        <div className="flex flex-row items-center justify-between py-2.5 pl-4 pr-2">
+        <div className="flex flex-row items-center justify-between py-2.5 pl-3 pr-2">
           <SubTitle title="Menu" />
 
           <Button handleState={handleOpenModal}>
@@ -117,7 +116,7 @@ const Modal = () => {
 
         <Line />
 
-        <div className="overflow-y-auto px-4 pb-2 pt-1.5">
+        <div className="overflow-y-auto px-3 pb-2 pt-1.5">
           <Paragraph text="Navigation" style="text-sm py-2" />
           <nav className="flex flex-col gap-1">
             <CustomLink
@@ -142,12 +141,6 @@ const Modal = () => {
               href="contact"
               Icon={<Contact />}
               text="Contact"
-              style="text-color-paragraph"
-            />
-            <CustomLink
-              href="experiences"
-              Icon={<Experiences />}
-              text="Experiences"
               style="text-color-paragraph"
             />
           </nav>

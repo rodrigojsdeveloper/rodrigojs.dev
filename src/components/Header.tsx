@@ -1,5 +1,6 @@
 'use client'
 
+import { useContext } from 'react'
 import { usePathname } from 'next/navigation'
 import CustomLink from './CustomLink'
 import Copyright from './Copyright'
@@ -12,9 +13,7 @@ import Button from './Button'
 import Home from '@/svgs/Home'
 import About from '@/svgs/About'
 import Contact from '@/svgs/Contact'
-import Experiences from '@/svgs/Experiences'
 import Projects from '@/svgs/Projects'
-import { useContext } from 'react'
 import Modal from './Modal'
 import { Context } from '@/contexts/context'
 
@@ -85,16 +84,6 @@ const Header = () => {
             text="Contact"
             activeLink={
               pathname === '/contact'
-                ? 'bg-link-active text-zinc-50'
-                : 'bg-transparent text-color-paragraph'
-            }
-          />
-          <CustomLink
-            href="experiences"
-            Icon={<Experiences pathname={pathname} />}
-            text="Experiences"
-            activeLink={
-              pathname === '/experiences'
                 ? 'bg-link-active text-zinc-50'
                 : 'bg-transparent text-color-paragraph'
             }

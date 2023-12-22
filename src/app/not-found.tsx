@@ -1,5 +1,5 @@
-import Paragraph from '@/components/Paragraph'
 import CustomLink from '@/components/CustomLink'
+import Paragraph from '@/components/Paragraph'
 
 const NotFound = () => {
   return (

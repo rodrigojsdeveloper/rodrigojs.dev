@@ -1,13 +1,16 @@
 'use client'
 
+import { useContext } from 'react'
 import { usePathname } from 'next/navigation'
 import CustomLink from './CustomLink'
-import Experiences from '@/svgs/Experiences'
 import Contact from '@/svgs/Contact'
 import Projects from '@/svgs/Projects'
 import About from '@/svgs/About'
+import { Context } from '@/contexts/context'
 
 const Menu = () => {
+  const { handleOpenMenu } = useContext(Context)
+
   const pathname = usePathname()
 
   return (
@@ -22,6 +25,7 @@ const Menu = () => {
             : 'bg-transparent text-color-paragraph'
         }
         style="rounded-b-none"
+        onClick={handleOpenMenu}
       />
       <CustomLink
         href="projects"
@@ -33,6 +37,7 @@ const Menu = () => {
             : 'bg-transparent text-color-paragraph'
         }
         style="rounded-none"
+        onClick={handleOpenMenu}
       />
       <CustomLink
         href="contact"
@@ -44,17 +49,7 @@ const Menu = () => {
             : 'bg-transparent text-color-paragraph'
         }
         style="rounded-none"
-      />
-      <CustomLink
-        href="experiences"
-        Icon={<Experiences pathname={pathname} />}
-        text="Experiences"
-        activeLink={
-          pathname === '/experiences'
-            ? 'bg-link-active text-zinc-50'
-            : 'bg-transparent text-color-paragraph'
-        }
-        style="rounded-t-none"
+        onClick={handleOpenMenu}
       />
     </nav>
   )
