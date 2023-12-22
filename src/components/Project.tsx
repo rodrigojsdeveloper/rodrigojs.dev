@@ -1,7 +1,7 @@
 import { IProject } from '@/interfaces'
 import Paragraph from './Paragraph'
 import SubTitle from './SubTitle'
-import Image from 'next/image'
+import Image from '@/components/Image'
 import Link from 'next/link'
 
 const Project = ({ project }: IProject) => {
@@ -9,11 +9,9 @@ const Project = ({ project }: IProject) => {
     <li className="w-full rounded-def border border-solid border-line p-2 hover:border-link-hover hover:bg-link-hover">
       <Link href={project.link} target="_blank">
         <Image
-          priority
           src={project.img}
           alt={project.title}
           className="max-h-[20.753rem] rounded-def"
-          quality={100}
         />
 
         <div className="flex flex-col gap-y-2 px-2 py-3">

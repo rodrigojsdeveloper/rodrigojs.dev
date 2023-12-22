@@ -5,8 +5,8 @@ import { usePathname } from 'next/navigation'
 import CustomLink from './CustomLink'
 import Copyright from './Copyright'
 import SubTitle from './SubTitle'
-import i from '@/assets/i.jpg'
-import Image from 'next/image'
+import author from '@/assets/author.jpg'
+import Image from '@/components/Image'
 import Link from 'next/link'
 import Line from './Line'
 import Button from './Button'
@@ -25,14 +25,9 @@ const Header = () => {
     <>
       {openModal ? <Modal /> : null}
       <aside className="sticky top-0 hidden h-[30rem] w-full max-w-[14.375rem] flex-col gap-y-3 pt-8 lg:flex">
-        <figure className="flex h-20 w-20 items-center justify-center rounded-full duration-300 ease-in-out">
-          <Image
-            src={i}
-            priority
-            alt="Rodrigo Silva"
-            className="h-20 w-20 rounded-full border border-solid border-line object-cover"
-          />
-        </figure>
+        <div className="flex h-[6.25rem] w-[6.25rem] items-center justify-center overflow-hidden rounded-full">
+          <Image src={author} alt="Rodrigo Silva" zoomHover={true} />
+        </div>
 
         <div className="w-full">
           <SubTitle title="Rodrigo Silva" />

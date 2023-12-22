@@ -1,8 +1,8 @@
 'use client'
 
 import { useContext } from 'react'
-import i from '@/assets/i.jpg'
-import Image from 'next/image'
+import author from '@/assets/author.jpg'
+import Image from '@/components/Image'
 import Link from 'next/link'
 import Menu from './Menu'
 import Button from './Button'
@@ -20,14 +20,9 @@ const HeaderMobile = () => {
       <header className="fixed top-0 z-10 flex h-20 w-full flex-row items-center justify-between bg-black px-6 pt-2 sm:px-8 lg:hidden">
         <Link
           href="/"
-          className="flex h-11 w-11 items-center justify-center rounded-full ease-in-out"
+          className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-full"
         >
-          <Image
-            src={i}
-            priority
-            alt="Rodrigo Silva"
-            className="h-10 w-10 rounded-full border border-solid border-line object-cover"
-          />
+          <Image src={author} alt="Rodrigo Silva" zoomHover={true} />
         </Link>
 
         <div className="flex items-center gap-1">

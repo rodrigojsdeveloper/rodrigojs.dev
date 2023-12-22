@@ -1,5 +1,5 @@
 import { Dispatch, MouseEventHandler, SetStateAction } from 'react'
-import { StaticImageData } from 'next/image'
+import NextImage, { StaticImageData } from 'next/image'
 
 export interface ICustomLink {
   Icon: React.ReactNode
@@ -68,4 +68,11 @@ export interface IContextData {
   handleOpenModal: () => void
   setOpenMenu: Dispatch<SetStateAction<boolean>>
   setOpenModal: Dispatch<SetStateAction<boolean>>
+}
+
+export interface ImageProps
+  extends React.ComponentPropsWithoutRef<typeof NextImage> {
+  zoomHover?: boolean
+  className?: string
+  lazy?: boolean
 }
