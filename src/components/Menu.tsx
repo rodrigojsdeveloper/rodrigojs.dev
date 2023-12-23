@@ -14,15 +14,15 @@ const Menu = () => {
   const pathname = usePathname()
 
   return (
-    <nav className="fixed right-6 top-16 z-20 w-full max-w-[8.75rem] animate-down rounded-def border border-solid border-line bg-black">
+    <nav className="fixed right-6 top-16 z-20 w-full max-w-[8.75rem] animate-down rounded-def border border-solid border-gray-200 bg-black">
       <CustomLink
         href="about"
         Icon={<About pathname={pathname} />}
         text="About"
         activeLink={
           pathname === '/about'
-            ? 'bg-link-active text-zinc-50'
-            : 'bg-transparent text-color-paragraph'
+            ? 'bg-active text-primary'
+            : 'bg-transparent text-gray-100'
         }
         style="rounded-b-none"
         onClick={handleOpenMenu}
@@ -33,8 +33,8 @@ const Menu = () => {
         text="Projects"
         activeLink={
           pathname === '/projects'
-            ? 'bg-link-active text-zinc-50'
-            : 'bg-transparent text-color-paragraph'
+            ? 'bg-active text-primary'
+            : 'bg-transparent text-gray-100'
         }
         style="rounded-none"
         onClick={handleOpenMenu}
@@ -45,8 +45,8 @@ const Menu = () => {
         text="Contact"
         activeLink={
           pathname === '/contact'
-            ? 'bg-link-active text-zinc-50'
-            : 'bg-transparent text-color-paragraph'
+            ? 'bg-active text-primary'
+            : 'bg-transparent text-gray-100'
         }
         style="rounded-none"
         onClick={handleOpenMenu}

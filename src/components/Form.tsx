@@ -60,7 +60,7 @@ const Form = () => {
 
       <button
         type="submit"
-        className="h-11 w-full rounded-def bg-zinc-50 text-dark-grey hover:opacity-80 active:opacity-50"
+        className="bg-primary h-11 w-full rounded-def text-gray-300 hover:opacity-80 active:opacity-50"
       >
         Send
       </button>

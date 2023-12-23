@@ -11,7 +11,7 @@ const Contact = ({ pathname }: IPathname) => {
       <path
         fill="none"
         stroke={pathname === '/contact' ? '#FAFAFA' : '#888888'}
-        className="duration-300 group-hover:stroke-zinc-50"
+        className="group-hover:stroke-primary duration-300"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth="1.5"

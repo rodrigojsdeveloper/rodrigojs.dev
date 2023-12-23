@@ -25,7 +25,7 @@ const About = () => {
         <Link
           href="/pdfs/curriculo-rodrigo.pdf"
           download
-          className="flex h-11 w-full max-w-[8.75rem] select-none items-center justify-center rounded-def border border-solid border-line p-3 text-sm font-medium text-color-paragraph hover:bg-line hover:text-zinc-50"
+          className="hover:text-primary flex h-11 w-full max-w-[8.75rem] select-none items-center justify-center rounded-def border border-solid border-gray-200 p-3 text-sm font-medium text-gray-100 hover:bg-gray-200"
         >
           CV Download
         </Link>

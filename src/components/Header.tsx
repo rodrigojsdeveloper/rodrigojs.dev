@@ -37,7 +37,7 @@ const Header = () => {
           <Link
             target="_blank"
             href="https://github.com/rodrigojsdeveloper"
-            className="select-none text-sm font-medium text-color-paragraph active:opacity-50"
+            className="select-none text-sm font-medium text-gray-100 active:opacity-50"
           >
             @rodrigojsdeveloper
           </Link>
@@ -52,8 +52,8 @@ const Header = () => {
             text="Home"
             activeLink={
               pathname === '/'
-                ? 'bg-link-active text-zinc-50'
-                : 'bg-transparent text-color-paragraph'
+                ? 'bg-active text-primary'
+                : 'bg-transparent text-gray-100'
             }
           />
           <CustomLink
@@ -62,8 +62,8 @@ const Header = () => {
             text="About"
             activeLink={
               pathname === '/about'
-                ? 'bg-link-active text-zinc-50'
-                : 'bg-transparent text-color-paragraph'
+                ? 'bg-active text-primary'
+                : 'bg-transparent text-gray-100'
             }
           />
           <CustomLink
@@ -72,8 +72,8 @@ const Header = () => {
             text="Projects"
             activeLink={
               pathname === '/projects'
-                ? 'bg-link-active text-zinc-50'
-                : 'bg-transparent text-color-paragraph'
+                ? 'bg-active text-primary'
+                : 'bg-transparent text-gray-100'
             }
           />
           <CustomLink
@@ -82,8 +82,8 @@ const Header = () => {
             text="Contact"
             activeLink={
               pathname === '/contact'
-                ? 'bg-link-active text-zinc-50'
-                : 'bg-transparent text-color-paragraph'
+                ? 'bg-active text-primary'
+                : 'bg-transparent text-gray-100'
             }
           />
         </nav>
@@ -102,7 +102,7 @@ const Header = () => {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="h-4 w-4 duration-300 group-hover:stroke-zinc-50"
+              className="group-hover:stroke-primary h-4 w-4 duration-300"
             >
               <path d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3"></path>
             </svg>

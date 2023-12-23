@@ -3,7 +3,7 @@ import { InputProps } from '@/interfaces'
 const Textarea = ({ label, name, htmlFor, id }: InputProps) => {
   return (
     <div className="flex flex-col gap-y-1.5">
-      <label className="select-none font-medium text-zinc-50" htmlFor={htmlFor}>
+      <label className="text-primary select-none font-medium" htmlFor={htmlFor}>
         {label}
       </label>
 
@@ -12,7 +12,7 @@ const Textarea = ({ label, name, htmlFor, id }: InputProps) => {
         name={name}
         required={true}
         autoComplete="off"
-        className="h-20 w-full resize-none rounded-def border border-solid border-line bg-transparent p-2.5 text-sm duration-300 focus:border-color-paragraph"
+        className="h-20 w-full resize-none rounded-def border border-solid border-gray-200 bg-transparent p-2.5 text-sm duration-300 focus:border-gray-100"
       />
     </div>
   )

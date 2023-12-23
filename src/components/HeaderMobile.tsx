@@ -42,7 +42,7 @@ const HeaderMobile = () => {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="h-4 w-4 duration-300 group-hover:stroke-zinc-50"
+              className="group-hover:stroke-primary h-4 w-4 duration-300"
             >
               <path d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3"></path>
             </svg>
@@ -59,7 +59,7 @@ const HeaderMobile = () => {
                 <path
                   fill="#888888"
                   fillRule="evenodd"
-                  className="h-5 w-5 duration-300 group-hover:fill-zinc-50"
+                  className="group-hover:fill-primary h-5 w-5 duration-300"
                   d="M19.75 12a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75Zm0-5a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75Zm0 10a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75Z"
                   clipRule="evenodd"
                 />
@@ -80,7 +80,7 @@ const HeaderMobile = () => {
                   strokeLinejoin="round"
                   strokeWidth="1.5"
                   d="m7 7l10 10M7 17L17 7"
-                  className="h-5 w-5 duration-300 group-hover:stroke-zinc-50"
+                  className="group-hover:stroke-primary h-5 w-5 duration-300"
                 />
               </svg>
             </Button>
