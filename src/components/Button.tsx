@@ -5,7 +5,7 @@ const Button = ({ handleState, children }: PropsWithChildren<IHandleState>) => {
   return (
     <button
       onClick={handleState}
-      className="group flex h-8 w-8 items-center justify-center rounded-def p-1.5 hover:bg-hover active:bg-active"
+      className="group flex size-8 items-center justify-center rounded-def p-1.5 hover:bg-hover active:bg-active"
     >
       {children}
     </button>

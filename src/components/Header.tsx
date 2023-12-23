@@ -29,7 +29,7 @@ const Header = () => {
           src={author}
           alt="Rodrigo Silva"
           zoomHover={true}
-          className="h-20 w-20 rounded-full"
+          className="size-20 rounded-full"
         />
 
         <div className="w-full">
