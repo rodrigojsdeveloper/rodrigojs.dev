@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 * {
   border: 0;
@@ -31,7 +31,7 @@ html {
 }
 
 body {
-  min-height: 100dvh;
+  min-height: 100vh;
   min-height: -webkit-fill-available;
 
   color: rgb(var(--foreground-rgb));
