@@ -25,8 +25,24 @@ const About = () => {
         <Link
           href="/pdfs/curriculo-rodrigo.pdf"
           download
-          className="hover:text-primary flex h-11 w-full max-w-[8.75rem] select-none items-center justify-center rounded-def border border-solid border-gray-200 p-3 text-sm font-medium text-gray-100 hover:bg-gray-200"
+          className="group flex h-11 w-full max-w-[9.375rem] select-none items-center justify-center gap-1.5 rounded-def border border-solid border-gray-200 p-2 text-sm font-medium text-gray-100 hover:bg-gray-200 hover:text-primary active:text-primary"
         >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="22"
+            height="22"
+            viewBox="0 0 22 22"
+            fill="none"
+          >
+            <path
+              d="M14.4375 8.25H16.1562C16.6121 8.25 17.0493 8.43108 17.3716 8.75341C17.6939 9.07574 17.875 9.51291 17.875 9.96875V18.2188C17.875 18.6746 17.6939 19.1118 17.3716 19.4341C17.0493 19.7564 16.6121 19.9375 16.1562 19.9375H5.84375C5.38791 19.9375 4.95074 19.7564 4.62841 19.4341C4.30608 19.1118 4.125 18.6746 4.125 18.2188V9.96875C4.125 9.51291 4.30608 9.07574 4.62841 8.75341C4.95074 8.43108 5.38791 8.25 5.84375 8.25H7.5625M14.4375 5.5L11 2.0625M11 2.0625L7.5625 5.5M11 2.0625V13.793"
+              stroke="#888888"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="duration-300 group-hover:stroke-primary group-active:stroke-primary"
+            />
+          </svg>{' '}
           CV Download
         </Link>
       </div>

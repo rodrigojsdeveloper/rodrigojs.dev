@@ -12,13 +12,13 @@ const Contact = () => {
         <Paragraph text="Feel free to get in touch, and we can discuss how we can work together." />
       </div>
       <div className="flex flex-col gap-y-3">
-        <h2 className="text-secondary leading-relaxed">My social networks</h2>
+        <h2 className="leading-relaxed text-secondary">My social networks</h2>
 
         <SocialNetworks />
       </div>
       <Line />
       <div className="flex flex-col gap-y-1.5 sm:gap-y-3">
-        <h2 className="text-secondary leading-relaxed">Send me an email</h2>
+        <h2 className="leading-relaxed text-secondary">Send me an email</h2>
 
         <Paragraph
           text="

@@ -3,7 +3,7 @@ import { InputProps } from '@/interfaces'
 const Textarea = ({ label, name, htmlFor, id }: InputProps) => {
   return (
     <div className="flex flex-col gap-y-1.5">
-      <label className="text-primary select-none font-medium" htmlFor={htmlFor}>
+      <label className="select-none font-medium text-primary" htmlFor={htmlFor}>
         {label}
       </label>
 

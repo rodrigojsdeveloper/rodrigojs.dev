@@ -26,9 +26,7 @@ const RootLayout = ({ children }: PropsWithChildren) => {
 
           <Header />
           <HeaderMobile />
-          <main className="w-full max-w-none lg:max-w-[50rem]">
-            {children}
-          </main>
+          <main className="w-full max-w-none lg:max-w-[50rem]">{children}</main>
         </body>
       </html>
     </Providers>
