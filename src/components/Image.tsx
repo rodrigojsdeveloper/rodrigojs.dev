@@ -7,7 +7,7 @@ import { ImageProps } from '@/interfaces'
 const Image = (props: ImageProps) => {
   const [isLoading, setIsLoading] = useState(true)
 
-  const { zoomHover, className, src, alt, lazy = true, ...rest } = props
+  const { zoomHover, className, src, alt, ...rest } = props
 
   return (
     <figure
@@ -25,8 +25,7 @@ const Image = (props: ImageProps) => {
           ${className}`}
         src={src}
         alt={alt}
-        loading={lazy ? 'lazy' : undefined}
-        priority={!lazy}
+        priority
         quality={100}
         onLoad={() => setIsLoading(false)}
         {...rest}
