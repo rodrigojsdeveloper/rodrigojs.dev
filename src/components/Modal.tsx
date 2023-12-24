@@ -92,7 +92,7 @@ const Modal = () => {
         <div className="flex flex-row items-center justify-between py-2.5 pl-3 pr-2">
           <SubTitle title="Menu" />
 
-          <Button handleState={handleOpenModal}>
+          <Button handleState={handleOpenModal} arialLabel="Close Button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"

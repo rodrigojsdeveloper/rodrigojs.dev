@@ -31,7 +31,7 @@ const HeaderMobile = () => {
         </Link>
 
         <div className="flex items-center gap-1">
-          <Button handleState={handleOpenModal}>
+          <Button handleState={handleOpenModal} arialLabel="Settings Button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="21"
@@ -76,7 +76,7 @@ const HeaderMobile = () => {
           </Button>
 
           {!openMenu ? (
-            <Button handleState={handleOpenMenu}>
+            <Button handleState={handleOpenMenu} arialLabel="Menu Button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -92,7 +92,7 @@ const HeaderMobile = () => {
               </svg>
             </Button>
           ) : (
-            <Button handleState={handleOpenMenu}>
+            <Button handleState={handleOpenMenu} arialLabel="Close Button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"

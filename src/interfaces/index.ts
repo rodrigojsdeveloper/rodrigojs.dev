@@ -59,6 +59,7 @@ export interface IPathname {
 
 export interface IHandleState {
   handleState: () => void
+  arialLabel: string
 }
 
 export interface IContextData {

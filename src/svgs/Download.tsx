@@ -29,7 +29,7 @@ const Download = ({ height, width }: ISvg) => {
             <g opacity="1" transform="matrix(1,0,0,1,2,-17)">
               <path
                 fill="rgb(18,19,49)"
-                fill-opacity="1"
+                fillOpacity="1"
                 d=" M237,-177 C237,-177 237,177 237,177 C237,177 -237,177 -237,177 C-237,177 -237,-177 -237,-177 C-237,-177 237,-177 237,-177z"
               ></path>
               <path
@@ -49,9 +49,9 @@ const Download = ({ height, width }: ISvg) => {
           <use xlinkHref="#__lottie_element_406"></use>
         </mask>
       </defs>
-      <g clip-path="url(#__lottie_element_380)">
+      <g clipPath="url(#__lottie_element_380)">
         <g
-          clip-path="url(#__lottie_element_400)"
+          clipPath="url(#__lottie_element_400)"
           transform="matrix(1,0,0,1,0,0)"
           opacity="1"
         >
