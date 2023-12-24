@@ -6,7 +6,6 @@ import Title from '@/components/Title'
 import Line from '@/components/Line'
 import stacks from '@/utils/stacks'
 import Link from 'next/link'
-import Image from 'next/image'
 import Download from '@/svgs/Download'
 
 const About = () => {
@@ -25,11 +24,11 @@ const About = () => {
 
       <div className="flex w-full items-center gap-2">
         <Link
-          href="/pdfs/curriculo-rodrigo.pdf"
-          download
+          target="_blank"
+          href="https://rodrigojsdeveloper.github.io/cv"
           className="group flex h-11 w-full max-w-[9.375rem] select-none items-center justify-center gap-2.5 rounded-def border border-solid border-gray-200 p-2 text-sm font-medium text-gray-100 hover:bg-gray-200 hover:text-primary active:text-primary"
         >
-          <Download /> CV Download
+          <Download height="20" width="20" /> CV Download
         </Link>
       </div>
       <Line />

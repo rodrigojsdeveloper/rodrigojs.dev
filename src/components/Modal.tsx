@@ -14,6 +14,7 @@ import Link from 'next/link'
 import SubTitle from './SubTitle'
 import ModalBackground from './ModalBackground'
 import socialMedia from '@/utils/socialMedia'
+import Download from '@/svgs/Download'
 
 const Modal = () => {
   const { handleOpenModal } = useContext(Context)
@@ -205,6 +206,14 @@ const Modal = () => {
                 />
               </svg>{' '}
               Source code
+            </Link>
+            <Link
+              target="_blank"
+              href="https://rodrigojsdeveloper.github.io/cv"
+              suppressHydrationWarning={true}
+              className="row group flex h-10 w-full select-none items-center gap-2 rounded-def px-2.5 py-2 text-sm text-gray-100 hover:bg-hover hover:text-primary active:bg-active active:text-primary"
+            >
+              <Download height="24" width="24" /> CV Download
             </Link>
           </nav>
         </div>

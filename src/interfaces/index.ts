@@ -76,3 +76,8 @@ export interface ImageProps
   className?: string
   lazy?: boolean
 }
+
+export interface ISvg {
+  height: string
+  width: string
+}
