@@ -1,4 +1,4 @@
-import secretaryNaty from '@/assets/secretary-naty.png'
+import devFinder from '@/assets/devfinder.png'
 import motorsShop from '@/assets/motors-shop.png'
 import geography from '@/assets/geography.png'
 import nuKenzie from '@/assets/nu-kenzie.png'
@@ -23,10 +23,10 @@ const projects: IProjectProps[] = [
     link: 'https://github.com/rodrigojsdeveloper/refactoring-nukenzie',
   },
   {
-    img: secretaryNaty,
-    title: 'Secretary Naty',
-    description: 'SN will perform operations through the interface.',
-    link: 'https://github.com/rodrigojsdeveloper/test-secretarianaty',
+    img: devFinder,
+    title: 'Dev Finder',
+    description: 'Dev Finder simplifies searching GitHub.',
+    link: 'https://github.com/rodrigojsdeveloper/devfinder',
   },
   {
     img: api,

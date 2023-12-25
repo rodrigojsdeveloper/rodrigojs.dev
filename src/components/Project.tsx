@@ -12,8 +12,6 @@ const Project = ({ project }: IProject) => {
           src={project.img}
           alt={project.title}
           className="max-h-[20.753rem] rounded-def"
-          width={573.6}
-          height={322.65}
         />
 
         <div className="flex flex-col gap-y-2 px-2 py-3">

@@ -48,7 +48,7 @@ const Menu = () => {
             ? 'bg-active text-primary'
             : 'bg-transparent text-gray-100'
         }
-        style="rounded-none"
+        style="rounded-t-none"
         onClick={handleOpenMenu}
       />
     </nav>
