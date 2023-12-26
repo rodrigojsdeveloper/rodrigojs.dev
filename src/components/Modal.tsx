@@ -88,7 +88,7 @@ const Modal = () => {
 
   return (
     <ModalBackground>
-      <div className="flex h-[22.425rem] w-full max-w-[31.9rem] animate-modal flex-col rounded-def border border-solid border-gray-200 bg-black duration-300">
+      <div className="flex h-full max-h-[22.425rem] w-full max-w-[31.9rem] animate-modal flex-col rounded-def border border-solid border-gray-200 bg-black duration-300">
         <div className="flex flex-row items-center justify-between py-2.5 pl-3 pr-2">
           <SubTitle title="Menu" />
 
@@ -119,24 +119,28 @@ const Modal = () => {
               Icon={<Home />}
               text="Home"
               style="text-gray-100"
+              onClick={handleOpenModal}
             />
             <CustomLink
               href="about"
               Icon={<About />}
               text="About"
               style="text-gray-100"
+              onClick={handleOpenModal}
             />
             <CustomLink
               href="projects"
               Icon={<Projects />}
               text="Projects"
               style="text-gray-100"
+              onClick={handleOpenModal}
             />
             <CustomLink
               href="contact"
               Icon={<Contact />}
               text="Contact"
               style="text-gray-100"
+              onClick={handleOpenModal}
             />
           </nav>
 
@@ -150,6 +154,7 @@ const Modal = () => {
                   key={index}
                   target="_blank"
                   href={newMedia.link}
+                  onClick={handleOpenModal}
                   className="row group flex h-10 w-full select-none items-center gap-2 rounded-def px-2.5 py-2 text-sm text-gray-100 hover:bg-hover hover:text-primary active:bg-active active:text-primary"
                 >
                   {newMedia.svg}
@@ -162,7 +167,10 @@ const Modal = () => {
           <Paragraph text="Suggestions" style="text-sm py-2" />
           <nav className="flex flex-col gap-1">
             <button
-              onClick={copyToClipboard}
+              onClick={() => {
+                copyToClipboard()
+                handleOpenModal()
+              }}
               className="row group flex h-10 w-full items-center gap-2 rounded-def px-2.5 py-2 text-sm text-gray-100 hover:bg-hover hover:text-primary active:bg-active active:text-primary"
             >
               <svg
@@ -187,6 +195,7 @@ const Modal = () => {
               target="_blank"
               href="https://github.com/rodrigojsdeveloper/rodrigojs.dev/"
               suppressHydrationWarning={true}
+              onClick={handleOpenModal}
               className="row group flex h-10 w-full select-none items-center gap-2 rounded-def px-2.5 py-2 text-sm text-gray-100 hover:bg-hover hover:text-primary active:bg-active active:text-primary"
             >
               <svg
@@ -211,6 +220,7 @@ const Modal = () => {
               target="_blank"
               href="https://rodrigojsdeveloper.github.io/cv"
               suppressHydrationWarning={true}
+              onClick={handleOpenModal}
               className="row group flex h-10 w-full select-none items-center gap-2 rounded-def px-2.5 py-2 text-sm text-gray-100 hover:bg-hover hover:text-primary active:bg-active active:text-primary"
             >
               <Download height="24" width="24" /> CV Download
