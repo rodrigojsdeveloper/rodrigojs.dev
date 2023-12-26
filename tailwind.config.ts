@@ -27,7 +27,7 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       borderRadius: {
-        def: '0.4rem',
+        def: '0.5rem',
       },
       keyframes: {
         up: {
