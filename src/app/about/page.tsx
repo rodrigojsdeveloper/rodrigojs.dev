@@ -12,13 +12,13 @@ const About = () => {
   return (
     <div className="flex animate-up flex-col gap-y-4 sm:gap-y-6">
       <div className="flex flex-col gap-y-3 sm:gap-y-6">
-        <Title title="About" />
+        <Title title="Sobre" />
         <div className="space-y-3 leading-7">
-          <Paragraph text="I specialize in creating and optimizing user experiences in interface development. My expertise covers the conception, design, and implementation of visual elements for intuitive interactions. My advanced skills include requirements analysis, innovative design solutions, and seamless integration of front-end components." />
+          <Paragraph text="Sou especialista em criar e otimizar experiências de usuário no desenvolvimento de interfaces. Minha experiência abrange a concepção, design e implementação de elementos visuais para interações intuitivas. Minhas habilidades incluem análise de requisitos, soluções de design inovadoras e integração perfeita de componentes." />
 
-          <Paragraph text="I have experience in frontend projects, developing interactive and responsive applications for various devices. Additionally, I am familiar with backend development, creating efficient server-side solutions, and mobile app development for both Android and iOS platforms." />
+          <Paragraph text="Tenho experiência em projetos vários front-end, desenvolvendo aplicações interativas e responsivas para diversos dispositivos. Além disso, estou familiarizado com desenvolvimento back-end, criação de soluções eficientes no lado do servidor e desenvolvimento de aplicativos móveis para plataformas Android e iOS." />
 
-          <Paragraph text="Additionally, I possess knowledge in DevOps, including continuous integration and delivery, and infrastructure process automation. I am committed to enhancing my technical skills to lead projects that result in attractive, functional, high-performance interfaces, aiming to provide users with an effective and memorable digital experience." />
+          <Paragraph text="Possuo conhecimento em DevOps, incluindo integração e entrega contínua e automação de processos de infraestrutura. Quero aprimorar minhas habilidades técnicas para liderar projetos que resultem em interfaces atrativas, funcionais e de alto desempenho." />
         </div>
       </div>
 
@@ -34,8 +34,8 @@ const About = () => {
       <Line />
       <div className="flex flex-col gap-y-3">
         <div className="flex flex-col gap-y-1.5 sm:gap-y-3">
-          <SubTitle title="Skills" />
-          <Paragraph text="My technical knowledge." />
+          <SubTitle title="Habilidades" />
+          <Paragraph text="Meus conhecimentos técnicos:" />
         </div>
 
         <GroupedItems>

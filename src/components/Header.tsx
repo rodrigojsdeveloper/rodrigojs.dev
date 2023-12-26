@@ -49,7 +49,7 @@ const Header = () => {
           <CustomLink
             href=""
             Icon={<Home pathname={pathname} />}
-            text="Home"
+            text="Início"
             activeLink={
               pathname === '/'
                 ? 'bg-active text-primary'
@@ -59,7 +59,7 @@ const Header = () => {
           <CustomLink
             href="about"
             Icon={<About pathname={pathname} />}
-            text="About"
+            text="Sobre"
             activeLink={
               pathname === '/about'
                 ? 'bg-active text-primary'
@@ -69,7 +69,7 @@ const Header = () => {
           <CustomLink
             href="projects"
             Icon={<Projects pathname={pathname} />}
-            text="Projects"
+            text="Projetos"
             activeLink={
               pathname === '/projects'
                 ? 'bg-active text-primary'
@@ -79,7 +79,7 @@ const Header = () => {
           <CustomLink
             href="contact"
             Icon={<Contact pathname={pathname} />}
-            text="Contact"
+            text="Contato"
             activeLink={
               pathname === '/contact'
                 ? 'bg-active text-primary'

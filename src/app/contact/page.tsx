@@ -8,21 +8,21 @@ const Contact = () => {
   return (
     <div className="flex animate-up flex-col gap-y-4 sm:gap-y-6">
       <div className="flex flex-col gap-y-3 sm:gap-y-6">
-        <Title title="Contact" />
-        <Paragraph text="Feel free to get in touch, and we can discuss how we can work together." />
+        <Title title="Contato" />
+        <Paragraph text="Sinta-se à vontade para entrar em contato e discutiremos como podemos trabalhar juntos." />
       </div>
       <div className="flex flex-col gap-y-3">
-        <h2 className="leading-relaxed text-secondary">My social networks</h2>
+        <h2 className="leading-relaxed text-secondary">Minhas redes sociais</h2>
 
         <SocialNetworks />
       </div>
       <Line />
       <div className="flex flex-col gap-y-1.5 sm:gap-y-3">
-        <h2 className="leading-relaxed text-secondary">Send me an email</h2>
+        <h2 className="leading-relaxed text-secondary">Mande-me um email</h2>
 
         <Paragraph
           text="
-I enjoy interacting with programmers, creators, and technology students. Interested in my work or want to provide feedback on this site? Let's chat!"
+          Tenho prazer em interagir com programadores, criadores e estudantes de tecnologia. Se você estiver interessado no meu trabalho ou deseja fornecer feedback sobre este site? Vamos conversar!"
         />
       </div>
       <Form />

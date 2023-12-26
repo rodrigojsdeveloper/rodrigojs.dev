@@ -1,4 +1,9 @@
-import { Dispatch, MouseEventHandler, SetStateAction } from 'react'
+import {
+  Dispatch,
+  SetStateAction,
+  MouseEventHandler,
+  HTMLAttributeAnchorTarget,
+} from 'react'
 import NextImage, { StaticImageData } from 'next/image'
 
 export interface ICustomLink {
@@ -8,6 +13,8 @@ export interface ICustomLink {
   activeLink?: string
   onClick?: MouseEventHandler<HTMLElement>
   style?: string
+  externalLink?: boolean
+  target?: HTMLAttributeAnchorTarget
 }
 
 export interface IStack {

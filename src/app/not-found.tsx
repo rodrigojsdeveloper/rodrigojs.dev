@@ -5,7 +5,7 @@ const NotFound = () => {
   return (
     <div className="flex h-full animate-up flex-col items-center gap-y-5 pt-8 lg:h-[30rem] lg:justify-center lg:pt-0">
       <Paragraph
-        text="The page you are trying to access does not exist."
+        text="A página que você está tentando acessar não existe."
         style="text-center"
       />
 
@@ -26,7 +26,7 @@ const NotFound = () => {
             />
           </svg>
         }
-        text="Go back"
+        text="Voltar"
         style="max-w-[7.563rem] text-gray-100 justify-center"
       />
     </div>

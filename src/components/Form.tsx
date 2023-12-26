@@ -34,7 +34,7 @@ const Form = () => {
       className="flex w-full max-w-[30.5rem] flex-col gap-y-4"
     >
       <div className="flex flex-row items-center justify-between gap-2">
-        <Input label="Name" type="text" name="name" htmlFor="name" id="name" />
+        <Input label="Nome" type="text" name="name" htmlFor="name" id="name" />
         <Input
           label="Email"
           type="email"
@@ -44,14 +44,14 @@ const Form = () => {
         />
       </div>
       <Input
-        label="Subject"
+        label="Assunto"
         type="text"
         name="subject"
         htmlFor="subject"
         id="subject"
       />
       <Textarea
-        label="Message"
+        label="Mensagem"
         type="text"
         name="message"
         htmlFor="message"
@@ -62,7 +62,7 @@ const Form = () => {
         type="submit"
         className="h-11 w-full rounded-def bg-primary text-gray-300 hover:opacity-80 active:opacity-50"
       >
-        Send
+        Enviar
       </button>
     </form>
   )

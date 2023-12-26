@@ -8,71 +8,68 @@ import todo from '@/assets/todo.png'
 import api from '@/assets/api.png'
 
 import { IProjectProps } from '@/interfaces'
+import { StaticImageData } from 'next/image'
+
+const createProject = (
+  img: StaticImageData,
+  title: string,
+  description: string,
+  link: string,
+): IProjectProps => {
+  return { img, title, description, link }
+}
 
 const projects: IProjectProps[] = [
-  {
-    img: motorsShop,
-    title: 'Motors Shop',
-    description: 'Motors Shop is a car sales website project.',
-    link: 'https://github.com/rodrigojsdeveloper/motors-shop',
-  },
-  {
-    img: nuKenzie,
-    title: 'Nu Kenzie',
-    description: 'Nu Kenzie is a cost control platform.',
-    link: 'https://github.com/rodrigojsdeveloper/refactoring-nukenzie',
-  },
-  {
-    img: devFinder,
-    title: 'Dev Finder',
-    description: 'Dev Finder simplifies searching GitHub.',
-    link: 'https://github.com/rodrigojsdeveloper/devfinder',
-  },
-  {
-    img: api,
-    title: 'API',
-    description: 'API to create, reserve and buy properties.',
-    link: 'https://github.com/rodrigojsdeveloper/api-nodejs',
-  },
-  {
-    img: geography,
-    title: 'Geography',
-    description: 'Geography explore and enjoy global countries.',
-    link: 'https://github.com/rodrigojsdeveloper/geography',
-  },
-  {
-    img: dtMoney,
-    title: 'DT Money',
-    description: 'DT Money efficient financial management.',
-    link: 'https://github.com/rodrigojsdeveloper/dt-money',
-  },
-  {
-    img: iweather,
-    title: 'iWeather',
-    description: 'iWeather intuitive and accurate weather forecast.',
-    link: 'https://github.com/rodrigojsdeveloper/iweather',
-  },
-  {
-    img: todo,
-    title: 'ToDo',
-    description: 'ToDo simplifies with tags and deletion.',
-    link: 'https://github.com/rodrigojsdeveloper/todo',
-  },
+  createProject(
+    motorsShop,
+    'Motors Shop',
+    'Motors Shop é um projeto de site de vendas de automóveis.',
+    'https://github.com/rodrigojsdeveloper/motors-shop',
+  ),
+  createProject(
+    nuKenzie,
+    'Nu Kenzie',
+    'Nu Kenzie é uma plataforma de controle de custos.',
+    'https://github.com/rodrigojsdeveloper/refactoring-nukenzie',
+  ),
+  createProject(
+    devFinder,
+    'DevFinder',
+    'O DevFinder simplifica a pesquisa no GitHub.',
+    'https://github.com/rodrigojsdeveloper/devfinder',
+  ),
+  createProject(
+    api,
+    'API',
+    'API para criar, reservar e comprar propriedades.',
+    'https://github.com/rodrigojsdeveloper/api-nodejs',
+  ),
+  createProject(
+    geography,
+    'Geography',
+    'Geography explora e desfrutar de países globais.',
+    'https://github.com/rodrigojsdeveloper/geography',
+  ),
+  createProject(
+    dtMoney,
+    'DT Money',
+    'DT Money é gestão financeira eficiente.',
+    'https://github.com/rodrigojsdeveloper/dt-money',
+  ),
+  createProject(
+    iweather,
+    'iWeather',
+    'iWeather previsão do tempo intuitiva e precisa.',
+    'https://github.com/rodrigojsdeveloper/iweather',
+  ),
+  createProject(
+    todo,
+    'ToDo',
+    'ToDo simplificada com tags e exclusão.',
+    'https://github.com/rodrigojsdeveloper/todo',
+  ),
 ]
 
-const initialHomeProjects: IProjectProps[] = [
-  {
-    img: motorsShop,
-    title: 'Motors Shop',
-    description: 'Motors Shop is a car sales website project.',
-    link: 'https://github.com/rodrigojsdeveloper/motors-shop/',
-  },
-  {
-    img: geography,
-    title: 'Geography',
-    description: 'Geography explore and enjoy global countries.',
-    link: 'https://github.com/rodrigojsdeveloper/geography',
-  },
-]
+const initialHomeProjects: IProjectProps[] = [projects[0], projects[4]]
 
 export { projects, initialHomeProjects }

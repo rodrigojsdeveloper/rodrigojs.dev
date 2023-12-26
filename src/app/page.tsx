@@ -11,24 +11,24 @@ import Link from 'next/link'
 const Home = () => {
   return (
     <div className="flex animate-up flex-col gap-y-4 sm:gap-y-6">
-      <Title title="Full Stack Developer" />
+      <Title title="Desenvolvedor Full Stack" />
 
       <Paragraph
         text="
-        Dedicated full-stack developer creating digital experiences that seamlessly blend elegant aesthetics and exceptional functionality on both front-end and back-end. Passionate about translating ideas into intuitive and visually appealing interfaces, ensuring robustness and efficiency in the technical aspects of the system."
+        Como desenvolvedor full stack, concebo experiências digitais que combinam perfeitamente estética elegante e funcionalidade, tanto no front-end quanto no back-end. Minhas motivações incluem a tradução de ideias em interfaces intuitivas e visualmente atrativas, assegurando eficiência nos aspectos técnicos do sistema."
       />
 
       <div className="flex flex-col gap-y-3">
         <Line />
 
         <div className="flex w-full items-center justify-between">
-          <SubTitle title="Recent projects" />
+          <SubTitle title="Projetos recentes" />
 
           <Link
             href="/projects"
             className="flex select-none items-center gap-1 text-xs font-medium text-gray-100 active:opacity-50"
           >
-            See all{' '}
+            Ver todos{' '}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="18"
