@@ -14,9 +14,9 @@ const About = () => {
       <div className="flex flex-col gap-y-3 sm:gap-y-6">
         <Title title="Sobre" />
         <div className="space-y-3 leading-7">
-          <Paragraph text="Sou especialista em criar e otimizar experiências de usuário no desenvolvimento de interfaces. Minha experiência abrange a concepção, design e implementação de elementos visuais para interações intuitivas. Minhas habilidades incluem análise de requisitos, soluções de design inovadoras e integração perfeita de componentes." />
+          <Paragraph text="Sou especialista em criar e otimizar experiências de usuário em interfaces, com mais de 2 anos de experiência. Minha expertise abrange a concepção, design e implementação de elementos visuais para interações intuitivas. Possuo habilidades avançadas na análise de requisitos, propondo soluções de design inovadoras e garantindo a integração perfeita de componentes." />
 
-          <Paragraph text="Tenho experiência em projetos vários front-end, desenvolvendo aplicações interativas e responsivas para diversos dispositivos. Além disso, estou familiarizado com desenvolvimento back-end, criação de soluções eficientes no lado do servidor e desenvolvimento de aplicativos móveis para plataformas Android e iOS." />
+          <Paragraph text="Tenho experiência em projetos front-end, desenvolvendo aplicações interativas e responsivas para diversos dispositivos. Minha familiaridade com o desenvolvimento back-end me permite criar soluções eficientes no lado do servidor, e também desenvolver aplicativos móveis para Android e iOS." />
 
           <Paragraph text="Possuo conhecimento em DevOps, incluindo integração e entrega contínua e automação de processos de infraestrutura. Quero aprimorar minhas habilidades técnicas para liderar projetos que resultem em interfaces atrativas, funcionais e de alto desempenho." />
         </div>
