@@ -1,6 +1,5 @@
 import Paragraph from './Paragraph'
 import SubTitle from './SubTitle'
-import Send from '@/svgs/Send'
 import Link from 'next/link'
 
 const Work = () => {
@@ -12,9 +11,9 @@ const Work = () => {
 
       <Link
         href="/contact"
-        className="group mt-1.5 flex h-11 w-full max-w-[8.5rem] select-none items-center justify-center gap-1.5 rounded-def border border-solid border-gray-200 text-gray-100 hover:bg-gray-200 hover:text-primary sm:mt-0"
+        className="group mt-1.5 flex h-11 w-full max-w-[7.563rem] select-none items-center justify-center gap-1.5 rounded-def border border-solid border-gray-200 text-gray-100 hover:bg-gray-200 hover:text-primary sm:mt-0"
       >
-        Contate-me <Send />
+        Contate-me
       </Link>
     </div>
   )
