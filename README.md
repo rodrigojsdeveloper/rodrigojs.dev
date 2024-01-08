@@ -1,5 +1,5 @@
 <h3 align="center">
-  My personal website
+  Meu site pessoal
 </h3>
 
 <br />
@@ -9,5 +9,5 @@
 </a>
 
 <br/>
-<p align="center">Developed by <a href="https://www.linkedin.com/in/rodrigo-de-jesus-silva/">Rodrigo Silva</a>
+<p align="center">Desenvolvido por <a href="https://www.linkedin.com/in/rodrigo-de-jesus-silva/">Rodrigo Silva</a>
 </p>
