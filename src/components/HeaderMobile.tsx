@@ -34,44 +34,17 @@ const HeaderMobile = () => {
           <Button handleState={handleOpenModal} arialLabel="Settings Button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="21"
-              height="21"
-              viewBox="0 0 21 21"
+              width="19"
+              height="19"
+              viewBox="0 0 23 23"
               fill="none"
+              stroke="#888888"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               className="duration-300 group-hover:stroke-primary group-active:stroke-primary"
             >
-              <path
-                d="M5.25 12.4688C6.33731 12.4688 7.21875 11.5873 7.21875 10.5C7.21875 9.41269 6.33731 8.53125 5.25 8.53125C4.16269 8.53125 3.28125 9.41269 3.28125 10.5C3.28125 11.5873 4.16269 12.4688 5.25 12.4688Z"
-                stroke="#888888"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="duration-300 group-hover:stroke-primary group-active:stroke-primary"
-              />
-              <path
-                d="M15.75 6.5625C16.8373 6.5625 17.7188 5.68106 17.7188 4.59375C17.7188 3.50644 16.8373 2.625 15.75 2.625C14.6627 2.625 13.7812 3.50644 13.7812 4.59375C13.7812 5.68106 14.6627 6.5625 15.75 6.5625Z"
-                stroke="#888888"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="duration-300 group-hover:stroke-primary group-active:stroke-primary"
-              />
-              <path
-                d="M15.75 18.375C16.8373 18.375 17.7188 17.4936 17.7188 16.4062C17.7188 15.3189 16.8373 14.4375 15.75 14.4375C14.6627 14.4375 13.7812 15.3189 13.7812 16.4062C13.7812 17.4936 14.6627 18.375 15.75 18.375Z"
-                stroke="#888888"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="duration-300 group-hover:stroke-primary group-active:stroke-primary"
-              />
-              <path
-                d="M6.9657 11.4651L14.0343 15.4412M14.0343 5.55885L6.9657 9.5349"
-                stroke="#888888"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="duration-300 group-hover:stroke-primary group-active:stroke-primary"
-              />
+              <path d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3"></path>
             </svg>
           </Button>
 

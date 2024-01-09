@@ -33,22 +33,13 @@ const Form = () => {
       onSubmit={handleSubmit}
       className="flex w-full max-w-[30.5rem] flex-col gap-y-4"
     >
-      <div className="flex flex-row items-center justify-between gap-2">
-        <Input label="Nome" type="text" name="name" htmlFor="name" id="name" />
-        <Input
-          label="Email"
-          type="email"
-          name="email"
-          htmlFor="email"
-          id="email"
-        />
-      </div>
+      <Input label="Nome" type="text" name="name" htmlFor="name" id="name" />
       <Input
-        label="Assunto"
-        type="text"
-        name="subject"
-        htmlFor="subject"
-        id="subject"
+        label="Email"
+        type="email"
+        name="email"
+        htmlFor="email"
+        id="email"
       />
       <Textarea
         label="Mensagem"

@@ -35,37 +35,37 @@ const projects: IProjectProps[] = [
   createProject(
     devFinder,
     'DevFinder',
-    'O DevFinder simplifica a pesquisa no GitHub.',
+    'O DevFinder simplifica a pesquisa de usuários no GitHub.',
     'https://github.com/rodrigojsdeveloper/devfinder',
   ),
   createProject(
     api,
     'API',
-    'API para criar, reservar e comprar propriedades.',
+    'API que trata da criação de propriedades e reserva de visitas ou compra.',
     'https://github.com/rodrigojsdeveloper/api-nodejs',
   ),
   createProject(
     geography,
     'Geography',
-    'Geography explora e desfrutar de países globais.',
+    'Geography é onde os usuários podem explorar os países ao redor do mundo.',
     'https://github.com/rodrigojsdeveloper/geography',
   ),
   createProject(
     dtMoney,
     'DT Money',
-    'DT Money é gestão financeira eficiente.',
+    'DT Money é uma gestão financeira de suas receitas, despesas e saldo.',
     'https://github.com/rodrigojsdeveloper/dt-money',
   ),
   createProject(
     iweather,
     'iWeather',
-    'iWeather previsão do tempo intuitiva e precisa.',
+    'iWeather é um site de previsão do tempo preciso para planejar o seu dia.',
     'https://github.com/rodrigojsdeveloper/iweather',
   ),
   createProject(
     todo,
     'ToDo',
-    'ToDo simplificada com tags e exclusão.',
+    'ToDo agiliza o gerenciamento de tarefas com marcação e exclusão.',
     'https://github.com/rodrigojsdeveloper/todo',
   ),
 ]
