@@ -1,6 +1,6 @@
 'use client'
 
-import { useContext } from 'react'
+import { useContext, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 import CustomLink from './CustomLink'
 import Copyright from './Copyright'
@@ -20,6 +20,12 @@ import { Context } from '@/contexts/context'
 const Header = () => {
   const { openModal, handleOpenModal } = useContext(Context)
   const pathname = usePathname()
+
+  useEffect(() => {
+    if (openModal) {
+      document.body.style.overflowY = 'hidden'
+    } else document.body.style.overflowY = 'auto'
+  }, [openModal])
 
   return (
     <>
