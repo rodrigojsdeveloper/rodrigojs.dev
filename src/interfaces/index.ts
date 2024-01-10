@@ -39,11 +39,9 @@ export interface IParagraph {
 }
 
 export interface InputProps {
-  label: string
   type: string
   name: string
-  htmlFor: string
-  id: string
+  placeholder: string
 }
 
 export interface ITitle {

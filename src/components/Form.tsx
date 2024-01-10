@@ -31,23 +31,13 @@ const Form = () => {
       action="https://formspree.io/f/mlekpwdz"
       method="POST"
       onSubmit={handleSubmit}
-      className="flex w-full max-w-[30.5rem] flex-col gap-y-4"
+      className="flex w-full max-w-[40rem] flex-col gap-y-2.5 sm:gap-y-4"
     >
-      <Input label="Nome" type="text" name="name" htmlFor="name" id="name" />
-      <Input
-        label="Email"
-        type="email"
-        name="email"
-        htmlFor="email"
-        id="email"
-      />
-      <Textarea
-        label="Mensagem"
-        type="text"
-        name="message"
-        htmlFor="message"
-        id="message"
-      />
+      <div className="flex flex-row gap-2.5 sm:gap-4">
+        <Input placeholder="Nome" type="text" name="name" />
+        <Input placeholder="Email" type="email" name="email" />
+      </div>
+      <Textarea placeholder="Mensagem" type="text" name="message" />
 
       <button
         type="submit"
