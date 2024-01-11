@@ -16,9 +16,10 @@ import Contact from '@/svgs/Contact'
 import Projects from '@/svgs/Projects'
 import Modal from './Modal'
 import { Context } from '@/contexts/context'
+import Notification from './Notification'
 
 const Header = () => {
-  const { openModal, handleOpenModal } = useContext(Context)
+  const { openModal, handleOpenModal, notification } = useContext(Context)
   const pathname = usePathname()
 
   useEffect(() => {
@@ -30,6 +31,7 @@ const Header = () => {
   return (
     <>
       {openModal ? <Modal /> : null}
+      {notification ? <Notification /> : null}
       <aside className="sticky top-0 hidden h-[30rem] w-full max-w-[14.375rem] flex-col gap-y-3 pt-8 lg:flex">
         <Image
           src={author}

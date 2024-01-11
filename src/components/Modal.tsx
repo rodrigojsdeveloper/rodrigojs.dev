@@ -18,7 +18,7 @@ import SourceCode from '@/svgs/SourceCode'
 import copyLink from '@/utils/copyLink'
 
 const Modal = () => {
-  const { handleOpenModal } = useContext(Context)
+  const { handleOpenModal, handleNotification } = useContext(Context)
 
   const getSocialIcon = (name: string) => {
     switch (name) {
@@ -168,6 +168,7 @@ const Modal = () => {
               onClick={() => {
                 copyLink()
                 handleOpenModal()
+                handleNotification()
               }}
               className="row group flex h-10 w-full items-center gap-2 rounded-def px-2.5 py-2 text-sm text-gray-100 hover:bg-hover hover:text-primary active:bg-active active:text-primary"
             >
