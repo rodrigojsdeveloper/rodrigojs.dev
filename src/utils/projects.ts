@@ -31,12 +31,6 @@ const projects: IProjectProps[] = [
     'https://github.com/rodrigojsdeveloper/geography',
   ),
   createProject(
-    devFinder,
-    'DevFinder',
-    'O DevFinder simplifica a pesquisa de usuários no GitHub.',
-    'https://github.com/rodrigojsdeveloper/devfinder',
-  ),
-  createProject(
     api,
     'API',
     'API que trata da criação de propriedades e reserva de visitas ou compra.',
@@ -47,6 +41,12 @@ const projects: IProjectProps[] = [
     'iWeather',
     'iWeather é um site de previsão do tempo preciso para planejar o seu dia.',
     'https://github.com/rodrigojsdeveloper/iweather',
+  ),
+  createProject(
+    devFinder,
+    'DevFinder',
+    'O DevFinder simplifica a pesquisa de usuários no GitHub.',
+    'https://github.com/rodrigojsdeveloper/devfinder',
   ),
   createProject(
     dtMoney,

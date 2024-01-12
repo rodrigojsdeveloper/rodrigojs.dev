@@ -25,7 +25,6 @@ const HeaderMobile = () => {
           <Image
             src={author}
             alt="Rodrigo Silva"
-            zoomHover={true}
             className="h-11 w-11 rounded-full"
           />
         </Link>
