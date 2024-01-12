@@ -127,3 +127,7 @@ a {
     height: 18.75rem;
   }
 }
+
+#notification-root {
+  position: fixed;
+}

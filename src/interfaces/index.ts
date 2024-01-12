@@ -70,10 +70,8 @@ export interface IHandleState {
 export interface IContextData {
   openMenu: boolean
   openModal: boolean
-  notification: boolean
   handleOpenMenu: () => void
   handleOpenModal: () => void
-  handleNotification: () => void
   setOpenMenu: Dispatch<SetStateAction<boolean>>
   setOpenModal: Dispatch<SetStateAction<boolean>>
 }
@@ -87,4 +85,10 @@ export interface ImageProps
 export interface ISvg {
   height: string
   width: string
+}
+
+export interface INotificationProps {
+  title: string
+  description: string
+  error?: boolean
 }

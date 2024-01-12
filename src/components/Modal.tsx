@@ -16,9 +16,10 @@ import socialMedia from '@/utils/socialMedia'
 import Download from '@/svgs/Download'
 import SourceCode from '@/svgs/SourceCode'
 import copyLink from '@/utils/copyLink'
+import notification from './Notification'
 
 const Modal = () => {
-  const { handleOpenModal, handleNotification } = useContext(Context)
+  const { handleOpenModal } = useContext(Context)
 
   const getSocialIcon = (name: string) => {
     switch (name) {
@@ -168,7 +169,10 @@ const Modal = () => {
               onClick={() => {
                 copyLink()
                 handleOpenModal()
-                handleNotification()
+                notification({
+                  title: 'Copiado',
+                  description: 'Link copiado com sucesso.',
+                })
               }}
               className="row group flex h-10 w-full items-center gap-2 rounded-def px-2.5 py-2 text-sm text-gray-100 hover:bg-hover hover:text-primary active:bg-active active:text-primary"
             >
