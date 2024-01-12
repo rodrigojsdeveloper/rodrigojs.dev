@@ -1,5 +1,5 @@
 <h3 align="center">
-  Meu site pessoal
+  rodrigojs.dev
 </h3>
 
 <br />

@@ -13,7 +13,7 @@ const About = () => {
     <div className="flex animate-up flex-col gap-y-4 sm:gap-y-6">
       <div className="flex flex-col gap-y-3 sm:gap-y-6">
         <Title title="Sobre" />
-        <div className="space-y-3 leading-7">
+        <div className="flex flex-col gap-3">
           <Paragraph text="Sou especialista em criar e otimizar experiências de usuário em interfaces, com mais de 3 anos de experiência. Minha expertise abrange a concepção, design e implementação de elementos visuais para interações intuitivas. Possuo habilidades avançadas na análise de requisitos, propondo soluções de design inovadoras e garantindo a integração perfeita de componentes." />
 
           <Paragraph text="Tenho experiência em projetos front-end, desenvolvendo aplicações interativas e responsivas para diversos dispositivos. Minha familiaridade com o desenvolvimento back-end me permite criar soluções eficientes no lado do servidor, e também desenvolver aplicativos móveis para Android e iOS." />

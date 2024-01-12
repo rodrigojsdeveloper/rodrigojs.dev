@@ -1,6 +1,6 @@
 const Notification = () => {
   return (
-    <div className="fixed bottom-5 right-5 flex h-16 w-60 animate-up flex-row items-center gap-2 rounded-def bg-gray-300 px-3 py-2">
+    <div className="fixed bottom-3 right-3 z-50 ml-3 flex max-w-60 animate-up flex-row items-center gap-2 rounded-def bg-gray-300 px-3 py-2 sm:bottom-5 sm:right-5">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="28.28"

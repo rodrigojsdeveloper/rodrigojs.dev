@@ -22,7 +22,7 @@ const Contact = () => {
 
         <Paragraph
           text="
-          Tenho prazer em interagir com programadores e estudantes de tecnologia. Se você estiver interessado no meu trabalho ou deseja fornecer feedback sobre este site? Vamos conversar!"
+          Se você estiver interessado no meu trabalho ou deseja fornecer feedback sobre este site? Vamos conversar!"
         />
       </div>
       <Form />
