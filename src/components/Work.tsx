@@ -11,7 +11,7 @@ const Work = () => {
 
       <Link
         href="/contact"
-        className="group mt-1.5 flex h-11 w-full max-w-[7.563rem] select-none items-center justify-center gap-1.5 rounded-def border border-solid border-gray-200 text-gray-100 hover:bg-gray-200 hover:text-primary sm:mt-0"
+        className="group mt-1.5 flex h-[2.4rem] w-full max-w-[6.5rem] select-none items-center justify-center gap-1.5 rounded-def border border-solid border-gray-200 text-sm text-gray-100 hover:bg-gray-200 hover:text-primary sm:mt-0 sm:h-11 sm:max-w-[7.563rem] sm:text-base"
       >
         Contate-me
       </Link>

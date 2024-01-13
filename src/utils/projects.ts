@@ -27,7 +27,7 @@ const projects: IProjectProps[] = [
   createProject(
     geography,
     'Geography',
-    'Geography é onde os usuários podem explorar os países ao redor do mundo.',
+    'Geography é um site para explorar os países ao redor do mundo.',
     'https://github.com/rodrigojsdeveloper/geography',
   ),
   createProject(
