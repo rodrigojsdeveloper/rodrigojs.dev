@@ -25,91 +25,91 @@ import { IStack } from '@/interfaces'
 const stacks: IStack[] = [
   {
     src: javascript,
-    bg: '#F7DF1F10',
+    bg: '#F7DF1F20',
   },
   {
     src: typescript,
-    bg: '#007ACC10',
+    bg: '#007ACC20',
   },
   {
     src: react,
-    bg: '#00D8FF10',
+    bg: '#00D8FF20',
   },
   {
     src: nextjs,
-    bg: '#FFFFFF10',
+    bg: '#FFFFFF20',
   },
   {
     src: tailwindcss,
-    bg: '#38BDF810',
+    bg: '#38BDF820',
   },
   {
     src: sass,
-    bg: '#CD679910',
+    bg: '#CD679920',
   },
   {
     src: bootstrap,
-    bg: '#9013FE10',
+    bg: '#9013FE20',
   },
   {
     src: nodejs,
-    bg: '#83CD2910',
+    bg: '#83CD2920',
   },
   {
     src: express,
-    bg: '#FFFFFF10',
+    bg: '#FFFFFF20',
   },
   {
     src: prisma,
-    bg: '#2d374810',
+    bg: '#2d374820',
   },
   {
     src: jest,
-    bg: '#99425B10',
+    bg: '#99425B20',
   },
   {
     src: react,
-    bg: '#38BDF810',
+    bg: '#38BDF820',
   },
   {
     src: python,
-    bg: '#387EB810',
+    bg: '#387EB820',
   },
   {
     src: django,
-    bg: '#092E2010',
+    bg: '#092E2020',
   },
   {
     src: postgresql,
-    bg: '#33679110',
+    bg: '#33679120',
   },
   {
     src: mysql,
-    bg: '#00618A10',
+    bg: '#00618A20',
   },
   {
     src: mongodb,
-    bg: '#01EC6410',
+    bg: '#01EC6420',
   },
   {
     src: docker,
-    bg: '#2396ED10',
+    bg: '#2396ED20',
   },
   {
     src: swagger,
-    bg: '#85EA2D10',
+    bg: '#85EA2D20',
   },
   {
     src: aws,
-    bg: '#252F3E10',
+    bg: '#252F3E20',
   },
   {
     src: git,
-    bg: '#F34F2910',
+    bg: '#F34F2920',
   },
   {
     src: figma,
-    bg: '#0ACF8310',
+    bg: '#0ACF8320',
   },
 ]
 
