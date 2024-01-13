@@ -7,6 +7,7 @@ import express from '@/assets/skills/express.svg'
 import swagger from '@/assets/skills/swagger.svg'
 import mongodb from '@/assets/skills/mongodb.svg'
 import nodejs from '@/assets/skills/nodejs.svg'
+import nestjs from '@/assets/skills/nestjs.svg'
 import nextjs from '@/assets/skills/nextjs.svg'
 import python from '@/assets/skills/python.svg'
 import django from '@/assets/skills/django.svg'
@@ -64,12 +65,12 @@ const stacks: IStack[] = [
     bg: '#2d374820',
   },
   {
-    src: jest,
-    bg: '#99425B20',
+    src: nestjs,
+    bg: '#E0234E20',
   },
   {
-    src: react,
-    bg: '#38BDF820',
+    src: jest,
+    bg: '#99425B20',
   },
   {
     src: python,

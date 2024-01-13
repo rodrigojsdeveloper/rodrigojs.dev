@@ -41,7 +41,7 @@ const Form = () => {
       onSubmit={handleSubmit}
       className="flex w-full flex-col gap-y-2.5 sm:gap-y-4"
     >
-      <div className="flex flex-col gap-2.5 sm:flex-row sm:gap-4">
+      <div className="flex flex-row gap-2.5 sm:gap-4">
         <Input placeholder="Nome" type="text" name="name" />
         <Input placeholder="Email" type="email" name="email" />
       </div>
