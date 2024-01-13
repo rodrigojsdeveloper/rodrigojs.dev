@@ -23,7 +23,6 @@ const RootLayout = ({ children }: PropsWithChildren) => {
       <html lang="en" className={`${kanit.variable} w-full font-kanit`}>
         <body className="m-auto flex w-full max-w-6xl flex-row justify-center gap-x-10 overflow-x-hidden px-6 pb-5 pt-24 sm:px-8 lg:pb-10 lg:pt-28">
           <div id="notification-root"></div>
-          <div className="center"></div>
 
           <Header />
           <HeaderMobile />

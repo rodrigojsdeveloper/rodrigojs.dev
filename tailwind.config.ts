@@ -20,6 +20,7 @@ const config: Config = {
         hover: 'rgba(255, 255, 255, 0.04)',
         active: 'rgba(255, 255, 255, 0.12)',
         shadow: 'rgba(0, 0, 0, 0.5)',
+        black: 'rgb(8, 5, 6)',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

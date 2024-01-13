@@ -19,7 +19,7 @@ export interface ICustomLink {
 
 export interface IStack {
   src: StaticImageData
-  name: string
+  bg: string
 }
 
 export interface IProjectProps {

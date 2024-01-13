@@ -40,7 +40,7 @@ const About = () => {
 
         <GroupedItems>
           {stacks.map((stack, index) => (
-            <Stack src={stack.src} name={stack.name} key={index} />
+            <Stack src={stack.src} bg={stack.bg} key={index} />
           ))}
         </GroupedItems>
       </div>

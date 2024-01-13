@@ -11,6 +11,7 @@ import nextjs from '@/assets/skills/nextjs.svg'
 import python from '@/assets/skills/python.svg'
 import django from '@/assets/skills/django.svg'
 import docker from '@/assets/skills/docker.svg'
+import prisma from '@/assets/skills/prisma.svg'
 import react from '@/assets/skills/react.svg'
 import mysql from '@/assets/skills/mysql.svg'
 import figma from '@/assets/skills/figma.svg'
@@ -24,87 +25,91 @@ import { IStack } from '@/interfaces'
 const stacks: IStack[] = [
   {
     src: javascript,
-    name: 'JavaScript',
+    bg: '#F7DF1F10',
   },
   {
     src: typescript,
-    name: 'TypeScript',
+    bg: '#007ACC10',
   },
   {
     src: react,
-    name: 'React.js',
+    bg: '#00D8FF10',
   },
   {
     src: nextjs,
-    name: 'Next.js',
+    bg: '#FFFFFF10',
   },
   {
     src: tailwindcss,
-    name: 'Tailwind CSS',
+    bg: '#38BDF810',
   },
   {
     src: sass,
-    name: 'Sass',
+    bg: '#CD679910',
   },
   {
     src: bootstrap,
-    name: 'Bootstrap',
+    bg: '#9013FE10',
   },
   {
     src: nodejs,
-    name: 'Node.js',
+    bg: '#83CD2910',
   },
   {
     src: express,
-    name: 'Express.js',
+    bg: '#FFFFFF10',
+  },
+  {
+    src: prisma,
+    bg: '#2d374810',
   },
   {
     src: jest,
-    name: 'Jest',
+    bg: '#99425B10',
   },
   {
     src: react,
-    name: 'React Native',
+    bg: '#38BDF810',
   },
   {
     src: python,
-    name: 'Python',
+    bg: '#387EB810',
   },
   {
     src: django,
-    name: 'Django',
+    bg: '#092E2010',
   },
   {
     src: postgresql,
-    name: 'PostgreSQL',
+    bg: '#33679110',
   },
   {
     src: mysql,
-    name: 'MySQL',
+    bg: '#00618A10',
   },
   {
     src: mongodb,
-    name: 'MongoDB',
+    bg: '#01EC6410',
   },
   {
     src: docker,
-    name: 'Docker',
+    bg: '#2396ED10',
   },
   {
     src: swagger,
-    name: 'Swagger',
+    bg: '#85EA2D10',
   },
   {
     src: aws,
-    name: 'AWS',
+    bg: '#252F3E10',
   },
   {
     src: git,
-    name: 'GIT',
+    bg: '#F34F2910',
   },
   {
     src: figma,
-    name: 'Figma',
+    bg: '#0ACF8310',
   },
 ]
 
