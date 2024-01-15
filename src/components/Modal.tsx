@@ -88,7 +88,7 @@ const Modal = () => {
   return (
     <ModalBackground>
       <div className="flex h-full max-h-[22.425rem] w-full max-w-[31.9rem] animate-modal flex-col rounded-def border border-solid border-gray-200 bg-black duration-300">
-        <div className="flex flex-row items-center justify-between py-2.5 pl-3 pr-2">
+        <div className="flex flex-row items-center justify-between py-2.5 pl-4 pr-2">
           <SubTitle title="Menu" />
 
           <Button handleState={handleOpenModal} arialLabel="Close Button">
@@ -221,11 +221,14 @@ const Modal = () => {
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
+                  fill="none"
                 >
                   <path
+                    d="M16.2823 9.28272L14.8458 12.0198L11.84 17.2209C11.6853 17.4886 11.2983 17.4871 11.1457 17.2182L8.21464 12.0531L6.72158 9.10075C6.61043 8.88097 6.38508 8.74241 6.13879 8.74241C5.77811 8.74241 5.48571 9.0348 5.48571 9.39548V21C5.48571 21.2209 5.30663 21.4 5.08571 21.4H3C2.77909 21.4 2.6 21.2209 2.6 21V4C2.6 3.77909 2.77909 3.6 3 3.6H6.00815C6.15415 3.6 6.28855 3.67955 6.3588 3.80753L10.946 12.1649C11.0599 12.3723 11.2776 12.5011 11.5142 12.5011C11.7519 12.5011 11.9706 12.371 12.0839 12.1621L16.615 3.80927C16.685 3.68031 16.8199 3.6 16.9666 3.6H20C20.2209 3.6 20.4 3.77909 20.4 4V21C20.4 21.2209 20.2209 21.4 20 21.4H17.9143C17.6934 21.4 17.5143 21.2209 17.5143 21V9.58637C17.5143 9.2255 17.2217 8.93295 16.8609 8.93295C16.618 8.93295 16.3952 9.06766 16.2823 9.28272Z"
                     fill="#888888"
-                    className="duration-300 group-hover:fill-primary group-active:fill-primary"
-                    d="M14 18q2.5 0 4.25-1.75T20 12q0-2.525-1.838-4.262T13.75 6q-1.2 0-2.325.275T9.25 7.1l2.5 1q1.025.425 1.638 1.313T14 11.4q0 1.5-1.037 2.55T10.45 15h-6.4Q4 15.6 4 16.363V18zm-9.6-5h6q.675 0 1.138-.462T12 11.4q0-.475-.262-.862T11 9.95l-3.7-1.5q-1.05.925-1.787 2.1T4.4 13m9.6 7H4q-.825 0-1.412-.587T2 18v-2.25q0-2.45.925-4.587t2.513-3.726Q7.025 5.85 9.175 4.926T13.75 4q1.7 0 3.2.625t2.625 1.713Q20.7 7.425 21.35 8.875T22 12q0 1.65-.625 3.113t-1.713 2.55q-1.087 1.087-2.55 1.712T14 20"
+                    stroke="#888888"
+                    stroke-width="1.2"
+                    className="duration-300 group-hover:fill-primary group-hover:stroke-primary group-active:fill-primary group-active:stroke-primary"
                   />
                 </svg>
               }

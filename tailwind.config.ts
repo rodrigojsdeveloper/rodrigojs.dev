@@ -16,7 +16,6 @@ const config: Config = {
         secondary: '#EDEDED',
         'gray-100': '#888888',
         'gray-200': '#27272A',
-        'gray-300': '#111111',
         hover: 'rgba(255, 255, 255, 0.04)',
         active: 'rgba(255, 255, 255, 0.12)',
         shadow: 'rgba(0, 0, 0, 0.5)',

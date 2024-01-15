@@ -21,7 +21,7 @@ const About = () => {
       <Link
         target="_blank"
         href="https://rodrigojsdeveloper.github.io/cv"
-        className="group flex h-10 w-full max-w-[8.8rem] select-none items-center justify-center gap-2.5 rounded-def border border-solid border-gray-200 p-2 text-sm font-medium text-gray-100 hover:bg-gray-200 hover:text-primary active:text-primary sm:h-11 sm:max-w-[9.375rem] sm:text-base"
+        className="group flex h-10 w-full max-w-[8.8rem] select-none items-center justify-center gap-2.5 rounded-def border border-solid border-gray-200 p-2 text-sm font-medium text-gray-100 hover:bg-gray-200 hover:text-primary active:text-primary sm:h-11 sm:max-w-[9.375rem]"
       >
         <Download height="20" width="20" /> CV Download
       </Link>

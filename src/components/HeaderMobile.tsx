@@ -1,6 +1,6 @@
 'use client'
 
-import { useContext } from 'react'
+import { useContext, useEffect } from 'react'
 import author from '@/assets/author.jpg'
 import Image from '@/components/Image'
 import Link from 'next/link'
@@ -12,6 +12,12 @@ import { Context } from '@/contexts/context'
 const HeaderMobile = () => {
   const { openMenu, openModal, handleOpenMenu, handleOpenModal } =
     useContext(Context)
+
+  useEffect(() => {
+    if (openMenu) {
+      document.body.style.overflowY = 'hidden'
+    } else document.body.style.overflowY = 'auto'
+  }, [openMenu])
 
   return (
     <>
