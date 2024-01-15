@@ -80,3 +80,7 @@ a {
 #notification-root {
   position: fixed;
 }
+
+.text {
+  font-size: 0.875rem !important;
+}

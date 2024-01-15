@@ -111,7 +111,7 @@ const Modal = () => {
         <Line />
 
         <div className="overflow-y-auto px-3 pb-2 pt-1.5">
-          <Paragraph text="Navegação" style="text-sm py-2" />
+          <Paragraph text="Navegação" style="text py-1.5" />
           <nav className="flex flex-col gap-1">
             <CustomLink
               href=""
@@ -143,7 +143,7 @@ const Modal = () => {
             />
           </nav>
 
-          <Paragraph text="Mídia sociais" style="text-sm py-2" />
+          <Paragraph text="Mídia sociais" style="text py-1.5" />
           <nav className="flex flex-col gap-1">
             {socialMedia.map((media, index) => {
               const newMedia = { ...media, svg: getSocialIcon(media.name) }
@@ -163,7 +163,80 @@ const Modal = () => {
             })}
           </nav>
 
-          <Paragraph text="Sugestões" style="text-sm py-2" />
+          <Paragraph text="Projetos recentes" style="text py-1.5" />
+          <nav className="flex flex-col gap-1">
+            <CustomLink
+              target="_blank"
+              href="https://github.com/rodrigojsdeveloper/geography"
+              Icon={
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="#888888"
+                    className="duration-300 group-hover:fill-primary group-active:fill-primary"
+                    fillRule="evenodd"
+                    d="M9.206 3.182A9.254 9.254 0 0 0 2.78 11.25h4.48c.033-1.096.135-2.176.305-3.2c.207-1.254.515-2.41.91-3.4a9.3 9.3 0 0 1 .731-1.468M12 1.25a10.75 10.75 0 1 0 0 21.5a10.75 10.75 0 0 0 0-21.5m0 1.5c-.261 0-.599.126-.991.532c-.396.41-.791 1.051-1.141 1.925c-.347.869-.63 1.917-.824 3.089c-.155.94-.25 1.937-.282 2.954h6.476a22.452 22.452 0 0 0-.282-2.954c-.194-1.172-.477-2.22-.824-3.089c-.35-.874-.745-1.515-1.14-1.925c-.393-.406-.73-.532-.992-.532m4.74 8.5a23.96 23.96 0 0 0-.305-3.2c-.207-1.254-.515-2.41-.91-3.4a9.292 9.292 0 0 0-.732-1.468a9.238 9.238 0 0 1 3.748 2.277a9.25 9.25 0 0 1 2.678 5.791zm-1.502 1.5H8.762c.031 1.017.127 2.014.282 2.954c.194 1.172.477 2.22.824 3.089c.35.874.745 1.515 1.14 1.925c.393.406.73.532.992.532c.261 0 .599-.126.991-.532c.396-.41.791-1.051 1.141-1.925c.347-.869.63-1.917.824-3.089c.155-.94.25-1.937.282-2.954m-.444 8.068c.27-.434.515-.929.73-1.468c.396-.99.704-2.146.911-3.4a23.96 23.96 0 0 0 .304-3.2h4.48a9.25 9.25 0 0 1-6.426 8.068m-5.588 0a9.3 9.3 0 0 1-.73-1.468c-.396-.99-.704-2.146-.911-3.4a23.961 23.961 0 0 1-.304-3.2H2.78a9.25 9.25 0 0 0 6.425 8.068"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              }
+              text="Geography"
+              style="text-gray-100"
+              onClick={handleOpenModal}
+              externalLink
+            />
+            <CustomLink
+              target="_blank"
+              href="https://github.com/rodrigojsdeveloper/iweather"
+              Icon={
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="#888888"
+                    strokeWidth="1.5"
+                    className="duration-300 group-hover:fill-primary group-active:fill-primary"
+                    d="M12 6c2.62 0 4.88 1.86 5.39 4.43l.3 1.5l1.53.11A2.98 2.98 0 0 1 22 15c0 1.65-1.35 3-3 3H6c-2.21 0-4-1.79-4-4c0-2.05 1.53-3.76 3.56-3.97l1.07-.11l.5-.95A5.469 5.469 0 0 1 12 6m0-2C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5c0-2.64-2.05-4.78-4.65-4.96A7.49 7.49 0 0 0 12 4"
+                  />
+                </svg>
+              }
+              text="iWeather"
+              style="text-gray-100"
+              onClick={handleOpenModal}
+              externalLink
+            />
+            <CustomLink
+              target="_blank"
+              href="https://github.com/rodrigojsdeveloper/motors-shop"
+              Icon={
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="#888888"
+                    className="duration-300 group-hover:fill-primary group-active:fill-primary"
+                    d="M14 18q2.5 0 4.25-1.75T20 12q0-2.525-1.838-4.262T13.75 6q-1.2 0-2.325.275T9.25 7.1l2.5 1q1.025.425 1.638 1.313T14 11.4q0 1.5-1.037 2.55T10.45 15h-6.4Q4 15.6 4 16.363V18zm-9.6-5h6q.675 0 1.138-.462T12 11.4q0-.475-.262-.862T11 9.95l-3.7-1.5q-1.05.925-1.787 2.1T4.4 13m9.6 7H4q-.825 0-1.412-.587T2 18v-2.25q0-2.45.925-4.587t2.513-3.726Q7.025 5.85 9.175 4.926T13.75 4q1.7 0 3.2.625t2.625 1.713Q20.7 7.425 21.35 8.875T22 12q0 1.65-.625 3.113t-1.713 2.55q-1.087 1.087-2.55 1.712T14 20"
+                  />
+                </svg>
+              }
+              text="Motors Shop"
+              style="text-gray-100"
+              onClick={handleOpenModal}
+              externalLink
+            />
+          </nav>
+
+          <Paragraph text="Sugestões" style="text py-1.5" />
           <nav className="flex flex-col gap-1">
             <button
               onClick={() => {

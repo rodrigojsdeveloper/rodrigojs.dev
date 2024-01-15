@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const Work = () => {
   return (
-    <div className="flex w-full flex-col gap-y-2 rounded-def border border-solid border-gray-200 p-5 sm:gap-y-4">
+    <section className="flex w-full flex-col gap-y-2 rounded-def border border-solid border-gray-200 p-5 sm:gap-y-4">
       <SubTitle title="Vamos trabalhar juntos!" />
 
       <Paragraph text="Se você se interessou pelo meu trabalho ou deseja dar feedback sobre este site, vamos bater um papo." />
@@ -15,7 +15,7 @@ const Work = () => {
       >
         Contate-me
       </Link>
-    </div>
+    </section>
   )
 }
 
