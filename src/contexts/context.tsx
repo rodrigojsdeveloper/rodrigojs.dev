@@ -15,6 +15,7 @@ const ContextProvider = ({ children }: PropsWithChildren) => {
 
   const handleOpenModal = () => {
     setOpenModal(!openModal)
+    setOpenMenu(false)
   }
 
   const contextData: IContextData = {
