@@ -1,11 +1,7 @@
 'use client'
 
 import { useContext } from 'react'
-import Home from '@/svgs/Home'
 import CustomLink from './CustomLink'
-import About from '@/svgs/About'
-import Projects from '@/svgs/Projects'
-import Contact from '@/svgs/Contact'
 import Paragraph from './Paragraph'
 import Line from './Line'
 import Button from './Button'
@@ -111,38 +107,6 @@ const Modal = () => {
         <Line />
 
         <div className="overflow-y-auto px-3 pb-2 pt-1.5">
-          <Paragraph text="Navegação" style="text py-1.5" />
-          <nav className="flex flex-col gap-1">
-            <CustomLink
-              href=""
-              Icon={<Home />}
-              text="Início"
-              style="text-gray-100"
-              onClick={handleOpenModal}
-            />
-            <CustomLink
-              href="about"
-              Icon={<About />}
-              text="Sobre"
-              style="text-gray-100"
-              onClick={handleOpenModal}
-            />
-            <CustomLink
-              href="projects"
-              Icon={<Projects />}
-              text="Projetos"
-              style="text-gray-100"
-              onClick={handleOpenModal}
-            />
-            <CustomLink
-              href="contact"
-              Icon={<Contact />}
-              text="Contato"
-              style="text-gray-100"
-              onClick={handleOpenModal}
-            />
-          </nav>
-
           <Paragraph text="Mídia sociais" style="text py-1.5" />
           <nav className="flex flex-col gap-1">
             {socialMedia.map((media, index) => {
