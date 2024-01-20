@@ -1,8 +1,21 @@
+import notification from '@/components/Notification'
+
 const copyLink = () => {
   navigator.clipboard
     .writeText('https://rodrigojs.dev/')
-    .then(() => console.log)
-    .catch((err) => console.error('Erro ao copiar texto: ', err))
+    .then(() => {
+      notification({
+        title: 'Copiado',
+        description: 'Link copiado com sucesso.',
+      })
+    })
+    .catch(() => {
+      notification({
+        title: 'Erro',
+        description: 'Erro ao copiar o link.',
+        error: true,
+      })
+    })
 }
 
 export default copyLink

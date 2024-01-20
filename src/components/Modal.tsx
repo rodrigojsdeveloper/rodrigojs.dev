@@ -9,10 +9,8 @@ import { Context } from '@/contexts/context'
 import SubTitle from './SubTitle'
 import ModalBackground from './ModalBackground'
 import socialMedia from '@/utils/socialMedia'
-import Download from '@/svgs/Download'
 import SourceCode from '@/svgs/SourceCode'
 import copyLink from '@/utils/copyLink'
-import notification from './Notification'
 
 const Modal = () => {
   const { handleOpenModal } = useContext(Context)
@@ -83,7 +81,7 @@ const Modal = () => {
 
   return (
     <ModalBackground>
-      <div className="flex h-full max-h-[22.425rem] w-full max-w-[31.9rem] animate-modal flex-col rounded-def border border-solid border-gray-200 bg-black duration-300">
+      <div className="flex h-fit w-full max-w-[31.9rem] animate-modal flex-col rounded-def border border-solid border-gray-200 bg-black duration-300">
         <div className="flex flex-row items-center justify-between py-2.5 pl-4 pr-2">
           <SubTitle title="Menu" />
 
@@ -106,7 +104,7 @@ const Modal = () => {
 
         <Line />
 
-        <div className="overflow-y-auto px-3 pb-2 pt-1.5">
+        <div className="overflow-y-auto px-3 pb-3 pt-1.5">
           <Paragraph text="Mídia sociais" style="text py-1.5" />
           <nav className="flex flex-col gap-1">
             {socialMedia.map((media, index) => {
@@ -133,10 +131,6 @@ const Modal = () => {
               onClick={() => {
                 copyLink()
                 handleOpenModal()
-                notification({
-                  title: 'Copiado',
-                  description: 'Link copiado com sucesso.',
-                })
               }}
               className="row group flex h-10 w-full items-center gap-2 rounded-def px-2.5 py-2 text-sm text-gray-100 hover:bg-hover hover:text-primary active:bg-active active:text-primary"
             >
@@ -161,15 +155,6 @@ const Modal = () => {
               href="https://github.com/rodrigojsdeveloper/rodrigojs.dev"
               Icon={<SourceCode />}
               text="Código fonte"
-              style="text-gray-100"
-              onClick={handleOpenModal}
-              externalLink
-            />
-            <CustomLink
-              target="_blank"
-              href="https://rodrigojsdeveloper.github.io/cv"
-              Icon={<Download height="24" width="24" />}
-              text="CV Download"
               style="text-gray-100"
               onClick={handleOpenModal}
               externalLink

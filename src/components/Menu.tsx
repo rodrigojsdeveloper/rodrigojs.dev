@@ -1,6 +1,6 @@
 'use client'
 
-import { useContext } from 'react'
+import { useContext, useEffect, useRef } from 'react'
 import { usePathname } from 'next/navigation'
 import CustomLink from './CustomLink'
 import Contact from '@/svgs/Contact'
@@ -11,10 +11,28 @@ import { Context } from '@/contexts/context'
 const Menu = () => {
   const { handleOpenMenu } = useContext(Context)
 
+  const menuRef = useRef<HTMLDivElement>(null)
   const pathname = usePathname()
 
+  useEffect(() => {
+    const handleClickOutsideMenu = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        handleOpenMenu()
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutsideMenu)
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutsideMenu)
+    }
+  }, [handleOpenMenu])
+
   return (
-    <nav className="fixed right-6 top-16 z-20 w-full max-w-[8.75rem] animate-down rounded-def border border-solid border-gray-200 bg-black">
+    <nav
+      ref={menuRef}
+      className="fixed right-6 top-16 z-20 w-full max-w-[8.75rem] animate-down rounded-def border border-solid border-gray-200 bg-black"
+    >
       <CustomLink
         href="about"
         Icon={<About pathname={pathname} />}
