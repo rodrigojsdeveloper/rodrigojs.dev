@@ -58,8 +58,8 @@ const Header = () => {
             text="Início"
             activeLink={
               pathname === '/'
-                ? 'border-hover text-primary'
-                : 'bg-transparent text-gray-100'
+                ? 'linkSelected text-primary'
+                : 'border-transparent text-gray-100'
             }
           />
           <CustomLink
@@ -68,8 +68,8 @@ const Header = () => {
             text="Sobre"
             activeLink={
               pathname === '/about'
-                ? 'border-hover text-primary'
-                : 'bg-transparent text-gray-100'
+                ? 'linkSelected text-primary'
+                : 'border-transparent text-gray-100'
             }
           />
           <CustomLink
@@ -78,8 +78,8 @@ const Header = () => {
             text="Projetos"
             activeLink={
               pathname === '/projects'
-                ? 'border-hover text-primary'
-                : 'bg-transparent text-gray-100'
+                ? 'linkSelected text-primary'
+                : 'border-transparent text-gray-100'
             }
           />
           <CustomLink
@@ -88,8 +88,8 @@ const Header = () => {
             text="Contato"
             activeLink={
               pathname === '/contact'
-                ? 'border-hover text-primary'
-                : 'bg-transparent text-gray-100'
+                ? 'linkSelected text-primary'
+                : 'border-transparent text-gray-100'
             }
           />
         </nav>

@@ -84,3 +84,7 @@ a {
 .text {
   font-size: 0.875rem !important;
 }
+
+.linkSelected {
+  border-color: rgba(255, 255, 255, 0.04) !important;
+}
