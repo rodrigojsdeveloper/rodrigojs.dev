@@ -2,11 +2,11 @@
 
 import { useContext, useEffect, useRef } from 'react'
 import { usePathname } from 'next/navigation'
+import { Context } from '@/contexts/context'
 import CustomLink from './CustomLink'
 import Contact from '@/svgs/Contact'
 import Projects from '@/svgs/Projects'
 import About from '@/svgs/About'
-import { Context } from '@/contexts/context'
 
 const Menu = () => {
   const { handleOpenMenu } = useContext(Context)
@@ -39,10 +39,10 @@ const Menu = () => {
         text="Sobre"
         activeLink={
           pathname === '/about'
-            ? 'bg-active text-primary'
+            ? 'text-primary'
             : 'bg-transparent text-gray-100'
         }
-        style="rounded-b-none"
+        style="rounded-b-none border-none"
         onClick={handleOpenMenu}
       />
       <CustomLink
@@ -51,10 +51,10 @@ const Menu = () => {
         text="Projetos"
         activeLink={
           pathname === '/projects'
-            ? 'bg-active text-primary'
+            ? 'text-primary'
             : 'bg-transparent text-gray-100'
         }
-        style="rounded-none"
+        style="rounded-none border-none"
         onClick={handleOpenMenu}
       />
       <CustomLink
@@ -63,10 +63,10 @@ const Menu = () => {
         text="Contato"
         activeLink={
           pathname === '/contact'
-            ? 'bg-active text-primary'
+            ? 'text-primary'
             : 'bg-transparent text-gray-100'
         }
-        style="rounded-t-none"
+        style="rounded-t-none border-none"
         onClick={handleOpenMenu}
       />
     </nav>

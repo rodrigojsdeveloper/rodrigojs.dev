@@ -5,7 +5,7 @@ import Stack from './Stack'
 
 const Stacks = () => {
   return (
-    <section className="flex w-full flex-col gap-2 rounded-def border border-solid border-gray-200 p-5 sm:gap-4">
+    <section className="flex w-full flex-col gap-2 rounded-def sm:gap-4">
       <SubTitle title="Habilidades" />
       <GroupedItems>
         {stacks.map((stack, index) => (

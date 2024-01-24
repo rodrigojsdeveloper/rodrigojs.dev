@@ -58,7 +58,7 @@ const Header = () => {
             text="Início"
             activeLink={
               pathname === '/'
-                ? 'bg-active text-primary'
+                ? 'border-hover text-primary'
                 : 'bg-transparent text-gray-100'
             }
           />
@@ -68,7 +68,7 @@ const Header = () => {
             text="Sobre"
             activeLink={
               pathname === '/about'
-                ? 'bg-active text-primary'
+                ? 'border-hover text-primary'
                 : 'bg-transparent text-gray-100'
             }
           />
@@ -78,7 +78,7 @@ const Header = () => {
             text="Projetos"
             activeLink={
               pathname === '/projects'
-                ? 'bg-active text-primary'
+                ? 'border-hover text-primary'
                 : 'bg-transparent text-gray-100'
             }
           />
@@ -88,7 +88,7 @@ const Header = () => {
             text="Contato"
             activeLink={
               pathname === '/contact'
-                ? 'bg-active text-primary'
+                ? 'border-hover text-primary'
                 : 'bg-transparent text-gray-100'
             }
           />
