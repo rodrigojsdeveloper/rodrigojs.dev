@@ -4,9 +4,7 @@ import { useContext, useEffect, useRef } from 'react'
 import { usePathname } from 'next/navigation'
 import { Context } from '@/contexts/context'
 import CustomLink from './CustomLink'
-import Contact from '@/svgs/Contact'
-import Projects from '@/svgs/Projects'
-import About from '@/svgs/About'
+import { About, Contact, Projects } from '@/svgs'
 
 const DropDown = () => {
   const { handleOpenDropDown } = useContext(Context)

@@ -8,9 +8,7 @@ import DropDown from './DropDown'
 import Button from './Button'
 import Modal from './Modal'
 import { Context } from '@/contexts/context'
-import Menu from '@/svgs/Menu'
-import Close from '@/svgs/Close'
-import MenuHamburguer from '@/svgs/MenuHamburguer'
+import { Close, Menu, MenuHamburguer } from '@/svgs'
 
 const HeaderMobile = () => {
   const { openDropDown, openModal, handleOpenDropDown, handleOpenModal } =

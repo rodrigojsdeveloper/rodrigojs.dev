@@ -9,16 +9,19 @@ import { Context } from '@/contexts/context'
 import SubTitle from './SubTitle'
 import ModalBackground from './ModalBackground'
 import socials from '@/utils/socials'
-import SourceCode from '@/svgs/SourceCode'
 import copyLink from '@/utils/copyLink'
 import { useTheme } from 'next-themes'
-import CopyLink from '@/svgs/CopyLink'
-import Sun from '@/svgs/Sun'
-import Moon from '@/svgs/Moon'
-import Close from '@/svgs/Close'
-import GitHub from '@/svgs/GitHub'
-import LinkedIn from '@/svgs/LinkedIn'
-import Instagram from '@/svgs/Instagram'
+import {
+  Close,
+  CopyLink,
+  GitHub,
+  Instagram,
+  LinkedIn,
+  Moon,
+  Sun,
+  SourceCode,
+  Laptop,
+} from '@/svgs'
 
 const Modal = () => {
   const { handleOpenModal } = useContext(Context)
@@ -91,6 +94,13 @@ const Modal = () => {
             >
               <Moon />
               Escuro
+            </div>
+            <div
+              onClick={() => setTheme('system')}
+              className="row group flex h-10 w-full cursor-pointer items-center gap-2 rounded-def border border-solid border-transparent px-2.5 py-2 text-sm text-gray-100 hover:border-hover"
+            >
+              <Laptop />
+              Sistema
             </div>
           </nav>
 

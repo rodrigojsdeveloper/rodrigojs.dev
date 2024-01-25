@@ -2,7 +2,7 @@ import Paragraph from '@/components/Paragraph'
 import Title from '@/components/Title'
 import Line from '@/components/Line'
 import Link from 'next/link'
-import Download from '@/svgs/Download'
+import { Download } from '@/svgs'
 import Stacks from '@/components/Stacks'
 
 const About = () => {

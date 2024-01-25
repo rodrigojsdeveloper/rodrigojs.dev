@@ -10,13 +10,9 @@ import Image from '@/components/Image'
 import Link from 'next/link'
 import Line from './Line'
 import Button from './Button'
-import Home from '@/svgs/Home'
-import About from '@/svgs/About'
-import Contact from '@/svgs/Contact'
-import Projects from '@/svgs/Projects'
+import { About, Home, Contact, Projects, Menu } from '@/svgs'
 import Modal from './Modal'
 import { Context } from '@/contexts/context'
-import Menu from '@/svgs/Menu'
 
 const Header = () => {
   const { openModal, handleOpenModal } = useContext(Context)
