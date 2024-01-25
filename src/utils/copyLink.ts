@@ -2,7 +2,7 @@ import notification from '@/components/Notification'
 
 const copyLink = () => {
   navigator.clipboard
-    .writeText('https://rodrigojs.dev/')
+    .writeText('https://rodrigojs.dev')
     .then(() => {
       notification({
         title: 'Copiado',
