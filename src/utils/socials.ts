@@ -1,6 +1,6 @@
 import { IMediaProps } from '@/interfaces'
 
-const links: IMediaProps[] = [
+const socials: IMediaProps[] = [
   {
     name: 'GitHub',
     link: 'https://github.com/rodrigojsdeveloper/',
@@ -18,4 +18,4 @@ const links: IMediaProps[] = [
   },
 ]
 
-export default links
+export default socials
