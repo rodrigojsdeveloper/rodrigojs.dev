@@ -8,25 +8,25 @@ import Contact from '@/svgs/Contact'
 import Projects from '@/svgs/Projects'
 import About from '@/svgs/About'
 
-const Menu = () => {
-  const { handleOpenMenu } = useContext(Context)
+const DropDown = () => {
+  const { handleOpenDropDown } = useContext(Context)
 
   const menuRef = useRef<HTMLDivElement>(null)
   const pathname = usePathname()
 
   useEffect(() => {
-    const handleClickOutsideMenu = (event: MouseEvent) => {
+    const handleClickOutsideDropDown = (event: MouseEvent) => {
       if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
-        handleOpenMenu()
+        handleOpenDropDown()
       }
     }
 
-    document.addEventListener('mousedown', handleClickOutsideMenu)
+    document.addEventListener('mousedown', handleClickOutsideDropDown)
 
     return () => {
-      document.removeEventListener('mousedown', handleClickOutsideMenu)
+      document.removeEventListener('mousedown', handleClickOutsideDropDown)
     }
-  }, [handleOpenMenu])
+  }, [handleOpenDropDown])
 
   return (
     <nav
@@ -43,7 +43,7 @@ const Menu = () => {
             : 'bg-transparent text-gray-100'
         }
         style="rounded-b-none border-none"
-        onClick={handleOpenMenu}
+        onClick={handleOpenDropDown}
       />
       <CustomLink
         href="projects"
@@ -55,7 +55,7 @@ const Menu = () => {
             : 'bg-transparent text-gray-100'
         }
         style="rounded-none border-none"
-        onClick={handleOpenMenu}
+        onClick={handleOpenDropDown}
       />
       <CustomLink
         href="contact"
@@ -67,10 +67,10 @@ const Menu = () => {
             : 'bg-transparent text-gray-100'
         }
         style="rounded-t-none border-none"
-        onClick={handleOpenMenu}
+        onClick={handleOpenDropDown}
       />
     </nav>
   )
 }
 
-export default Menu
+export default DropDown

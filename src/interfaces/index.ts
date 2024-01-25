@@ -48,14 +48,13 @@ export interface ITitle {
   title: string
 }
 
-export interface IMediaProps {
+export interface ISocialProps {
   name: string
   link: string
-  svg: JSX.Element | null
 }
 
-export interface IMedia {
-  media: IMediaProps
+export interface ISocial {
+  social: ISocialProps
 }
 
 export interface IPathname {
@@ -68,11 +67,11 @@ export interface IHandleState {
 }
 
 export interface IContextData {
-  openMenu: boolean
+  openDropDown: boolean
   openModal: boolean
-  handleOpenMenu: () => void
+  handleOpenDropDown: () => void
   handleOpenModal: () => void
-  setOpenMenu: Dispatch<SetStateAction<boolean>>
+  setOpenDropDown: Dispatch<SetStateAction<boolean>>
   setOpenModal: Dispatch<SetStateAction<boolean>>
 }
 

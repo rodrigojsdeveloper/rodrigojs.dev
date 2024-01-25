@@ -6,11 +6,11 @@ import { IContextData } from '@/interfaces'
 const Context = createContext({} as IContextData)
 
 const ContextProvider = ({ children }: PropsWithChildren) => {
-  const [openMenu, setOpenMenu] = useState<boolean>(false)
+  const [openDropDown, setOpenDropDown] = useState<boolean>(false)
   const [openModal, setOpenModal] = useState<boolean>(false)
 
-  const handleOpenMenu = () => {
-    setOpenMenu(!openMenu)
+  const handleOpenDropDown = () => {
+    setOpenDropDown(!openDropDown)
   }
 
   const handleOpenModal = () => {
@@ -18,11 +18,11 @@ const ContextProvider = ({ children }: PropsWithChildren) => {
   }
 
   const contextData: IContextData = {
-    openMenu,
+    openDropDown,
     openModal,
-    handleOpenMenu,
+    handleOpenDropDown,
     handleOpenModal,
-    setOpenMenu,
+    setOpenDropDown,
     setOpenModal,
   }
 

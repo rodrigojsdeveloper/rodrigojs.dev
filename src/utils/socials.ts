@@ -1,20 +1,17 @@
-import { IMediaProps } from '@/interfaces'
+import { ISocialProps } from '@/interfaces'
 
-const socials: IMediaProps[] = [
+const socials: ISocialProps[] = [
   {
     name: 'GitHub',
     link: 'https://github.com/rodrigojsdeveloper/',
-    svg: null,
   },
   {
     name: 'LinkedIn',
     link: 'https://www.linkedin.com/in/rodrigo-de-jesus-silva/',
-    svg: null,
   },
   {
     name: 'Instagram',
     link: 'https://www.instagram.com/eurodrigojs/',
-    svg: null,
   },
 ]
 

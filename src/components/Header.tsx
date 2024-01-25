@@ -16,6 +16,7 @@ import Contact from '@/svgs/Contact'
 import Projects from '@/svgs/Projects'
 import Modal from './Modal'
 import { Context } from '@/contexts/context'
+import Menu from '@/svgs/Menu'
 
 const Header = () => {
   const { openModal, handleOpenModal } = useContext(Context)
@@ -98,20 +99,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <Copyright />
           <Button handleState={handleOpenModal} arialLabel="Settings Button">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#888888"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="duration-300 group-hover:stroke-primary group-active:stroke-primary"
-            >
-              <path d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3"></path>
-            </svg>
+            <Menu />
           </Button>
         </div>
       </aside>

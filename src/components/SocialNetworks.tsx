@@ -5,8 +5,8 @@ import SocialMedia from './SocialMedia'
 const SocialNetworks = () => {
   return (
     <GroupedItems>
-      {socials.map((media, index) => (
-        <SocialMedia key={index} media={media} />
+      {socials.map((social, index) => (
+        <SocialMedia key={index} social={social} />
       ))}
     </GroupedItems>
   )
