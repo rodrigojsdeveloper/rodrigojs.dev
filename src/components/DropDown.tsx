@@ -29,7 +29,7 @@ const DropDown = () => {
   return (
     <nav
       ref={menuRef}
-      className="fixed right-6 top-16 z-20 w-full max-w-[8.75rem] animate-down rounded-def border border-solid border-gray-200 bg-black"
+      className="bg-background fixed right-6 top-16 z-20 w-full max-w-[8.75rem] animate-down rounded-def border border-solid border-gray-200"
     >
       <CustomLink
         href="about"

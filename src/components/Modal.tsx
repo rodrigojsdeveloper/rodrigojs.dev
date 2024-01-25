@@ -47,7 +47,7 @@ const Modal = () => {
 
   return (
     <ModalBackground>
-      <div className="flex h-full max-h-[22.425rem] w-full max-w-[31.9rem] animate-modal flex-col rounded-def border border-solid border-gray-200 bg-black duration-300">
+      <div className="bg-background flex h-full max-h-[22.425rem] w-full max-w-[31.9rem] animate-modal flex-col rounded-def border border-solid border-gray-200 duration-300">
         <div className="flex flex-row items-center justify-between py-2.5 pl-4 pr-2">
           <SubTitle title="Menu" />
 
@@ -83,21 +83,21 @@ const Modal = () => {
           <nav className="flex flex-col gap-1">
             <div
               onClick={() => setTheme('light')}
-              className="row group flex h-10 w-full cursor-pointer items-center gap-2 rounded-def border border-solid border-transparent px-2.5 py-2 text-sm text-gray-100 hover:border-hover"
+              className="row group flex h-10 w-full cursor-pointer select-none items-center gap-2 rounded-def border border-solid border-transparent px-2.5 py-2 text-sm text-gray-100 hover:border-hover"
             >
               <Sun />
               Claro
             </div>
             <div
               onClick={() => setTheme('dark')}
-              className="row group flex h-10 w-full cursor-pointer items-center gap-2 rounded-def border border-solid border-transparent px-2.5 py-2 text-sm text-gray-100 hover:border-hover"
+              className="row group flex h-10 w-full cursor-pointer select-none items-center gap-2 rounded-def border border-solid border-transparent px-2.5 py-2 text-sm text-gray-100 hover:border-hover"
             >
               <Moon />
               Escuro
             </div>
             <div
               onClick={() => setTheme('system')}
-              className="row group flex h-10 w-full cursor-pointer items-center gap-2 rounded-def border border-solid border-transparent px-2.5 py-2 text-sm text-gray-100 hover:border-hover"
+              className="row group flex h-10 w-full cursor-pointer select-none items-center gap-2 rounded-def border border-solid border-transparent px-2.5 py-2 text-sm text-gray-100 hover:border-hover"
             >
               <Laptop />
               Sistema

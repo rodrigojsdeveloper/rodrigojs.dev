@@ -2,7 +2,6 @@ import About from './About'
 import Close from './Close'
 import Contact from './Contact'
 import CopyLink from './CopyLink'
-import Download from './Download'
 import GitHub from './GitHub'
 import Home from './Home'
 import Instagram from './Instagram'
@@ -20,7 +19,6 @@ export {
   Close,
   Contact,
   CopyLink,
-  Download,
   GitHub,
   Home,
   Instagram,

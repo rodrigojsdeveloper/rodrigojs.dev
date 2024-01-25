@@ -10,7 +10,6 @@ const Menu = () => {
       strokeWidth="1.5"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="duration-300 group-hover:stroke-primary group-active:stroke-primary"
     >
       <path d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3"></path>
     </svg>

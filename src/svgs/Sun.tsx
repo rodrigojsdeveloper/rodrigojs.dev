@@ -10,7 +10,6 @@ const Sun = () => {
       strokeWidth="1.5"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="duration-300"
     >
       <circle cx="12" cy="12" r="4"></circle>
       <path d="M12 2v2"></path>

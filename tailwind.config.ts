@@ -18,7 +18,7 @@ const config: Config = {
         'gray-200': 'var(--gray-200)',
         hover: 'var(--hover)',
         shadow: 'var(--shadow)',
-        black: 'var(--black)',
+        background: 'var(--background)',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

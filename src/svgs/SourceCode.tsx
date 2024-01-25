@@ -13,7 +13,6 @@ const SourceCode = () => {
         strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="duration-300"
       />
     </svg>
   )

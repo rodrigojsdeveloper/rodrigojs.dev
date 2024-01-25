@@ -1,9 +1,8 @@
 import Paragraph from '@/components/Paragraph'
+import Stacks from '@/components/Stacks'
 import Title from '@/components/Title'
 import Line from '@/components/Line'
 import Link from 'next/link'
-import { Download } from '@/svgs'
-import Stacks from '@/components/Stacks'
 
 const About = () => {
   return (
@@ -21,9 +20,9 @@ const About = () => {
       <Link
         target="_blank"
         href="https://rodrigojsdeveloper.github.io/cv"
-        className="group flex h-10 w-full max-w-[8.8rem] select-none items-center justify-center gap-2.5 rounded-def border border-solid border-gray-200 p-2 text-sm font-medium text-gray-100 hover:text-primary active:text-primary sm:h-11 sm:max-w-[9.375rem]"
+        className="group flex h-10 w-full max-w-[8rem] select-none items-center justify-center gap-2.5 rounded-def border border-solid border-gray-200 p-2 text-sm font-medium text-gray-100 hover:text-primary active:text-primary sm:h-11 sm:max-w-[9rem]"
       >
-        <Download height="20" width="20" /> CV Download
+        Download C.V
       </Link>
       <Line />
       <Stacks />
