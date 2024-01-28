@@ -1,9 +1,9 @@
-import devFinder from '@/assets/devfinder.png'
+import mathematical from '@/assets/mathematical.png'
 import motorsShop from '@/assets/motors-shop.png'
+import devFinder from '@/assets/devfinder.png'
 import geography from '@/assets/geography.png'
 import iweather from '@/assets/iweather.png'
 import dtMoney from '@/assets/dt-money.png'
-import api from '@/assets/api.png'
 
 import { IProjectProps } from '@/interfaces'
 import { StaticImageData } from 'next/image'
@@ -31,22 +31,22 @@ const projects: IProjectProps[] = [
     'https://github.com/rodrigojsdeveloper/geography',
   ),
   createProject(
-    api,
-    'API',
-    'API que trata da criação de propriedades e reserva de visitas ou compra.',
-    'https://github.com/rodrigojsdeveloper/api-nodejs',
+    devFinder,
+    'DevFinder',
+    'O DevFinder simplifica a pesquisa de usuários no GitHub.',
+    'https://github.com/rodrigojsdeveloper/devfinder',
+  ),
+  createProject(
+    mathematical,
+    'Mathematical',
+    'Mathematical se concentra no ensino de operadores matemáticos básicos.',
+    'https://github.com/rodrigojsdeveloper/mathematical',
   ),
   createProject(
     iweather,
     'iWeather',
     'iWeather é um site de previsão do tempo preciso para planejar o seu dia.',
     'https://github.com/rodrigojsdeveloper/iweather',
-  ),
-  createProject(
-    devFinder,
-    'DevFinder',
-    'O DevFinder simplifica a pesquisa de usuários no GitHub.',
-    'https://github.com/rodrigojsdeveloper/devfinder',
   ),
   createProject(
     dtMoney,
