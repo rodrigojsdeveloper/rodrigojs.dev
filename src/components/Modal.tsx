@@ -62,7 +62,7 @@ const Modal = () => {
                 href=""
                 Icon={<theme.svg />}
                 text={theme.title}
-                onClick={() => theme.setTheme(setTheme)}
+                onClick={() => setTheme(theme.theme)}
                 style="text-gray-100 font-light"
               />
             ))}

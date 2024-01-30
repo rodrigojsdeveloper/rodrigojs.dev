@@ -37,17 +37,17 @@ const LINKS = {
   themes: [
     {
       title: 'Claro',
-      setTheme: (setTheme: (theme: string) => void) => setTheme('light'),
+      theme: 'light',
       svg: Sun,
     },
     {
       title: 'Escuro',
-      setTheme: (setTheme: (theme: string) => void) => setTheme('dark'),
+      theme: 'dark',
       svg: Moon,
     },
     {
       title: 'Sistema',
-      setTheme: (setTheme: (theme: string) => void) => setTheme('system'),
+      theme: 'system',
       svg: Laptop,
     },
   ],
