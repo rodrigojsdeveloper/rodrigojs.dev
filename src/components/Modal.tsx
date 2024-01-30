@@ -2,7 +2,6 @@
 
 import { useContext } from 'react'
 import CustomLink from './CustomLink'
-import Paragraph from './Paragraph'
 import Line from './Line'
 import Button from './Button'
 import { Context } from '@/contexts/context'
@@ -59,7 +58,9 @@ const Modal = () => {
         <Line />
 
         <div className="overflow-y-auto px-3 pb-2 pt-1.5">
-          <Paragraph text="Redes sociais" style="text py-1.5" />
+          <p className="text-pretty py-2 text-xs text-gray-100">
+            Redes sociais
+          </p>
           <nav className="flex flex-col gap-1">
             {socials.map((media, index) => {
               const newMedia = { ...media, svg: getSocialIcon(media.name) }
@@ -70,7 +71,7 @@ const Modal = () => {
                   href={newMedia.link}
                   Icon={newMedia.svg}
                   text={newMedia.name}
-                  style="text-gray-100"
+                  style="text-gray-100 font-light"
                   onClick={handleOpenModal}
                   externalLink
                   target="_blank"
@@ -79,36 +80,36 @@ const Modal = () => {
             })}
           </nav>
 
-          <Paragraph text="Temas" style="text py-1.5" />
+          <p className="text-pretty py-2 text-xs text-gray-100">Temas</p>
           <nav className="flex flex-col gap-1">
             <div
               onClick={() => setTheme('light')}
-              className="row group flex h-10 w-full cursor-pointer select-none items-center gap-2 rounded-def border border-solid border-transparent px-2.5 py-2 text-sm text-gray-100 hover:border-hover"
+              className="row group  flex h-10 w-full cursor-pointer select-none items-center gap-2 rounded-def border border-solid border-transparent px-2 py-2 text-sm font-light text-gray-100 hover:border-hover"
             >
               <Sun />
               Claro
             </div>
             <div
               onClick={() => setTheme('dark')}
-              className="row group flex h-10 w-full cursor-pointer select-none items-center gap-2 rounded-def border border-solid border-transparent px-2.5 py-2 text-sm text-gray-100 hover:border-hover"
+              className="row group  flex h-10 w-full cursor-pointer select-none items-center gap-2 rounded-def border border-solid border-transparent px-2 py-2 text-sm font-light text-gray-100 hover:border-hover"
             >
               <Moon />
               Escuro
             </div>
             <div
               onClick={() => setTheme('system')}
-              className="row group flex h-10 w-full cursor-pointer select-none items-center gap-2 rounded-def border border-solid border-transparent px-2.5 py-2 text-sm text-gray-100 hover:border-hover"
+              className="row group flex h-10 w-full cursor-pointer select-none items-center gap-2 rounded-def border border-solid border-transparent px-2 py-2 text-sm font-light text-gray-100 hover:border-hover"
             >
               <Laptop />
               Sistema
             </div>
           </nav>
 
-          <Paragraph text="Sugestões" style="text py-1.5" />
+          <p className="text-pretty py-2 text-xs text-gray-100">Sugestões</p>
           <nav className="flex flex-col gap-1">
             <button
               onClick={handleCopyLink}
-              className="row group flex h-10 w-full items-center gap-2 rounded-def border border-solid border-transparent px-2.5 py-2 text-sm text-gray-100 hover:border-hover"
+              className="row group flex h-10 w-full items-center gap-2 rounded-def border border-solid border-transparent px-2 py-2 text-sm font-light text-gray-100 hover:border-hover"
             >
               <CopyLink />
               Copiar link
@@ -118,7 +119,7 @@ const Modal = () => {
               href="https://github.com/rodrigojsdeveloper/rodrigojs.dev"
               Icon={<SourceCode />}
               text="Código fonte"
-              style="text-gray-100"
+              style="text-gray-100 font-light"
               onClick={handleOpenModal}
               externalLink
             />
