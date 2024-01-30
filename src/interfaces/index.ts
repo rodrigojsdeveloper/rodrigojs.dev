@@ -52,6 +52,7 @@ export interface ITitle {
 export interface ISocialProps {
   name: string
   link: string
+  svg: React.ComponentType<React.SVGProps<SVGSVGElement>>
 }
 
 export interface ISocial {

@@ -1,43 +1,20 @@
 'use client'
 
 import { useContext } from 'react'
-import CustomLink from './CustomLink'
 import Line from './Line'
 import Button from './Button'
-import { Context } from '@/contexts/context'
 import SubTitle from './SubTitle'
-import ModalBackground from './ModalBackground'
 import socials from '@/utils/socials'
-import copyLink from '@/utils/copyLink'
+import CustomLink from './CustomLink'
 import { useTheme } from 'next-themes'
-import {
-  Close,
-  CopyLink,
-  GitHub,
-  Instagram,
-  LinkedIn,
-  Moon,
-  Sun,
-  SourceCode,
-  Laptop,
-} from '@/svgs'
+import copyLink from '@/utils/copyLink'
+import { Context } from '@/contexts/context'
+import ModalBackground from './ModalBackground'
+import { Close, CopyLink, Moon, Sun, SourceCode, Laptop } from '@/svgs'
 
 const Modal = () => {
   const { handleOpenModal } = useContext(Context)
   const { setTheme } = useTheme()
-
-  const getSocialIcon = (name: string) => {
-    switch (name) {
-      case 'GitHub':
-        return <GitHub />
-      case 'LinkedIn':
-        return <LinkedIn />
-      case 'Instagram':
-        return <Instagram />
-      default:
-        return null
-    }
-  }
 
   const handleCopyLink = () => {
     copyLink()
@@ -62,23 +39,19 @@ const Modal = () => {
             Redes sociais
           </p>
           <nav className="flex flex-col gap-1">
-            {socials.map((media, index) => {
-              const newMedia = { ...media, svg: getSocialIcon(media.name) }
-
-              return (
-                <CustomLink
-                  key={index}
-                  href={newMedia.link}
-                  Icon={newMedia.svg}
-                  text={newMedia.name}
-                  style="text-gray-100 font-light"
-                  onClick={handleOpenModal}
-                  externalLink
-                  target="_blank"
-                  isLink
-                />
-              )
-            })}
+            {socials.map((media, index) => (
+              <CustomLink
+                key={index}
+                href={media.link}
+                Icon={<media.svg />}
+                text={media.name}
+                style="text-gray-100 font-light"
+                onClick={handleOpenModal}
+                externalLink
+                target="_blank"
+                isLink
+              />
+            ))}
           </nav>
 
           <p className="text-pretty py-2 text-xs text-gray-100">Temas</p>
