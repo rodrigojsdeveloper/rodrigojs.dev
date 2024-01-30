@@ -15,6 +15,7 @@ export interface ICustomLink {
   style?: string
   externalLink?: boolean
   target?: HTMLAttributeAnchorTarget
+  isLink?: boolean
 }
 
 export interface IStack {

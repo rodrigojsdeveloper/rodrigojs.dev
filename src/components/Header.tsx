@@ -58,6 +58,7 @@ const Header = () => {
                 ? 'linkSelected text-primary'
                 : 'border-transparent text-gray-100'
             }
+            isLink
           />
           <CustomLink
             href="about"
@@ -68,6 +69,7 @@ const Header = () => {
                 ? 'linkSelected text-primary'
                 : 'border-transparent text-gray-100'
             }
+            isLink
           />
           <CustomLink
             href="projects"
@@ -78,6 +80,7 @@ const Header = () => {
                 ? 'linkSelected text-primary'
                 : 'border-transparent text-gray-100'
             }
+            isLink
           />
           <CustomLink
             href="contact"
@@ -88,6 +91,7 @@ const Header = () => {
                 ? 'linkSelected text-primary'
                 : 'border-transparent text-gray-100'
             }
+            isLink
           />
         </nav>
 

@@ -42,6 +42,7 @@ const DropDown = () => {
         }
         style="rounded-b-none border-none"
         onClick={handleOpenDropDown}
+        isLink
       />
       <CustomLink
         href="projects"
@@ -54,6 +55,7 @@ const DropDown = () => {
         }
         style="rounded-none border-none"
         onClick={handleOpenDropDown}
+        isLink
       />
       <CustomLink
         href="contact"
@@ -66,6 +68,7 @@ const DropDown = () => {
         }
         style="rounded-t-none border-none"
         onClick={handleOpenDropDown}
+        isLink
       />
     </nav>
   )

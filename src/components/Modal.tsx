@@ -75,6 +75,7 @@ const Modal = () => {
                   onClick={handleOpenModal}
                   externalLink
                   target="_blank"
+                  isLink
                 />
               )
             })}
@@ -82,38 +83,34 @@ const Modal = () => {
 
           <p className="text-pretty py-2 text-xs text-gray-100">Temas</p>
           <nav className="flex flex-col gap-1">
-            <div
+            <CustomLink
+              href=""
+              Icon={<Sun />}
+              text="Claro"
               onClick={() => setTheme('light')}
-              className="row group  flex h-10 w-full cursor-pointer select-none items-center gap-2 rounded-def border border-solid border-transparent px-2 py-2 text-sm font-light text-gray-100 hover:border-hover"
-            >
-              <Sun />
-              Claro
-            </div>
-            <div
+            />
+            <CustomLink
+              href=""
+              Icon={<Moon />}
+              text="Escuro"
               onClick={() => setTheme('dark')}
-              className="row group  flex h-10 w-full cursor-pointer select-none items-center gap-2 rounded-def border border-solid border-transparent px-2 py-2 text-sm font-light text-gray-100 hover:border-hover"
-            >
-              <Moon />
-              Escuro
-            </div>
-            <div
+            />
+            <CustomLink
+              href=""
+              Icon={<Laptop />}
+              text="Sistema"
               onClick={() => setTheme('system')}
-              className="row group flex h-10 w-full cursor-pointer select-none items-center gap-2 rounded-def border border-solid border-transparent px-2 py-2 text-sm font-light text-gray-100 hover:border-hover"
-            >
-              <Laptop />
-              Sistema
-            </div>
+            />
           </nav>
 
           <p className="text-pretty py-2 text-xs text-gray-100">Sugestões</p>
           <nav className="flex flex-col gap-1">
-            <button
+            <CustomLink
+              href=""
+              Icon={<CopyLink />}
+              text="Copiar link"
               onClick={handleCopyLink}
-              className="row group flex h-10 w-full items-center gap-2 rounded-def border border-solid border-transparent px-2 py-2 text-sm font-light text-gray-100 hover:border-hover"
-            >
-              <CopyLink />
-              Copiar link
-            </button>
+            />
             <CustomLink
               target="_blank"
               href="https://github.com/rodrigojsdeveloper/rodrigojs.dev"
@@ -122,6 +119,7 @@ const Modal = () => {
               style="text-gray-100 font-light"
               onClick={handleOpenModal}
               externalLink
+              isLink
             />
           </nav>
         </div>
