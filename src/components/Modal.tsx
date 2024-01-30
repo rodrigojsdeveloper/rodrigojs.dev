@@ -21,6 +21,19 @@ const Modal = () => {
     handleOpenModal()
   }
 
+  const getTheme = (name: string) => {
+    switch (name) {
+      case 'light':
+        return 'light'
+      case 'dark':
+        return 'dark'
+      case 'system':
+        return 'system'
+      default:
+        return 'system'
+    }
+  }
+
   return (
     <ModalBackground>
       <div className="flex h-full max-h-[22.425rem] w-full max-w-[31.9rem] animate-modal flex-col rounded-def border border-solid border-gray-200 bg-background duration-300">
@@ -56,16 +69,20 @@ const Modal = () => {
 
           <p className="text-pretty py-2 text-xs text-gray-100">Temas</p>
           <nav className="flex flex-col gap-1">
-            {LINKS.themes.map((theme, index) => (
-              <CustomLink
-                key={`theme ${index}`}
-                href=""
-                Icon={<theme.svg />}
-                text={theme.title}
-                onClick={() => setTheme(theme.theme)}
-                style="text-gray-100 font-light"
-              />
-            ))}
+            {LINKS.themes.map((theme, index) => {
+              const newTheme = { ...theme, theme: getTheme(theme.theme) }
+
+              return (
+                <CustomLink
+                  key={`theme ${index}`}
+                  href=""
+                  Icon={<newTheme.svg />}
+                  text={newTheme.title}
+                  onClick={() => setTheme(newTheme.theme)}
+                  style="text-gray-100 font-light"
+                />
+              )
+            })}
           </nav>
 
           <p className="text-pretty py-2 text-xs text-gray-100">Sugestões</p>
