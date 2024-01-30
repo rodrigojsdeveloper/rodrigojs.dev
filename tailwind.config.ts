@@ -19,6 +19,7 @@ const config: Config = {
         hover: 'var(--hover)',
         shadow: 'var(--shadow)',
         background: 'var(--background)',
+        button: 'var(--button)',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

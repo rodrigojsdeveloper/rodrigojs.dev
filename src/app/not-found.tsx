@@ -29,6 +29,7 @@ const NotFound = () => {
         }
         text="Voltar"
         style="max-w-[7.563rem] text-gray-100 justify-center"
+        isLink
       />
     </div>
   )

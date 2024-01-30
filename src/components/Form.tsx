@@ -49,7 +49,7 @@ const Form = () => {
 
       <button
         type="submit"
-        className="h-11 w-full rounded-def bg-primary text-sm text-background"
+        className="hover:bg-button h-11 w-full rounded-def bg-secondary text-sm text-background"
       >
         Enviar
       </button>
