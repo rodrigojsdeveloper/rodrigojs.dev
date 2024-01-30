@@ -1,4 +1,12 @@
-import { GitHub, Instagram, LinkedIn } from '@/svgs'
+import {
+  About,
+  Contact,
+  GitHub,
+  Home,
+  Instagram,
+  LinkedIn,
+  Projects,
+} from '@/svgs'
 import { ISocialProps } from '@/interfaces'
 
 const socials: ISocialProps[] = [
@@ -18,5 +26,30 @@ const socials: ISocialProps[] = [
     svg: Instagram,
   },
 ]
+
+export const LINKS = {
+  website: [
+    {
+      href: '',
+      title: 'Início',
+      svg: Home,
+    },
+    {
+      href: 'about',
+      title: 'Sobre',
+      svg: About,
+    },
+    {
+      href: 'projects',
+      title: 'Projetos',
+      svg: Projects,
+    },
+    {
+      href: 'contact',
+      title: 'Contato',
+      svg: Contact,
+    },
+  ],
+}
 
 export default socials

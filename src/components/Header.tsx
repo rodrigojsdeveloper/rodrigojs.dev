@@ -10,9 +10,10 @@ import Image from '@/components/Image'
 import Link from 'next/link'
 import Line from './Line'
 import Button from './Button'
-import { About, Home, Contact, Projects, Menu } from '@/svgs'
+import { Menu } from '@/svgs'
 import Modal from './Modal'
 import { Context } from '@/contexts/context'
+import { LINKS } from '@/utils/socials'
 
 const Header = () => {
   const { openModal, handleOpenModal } = useContext(Context)
@@ -49,50 +50,20 @@ const Header = () => {
         <Line />
 
         <nav className="flex flex-col gap-1">
-          <CustomLink
-            href=""
-            Icon={<Home pathname={pathname} />}
-            text="Início"
-            activeLink={
-              pathname === '/'
-                ? 'linkSelected text-primary'
-                : 'border-transparent text-gray-100'
-            }
-            isLink
-          />
-          <CustomLink
-            href="about"
-            Icon={<About pathname={pathname} />}
-            text="Sobre"
-            activeLink={
-              pathname === '/about'
-                ? 'linkSelected text-primary'
-                : 'border-transparent text-gray-100'
-            }
-            isLink
-          />
-          <CustomLink
-            href="projects"
-            Icon={<Projects pathname={pathname} />}
-            text="Projetos"
-            activeLink={
-              pathname === '/projects'
-                ? 'linkSelected text-primary'
-                : 'border-transparent text-gray-100'
-            }
-            isLink
-          />
-          <CustomLink
-            href="contact"
-            Icon={<Contact pathname={pathname} />}
-            text="Contato"
-            activeLink={
-              pathname === '/contact'
-                ? 'linkSelected text-primary'
-                : 'border-transparent text-gray-100'
-            }
-            isLink
-          />
+          {LINKS.website.map((link, index) => (
+            <CustomLink
+              key={`website ${index}`}
+              href={link.href}
+              Icon={<link.svg pathname={pathname} />}
+              text={link.title}
+              activeLink={
+                pathname === `/${link.href}`
+                  ? 'linkSelected text-primary'
+                  : 'border-transparent text-gray-100'
+              }
+              isLink
+            />
+          ))}
         </nav>
 
         <Line />
