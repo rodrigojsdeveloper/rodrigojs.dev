@@ -4,13 +4,13 @@ import { useContext } from 'react'
 import Line from './Line'
 import Button from './Button'
 import SubTitle from './SubTitle'
-import socials from '@/utils/socials'
+import LINKS from '@/utils/links'
 import CustomLink from './CustomLink'
 import { useTheme } from 'next-themes'
 import copyLink from '@/utils/copyLink'
 import { Context } from '@/contexts/context'
 import ModalBackground from './ModalBackground'
-import { Close, CopyLink, Moon, Sun, SourceCode, Laptop } from '@/svgs'
+import { Close, CopyLink, SourceCode } from '@/svgs'
 
 const Modal = () => {
   const { handleOpenModal } = useContext(Context)
@@ -39,9 +39,9 @@ const Modal = () => {
             Redes sociais
           </p>
           <nav className="flex flex-col gap-1">
-            {socials.map((media, index) => (
+            {LINKS.socials.map((media, index) => (
               <CustomLink
-                key={index}
+                key={`media ${index}`}
                 href={media.link}
                 Icon={<media.svg />}
                 text={media.name}
@@ -56,24 +56,16 @@ const Modal = () => {
 
           <p className="text-pretty py-2 text-xs text-gray-100">Temas</p>
           <nav className="flex flex-col gap-1">
-            <CustomLink
-              href=""
-              Icon={<Sun />}
-              text="Claro"
-              onClick={() => setTheme('light')}
-            />
-            <CustomLink
-              href=""
-              Icon={<Moon />}
-              text="Escuro"
-              onClick={() => setTheme('dark')}
-            />
-            <CustomLink
-              href=""
-              Icon={<Laptop />}
-              text="Sistema"
-              onClick={() => setTheme('system')}
-            />
+            {LINKS.themes.map((theme, index) => (
+              <CustomLink
+                key={`theme ${index}`}
+                href=""
+                Icon={<theme.svg />}
+                text={theme.title}
+                onClick={() => theme.setTheme(setTheme)}
+                style="text-gray-100 font-light"
+              />
+            ))}
           </nav>
 
           <p className="text-pretty py-2 text-xs text-gray-100">Sugestões</p>
@@ -83,6 +75,7 @@ const Modal = () => {
               Icon={<CopyLink />}
               text="Copiar link"
               onClick={handleCopyLink}
+              style="text-gray-100 font-light"
             />
             <CustomLink
               target="_blank"

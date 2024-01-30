@@ -13,7 +13,7 @@ import Button from './Button'
 import { Menu } from '@/svgs'
 import Modal from './Modal'
 import { Context } from '@/contexts/context'
-import { LINKS } from '@/utils/socials'
+import LINKS from '@/utils/links'
 
 const Header = () => {
   const { openModal, handleOpenModal } = useContext(Context)

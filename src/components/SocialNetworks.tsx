@@ -1,11 +1,11 @@
-import socials from '@/utils/socials'
 import GroupedItems from './GroupedItems'
 import SocialMedia from './SocialMedia'
+import LINKS from '@/utils/links'
 
 const SocialNetworks = () => {
   return (
     <GroupedItems>
-      {socials.map((social, index) => (
+      {LINKS.socials.map((social, index) => (
         <SocialMedia key={index} social={social} />
       ))}
     </GroupedItems>
