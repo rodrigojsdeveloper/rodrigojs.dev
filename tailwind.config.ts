@@ -21,6 +21,10 @@ const config: Config = {
         background: 'var(--background)',
         button: 'var(--button)',
       },
+      backgroundImage: {
+        'fade-gradient':
+          'linear-gradient(90deg, var(--background), transparent 20%, transparent 80%, var(--background))',
+      },
       borderRadius: {
         def: '0.5rem',
       },
@@ -37,11 +41,16 @@ const config: Config = {
           from: { opacity: '0' },
           to: { opacity: '1' },
         },
+        slide: {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(calc(-100% - 1rem))' },
+        },
       },
       animation: {
         up: 'up 0.3s',
         down: 'down 0.3s',
         modal: 'modal 0.2s',
+        slide: 'slide 40s linear infinite',
       },
     },
   },

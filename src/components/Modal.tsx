@@ -51,7 +51,7 @@ const Modal = () => {
           <p className="text-pretty py-2 text-xs text-gray-100">
             Redes sociais
           </p>
-          <nav className="flex flex-col gap-1">
+          <nav className="flex flex-col gap-0.5">
             {LINKS.socials.map((media, index) => (
               <CustomLink
                 key={`media ${index}`}
@@ -68,7 +68,7 @@ const Modal = () => {
           </nav>
 
           <p className="text-pretty py-2 text-xs text-gray-100">Temas</p>
-          <nav className="flex flex-col gap-1">
+          <nav className="flex flex-col gap-0.5">
             {LINKS.themes.map((theme, index) => {
               const newTheme = { ...theme, theme: getTheme(theme.theme) }
 
@@ -86,7 +86,7 @@ const Modal = () => {
           </nav>
 
           <p className="text-pretty py-2 text-xs text-gray-100">Sugestões</p>
-          <nav className="flex flex-col gap-1">
+          <nav className="flex flex-col gap-0.5">
             <CustomLink
               href=""
               Icon={<CopyLink />}
