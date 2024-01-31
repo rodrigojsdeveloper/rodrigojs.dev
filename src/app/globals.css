@@ -38,7 +38,7 @@
     --primary: #fafafa;
     --secondary: #ededed;
     --gray-100: #888888;
-    --gray-200: #333333;
+    --gray-200: rgba(38,38,38,.8);
     --hover: #1a1a1a;
     --shadow: rgba(0, 0, 0, 0.5);
     --selection: rgba(38, 38, 38, .5);
