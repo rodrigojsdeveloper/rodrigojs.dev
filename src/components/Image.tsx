@@ -13,8 +13,8 @@ const Image = (props: ImageProps) => {
     <figure
       className={`
       overflow-hidden
-      ${isLoading ? 'animate-pulse' : ''}
-      ${zoomHover ? 'duration-500 ease-in-out hover:scale-105' : ''}
+      ${isLoading && 'animate-pulse'}
+      ${zoomHover && 'duration-500 ease-in-out hover:scale-105'}
       ${className}
     `}
     >
