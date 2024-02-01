@@ -55,11 +55,11 @@ body {
   min-height: -webkit-fill-available;
 
   color: var(--primary);
-  background: var(--background);
+  background-color: var(--background);
 }
 
 button,
-a, li, img {
+a, li, img, textarea {
   transition: 0.3s;
 }
 
