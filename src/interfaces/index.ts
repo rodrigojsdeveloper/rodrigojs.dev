@@ -1,4 +1,4 @@
-import {
+import React, {
   Dispatch,
   SetStateAction,
   MouseEventHandler,
@@ -19,7 +19,7 @@ export interface ICustomLink {
 }
 
 export interface IStack {
-  src: StaticImageData
+  Icon: React.ReactNode
   bg: string
 }
 

@@ -1,115 +1,115 @@
-import tailwindcss from '@/assets/skills/tailwindcss.svg'
-import javascript from '@/assets/skills/javascript.svg'
-import typescript from '@/assets/skills/typescript.svg'
-import postgresql from '@/assets/skills/postgresql.svg'
-import bootstrap from '@/assets/skills/bootstrap.svg'
-import express from '@/assets/skills/express.svg'
-import swagger from '@/assets/skills/swagger.svg'
-import mongodb from '@/assets/skills/mongodb.svg'
-import nodejs from '@/assets/skills/nodejs.svg'
-import nestjs from '@/assets/skills/nestjs.svg'
-import nextjs from '@/assets/skills/nextjs.svg'
-import python from '@/assets/skills/python.svg'
-import django from '@/assets/skills/django.svg'
-import docker from '@/assets/skills/docker.svg'
-import prisma from '@/assets/skills/prisma.svg'
-import react from '@/assets/skills/react.svg'
-import mysql from '@/assets/skills/mysql.svg'
-import figma from '@/assets/skills/figma.svg'
-import jest from '@/assets/skills/jest.svg'
-import sass from '@/assets/skills/sass.svg'
-import aws from '@/assets/skills/aws.svg'
-import git from '@/assets/skills/git.svg'
+import {
+  Aws,
+  Bootstrap,
+  Django,
+  Docker,
+  Express,
+  Figma,
+  Git,
+  JavaScript,
+  Jest,
+  Mongodb,
+  Mysql,
+  Nestjs,
+  Nextjs,
+  Nodejs,
+  Postgresql,
+  Prisma,
+  Python,
+  React,
+  Sass,
+  Swagger,
+  Tailwind,
+  TypeScript,
+} from '@/svgs/stacks'
 
-import { IStack } from '@/interfaces'
-
-const stacks: IStack[] = [
+const stacks = [
   {
-    src: javascript,
+    svg: JavaScript,
     bg: '#F7DF1F20',
   },
   {
-    src: typescript,
+    svg: TypeScript,
     bg: '#007ACC20',
   },
   {
-    src: react,
+    svg: React,
     bg: '#00D8FF20',
   },
   {
-    src: nextjs,
+    svg: Nextjs,
     bg: '#FFFFFF20',
   },
   {
-    src: tailwindcss,
+    svg: Tailwind,
     bg: '#38BDF820',
   },
   {
-    src: sass,
+    svg: Sass,
     bg: '#CD679920',
   },
   {
-    src: bootstrap,
+    svg: Bootstrap,
     bg: '#9013FE20',
   },
   {
-    src: nodejs,
+    svg: Nodejs,
     bg: '#83CD2920',
   },
   {
-    src: express,
+    svg: Express,
     bg: '#FFFFFF20',
   },
   {
-    src: prisma,
+    svg: Prisma,
     bg: '#2d374820',
   },
   {
-    src: nestjs,
+    svg: Nestjs,
     bg: '#E0234E20',
   },
   {
-    src: jest,
+    svg: Jest,
     bg: '#99425B20',
   },
   {
-    src: python,
+    svg: Python,
     bg: '#387EB820',
   },
   {
-    src: django,
+    svg: Django,
     bg: '#092E2020',
   },
   {
-    src: postgresql,
+    svg: Postgresql,
     bg: '#33679120',
   },
   {
-    src: mysql,
+    svg: Mysql,
     bg: '#00618A20',
   },
   {
-    src: mongodb,
+    svg: Mongodb,
     bg: '#01EC6420',
   },
   {
-    src: docker,
+    svg: Docker,
     bg: '#2396ED20',
   },
   {
-    src: swagger,
+    svg: Swagger,
     bg: '#85EA2D20',
   },
   {
-    src: aws,
+    svg: Aws,
     bg: '#252F3E20',
   },
   {
-    src: git,
+    svg: Git,
     bg: '#F34F2920',
   },
   {
-    src: figma,
+    svg: Figma,
     bg: '#0ACF8320',
   },
 ]

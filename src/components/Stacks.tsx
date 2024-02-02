@@ -1,3 +1,5 @@
+'use client'
+
 import stacks from '@/utils/stacks'
 import SubTitle from './SubTitle'
 import array from '@/utils/array'
@@ -15,7 +17,7 @@ const Stacks = () => {
             data-testid={`slider-child-${index + 1}`}
           >
             {stacks.map((stack, index) => (
-              <Stack src={stack.src} bg={stack.bg} key={index} />
+              <Stack Icon={<stack.svg />} bg={stack.bg} key={index} />
             ))}
           </ul>
         ))}
