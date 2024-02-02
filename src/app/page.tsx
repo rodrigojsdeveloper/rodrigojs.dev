@@ -3,7 +3,6 @@ import Paragraph from '@/components/Paragraph'
 import SubTitle from '@/components/SubTitle'
 import Project from '@/components/Project'
 import Title from '@/components/Title'
-import Line from '@/components/Line'
 import Work from '@/components/Work'
 import List from '@/components/List'
 import Link from 'next/link'
@@ -19,8 +18,6 @@ const Home = () => {
       />
 
       <div className="flex flex-col gap-y-3">
-        <Line />
-
         <div className="flex w-full flex-wrap items-center justify-between gap-x-2 gap-y-1.5">
           <SubTitle title="Projetos recentes" />
 
@@ -54,7 +51,6 @@ const Home = () => {
         ))}
       </List>
 
-      <Line />
       <Work />
     </div>
   )

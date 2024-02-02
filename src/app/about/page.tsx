@@ -1,7 +1,6 @@
 import Paragraph from '@/components/Paragraph'
 import Stacks from '@/components/Stacks'
 import Title from '@/components/Title'
-import Line from '@/components/Line'
 import Link from 'next/link'
 
 const About = () => {
@@ -24,7 +23,6 @@ const About = () => {
       >
         Download C.V
       </Link>
-      <Line />
       <Stacks />
     </div>
   )

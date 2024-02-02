@@ -1,7 +1,6 @@
 import SocialNetworks from '@/components/SocialNetworks'
 import Paragraph from '@/components/Paragraph'
 import Title from '@/components/Title'
-import Line from '@/components/Line'
 import Form from '@/components/Form'
 
 const Contact = () => {
@@ -16,7 +15,6 @@ const Contact = () => {
 
         <SocialNetworks />
       </div>
-      <Line />
       <div className="flex flex-col gap-y-1.5 sm:gap-y-3">
         <h2 className="leading-relaxed text-secondary">Mande-me um email</h2>
 
