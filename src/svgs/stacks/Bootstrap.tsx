@@ -37,7 +37,7 @@ const Bootstrap = () => {
           height="249"
           x="161.9"
           y="135.46"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
           filterUnits="userSpaceOnUse"
         >
           <feFlood floodOpacity="0" result="BackgroundImageFix" />

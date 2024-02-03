@@ -7,7 +7,7 @@ const CustomLink = ({
   href,
   activeLink,
   onClick,
-  style,
+  className,
   externalLink,
   target,
   isLink,
@@ -18,7 +18,7 @@ const CustomLink = ({
       onClick={onClick}
       suppressHydrationWarning={true}
       target={target}
-      className={`row group flex h-10 w-full select-none items-center gap-2 rounded-def px-2 py-2 text-sm ${activeLink} ${style} border border-solid border-transparent hover:border-gray-200`}
+      className={`row group flex h-10 w-full select-none items-center gap-2 rounded-def px-2 py-2 text-sm ${activeLink} ${className} border border-solid border-transparent hover:border-gray-200`}
     >
       {Icon} {text}
     </Link>

@@ -1,7 +1,7 @@
 import {
   Home,
   CircleUserRound,
-  KanbanSquare,
+  PanelsTopLeft,
   MessageCircle,
   Linkedin,
   Instagram,
@@ -26,7 +26,7 @@ const LINKS = {
     {
       href: 'projects',
       title: 'Projetos',
-      svg: KanbanSquare,
+      svg: PanelsTopLeft,
     },
     {
       href: 'contact',
@@ -43,7 +43,7 @@ const LINKS = {
     {
       href: 'projects',
       title: 'Projetos',
-      svg: KanbanSquare,
+      svg: PanelsTopLeft,
     },
     {
       href: 'contact',

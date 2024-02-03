@@ -37,12 +37,13 @@ const DropDown = () => {
           href={link.href}
           Icon={<link.svg size={22} strokeWidth={2} />}
           text={link.title}
+          onClick={handleOpenDropDown}
           activeLink={
             pathname === `/${link.href}`
               ? 'text-primary'
               : 'bg-transparent text-gray-100'
           }
-          style="border-none"
+          className="border-none"
           isLink
         />
       ))}

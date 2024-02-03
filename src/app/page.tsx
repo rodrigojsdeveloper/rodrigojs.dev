@@ -2,6 +2,7 @@ import { initialHomeProjects } from '@/utils/projects'
 import Paragraph from '@/components/Paragraph'
 import SubTitle from '@/components/SubTitle'
 import Project from '@/components/Project'
+import { MoveRight } from 'lucide-react'
 import Title from '@/components/Title'
 import Work from '@/components/Work'
 import List from '@/components/List'
@@ -25,22 +26,7 @@ const Home = () => {
             href="/projects"
             className="flex select-none items-center gap-1.5 text-xs font-medium text-gray-100 active:opacity-50"
           >
-            Ver todos{' '}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill="none"
-                stroke="#888888"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="1.5"
-                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-              />
-            </svg>
+            Ver todos <MoveRight size={18} strokeWidth={1.5} />
           </Link>
         </div>
       </div>

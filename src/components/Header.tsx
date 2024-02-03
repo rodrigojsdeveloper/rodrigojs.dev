@@ -43,7 +43,7 @@ const Header = () => {
             href="https://github.com/rodrigojsdeveloper"
             className="select-none text-sm font-medium text-gray-100 active:opacity-50"
           >
-            @rodrigojsdeveloper
+            &#x00040;rodrigojsdeveloper
           </Link>
         </div>
 

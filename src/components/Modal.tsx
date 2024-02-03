@@ -58,7 +58,7 @@ const Modal = () => {
                 href={media.link}
                 Icon={<media.svg size={20} strokeWidth={1.5} />}
                 text={media.name}
-                style="text-gray-100 font-light"
+                className="font-light text-gray-100"
                 onClick={handleOpenModal}
                 externalLink
                 target="_blank"
@@ -79,7 +79,7 @@ const Modal = () => {
                   Icon={<newTheme.svg size={20} strokeWidth={1.5} />}
                   text={newTheme.title}
                   onClick={() => setTheme(newTheme.theme)}
-                  style="text-gray-100 font-light"
+                  className="font-light text-gray-100"
                 />
               )
             })}
@@ -92,14 +92,14 @@ const Modal = () => {
               Icon={<Link size={20} strokeWidth={1.5} />}
               text="Copiar link"
               onClick={handleCopyLink}
-              style="text-gray-100 font-light"
+              className="font-light text-gray-100"
             />
             <CustomLink
               target="_blank"
               href="https://github.com/rodrigojsdeveloper/rodrigojs.dev"
               Icon={<Code2 size={20} strokeWidth={1.5} />}
               text="Código fonte"
-              style="text-gray-100 font-light"
+              className="font-light text-gray-100"
               onClick={handleOpenModal}
               externalLink
               isLink

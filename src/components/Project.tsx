@@ -19,7 +19,7 @@ const Project = ({ project }: IProject) => {
 
           <Paragraph
             text={project.description}
-            style="min-h-[2.938rem] text-sm"
+            className="min-h-[2.938rem] text-sm"
           />
         </div>
       </Link>

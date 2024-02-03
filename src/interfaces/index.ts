@@ -13,7 +13,7 @@ export interface ICustomLink {
   href: string
   activeLink?: string
   onClick?: MouseEventHandler<HTMLElement>
-  style?: string
+  className?: string
   externalLink?: boolean
   target?: HTMLAttributeAnchorTarget
   isLink?: boolean
@@ -37,7 +37,7 @@ export interface IProject {
 
 export interface IParagraph {
   text: string
-  style?: string
+  className?: string
 }
 
 export interface InputProps {
