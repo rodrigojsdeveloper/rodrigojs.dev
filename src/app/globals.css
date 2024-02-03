@@ -23,8 +23,7 @@
 @layer base {
   :root {
     --background: rgb(250, 250, 250);
-    --primary: #111111;
-    --secondary: #171717;
+    --primary: #171717;
     --gray-100: #666666;
     --gray-200: #eaeaea;
     --hover: #f2f2f2;
@@ -34,9 +33,8 @@
   }
 
   .dark {
-    --background: rgb(17, 17, 16);
-    --primary: #fafafa;
-    --secondary: #ededed;
+    --background: #0f0f0f;
+    --primary: #ededed;
     --gray-100: #888888;
     --gray-200: rgba(38,38,38,.6);
     --hover: #1a1a1a;

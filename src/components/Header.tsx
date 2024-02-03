@@ -10,10 +10,10 @@ import Image from '@/components/Image'
 import Link from 'next/link'
 import Line from './Line'
 import Button from './Button'
-import { Menu } from '@/svgs'
 import Modal from './Modal'
 import { Context } from '@/contexts/context'
 import LINKS from '@/utils/links'
+import { MoreHorizontal } from 'lucide-react'
 
 const Header = () => {
   const { openModal, handleOpenModal } = useContext(Context)
@@ -36,7 +36,7 @@ const Header = () => {
           className="size-20 rounded-full"
         />
 
-        <div className="w-full">
+        <div>
           <SubTitle title="Rodrigo Silva" />
           <Link
             target="_blank"
@@ -54,7 +54,7 @@ const Header = () => {
             <CustomLink
               key={`website ${index}`}
               href={link.href}
-              Icon={<link.svg pathname={pathname} />}
+              Icon={<link.svg size={22} strokeWidth={2} />}
               text={link.title}
               activeLink={
                 pathname === `/${link.href}`
@@ -70,7 +70,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <Copyright />
           <Button handleState={handleOpenModal} arialLabel="Settings Button">
-            <Menu />
+            <MoreHorizontal size={20} color="var(--gray-100)" />
           </Button>
         </div>
       </aside>

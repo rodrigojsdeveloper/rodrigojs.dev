@@ -4,7 +4,7 @@ import { useContext, useEffect, useRef } from 'react'
 import { usePathname } from 'next/navigation'
 import { Context } from '@/contexts/context'
 import CustomLink from './CustomLink'
-import { About, Contact, Projects } from '@/svgs'
+import LINKS from '@/utils/links'
 
 const DropDown = () => {
   const { handleOpenDropDown } = useContext(Context)
@@ -31,45 +31,21 @@ const DropDown = () => {
       ref={menuRef}
       className="fixed right-6 top-16 z-20 w-full max-w-[8.75rem] animate-down rounded-def border border-solid border-gray-200 bg-background"
     >
-      <CustomLink
-        href="about"
-        Icon={<About pathname={pathname} />}
-        text="Sobre"
-        activeLink={
-          pathname === '/about'
-            ? 'text-primary'
-            : 'bg-transparent text-gray-100'
-        }
-        style="rounded-b-none border-none"
-        onClick={handleOpenDropDown}
-        isLink
-      />
-      <CustomLink
-        href="projects"
-        Icon={<Projects pathname={pathname} />}
-        text="Projetos"
-        activeLink={
-          pathname === '/projects'
-            ? 'text-primary'
-            : 'bg-transparent text-gray-100'
-        }
-        style="rounded-none border-none"
-        onClick={handleOpenDropDown}
-        isLink
-      />
-      <CustomLink
-        href="contact"
-        Icon={<Contact pathname={pathname} />}
-        text="Contato"
-        activeLink={
-          pathname === '/contact'
-            ? 'text-primary'
-            : 'bg-transparent text-gray-100'
-        }
-        style="rounded-t-none border-none"
-        onClick={handleOpenDropDown}
-        isLink
-      />
+      {LINKS.mobile_website.map((link, index) => (
+        <CustomLink
+          key={`website ${index}`}
+          href={link.href}
+          Icon={<link.svg size={22} strokeWidth={2} />}
+          text={link.title}
+          activeLink={
+            pathname === `/${link.href}`
+              ? 'text-primary'
+              : 'bg-transparent text-gray-100'
+          }
+          style="border-none"
+          isLink
+        />
+      ))}
     </nav>
   )
 }

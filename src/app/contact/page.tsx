@@ -2,6 +2,7 @@ import SocialNetworks from '@/components/SocialNetworks'
 import Paragraph from '@/components/Paragraph'
 import Title from '@/components/Title'
 import Form from '@/components/Form'
+import SubTitle from '@/components/SubTitle'
 
 const Contact = () => {
   return (
@@ -11,12 +12,12 @@ const Contact = () => {
         <Paragraph text="Sinta-se à vontade para entrar em contato e discutiremos como podemos trabalhar juntos." />
       </div>
       <div className="flex flex-col gap-y-3">
-        <h2 className="leading-relaxed text-secondary">Minhas redes sociais</h2>
+        <h2 className="leading-relaxed">Minhas redes sociais</h2>
 
         <SocialNetworks />
       </div>
       <div className="flex flex-col gap-y-1.5 sm:gap-y-3">
-        <h2 className="leading-relaxed text-secondary">Mande-me um email</h2>
+        <h2 className="leading-relaxed">Mande-me um email</h2>
 
         <Paragraph
           text="

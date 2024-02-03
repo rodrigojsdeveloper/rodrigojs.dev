@@ -7,7 +7,7 @@ const SocialMedia = ({ social }: ISocial) => {
       <Link
         target="_blank"
         href={social.link}
-        className="decoration-[0.094rem] underline-offset-4 group-hover:text-secondary group-hover:underline"
+        className="decoration-[0.094rem] underline-offset-4 group-hover:text-primary group-hover:underline"
       >
         {social.name}
       </Link>

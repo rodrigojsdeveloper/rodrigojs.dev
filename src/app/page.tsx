@@ -18,7 +18,7 @@ const Home = () => {
       />
 
       <div className="flex flex-col gap-y-3">
-        <div className="flex w-full flex-wrap items-center justify-between gap-x-2 gap-y-1.5">
+        <div className="flex flex-wrap items-center justify-between gap-x-2 gap-y-1.5">
           <SubTitle title="Projetos recentes" />
 
           <Link

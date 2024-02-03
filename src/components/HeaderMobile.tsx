@@ -8,7 +8,7 @@ import DropDown from './DropDown'
 import Button from './Button'
 import Modal from './Modal'
 import { Context } from '@/contexts/context'
-import { Close, Menu, MenuHamburguer } from '@/svgs'
+import { X, Menu, MoreHorizontal } from 'lucide-react'
 
 const HeaderMobile = () => {
   const { openDropDown, openModal, handleOpenDropDown, handleOpenModal } =
@@ -32,7 +32,7 @@ const HeaderMobile = () => {
 
         <div className="flex items-center gap-1">
           <Button handleState={handleOpenModal} arialLabel="Settings Button">
-            <Menu />
+            <MoreHorizontal size={20} color="var(--gray-100)" />
           </Button>
 
           {!openDropDown ? (
@@ -40,11 +40,11 @@ const HeaderMobile = () => {
               handleState={handleOpenDropDown}
               arialLabel="DropDown Button"
             >
-              <MenuHamburguer />
+              <Menu size={20} strokeWidth={1.5} color="var(--gray-100)" />
             </Button>
           ) : (
             <Button handleState={handleOpenDropDown} arialLabel="Close Button">
-              <Close />
+              <X size={20} strokeWidth={1.5} color="var(--gray-100)" />
             </Button>
           )}
         </div>

@@ -39,7 +39,7 @@ const Form = () => {
       action="https://formspree.io/f/mlekpwdz"
       method="POST"
       onSubmit={handleSubmit}
-      className="flex w-full flex-col gap-y-2.5 sm:gap-y-4"
+      className="flex flex-col gap-y-2.5 sm:gap-y-4"
     >
       <div className="flex flex-row gap-2.5 sm:gap-4">
         <Input placeholder="Nome" type="text" name="name" />
@@ -49,7 +49,7 @@ const Form = () => {
 
       <button
         type="submit"
-        className="h-11 w-full rounded-def bg-secondary text-sm text-background hover:bg-button"
+        className="h-11 rounded-def bg-primary text-sm text-background hover:bg-button"
       >
         Enviar
       </button>

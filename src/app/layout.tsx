@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const RootLayout = ({ children }: PropsWithChildren) => {
   return (
     <Providers>
-      <html lang="en" className={`${kanit.variable} w-full font-kanit`}>
+      <html lang="en" className={`${kanit.variable} font-kanit`}>
         <body className="m-auto flex w-full max-w-6xl flex-row justify-center gap-x-10 overflow-x-hidden px-6 pb-5 pt-24 sm:px-8 lg:pb-10 lg:pt-28">
           <ThemeProvider>
             <div id="notification-root"></div>

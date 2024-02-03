@@ -1,15 +1,15 @@
 import {
-  About,
-  Contact,
-  GitHub,
   Home,
+  CircleUserRound,
+  KanbanSquare,
+  MessageCircle,
+  Linkedin,
   Instagram,
-  Laptop,
-  LinkedIn,
-  Moon,
-  Projects,
+  Github,
   Sun,
-} from '@/svgs'
+  Moon,
+  Laptop,
+} from 'lucide-react'
 
 const LINKS = {
   website: [
@@ -21,17 +21,34 @@ const LINKS = {
     {
       href: 'about',
       title: 'Sobre',
-      svg: About,
+      svg: CircleUserRound,
     },
     {
       href: 'projects',
       title: 'Projetos',
-      svg: Projects,
+      svg: KanbanSquare,
     },
     {
       href: 'contact',
       title: 'Contato',
-      svg: Contact,
+      svg: MessageCircle,
+    },
+  ],
+  mobile_website: [
+    {
+      href: 'about',
+      title: 'Sobre',
+      svg: CircleUserRound,
+    },
+    {
+      href: 'projects',
+      title: 'Projetos',
+      svg: KanbanSquare,
+    },
+    {
+      href: 'contact',
+      title: 'Contato',
+      svg: MessageCircle,
     },
   ],
   themes: [
@@ -55,12 +72,12 @@ const LINKS = {
     {
       name: 'GitHub',
       link: 'https://github.com/rodrigojsdeveloper',
-      svg: GitHub,
+      svg: Github,
     },
     {
       name: 'LinkedIn',
       link: 'https://www.linkedin.com/in/rodrigo-de-jesus-silva',
-      svg: LinkedIn,
+      svg: Linkedin,
     },
     {
       name: 'Instagram',

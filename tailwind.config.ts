@@ -13,7 +13,6 @@ const config: Config = {
       },
       colors: {
         primary: 'var(--primary)',
-        secondary: 'var(--secondary)',
         'gray-100': 'var(--gray-100)',
         'gray-200': 'var(--gray-200)',
         hover: 'var(--hover)',

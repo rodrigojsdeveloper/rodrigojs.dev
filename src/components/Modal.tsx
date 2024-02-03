@@ -10,7 +10,7 @@ import { useTheme } from 'next-themes'
 import copyLink from '@/utils/copyLink'
 import { Context } from '@/contexts/context'
 import ModalBackground from './ModalBackground'
-import { Close, CopyLink, SourceCode } from '@/svgs'
+import { Code2, Link, X } from 'lucide-react'
 
 const Modal = () => {
   const { handleOpenModal } = useContext(Context)
@@ -41,7 +41,7 @@ const Modal = () => {
           <SubTitle title="Menu" />
 
           <Button handleState={handleOpenModal} arialLabel="Close Button">
-            <Close />
+            <X size={20} strokeWidth={1.5} color="var(--gray-100)" />
           </Button>
         </div>
 
@@ -56,7 +56,7 @@ const Modal = () => {
               <CustomLink
                 key={`media ${index}`}
                 href={media.link}
-                Icon={<media.svg />}
+                Icon={<media.svg size={20} strokeWidth={1.5} />}
                 text={media.name}
                 style="text-gray-100 font-light"
                 onClick={handleOpenModal}
@@ -76,7 +76,7 @@ const Modal = () => {
                 <CustomLink
                   key={`theme ${index}`}
                   href=""
-                  Icon={<newTheme.svg />}
+                  Icon={<newTheme.svg size={20} strokeWidth={1.5} />}
                   text={newTheme.title}
                   onClick={() => setTheme(newTheme.theme)}
                   style="text-gray-100 font-light"
@@ -89,7 +89,7 @@ const Modal = () => {
           <nav className="flex flex-col gap-0.5">
             <CustomLink
               href=""
-              Icon={<CopyLink />}
+              Icon={<Link size={20} strokeWidth={1.5} />}
               text="Copiar link"
               onClick={handleCopyLink}
               style="text-gray-100 font-light"
@@ -97,7 +97,7 @@ const Modal = () => {
             <CustomLink
               target="_blank"
               href="https://github.com/rodrigojsdeveloper/rodrigojs.dev"
-              Icon={<SourceCode />}
+              Icon={<Code2 size={20} strokeWidth={1.5} />}
               text="Código fonte"
               style="text-gray-100 font-light"
               onClick={handleOpenModal}
