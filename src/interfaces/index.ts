@@ -5,6 +5,7 @@ import React, {
   HTMLAttributeAnchorTarget,
 } from 'react'
 import NextImage, { StaticImageData } from 'next/image'
+import { LucideIcon } from 'lucide-react'
 
 export interface ICustomLink {
   Icon: React.ReactNode
@@ -52,7 +53,7 @@ export interface ITitle {
 export interface ISocialProps {
   name: string
   link: string
-  svg: React.ComponentType<React.SVGProps<SVGSVGElement>>
+  svg: LucideIcon
 }
 
 export interface ISocial {
