@@ -32,7 +32,7 @@ const HeaderMobile = () => {
 
         <div className="flex items-center gap-1">
           <Button handleState={handleOpenModal} arialLabel="Settings Button">
-            <MoreHorizontal size={20} color="var(--gray-100)" />
+            <MoreHorizontal size={20} className="stroke-muted-foreground" />
           </Button>
 
           {!openDropDown ? (
@@ -40,11 +40,19 @@ const HeaderMobile = () => {
               handleState={handleOpenDropDown}
               arialLabel="DropDown Button"
             >
-              <Menu size={20} strokeWidth={1.5} color="var(--gray-100)" />
+              <Menu
+                size={20}
+                strokeWidth={1.5}
+                className="stroke-muted-foreground"
+              />
             </Button>
           ) : (
             <Button handleState={handleOpenDropDown} arialLabel="Close Button">
-              <X size={20} strokeWidth={1.5} color="var(--gray-100)" />
+              <X
+                size={20}
+                strokeWidth={1.5}
+                className="stroke-muted-foreground"
+              />
             </Button>
           )}
         </div>

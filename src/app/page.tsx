@@ -24,7 +24,7 @@ const Home = () => {
 
           <Link
             href="/projects"
-            className="flex select-none items-center gap-1.5 text-xs font-medium text-gray-100 active:opacity-50"
+            className="text-muted-foreground flex select-none items-center gap-1.5 text-xs font-medium active:opacity-50"
           >
             Ver todos <MoveRight size={18} strokeWidth={1.5} />
           </Link>

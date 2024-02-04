@@ -12,17 +12,17 @@ const config: Config = {
         kanit: ['var(--font-kanit)'],
       },
       colors: {
-        primary: 'var(--primary)',
-        'gray-100': 'var(--gray-100)',
-        'gray-200': 'var(--gray-200)',
-        hover: 'var(--hover)',
+        background: 'hsl(var(--background))',
+        foreground: 'hsl(var(--foreground))',
+        muted: {
+          foreground: 'hsl(var(--muted-foreground))',
+        },
+        border: 'hsl(var(--border))',
         shadow: 'var(--shadow)',
-        background: 'var(--background)',
-        button: 'var(--button)',
       },
       backgroundImage: {
         'fade-gradient':
-          'linear-gradient(90deg, var(--background), transparent 20%, transparent 80%, var(--background))',
+          'linear-gradient(90deg, hsl(var(--background)), transparent 20%, transparent 80%, hsl(var(--background)))',
       },
       borderRadius: {
         def: '0.5rem',

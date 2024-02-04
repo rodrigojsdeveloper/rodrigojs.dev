@@ -29,7 +29,7 @@ const DropDown = () => {
   return (
     <nav
       ref={menuRef}
-      className="fixed right-6 top-16 z-20 w-full max-w-[8.75rem] animate-down rounded-def border border-solid border-gray-200 bg-background"
+      className="border-border fixed right-6 top-16 z-20 w-full max-w-[8.75rem] animate-down rounded-def border border-solid bg-background"
     >
       {LINKS.mobile_website.map((link, index) => (
         <CustomLink
@@ -40,8 +40,8 @@ const DropDown = () => {
           onClick={handleOpenDropDown}
           activeLink={
             pathname === `/${link.href}`
-              ? 'text-primary'
-              : 'bg-transparent text-gray-100'
+              ? 'text-foreground'
+              : 'bg-transparent text-muted-foreground'
           }
           className="border-none"
           isLink

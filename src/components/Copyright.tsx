@@ -1,6 +1,6 @@
 const Copyright = () => {
   return (
-    <small className="text-center text-xs font-medium text-gray-100">
+    <small className="text-muted-foreground text-center text-xs font-medium">
       &copy; {new Date().getFullYear()} - rodrigojsdeveloper
     </small>
   )

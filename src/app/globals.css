@@ -22,25 +22,21 @@
 
 @layer base {
   :root {
-    --background: #fafafa;
-    --primary: #171717;
-    --gray-100: #666666;
-    --gray-200: #eaeaea;
-    --hover: #f2f2f2;
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --border: 240 5.9% 90%;
     --shadow: #ffffff80;
     --selection: #1618230f;
-    --button: #383838;
   }
 
   .dark {
-    --background: #0f0f0f;
-    --primary: #ededed;
-    --gray-100: #888888;
-    --gray-200: #26262699;
-    --hover: #1a1a1a;
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --muted-foreground: 240 5% 64.9%;
+    --border: 240 3.7% 15.9%;
     --shadow: #0a0a0acc;
     --selection: #26262680;
-    --button: #cccccc;
   }
 }
 
@@ -52,8 +48,8 @@ body {
   min-height: 100vh;
   min-height: -webkit-fill-available;
 
-  color: var(--primary);
-  background-color: var(--background);
+  color: hsl(var(--foreground));
+  background-color: hsl(var(--background));
 }
 
 button,
@@ -83,7 +79,7 @@ a {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 0.4rem;
-  background-color: var(--gray-200);
+  background-color: hsl(var(--border));
 }
 
 ::selection {
@@ -95,5 +91,5 @@ a {
 }
 
 .linkSelected {
-  border-color: var(--gray-200) !important;
+  border-color: hsl(var(--border)) !important;
 }

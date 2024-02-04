@@ -3,11 +3,11 @@ import Link from 'next/link'
 
 const SocialMedia = ({ social }: ISocial) => {
   return (
-    <li className="group cursor-pointer pr-2.5 text-sm font-medium text-gray-100">
+    <li className="text-muted-foreground group cursor-pointer pr-2.5 text-sm font-medium">
       <Link
         target="_blank"
         href={social.link}
-        className="decoration-[0.094rem] underline-offset-4 group-hover:text-primary group-hover:underline"
+        className="decoration-[0.094rem] underline-offset-4 group-hover:text-foreground group-hover:underline"
       >
         {social.name}
       </Link>

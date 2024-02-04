@@ -41,7 +41,7 @@ const Header = () => {
           <Link
             target="_blank"
             href="https://github.com/rodrigojsdeveloper"
-            className="select-none text-sm font-medium text-gray-100 active:opacity-50"
+            className="select-none text-sm font-medium text-muted-foreground active:opacity-50"
           >
             &#x00040;rodrigojsdeveloper
           </Link>
@@ -58,8 +58,8 @@ const Header = () => {
               text={link.title}
               activeLink={
                 pathname === `/${link.href}`
-                  ? 'linkSelected text-primary'
-                  : 'border-transparent text-gray-100'
+                  ? 'linkSelected text-foreground'
+                  : 'border-transparent text-muted-foreground'
               }
               isLink
             />
@@ -70,7 +70,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <Copyright />
           <Button handleState={handleOpenModal} arialLabel="Settings Button">
-            <MoreHorizontal size={20} color="var(--gray-100)" />
+            <MoreHorizontal size={20} className="stroke-muted-foreground" />
           </Button>
         </div>
       </aside>

@@ -8,7 +8,7 @@ const Input = ({ type, name, placeholder }: InputProps) => {
       required={true}
       autoComplete="off"
       placeholder={placeholder}
-      className="h-10 w-full select-none rounded-def border border-solid border-gray-200 bg-transparent p-2.5 text-sm placeholder:text-gray-100 placeholder:focus:text-transparent"
+      className="border-border placeholder:text-muted-foreground h-10 w-full select-none rounded-def border border-solid bg-transparent p-2.5 text-sm placeholder:focus:text-transparent"
     />
   )
 }
