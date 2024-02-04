@@ -36,7 +36,7 @@ const Modal = () => {
 
   return (
     <ModalBackground>
-      <div className="border-border flex h-full max-h-[21rem] w-full max-w-lg animate-modal flex-col rounded-def border border-solid bg-background duration-300">
+      <div className="flex h-full max-h-[21rem] w-full max-w-lg animate-modal flex-col rounded-def border border-solid border-border bg-background duration-300">
         <div className="flex flex-row items-center justify-between py-2.5 pl-4 pr-2">
           <SubTitle title="Menu" />
 
@@ -52,7 +52,7 @@ const Modal = () => {
         <Line />
 
         <div className="overflow-y-auto px-3 pb-2 pt-1.5">
-          <p className="text-muted-foreground text-pretty py-2 text-xs">
+          <p className="text-pretty py-2 text-xs text-muted-foreground">
             Redes sociais
           </p>
           <nav className="flex flex-col gap-0.5">
@@ -62,7 +62,7 @@ const Modal = () => {
                 href={media.link}
                 Icon={<media.svg size={20} strokeWidth={1.5} />}
                 text={media.name}
-                className="text-muted-foreground font-light"
+                className="font-light text-muted-foreground"
                 onClick={handleOpenModal}
                 externalLink
                 target="_blank"
@@ -71,7 +71,7 @@ const Modal = () => {
             ))}
           </nav>
 
-          <p className="text-muted-foreground text-pretty py-2 text-xs">
+          <p className="text-pretty py-2 text-xs text-muted-foreground">
             Temas
           </p>
           <nav className="flex flex-col gap-0.5">
@@ -85,13 +85,13 @@ const Modal = () => {
                   Icon={<newTheme.svg size={20} strokeWidth={1.5} />}
                   text={newTheme.title}
                   onClick={() => setTheme(newTheme.theme)}
-                  className="text-muted-foreground font-light"
+                  className="font-light text-muted-foreground"
                 />
               )
             })}
           </nav>
 
-          <p className="text-muted-foreground text-pretty py-2 text-xs">
+          <p className="text-pretty py-2 text-xs text-muted-foreground">
             Sugestões
           </p>
           <nav className="flex flex-col gap-0.5">
@@ -100,14 +100,14 @@ const Modal = () => {
               Icon={<Link size={20} strokeWidth={1.5} />}
               text="Copiar link"
               onClick={handleCopyLink}
-              className="text-muted-foreground font-light"
+              className="font-light text-muted-foreground"
             />
             <CustomLink
               target="_blank"
               href="https://github.com/rodrigojsdeveloper/rodrigojs.dev"
               Icon={<Code2 size={20} strokeWidth={1.5} />}
               text="Código fonte"
-              className="text-muted-foreground font-light"
+              className="font-light text-muted-foreground"
               onClick={handleOpenModal}
               externalLink
               isLink

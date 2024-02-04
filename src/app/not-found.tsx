@@ -20,7 +20,7 @@ const NotFound = () => {
           />
         }
         text="Voltar"
-        className="text-muted-foreground max-w-[7.563rem] justify-center"
+        className="max-w-[7.563rem] justify-center text-muted-foreground"
         isLink
       />
     </div>

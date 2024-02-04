@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 
 const Notification = ({ title, description, error }: INotificationProps) => {
   return (
-    <div className="border-border fixed bottom-3 right-3 z-50 ml-3 flex max-w-60 animate-up flex-row items-center gap-2 rounded-def border border-solid bg-background px-3 py-2 sm:bottom-5 sm:right-5">
+    <div className="fixed bottom-3 right-3 z-50 ml-3 flex max-w-60 animate-up flex-row items-center gap-2 rounded-def border border-solid border-border bg-background px-3 py-2 sm:bottom-5 sm:right-5">
       {error ? (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -33,7 +33,7 @@ const Notification = ({ title, description, error }: INotificationProps) => {
 
       <div>
         <p>{title}</p>
-        <p className="text-muted-foreground text-sm">{description}</p>
+        <p className="text-sm text-muted-foreground">{description}</p>
       </div>
     </div>
   )
