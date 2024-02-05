@@ -10,7 +10,7 @@ const Button = ({
     <button
       onClick={handleState}
       aria-label={arialLabel}
-      className="group flex size-8 items-center justify-center rounded-def border border-solid border-transparent p-1.5 hover:border-border"
+      className="rounded-radius group flex size-8 items-center justify-center border border-solid border-transparent p-1.5 hover:border-border"
     >
       {children}
     </button>

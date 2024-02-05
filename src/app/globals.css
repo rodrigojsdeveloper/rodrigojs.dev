@@ -22,21 +22,19 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 60, 20%, 99%;
     --foreground: 240 10% 3.9%;
-    --muted-foreground: 240 3.8% 46.1%;
-    --border: 240 5.9% 90%;
-    --shadow: #ffffff80;
-    --selection: #1618230f;
+    --muted-foreground: 45, 5%, 55%;
+    --border: 0,0%,83%,.7;
+    --shadow: 60,20%,99%,.3;
   }
 
   .dark {
-    --background: 240 10% 3.9%;
+    --background: 60, 3%, 6%;
     --foreground: 0 0% 98%;
     --muted-foreground: 240 5% 64.9%;
-    --border: 240 3.7% 15.9%;
-    --shadow: #0a0a0acc;
-    --selection: #26262680;
+    --border: 0, 0%, 15%;
+    --shadow: 0,0%,4%,.8;
   }
 }
 
@@ -80,10 +78,6 @@ a {
 ::-webkit-scrollbar-thumb {
   border-radius: 0.4rem;
   background-color: hsl(var(--border));
-}
-
-::selection {
-  background-color: var(--selection);
 }
 
 #notification-root {

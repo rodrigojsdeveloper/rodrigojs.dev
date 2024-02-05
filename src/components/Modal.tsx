@@ -36,7 +36,7 @@ const Modal = () => {
 
   return (
     <ModalBackground>
-      <div className="flex h-full max-h-[21rem] w-full max-w-lg animate-modal flex-col rounded-def border border-solid border-border bg-background duration-300">
+      <div className="flex h-full max-h-[21rem] w-full max-w-lg animate-modal flex-col rounded-radius border border-solid border-border bg-background shadow-lg duration-300">
         <div className="flex flex-row items-center justify-between py-2.5 pl-4 pr-2">
           <SubTitle title="Menu" />
 

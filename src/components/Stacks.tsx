@@ -7,7 +7,7 @@ import Stack from './Stack'
 
 const Stacks = () => {
   return (
-    <section className="flex w-full flex-col gap-2 rounded-def sm:gap-6">
+    <section className="rounded-radius flex w-full flex-col gap-2 sm:gap-6">
       <SubTitle title="Habilidades" />
       <div className="relative flex gap-3 overflow-hidden lg:m-auto lg:w-[40.625rem]">
         {array(0, 2).map((index) => (

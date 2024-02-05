@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        kanit: ['var(--font-kanit)'],
+        kanit: 'var(--font-kanit)',
       },
       colors: {
         background: 'hsl(var(--background))',
@@ -18,14 +18,14 @@ const config: Config = {
           foreground: 'hsl(var(--muted-foreground))',
         },
         border: 'hsl(var(--border))',
-        shadow: 'var(--shadow)',
+        shadow: 'hsl(var(--shadow))',
       },
       backgroundImage: {
         'fade-gradient':
           'linear-gradient(90deg, hsl(var(--background)), transparent 20%, transparent 80%, hsl(var(--background)))',
       },
       borderRadius: {
-        def: '0.5rem',
+        radius: '0.6rem',
       },
       keyframes: {
         up: {

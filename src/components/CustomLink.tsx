@@ -1,4 +1,5 @@
 import { ICustomLink } from '@/interfaces'
+import cn from '@/utils/cn'
 import Link from 'next/link'
 
 const CustomLink = ({
@@ -18,14 +19,18 @@ const CustomLink = ({
       onClick={onClick}
       suppressHydrationWarning={true}
       target={target}
-      className={`row group flex h-10 w-full select-none items-center gap-2 rounded-def px-2 py-2 text-sm ${activeLink} ${className} border border-solid border-transparent hover:border-border`}
+      className={cn(
+        'row rounded-radius group flex h-10 w-full select-none items-center gap-2 border border-solid border-transparent px-2 py-2 text-sm hover:border-border',
+        activeLink,
+        className,
+      )}
     >
       {Icon} {text}
     </Link>
   ) : (
     <button
       onClick={onClick}
-      className="row group flex h-10 w-full items-center gap-2 rounded-def border border-solid border-transparent px-2 py-2 text-sm font-light text-muted-foreground hover:border-border"
+      className="row rounded-radius group flex h-10 w-full items-center gap-2 border border-solid border-transparent px-2 py-2 text-sm font-light text-muted-foreground hover:border-border"
     >
       {Icon} {text}
     </button>

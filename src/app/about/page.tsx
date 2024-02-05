@@ -19,7 +19,7 @@ const About = () => {
       <Link
         target="_blank"
         href="https://rodrigojsdeveloper.github.io/cv"
-        className="group flex h-10 w-full max-w-[7.4rem] select-none items-center justify-center gap-2.5 rounded-def border border-solid border-border p-2 text-sm text-foreground hover:bg-border sm:h-11 sm:max-w-[9rem] sm:text-base"
+        className="rounded-radius group flex h-10 w-full max-w-[7.4rem] select-none items-center justify-center gap-2.5 border border-solid border-border p-2 text-sm text-foreground hover:bg-border sm:h-11 sm:max-w-[9rem] sm:text-base"
       >
         Download C.V
       </Link>

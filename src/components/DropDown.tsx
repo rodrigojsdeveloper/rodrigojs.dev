@@ -29,7 +29,7 @@ const DropDown = () => {
   return (
     <nav
       ref={menuRef}
-      className="fixed right-6 top-16 z-20 w-full max-w-[8.75rem] animate-down rounded-def border border-solid border-border bg-background"
+      className="fixed right-6 top-16 z-20 w-full max-w-[8.75rem] animate-down rounded-radius border border-solid border-border bg-background"
     >
       {LINKS.mobile_website.map((link, index) => (
         <CustomLink

@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import NextImage from 'next/image'
 import { ImageProps } from '@/interfaces'
+import cn from '@/utils/cn'
 
 const Image = (props: ImageProps) => {
   const [isLoading, setIsLoading] = useState(true)
@@ -11,18 +12,19 @@ const Image = (props: ImageProps) => {
 
   return (
     <figure
-      className={`
-      overflow-hidden
-      ${isLoading && 'animate-pulse'}
-      ${zoomHover && 'duration-500 ease-in-out hover:scale-105'}
-      ${className}
-    `}
+      className={cn(
+        'overflow-hidden',
+        isLoading && 'animate-pulse',
+        zoomHover && 'duration-500 ease-in-out hover:scale-105',
+        className,
+      )}
     >
       <NextImage
-        className={`
-          object-cover transition-[scale,filter] duration-700
-          ${isLoading && 'scale-[1.02] blur-xl grayscale'}
-          ${className}`}
+        className={cn(
+          'object-cover transition-[scale,filter] duration-700',
+          isLoading && 'scale-[1.02] blur-xl grayscale',
+          className,
+        )}
         src={src}
         alt={alt}
         priority

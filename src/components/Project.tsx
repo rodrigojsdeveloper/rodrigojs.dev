@@ -6,12 +6,12 @@ import Link from 'next/link'
 
 const Project = ({ project }: IProject) => {
   return (
-    <li className="rounded-def border border-solid border-border p-2 hover:bg-border">
-      <Link href={project.link} target="_blank" className="rounded-def">
+    <li className="rounded-radius border border-solid border-border p-2 hover:bg-border">
+      <Link href={project.link} target="_blank" className="rounded-radius">
         <Image
           src={project.img}
           alt={project.title}
-          className="max-h-[20.753rem] rounded-def"
+          className="max-h-[20.753rem] rounded-radius"
         />
 
         <div className="flex flex-col gap-y-2 px-2 py-3">
