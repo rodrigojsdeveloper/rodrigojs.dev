@@ -6,7 +6,7 @@ const Stack = ({ Icon, bg }: IStack) => {
     <li
       style={{ backgroundColor: bg }}
       className={cn(
-        'rounded-radius flex size-14 select-none items-center justify-center gap-2 px-3 py-2',
+        'flex size-14 select-none items-center justify-center gap-2 rounded-radius px-3 py-2',
         bg,
       )}
     >
