@@ -6,11 +6,12 @@ import array from '@/utils/array'
 import Stack from './Stack'
 import cn from '@/utils/cn'
 import { IStacks } from '@/interfaces'
+import { translate } from '@/i18n'
 
 const Stacks = ({ pauseOnHover }: IStacks) => {
   return (
     <section className="flex w-full flex-col gap-2 rounded-radius sm:gap-6">
-      <SubTitle title="Habilidades" />
+      <SubTitle title={translate('about.skills')} />
       <div className="group relative flex gap-3 overflow-hidden lg:m-auto lg:w-[40.625rem]">
         {array(0, 2).map((index) => (
           <ul
@@ -32,4 +33,4 @@ const Stacks = ({ pauseOnHover }: IStacks) => {
   )
 }
 
-export default Stacks
+export { Stacks }
