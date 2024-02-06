@@ -21,15 +21,15 @@ const Form = () => {
 
     if (!response.ok) {
       notification({
-        title: translate('contact.form.notification.success.title'),
-        description: translate('contact.form.notification.success.description'),
+        title: translate('notification.form.success.title'),
+        description: translate('notification.form.success.description'),
         error: true,
       })
     } else {
       form.reset()
       notification({
-        title: translate('contact.form.notification.success.title'),
-        description: translate('contact.form.notification.success.description'),
+        title: translate('notification.form.success.title'),
+        description: translate('notification.form.success.description'),
       })
     }
   }

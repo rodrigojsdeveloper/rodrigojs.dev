@@ -12,9 +12,4 @@ export default {
   'contact.form.email': 'Email',
   'contact.form.message': 'Mensagem',
   'contact.form.send': 'Enviar',
-
-  'contact.form.notification.success.title': 'Enviado',
-  'contact.form.notification.success.description': 'Email enviado com sucesso.',
-  'contact.form.notification.error.title': 'Erro',
-  'contact.form.notification.error.description': 'Erro ao enviar o email.',
 }

@@ -54,18 +54,18 @@ const LINKS = {
   ],
   themes: [
     {
-      title: translate('links.light'),
       theme: 'light',
+      title: translate('links.light'),
       svg: Sun,
     },
     {
-      title: translate('links.dark'),
       theme: 'dark',
+      title: translate('links.dark'),
       svg: Moon,
     },
     {
-      title: translate('links.system'),
       theme: 'system',
+      title: translate('links.system'),
       svg: Laptop,
     },
   ],
