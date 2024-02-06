@@ -7,7 +7,7 @@ const Work = () => {
     <section className="flex flex-col gap-y-2 rounded-radius border border-solid border-border p-5 sm:gap-y-4">
       <SubTitle title="Vamos trabalhar juntos!" />
 
-      <Paragraph text="Se você se interessou pelo meu trabalho ou deseja dar feedback sobre este site, vamos bater um papo." />
+      <Paragraph text="Se meu trabalho chamou sua atenção ou se deseja compartilhar comentários aqui, vamos conversar!" />
 
       <Link
         href="/contact"

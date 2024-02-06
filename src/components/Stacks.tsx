@@ -4,16 +4,21 @@ import stacks from '@/utils/stacks'
 import SubTitle from './SubTitle'
 import array from '@/utils/array'
 import Stack from './Stack'
+import cn from '@/utils/cn'
+import { IStacks } from '@/interfaces'
 
-const Stacks = () => {
+const Stacks = ({ pauseOnHover }: IStacks) => {
   return (
     <section className="flex w-full flex-col gap-2 rounded-radius sm:gap-6">
       <SubTitle title="Habilidades" />
-      <div className="relative flex gap-3 overflow-hidden lg:m-auto lg:w-[40.625rem]">
+      <div className="group relative flex gap-3 overflow-hidden lg:m-auto lg:w-[40.625rem]">
         {array(0, 2).map((index) => (
           <ul
             key={index}
-            className="flex animate-slide justify-around gap-3"
+            className={cn(
+              'flex animate-slide justify-around gap-3',
+              pauseOnHover && 'group-hover:paused',
+            )}
             data-testid={`slider-child-${index + 1}`}
           >
             {stacks.map((stack, index) => (

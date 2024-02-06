@@ -2,7 +2,6 @@ import SocialNetworks from '@/components/SocialNetworks'
 import Paragraph from '@/components/Paragraph'
 import Title from '@/components/Title'
 import Form from '@/components/Form'
-import SubTitle from '@/components/SubTitle'
 
 const Contact = () => {
   return (
@@ -21,7 +20,7 @@ const Contact = () => {
 
         <Paragraph
           text="
-          Se você estiver interessado no meu trabalho ou deseja fornecer feedback sobre este site? Vamos conversar!"
+          Se meu trabalho chamou sua atenção ou se deseja compartilhar comentários aqui, vamos conversar!"
         />
       </div>
       <Form />

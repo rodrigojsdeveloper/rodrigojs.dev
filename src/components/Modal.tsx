@@ -52,15 +52,15 @@ const Modal = () => {
         <Line />
 
         <div className="overflow-y-auto px-3 pb-2 pt-1.5">
-          <p className="text-pretty py-2 text-xs text-muted-foreground">
+          <p className="text-pretty px-1 py-2 text-xs text-muted-foreground">
             Redes sociais
           </p>
-          <nav className="flex flex-col gap-0.5">
+          <nav>
             {LINKS.socials.map((media, index) => (
               <CustomLink
                 key={`media ${index}`}
                 href={media.link}
-                Icon={<media.svg size={20} strokeWidth={1.5} />}
+                Icon={<media.svg size={20} strokeWidth={2} />}
                 text={media.name}
                 className="font-light text-muted-foreground"
                 onClick={handleOpenModal}
@@ -71,10 +71,10 @@ const Modal = () => {
             ))}
           </nav>
 
-          <p className="text-pretty py-2 text-xs text-muted-foreground">
+          <p className="text-pretty px-1 py-2 text-xs text-muted-foreground">
             Temas
           </p>
-          <nav className="flex flex-col gap-0.5">
+          <nav>
             {LINKS.themes.map((theme, index) => {
               const newTheme = { ...theme, theme: getTheme(theme.theme) }
 
@@ -82,7 +82,7 @@ const Modal = () => {
                 <CustomLink
                   key={`theme ${index}`}
                   href=""
-                  Icon={<newTheme.svg size={20} strokeWidth={1.5} />}
+                  Icon={<newTheme.svg size={20} strokeWidth={2} />}
                   text={newTheme.title}
                   onClick={() => setTheme(newTheme.theme)}
                   className="font-light text-muted-foreground"
@@ -91,13 +91,13 @@ const Modal = () => {
             })}
           </nav>
 
-          <p className="text-pretty py-2 text-xs text-muted-foreground">
+          <p className="text-pretty px-1 py-2 text-xs text-muted-foreground">
             Sugestões
           </p>
-          <nav className="flex flex-col gap-0.5">
+          <nav>
             <CustomLink
               href=""
-              Icon={<Link size={20} strokeWidth={1.5} />}
+              Icon={<Link size={20} strokeWidth={2} />}
               text="Copiar link"
               onClick={handleCopyLink}
               className="font-light text-muted-foreground"
@@ -105,7 +105,7 @@ const Modal = () => {
             <CustomLink
               target="_blank"
               href="https://github.com/rodrigojsdeveloper/rodrigojs.dev"
-              Icon={<Code2 size={20} strokeWidth={1.5} />}
+              Icon={<Code2 size={20} strokeWidth={2} />}
               text="Código fonte"
               className="font-light text-muted-foreground"
               onClick={handleOpenModal}

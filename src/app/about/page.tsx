@@ -23,7 +23,7 @@ const About = () => {
       >
         Download C.V
       </Link>
-      <Stacks />
+      <Stacks pauseOnHover />
     </div>
   )
 }
