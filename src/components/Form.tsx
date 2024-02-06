@@ -4,6 +4,7 @@ import { ChangeEvent } from 'react'
 import Textarea from './Textarea'
 import Input from './Input'
 import notification from './Notification'
+import { translate } from '@/i18n'
 
 const Form = () => {
   const handleSubmit = async (event: ChangeEvent<HTMLFormElement>) => {
@@ -20,15 +21,15 @@ const Form = () => {
 
     if (!response.ok) {
       notification({
-        title: 'Erro',
-        description: 'Erro ao enviar o email.',
+        title: translate('contact.form.notification.success.title'),
+        description: translate('contact.form.notification.success.description'),
         error: true,
       })
     } else {
       form.reset()
       notification({
-        title: 'Enviado',
-        description: 'Email enviado com sucesso.',
+        title: translate('contact.form.notification.success.title'),
+        description: translate('contact.form.notification.success.description'),
       })
     }
   }
@@ -42,16 +43,28 @@ const Form = () => {
       className="flex flex-col gap-y-2.5 sm:gap-y-4"
     >
       <div className="flex flex-row gap-2.5 sm:gap-4">
-        <Input placeholder="Nome" type="text" name="name" />
-        <Input placeholder="Email" type="email" name="email" />
+        <Input
+          placeholder={translate('contact.form.name')}
+          type="text"
+          name="name"
+        />
+        <Input
+          placeholder={translate('contact.form.email')}
+          type="email"
+          name="email"
+        />
       </div>
-      <Textarea placeholder="Mensagem" type="text" name="message" />
+      <Textarea
+        placeholder={translate('contact.form.message')}
+        type="text"
+        name="message"
+      />
 
       <button
         type="submit"
         className="h-11 rounded-radius bg-foreground text-sm text-background hover:opacity-90"
       >
-        Enviar
+        {translate('contact.form.send')}
       </button>
     </form>
   )
