@@ -1,9 +1,9 @@
 'use client'
 
-import SocialNetworks from '@/components/SocialNetworks'
+import { SocialNetworks } from '@/components/SocialNetworks'
 import Paragraph from '@/components/Paragraph'
 import Title from '@/components/Title'
-import Form from '@/components/Form'
+import { Form } from '@/components/Form'
 import { translate } from '@/i18n'
 
 const Contact = () => {

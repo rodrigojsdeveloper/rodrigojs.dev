@@ -11,4 +11,4 @@ const SocialNetworks = () => {
   )
 }
 
-export default SocialNetworks
+export { SocialNetworks }

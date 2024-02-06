@@ -7,6 +7,7 @@ import dtMoney from '@/assets/dt-money.png'
 
 import { IProjectProps } from '@/interfaces'
 import { StaticImageData } from 'next/image'
+import { translate } from '@/i18n'
 
 const createProject = (
   img: StaticImageData,
@@ -20,38 +21,38 @@ const createProject = (
 const projects: IProjectProps[] = [
   createProject(
     motorsShop,
-    'Motors Shop',
-    'Motors Shop é um projeto de site de vendas de automóveis.',
+    translate('projects.motors_shop.title'),
+    translate('projects.motors_shop.description'),
     'https://github.com/rodrigojsdeveloper/motors-shop',
   ),
   createProject(
     geography,
-    'Geography',
-    'Geography é um site para explorar os países ao redor do mundo.',
+    translate('projects.geography.title'),
+    translate('projects.geography.description'),
     'https://github.com/rodrigojsdeveloper/geography',
   ),
   createProject(
     devFinder,
-    'DevFinder',
-    'O DevFinder simplifica a pesquisa de usuários no GitHub.',
+    translate('projects.devfinder.title'),
+    translate('projects.devfinder.description'),
     'https://github.com/rodrigojsdeveloper/devfinder',
   ),
   createProject(
     mathematical,
-    'Mathematical',
-    'Mathematical se concentra no ensino de operadores matemáticos básicos.',
+    translate('projects.mathematical.title'),
+    translate('projects.mathematical.description'),
     'https://github.com/rodrigojsdeveloper/mathematical',
   ),
   createProject(
     iweather,
-    'iWeather',
-    'iWeather é um site de previsão do tempo preciso para planejar o seu dia.',
+    translate('projects.iweather.title'),
+    translate('projects.iweather.description'),
     'https://github.com/rodrigojsdeveloper/iweather',
   ),
   createProject(
     dtMoney,
-    'DT Money',
-    'DT Money é uma gestão financeira de suas receitas, despesas e saldo.',
+    translate('projects.dtmoney.title'),
+    translate('projects.dtmoney.description'),
     'https://github.com/rodrigojsdeveloper/dt-money',
   ),
 ]
