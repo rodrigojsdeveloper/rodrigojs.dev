@@ -13,4 +13,4 @@ const Input = ({ type, name, placeholder }: InputProps) => {
   )
 }
 
-export default Input
+export { Input }

@@ -1,7 +1,7 @@
 import { IProject } from '@/interfaces'
-import Paragraph from './Paragraph'
-import SubTitle from './SubTitle'
-import Image from '@/components/Image'
+import { Paragraph } from './Paragraph'
+import { SubTitle } from './SubTitle'
+import { Image } from '@/components/Image'
 import Link from 'next/link'
 
 const Project = ({ project }: IProject) => {
@@ -27,4 +27,4 @@ const Project = ({ project }: IProject) => {
   )
 }
 
-export default Project
+export { Project }

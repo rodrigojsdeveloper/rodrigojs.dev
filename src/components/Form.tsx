@@ -1,9 +1,9 @@
 'use client'
 
 import { ChangeEvent } from 'react'
-import Textarea from './Textarea'
-import Input from './Input'
-import notification from './Notification'
+import { Textarea } from './Textarea'
+import { Input } from './Input'
+import { notification } from './Notification'
 import { translate } from '@/i18n'
 
 const Form = () => {

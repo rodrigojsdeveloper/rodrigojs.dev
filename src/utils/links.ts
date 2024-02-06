@@ -1,3 +1,4 @@
+import { translate } from '@/i18n'
 import {
   Home,
   CircleUserRound,
@@ -15,55 +16,55 @@ const LINKS = {
   website: [
     {
       href: '',
-      title: 'Início',
+      title: translate('links.home'),
       svg: Home,
     },
     {
       href: 'about',
-      title: 'Sobre',
+      title: translate('links.about'),
       svg: CircleUserRound,
     },
     {
       href: 'projects',
-      title: 'Projetos',
+      title: translate('links.projects'),
       svg: PanelsTopLeft,
     },
     {
       href: 'contact',
-      title: 'Contato',
+      title: translate('links.contact'),
       svg: MessageCircle,
     },
   ],
   mobile_website: [
     {
       href: 'about',
-      title: 'Sobre',
+      title: translate('links.about'),
       svg: CircleUserRound,
     },
     {
       href: 'projects',
-      title: 'Projetos',
+      title: translate('links.projects'),
       svg: PanelsTopLeft,
     },
     {
       href: 'contact',
-      title: 'Contato',
+      title: translate('links.contact'),
       svg: MessageCircle,
     },
   ],
   themes: [
     {
-      title: 'Claro',
+      title: translate('links.light'),
       theme: 'light',
       svg: Sun,
     },
     {
-      title: 'Escuro',
+      title: translate('links.dark'),
       theme: 'dark',
       svg: Moon,
     },
     {
-      title: 'Sistema',
+      title: translate('links.system'),
       theme: 'system',
       svg: Laptop,
     },
@@ -87,4 +88,4 @@ const LINKS = {
   ],
 }
 
-export default LINKS
+export { LINKS }

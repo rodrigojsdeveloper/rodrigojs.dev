@@ -1,11 +1,11 @@
 import { PropsWithChildren } from 'react'
 import type { Metadata } from 'next'
-import HeaderMobile from '@/components/HeaderMobile'
+import { HeaderMobile } from '@/components/HeaderMobile'
 import ThemeProvider from '@/contexts/themeProvider'
-import Header from '@/components/Header'
+import { Header } from '@/components/Header'
 import { Kanit } from 'next/font/google'
 import Providers from '@/contexts'
-import cn from '@/utils/cn'
+import { cn } from '@/utils/cn'
 import './globals.css'
 
 const kanit = Kanit({

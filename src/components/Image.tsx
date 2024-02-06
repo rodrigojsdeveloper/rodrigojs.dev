@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import NextImage from 'next/image'
 import { ImageProps } from '@/interfaces'
-import cn from '@/utils/cn'
+import { cn } from '@/utils/cn'
 
 const Image = (props: ImageProps) => {
   const [isLoading, setIsLoading] = useState(true)
@@ -36,4 +36,4 @@ const Image = (props: ImageProps) => {
   )
 }
 
-export default Image
+export { Image }

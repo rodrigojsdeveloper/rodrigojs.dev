@@ -1,5 +1,5 @@
 import { ICustomLink } from '@/interfaces'
-import cn from '@/utils/cn'
+import { cn } from '@/utils/cn'
 import Link from 'next/link'
 
 const CustomLink = ({
@@ -37,4 +37,4 @@ const CustomLink = ({
   )
 }
 
-export default CustomLink
+export { CustomLink }

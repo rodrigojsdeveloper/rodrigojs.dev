@@ -15,4 +15,4 @@ const SocialMedia = ({ social }: ISocial) => {
   )
 }
 
-export default SocialMedia
+export { SocialMedia }

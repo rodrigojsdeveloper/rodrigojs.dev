@@ -1,16 +1,17 @@
 'use client'
 
 import { useContext } from 'react'
-import Line from './Line'
-import Button from './Button'
-import SubTitle from './SubTitle'
-import LINKS from '@/utils/links'
-import CustomLink from './CustomLink'
+import { Line } from './Line'
+import { Button } from './Button'
+import { SubTitle } from './SubTitle'
+import { LINKS } from '@/utils/links'
+import { CustomLink } from './CustomLink'
 import { useTheme } from 'next-themes'
-import copyLink from '@/utils/copyLink'
+import { copyLink } from '@/utils/copyLink'
 import { Context } from '@/contexts/context'
-import ModalBackground from './ModalBackground'
+import { ModalBackground } from './ModalBackground'
 import { Code2, Link, X } from 'lucide-react'
+import { translate } from '@/i18n'
 
 const Modal = () => {
   const { handleOpenModal } = useContext(Context)
@@ -38,7 +39,7 @@ const Modal = () => {
     <ModalBackground>
       <div className="flex h-full max-h-[21rem] w-full max-w-lg animate-modal flex-col rounded-radius border border-solid border-border bg-background shadow-lg duration-300">
         <div className="flex flex-row items-center justify-between py-2.5 pl-4 pr-2">
-          <SubTitle title="Menu" />
+          <SubTitle title={translate('links.menu')} />
 
           <Button handleState={handleOpenModal} arialLabel="Close Button">
             <X
@@ -53,7 +54,7 @@ const Modal = () => {
 
         <div className="overflow-y-auto px-3 pb-2 pt-1.5">
           <p className="text-pretty px-1 py-2 text-xs text-muted-foreground">
-            Redes sociais
+            {translate('links.title.socials')}
           </p>
           <nav>
             {LINKS.socials.map((media, index) => (
@@ -72,7 +73,7 @@ const Modal = () => {
           </nav>
 
           <p className="text-pretty px-1 py-2 text-xs text-muted-foreground">
-            Temas
+            {translate('links.title.themes')}
           </p>
           <nav>
             {LINKS.themes.map((theme, index) => {
@@ -92,13 +93,13 @@ const Modal = () => {
           </nav>
 
           <p className="text-pretty px-1 py-2 text-xs text-muted-foreground">
-            Sugestões
+            {translate('links.title.suggestions')}
           </p>
           <nav>
             <CustomLink
               href=""
               Icon={<Link size={20} strokeWidth={2} />}
-              text="Copiar link"
+              text={translate('links.copy_link')}
               onClick={handleCopyLink}
               className="font-light text-muted-foreground"
             />
@@ -106,7 +107,7 @@ const Modal = () => {
               target="_blank"
               href="https://github.com/rodrigojsdeveloper/rodrigojs.dev"
               Icon={<Code2 size={20} strokeWidth={2} />}
-              text="Código fonte"
+              text={translate('links.source_code')}
               className="font-light text-muted-foreground"
               onClick={handleOpenModal}
               externalLink
@@ -119,4 +120,4 @@ const Modal = () => {
   )
 }
 
-export default Modal
+export { Modal }

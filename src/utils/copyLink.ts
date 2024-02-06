@@ -1,4 +1,4 @@
-import notification from '@/components/Notification'
+import { notification } from '@/components/Notification'
 
 const copyLink = () => {
   navigator.clipboard
@@ -18,4 +18,4 @@ const copyLink = () => {
     })
 }
 
-export default copyLink
+export { copyLink }

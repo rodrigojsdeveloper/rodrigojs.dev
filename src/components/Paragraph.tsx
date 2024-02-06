@@ -1,5 +1,5 @@
 import { IParagraph } from '@/interfaces'
-import cn from '@/utils/cn'
+import { cn } from '@/utils/cn'
 
 const Paragraph = ({ text, className }: IParagraph) => {
   return (
@@ -14,4 +14,4 @@ const Paragraph = ({ text, className }: IParagraph) => {
   )
 }
 
-export default Paragraph
+export { Paragraph }

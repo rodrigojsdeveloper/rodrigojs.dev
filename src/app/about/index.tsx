@@ -1,8 +1,8 @@
 'use client'
 
-import Paragraph from '@/components/Paragraph'
+import { Paragraph } from '@/components/Paragraph'
 import { Stacks } from '@/components/Stacks'
-import Title from '@/components/Title'
+import { Title } from '@/components/Title'
 import { translate } from '@/i18n'
 import Link from 'next/link'
 

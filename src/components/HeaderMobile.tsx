@@ -2,13 +2,14 @@
 
 import { useContext } from 'react'
 import author from '@/assets/author.jpg'
-import Image from '@/components/Image'
+import { Image } from '@/components/Image'
 import Link from 'next/link'
-import DropDown from './DropDown'
-import Button from './Button'
-import Modal from './Modal'
+import { DropDown } from './DropDown'
+import { Button } from './Button'
+import { Modal } from './Modal'
 import { Context } from '@/contexts/context'
 import { X, Menu, MoreHorizontal } from 'lucide-react'
+import { translate } from '@/i18n'
 
 const HeaderMobile = () => {
   const { openDropDown, openModal, handleOpenDropDown, handleOpenModal } =
@@ -31,14 +32,17 @@ const HeaderMobile = () => {
         </Link>
 
         <div className="flex items-center gap-1">
-          <Button handleState={handleOpenModal} arialLabel="Settings Button">
+          <Button
+            handleState={handleOpenModal}
+            arialLabel={translate('links.arial_label.settings')}
+          >
             <MoreHorizontal size={20} className="stroke-muted-foreground" />
           </Button>
 
           {!openDropDown ? (
             <Button
               handleState={handleOpenDropDown}
-              arialLabel="DropDown Button"
+              arialLabel={translate('links.arial_label.drop_down')}
             >
               <Menu
                 size={20}
@@ -47,7 +51,10 @@ const HeaderMobile = () => {
               />
             </Button>
           ) : (
-            <Button handleState={handleOpenDropDown} arialLabel="Close Button">
+            <Button
+              handleState={handleOpenDropDown}
+              arialLabel={translate('links.arial_label.close')}
+            >
               <X
                 size={20}
                 strokeWidth={1.5}
@@ -61,4 +68,4 @@ const HeaderMobile = () => {
   )
 }
 
-export default HeaderMobile
+export { HeaderMobile }

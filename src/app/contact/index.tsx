@@ -1,8 +1,8 @@
 'use client'
 
 import { SocialNetworks } from '@/components/SocialNetworks'
-import Paragraph from '@/components/Paragraph'
-import Title from '@/components/Title'
+import { Paragraph } from '@/components/Paragraph'
+import { Title } from '@/components/Title'
 import { Form } from '@/components/Form'
 import { translate } from '@/i18n'
 

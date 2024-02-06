@@ -12,4 +12,4 @@ const Textarea = ({ name, placeholder }: InputProps) => {
   )
 }
 
-export default Textarea
+export { Textarea }

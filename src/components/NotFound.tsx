@@ -1,7 +1,7 @@
 'use client'
 
-import CustomLink from '@/components/CustomLink'
-import Paragraph from '@/components/Paragraph'
+import { CustomLink } from '@/components/CustomLink'
+import { Paragraph } from '@/components/Paragraph'
 import { translate } from '@/i18n'
 import { MoveLeft } from 'lucide-react'
 

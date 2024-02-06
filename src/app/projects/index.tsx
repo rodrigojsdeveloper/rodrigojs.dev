@@ -1,10 +1,10 @@
 'use client'
 
-import Paragraph from '@/components/Paragraph'
+import { Paragraph } from '@/components/Paragraph'
 import { projects } from '@/utils/projects'
-import Project from '@/components/Project'
-import Title from '@/components/Title'
-import List from '@/components/List'
+import { Project } from '@/components/Project'
+import { Title } from '@/components/Title'
+import { List } from '@/components/List'
 import { translate } from '@/i18n'
 
 const Projects = () => {

@@ -50,4 +50,4 @@ const notification = ({ title, description, error }: INotificationProps) => {
   }
 }
 
-export default notification
+export { notification }

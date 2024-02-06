@@ -1,10 +1,10 @@
 'use client'
 
-import stacks from '@/utils/stacks'
-import SubTitle from './SubTitle'
-import array from '@/utils/array'
-import Stack from './Stack'
-import cn from '@/utils/cn'
+import { stacks } from '@/utils/stacks'
+import { SubTitle } from './SubTitle'
+import { array } from '@/utils/array'
+import { Stack } from './Stack'
+import { cn } from '@/utils/cn'
 import { IStacks } from '@/interfaces'
 import { translate } from '@/i18n'
 

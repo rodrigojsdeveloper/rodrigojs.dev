@@ -1,5 +1,5 @@
 import { IStack } from '@/interfaces'
-import cn from '@/utils/cn'
+import { cn } from '@/utils/cn'
 
 const Stack = ({ Icon, bg }: IStack) => {
   return (
@@ -15,4 +15,4 @@ const Stack = ({ Icon, bg }: IStack) => {
   )
 }
 
-export default Stack
+export { Stack }

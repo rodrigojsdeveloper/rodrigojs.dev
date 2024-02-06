@@ -2,18 +2,19 @@
 
 import { useContext, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
-import CustomLink from './CustomLink'
-import Copyright from './Copyright'
-import SubTitle from './SubTitle'
+import { CustomLink } from './CustomLink'
+import { Copyright } from './Copyright'
+import { SubTitle } from './SubTitle'
 import author from '@/assets/author.jpg'
-import Image from '@/components/Image'
+import { Image } from '@/components/Image'
 import Link from 'next/link'
-import Line from './Line'
-import Button from './Button'
-import Modal from './Modal'
+import { Line } from './Line'
+import { Button } from './Button'
+import { Modal } from './Modal'
 import { Context } from '@/contexts/context'
-import LINKS from '@/utils/links'
+import { LINKS } from '@/utils/links'
 import { MoreHorizontal } from 'lucide-react'
+import { translate } from '@/i18n'
 
 const Header = () => {
   const { openModal, handleOpenModal } = useContext(Context)
@@ -69,7 +70,10 @@ const Header = () => {
         <Line />
         <div className="flex items-center justify-between">
           <Copyright />
-          <Button handleState={handleOpenModal} arialLabel="Settings Button">
+          <Button
+            handleState={handleOpenModal}
+            arialLabel={translate('links.arial_label.settings')}
+          >
             <MoreHorizontal size={20} className="stroke-muted-foreground" />
           </Button>
         </div>
@@ -78,4 +82,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export { Header }

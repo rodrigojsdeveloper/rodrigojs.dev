@@ -1,6 +1,6 @@
 import { translate } from '@/i18n'
-import Paragraph from './Paragraph'
-import SubTitle from './SubTitle'
+import { Paragraph } from './Paragraph'
+import { SubTitle } from './SubTitle'
 import Link from 'next/link'
 
 const Work = () => {
@@ -20,4 +20,4 @@ const Work = () => {
   )
 }
 
-export default Work
+export { Work }

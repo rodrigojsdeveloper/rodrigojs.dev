@@ -8,4 +8,4 @@ const List = ({ children }: PropsWithChildren) => {
   )
 }
 
-export default List
+export { List }

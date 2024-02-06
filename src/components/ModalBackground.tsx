@@ -8,4 +8,4 @@ const ModalBackground = ({ children }: PropsWithChildren) => {
   )
 }
 
-export default ModalBackground
+export { ModalBackground }

@@ -1,5 +1,5 @@
-import SocialMedia from './SocialMedia'
-import LINKS from '@/utils/links'
+import { SocialMedia } from './SocialMedia'
+import { LINKS } from '@/utils/links'
 
 const SocialNetworks = () => {
   return (
