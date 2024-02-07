@@ -18,7 +18,8 @@ export default {
   'links.copy_link': 'Copy Link',
   'links.source_code': 'Source Code',
 
-  'links.menu': 'Menu',
+  'links.placeholder': 'Type to search ↵',
+  'links.not_found': 'No results found.',
 
   'links.arial_label.settings': 'Settings Button',
   'links.arial_label.close': 'Close Button',

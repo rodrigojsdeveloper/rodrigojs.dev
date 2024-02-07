@@ -91,18 +91,18 @@ const LINKS = {
   ],
   socials: [
     {
-      name: 'GitHub',
       link: 'https://github.com/rodrigojsdeveloper',
+      title: 'GitHub',
       svg: Github,
     },
     {
-      name: 'LinkedIn',
       link: 'https://www.linkedin.com/in/rodrigo-de-jesus-silva',
+      title: 'LinkedIn',
       svg: Linkedin,
     },
     {
-      name: 'Instagram',
       link: 'https://www.instagram.com/eurodrigojs',
+      title: 'Instagram',
       svg: Instagram,
     },
   ],
