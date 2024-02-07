@@ -23,7 +23,7 @@ const RootLayout = ({ children }: PropsWithChildren) => {
   return (
     <Providers>
       <html
-        lang="pt-BR"
+        lang="en"
         className={cn('font-kanit selection:bg-neutral-500/10', kanit.variable)}
       >
         <body className="m-auto flex w-full max-w-6xl flex-row justify-center gap-x-10 overflow-x-hidden px-6 pb-5 pt-24 sm:px-8 lg:pb-10 lg:pt-28">

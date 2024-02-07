@@ -14,6 +14,7 @@ export default {
   'links.system': 'Sistema',
   'links.portuguese': 'Português',
   'links.english': 'Inglês',
+  'links.spanish': 'Espanhol',
   'links.copy_link': 'Copiar link',
   'links.source_code': 'Código fonte',
 

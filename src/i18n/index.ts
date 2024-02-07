@@ -1,18 +1,24 @@
 import i18next from 'i18next'
 import LanguageDetector from 'i18next-browser-languagedetector'
-import ptBR from './pt-BR'
-import enUS from './en-US'
+import br from './br'
+import en from './en'
+import es from './es'
 
 i18next.use(LanguageDetector).init({
   resources: {
     pt: {
       translation: {
-        ...ptBR,
+        ...br,
       },
     },
     en: {
       translation: {
-        ...enUS,
+        ...en,
+      },
+    },
+    es: {
+      translation: {
+        ...es,
       },
     },
   },
