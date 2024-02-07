@@ -9,7 +9,7 @@ const SocialMedia = ({ social }: ISocial) => {
         href={social.link}
         className="decoration-[0.094rem] underline-offset-4 group-hover:text-foreground group-hover:underline"
       >
-        {social.name}
+        {social.title}
       </Link>
     </li>
   )
