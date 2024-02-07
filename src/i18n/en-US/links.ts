@@ -2,6 +2,7 @@
 export default {
   'links.title.socials': 'Social Media',
   'links.title.themes': 'Themes',
+  'links.title.languages': 'Languages',
   'links.title.suggestions': 'Suggestions',
 
   'links.home': 'Home',
@@ -11,6 +12,8 @@ export default {
   'links.light': 'Light',
   'links.dark': 'Dark',
   'links.system': 'System',
+  'links.portuguese': 'Portuguese',
+  'links.english': 'English',
   'links.copy_link': 'Copy Link',
   'links.source_code': 'Source Code',
 

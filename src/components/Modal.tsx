@@ -14,7 +14,7 @@ import { Code2, Link, X } from 'lucide-react'
 import { translate } from '@/i18n'
 
 const Modal = () => {
-  const { handleOpenModal } = useContext(Context)
+  const { handleOpenModal, handleChangeLanguage } = useContext(Context)
   const { setTheme } = useTheme()
 
   const handleCopyLink = () => {
@@ -90,6 +90,22 @@ const Modal = () => {
                 />
               )
             })}
+          </nav>
+
+          <p className="text-pretty px-1 py-2 text-xs text-muted-foreground">
+            {translate('links.title.languages')}
+          </p>
+          <nav>
+            {LINKS.languages.map((language, index) => (
+              <CustomLink
+                key={`language ${index}`}
+                href=""
+                Icon={<language.svg />}
+                text={language.title}
+                onClick={() => handleChangeLanguage(language.locale)}
+                className="font-light text-muted-foreground"
+              />
+            ))}
           </nav>
 
           <p className="text-pretty px-1 py-2 text-xs text-muted-foreground">

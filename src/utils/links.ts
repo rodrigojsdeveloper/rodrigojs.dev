@@ -1,4 +1,6 @@
 import { translate } from '@/i18n'
+import { Brazil } from '@/svgs/Brazil'
+import { EUA } from '@/svgs/EUA'
 import {
   Home,
   CircleUserRound,
@@ -67,6 +69,18 @@ const LINKS = {
       theme: 'system',
       title: translate('links.system'),
       svg: Laptop,
+    },
+  ],
+  languages: [
+    {
+      locale: 'pt-BR',
+      title: translate('links.portuguese'),
+      svg: Brazil,
+    },
+    {
+      locale: 'en-US',
+      title: translate('links.english'),
+      svg: EUA,
     },
   ],
   socials: [

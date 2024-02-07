@@ -11,7 +11,7 @@ i18next.use(LanguageDetector).init({
       },
     },
     en: {
-      translate: {
+      translation: {
         ...enUS,
       },
     },

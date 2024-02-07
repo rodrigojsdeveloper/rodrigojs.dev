@@ -76,6 +76,7 @@ export interface IContextData {
   handleOpenModal: () => void
   setOpenDropDown: Dispatch<SetStateAction<boolean>>
   setOpenModal: Dispatch<SetStateAction<boolean>>
+  handleChangeLanguage: (language: string) => void
 }
 
 export interface ImageProps
