@@ -51,7 +51,7 @@ export interface ITitle {
 }
 
 export interface ISocialProps {
-  name: string
+  title: string
   link: string
   svg: LucideIcon
 }
