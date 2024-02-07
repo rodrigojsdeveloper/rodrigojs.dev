@@ -14,11 +14,21 @@ const config: Config = {
       colors: {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
+        border: 'hsl(var(--border))',
+        shadow: 'hsl(var(--shadow))',
+        success: {
+          bg: 'hsl(var(--success-bg))',
+          border: 'hsl(var(--success-border))',
+          text: 'hsl(var(--success-text))',
+        },
+        error: {
+          bg: 'hsl(var(--error-bg))',
+          border: 'hsl(var(--error-border))',
+          text: 'hsl(var(--error-text))',
+        },
         muted: {
           foreground: 'hsl(var(--muted-foreground))',
         },
-        border: 'hsl(var(--border))',
-        shadow: 'hsl(var(--shadow))',
       },
       backgroundImage: {
         'fade-gradient':

@@ -91,7 +91,6 @@ export interface ISvg {
 }
 
 export interface INotificationProps {
-  title: string
   description: string
   error?: boolean
 }

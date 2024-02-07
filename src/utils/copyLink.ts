@@ -6,14 +6,12 @@ const copyLink = () => {
     .writeText('https://rodrigojs.dev')
     .then(() => {
       notification({
-        title: translate('notification.copy_link.success.title'),
-        description: translate('notification.copy_link.success.description'),
+        description: translate('notification.copy_link.success'),
       })
     })
     .catch(() => {
       notification({
-        title: translate('notification.copy_link.error.title'),
-        description: translate('notification.copy_link.error.description'),
+        description: translate('notification.copy_link.error'),
         error: true,
       })
     })
