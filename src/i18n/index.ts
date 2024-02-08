@@ -5,6 +5,10 @@ import en from './en'
 import es from './es'
 
 i18next.use(LanguageDetector).init({
+  fallbackLng: (options: any) => {
+    const detectedLng = options.detectedLng
+    return detectedLng || 'pt'
+  },
   resources: {
     pt: {
       translation: {
