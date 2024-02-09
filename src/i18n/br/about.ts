@@ -8,4 +8,5 @@ export default {
   'about.third.paragraph':
     'Possuo conhecimento em DevOps, incluindo integração e entrega contínua e automação de processos de infraestrutura. Quero aprimorar minhas habilidades técnicas para liderar projetos que resultem em interfaces atrativas, funcionais e de alto desempenho.',
   'about.skills': 'Habilidades',
+  'about.download': 'Ver Currículo',
 }

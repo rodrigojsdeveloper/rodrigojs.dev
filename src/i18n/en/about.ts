@@ -8,4 +8,5 @@ export default {
   'about.third.paragraph':
     'I have knowledge in DevOps, including continuous integration and delivery and infrastructure process automation. I aim to enhance my technical skills to lead projects resulting in attractive, functional, and high-performance interfaces.',
   'about.skills': 'Skills',
+  'about.download': 'View Resume',
 }
