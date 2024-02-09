@@ -19,8 +19,8 @@ export interface ICustomLink {
   isLink?: boolean
 }
 
-export interface IStack {
-  Icon: React.ReactNode
+export interface IStackProps {
+  icon: string
   bg: string
 }
 
@@ -104,7 +104,7 @@ export interface IThemeProps {
 export interface ILanguageProps {
   locale: string
   title: string
-  icon: () => JSX.Element
+  icon: LucideIcon
 }
 
 export interface ISocialProps {

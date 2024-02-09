@@ -1,8 +1,5 @@
-import { translate } from '@/i18n'
 import { ILINKS } from '@/interfaces'
-import { Brazil } from '@/svgs/brazil'
-import { EUA } from '@/svgs/eua'
-import { Spain } from '@/svgs/spain'
+import { translate } from '@/i18n'
 import {
   Home,
   CircleUserRound,
@@ -14,6 +11,7 @@ import {
   Sun,
   Moon,
   Laptop,
+  Globe,
 } from 'lucide-react'
 
 export const LINKS: ILINKS = {
@@ -77,17 +75,17 @@ export const LINKS: ILINKS = {
     {
       locale: 'pt-BR',
       title: translate('links.portuguese'),
-      icon: Brazil,
+      icon: Globe,
     },
     {
       locale: 'en-US',
       title: translate('links.english'),
-      icon: EUA,
+      icon: Globe,
     },
     {
       locale: 'es',
       title: translate('links.spanish'),
-      icon: Spain,
+      icon: Globe,
     },
   ],
   socials: [

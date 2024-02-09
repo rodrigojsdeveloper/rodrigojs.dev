@@ -22,6 +22,7 @@
     "tailwind-merge": "^2.2.1"
   },
   "devDependencies": {
+    "@iconify/react": "^4.1.1",
     "@rocketseat/eslint-config": "^2.1.0",
     "@types/node": "^20",
     "@types/react": "^18",

@@ -6,10 +6,9 @@ import { Button } from './button'
 import { LINKS } from '@/utils/links'
 import { CustomLink } from './custom-link'
 import { useTheme } from 'next-themes'
-import { copyLink } from '@/utils/copy-link'
 import { Context } from '@/contexts/context'
 import { ModalBackground } from './modal-background'
-import { Code2, Link, Search, X } from 'lucide-react'
+import { Search, X } from 'lucide-react'
 import { translate } from '@/i18n'
 import { cn } from '@/utils/cn'
 import { ILanguageProps, ISocialProps, IThemeProps } from '@/interfaces'
@@ -18,11 +17,6 @@ export const Modal = () => {
   const { handleOpenModal, handleChangeLanguage } = useContext(Context)
   const { setTheme } = useTheme()
   const [searchValue, setSearchValue] = useState('')
-
-  const handleCopyLink = () => {
-    copyLink()
-    handleOpenModal()
-  }
 
   const getTheme = (name: string) => {
     switch (name) {
@@ -47,24 +41,6 @@ export const Modal = () => {
   const filteredSocials = filterLinks(LINKS.socials)
   const filteredThemes = filterLinks(LINKS.themes)
   const filteredLanguages = filterLinks(LINKS.languages)
-  const filteredSuggestions = filterLinks([
-    {
-      link: '',
-      svg: Link,
-      title: translate('links.copy_link'),
-      onClick: handleCopyLink,
-      externalLink: false,
-      isLink: false,
-    },
-    {
-      link: 'https://github.com/rodrigojsdeveloper/rodrigojs.dev',
-      svg: Code2,
-      title: translate('links.source_code'),
-      onClick: handleOpenModal,
-      externalLink: true,
-      isLink: true,
-    },
-  ])
 
   const showSuggestions =
     filteredSocials.length === 0 &&
@@ -111,25 +87,24 @@ export const Modal = () => {
             showSuggestions && 'm-auto',
           )}
         >
-          {filteredSocials.length > 0 && (
+          {filteredLanguages.length > 0 && (
             <>
               <p className="text-pretty px-1 py-2 text-xs text-muted-foreground">
-                {translate('links.title.socials')}
+                {translate('links.title.languages')}
               </p>
               <nav>
-                {filteredSocials.map((social: ISocialProps, index: number) => (
-                  <CustomLink
-                    key={`media ${index}`}
-                    href={social.link}
-                    Icon={<social.icon size={20} strokeWidth={2} />}
-                    text={social.title}
-                    className="font-light text-muted-foreground"
-                    onClick={handleOpenModal}
-                    externalLink
-                    target="_blank"
-                    isLink
-                  />
-                ))}
+                {filteredLanguages.map(
+                  (language: ILanguageProps, index: number) => (
+                    <CustomLink
+                      key={`language ${index}`}
+                      href=""
+                      Icon={<language.icon size={20} strokeWidth={2} />}
+                      text={language.title}
+                      onClick={() => handleChangeLanguage(language.locale)}
+                      className="font-light text-muted-foreground"
+                    />
+                  ),
+                )}
               </nav>
             </>
           )}
@@ -158,45 +133,23 @@ export const Modal = () => {
             </>
           )}
 
-          {filteredLanguages.length > 0 && (
+          {filteredSocials.length > 0 && (
             <>
               <p className="text-pretty px-1 py-2 text-xs text-muted-foreground">
-                {translate('links.title.languages')}
+                {translate('links.title.socials')}
               </p>
               <nav>
-                {filteredLanguages.map(
-                  (language: ILanguageProps, index: number) => (
-                    <CustomLink
-                      key={`language ${index}`}
-                      href=""
-                      Icon={<language.icon />}
-                      text={language.title}
-                      onClick={() => handleChangeLanguage(language.locale)}
-                      className="font-light text-muted-foreground"
-                    />
-                  ),
-                )}
-              </nav>
-            </>
-          )}
-
-          {filteredSuggestions.length > 0 && (
-            <>
-              <p className="text-pretty px-1 py-2 text-xs text-muted-foreground">
-                {translate('links.title.suggestions')}
-              </p>
-              <nav>
-                {filteredSuggestions.map((suggestion: any, index: number) => (
+                {filteredSocials.map((social: ISocialProps, index: number) => (
                   <CustomLink
-                    key={`suggestion ${index}`}
-                    href={suggestion.link}
-                    Icon={<suggestion.svg size={20} strokeWidth={2} />}
-                    text={suggestion.title}
+                    key={`media ${index}`}
+                    href={social.link}
+                    Icon={<social.icon size={20} strokeWidth={2} />}
+                    text={social.title}
                     className="font-light text-muted-foreground"
-                    onClick={suggestion.onClick}
-                    externalLink={suggestion.externalLink}
+                    onClick={handleOpenModal}
+                    externalLink
                     target="_blank"
-                    isLink={suggestion.isLink}
+                    isLink
                   />
                 ))}
               </nav>

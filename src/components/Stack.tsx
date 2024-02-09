@@ -1,7 +1,8 @@
-import { IStack } from '@/interfaces'
+import { IStackProps } from '@/interfaces'
+import { Icon } from '@iconify/react'
 import { cn } from '@/utils/cn'
 
-export const Stack = ({ Icon, bg }: IStack) => {
+export const Stack = ({ icon, bg }: IStackProps) => {
   return (
     <li
       style={{ backgroundColor: bg }}
@@ -10,7 +11,7 @@ export const Stack = ({ Icon, bg }: IStack) => {
         bg,
       )}
     >
-      {Icon}
+      <Icon icon={icon} width="32px" height="32px" />
     </li>
   )
 }

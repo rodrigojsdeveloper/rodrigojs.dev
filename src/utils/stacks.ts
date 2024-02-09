@@ -1,115 +1,92 @@
-import {
-  Aws,
-  Bootstrap,
-  Django,
-  Docker,
-  Express,
-  Figma,
-  Git,
-  JavaScript,
-  Jest,
-  Mongodb,
-  Mysql,
-  Nestjs,
-  Nextjs,
-  Nodejs,
-  Postgresql,
-  Prisma,
-  Python,
-  React,
-  Sass,
-  Swagger,
-  Tailwind,
-  TypeScript,
-} from '@/svgs/stacks'
+import { IStackProps } from '@/interfaces'
 
-export const stacks = [
+export const stacks: IStackProps[] = [
   {
-    svg: JavaScript,
+    icon: 'logos:javascript',
     bg: '#F7DF1F20',
   },
   {
-    svg: TypeScript,
+    icon: 'devicon:typescript',
     bg: '#007ACC20',
   },
   {
-    svg: React,
+    icon: 'logos:react',
     bg: '#00D8FF20',
   },
   {
-    svg: Nextjs,
+    icon: 'logos:nextjs-icon',
     bg: '#FFFFFF20',
   },
   {
-    svg: Tailwind,
+    icon: 'devicon:tailwindcss',
     bg: '#38BDF820',
   },
   {
-    svg: Sass,
+    icon: 'logos:sass',
     bg: '#CD679920',
   },
   {
-    svg: Bootstrap,
+    icon: 'devicon:bootstrap',
     bg: '#9013FE20',
   },
   {
-    svg: Nodejs,
+    icon: 'logos:nodejs-icon',
     bg: '#83CD2920',
   },
   {
-    svg: Express,
+    icon: 'devicon:express',
     bg: '#FFFFFF20',
   },
   {
-    svg: Prisma,
+    icon: 'devicon:prisma',
     bg: '#2d374820',
   },
   {
-    svg: Nestjs,
+    icon: 'logos:nestjs',
     bg: '#E0234E20',
   },
   {
-    svg: Jest,
+    icon: 'logos:jest',
     bg: '#99425B20',
   },
   {
-    svg: Python,
+    icon: 'logos:python',
     bg: '#387EB820',
   },
   {
-    svg: Django,
+    icon: 'logos:django',
     bg: '#092E2020',
   },
   {
-    svg: Postgresql,
+    icon: 'logos:postgresql',
     bg: '#33679120',
   },
   {
-    svg: Mysql,
+    icon: 'logos:mysql-icon',
     bg: '#00618A20',
   },
   {
-    svg: Mongodb,
+    icon: 'logos:mongodb-icon',
     bg: '#01EC6420',
   },
   {
-    svg: Docker,
+    icon: 'logos:docker-icon',
     bg: '#2396ED20',
   },
   {
-    svg: Swagger,
+    icon: 'logos:swagger',
     bg: '#85EA2D20',
   },
   {
-    svg: Aws,
+    icon: 'logos:aws',
     bg: '#252F3E20',
   },
   {
-    svg: Git,
+    icon: 'devicon:git',
     bg: '#F34F2920',
   },
   {
-    svg: Figma,
+    icon: 'logos:figma',
     bg: '#0ACF8320',
   },
 ]
