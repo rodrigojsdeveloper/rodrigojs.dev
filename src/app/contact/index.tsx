@@ -1,7 +1,7 @@
 'use client'
 
-import { Socials } from '@/components/socials'
 import { Paragraph } from '@/components/paragraph'
+import { Socials } from '@/components/socials'
 import { Title } from '@/components/title'
 import { Form } from '@/components/form'
 import { translate } from '@/i18n'

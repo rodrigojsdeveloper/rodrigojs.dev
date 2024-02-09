@@ -1,8 +1,8 @@
 'use client'
 
 import { Paragraph } from '@/components/paragraph'
-import { projects } from '@/utils/projects'
 import { Project } from '@/components/project'
+import { projects } from '@/utils/projects'
 import { Title } from '@/components/title'
 import { List } from '@/components/list'
 import { translate } from '@/i18n'
