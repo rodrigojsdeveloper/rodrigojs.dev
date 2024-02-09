@@ -22,7 +22,7 @@ export const Stacks = ({ pauseOnHover }: IStacks) => {
             )}
             data-testid={`slider-child-${index + 1}`}
           >
-            {stacks.map((stack: any, index: number) => (
+            {stacks.map((stack, index) => (
               <Stack Icon={<stack.svg />} bg={stack.bg} key={index} />
             ))}
           </ul>

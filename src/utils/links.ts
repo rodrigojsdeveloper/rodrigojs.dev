@@ -1,4 +1,5 @@
 import { translate } from '@/i18n'
+import { ILINKS } from '@/interfaces'
 import { Brazil } from '@/svgs/brazil'
 import { EUA } from '@/svgs/eua'
 import { Spain } from '@/svgs/spain'
@@ -15,95 +16,95 @@ import {
   Laptop,
 } from 'lucide-react'
 
-export const LINKS = {
+export const LINKS: ILINKS = {
   website: [
     {
       href: '',
       title: translate('links.home'),
-      svg: Home,
+      icon: Home,
     },
     {
       href: 'about',
       title: translate('links.about'),
-      svg: CircleUserRound,
+      icon: CircleUserRound,
     },
     {
       href: 'projects',
       title: translate('links.projects'),
-      svg: PanelsTopLeft,
+      icon: PanelsTopLeft,
     },
     {
       href: 'contact',
       title: translate('links.contact'),
-      svg: MessageCircle,
+      icon: MessageCircle,
     },
   ],
   mobile_website: [
     {
       href: 'about',
       title: translate('links.about'),
-      svg: CircleUserRound,
+      icon: CircleUserRound,
     },
     {
       href: 'projects',
       title: translate('links.projects'),
-      svg: PanelsTopLeft,
+      icon: PanelsTopLeft,
     },
     {
       href: 'contact',
       title: translate('links.contact'),
-      svg: MessageCircle,
+      icon: MessageCircle,
     },
   ],
   themes: [
     {
       theme: 'light',
       title: translate('links.light'),
-      svg: Sun,
+      icon: Sun,
     },
     {
       theme: 'dark',
       title: translate('links.dark'),
-      svg: Moon,
+      icon: Moon,
     },
     {
       theme: 'system',
       title: translate('links.system'),
-      svg: Laptop,
+      icon: Laptop,
     },
   ],
   languages: [
     {
       locale: 'pt-BR',
       title: translate('links.portuguese'),
-      svg: Brazil,
+      icon: Brazil,
     },
     {
       locale: 'en-US',
       title: translate('links.english'),
-      svg: EUA,
+      icon: EUA,
     },
     {
       locale: 'es',
       title: translate('links.spanish'),
-      svg: Spain,
+      icon: Spain,
     },
   ],
   socials: [
     {
       link: 'https://github.com/rodrigojsdeveloper',
       title: 'GitHub',
-      svg: Github,
+      icon: Github,
     },
     {
       link: 'https://www.linkedin.com/in/rodrigo-de-jesus-silva',
       title: 'LinkedIn',
-      svg: Linkedin,
+      icon: Linkedin,
     },
     {
       link: 'https://www.instagram.com/eurodrigojs',
       title: 'Instagram',
-      svg: Instagram,
+      icon: Instagram,
     },
   ],
 }

@@ -55,7 +55,7 @@ export const Header = () => {
             <CustomLink
               key={`website ${index}`}
               href={link.href}
-              Icon={<link.svg size={22} strokeWidth={2} />}
+              Icon={<link.icon size={22} strokeWidth={2} />}
               text={link.title}
               activeLink={
                 pathname === `/${link.href}`

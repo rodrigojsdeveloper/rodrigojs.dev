@@ -12,6 +12,7 @@ import { ModalBackground } from './modal-background'
 import { Code2, Link, Search, X } from 'lucide-react'
 import { translate } from '@/i18n'
 import { cn } from '@/utils/cn'
+import { ILanguageProps, ISocialProps, IThemeProps } from '@/interfaces'
 
 export const Modal = () => {
   const { handleOpenModal, handleChangeLanguage } = useContext(Context)
@@ -116,12 +117,12 @@ export const Modal = () => {
                 {translate('links.title.socials')}
               </p>
               <nav>
-                {filteredSocials.map((media: any, index: number) => (
+                {filteredSocials.map((social: ISocialProps, index: number) => (
                   <CustomLink
                     key={`media ${index}`}
-                    href={media.link}
-                    Icon={<media.svg size={20} strokeWidth={2} />}
-                    text={media.title}
+                    href={social.link}
+                    Icon={<social.icon size={20} strokeWidth={2} />}
+                    text={social.title}
                     className="font-light text-muted-foreground"
                     onClick={handleOpenModal}
                     externalLink
@@ -139,14 +140,14 @@ export const Modal = () => {
                 {translate('links.title.themes')}
               </p>
               <nav>
-                {filteredThemes.map((theme: any, index: number) => {
+                {filteredThemes.map((theme: IThemeProps, index: number) => {
                   const newTheme = { ...theme, theme: getTheme(theme.theme) }
 
                   return (
                     <CustomLink
                       key={`theme ${index}`}
                       href=""
-                      Icon={<newTheme.svg size={20} strokeWidth={2} />}
+                      Icon={<newTheme.icon size={20} strokeWidth={2} />}
                       text={newTheme.title}
                       onClick={() => setTheme(newTheme.theme)}
                       className="font-light text-muted-foreground"
@@ -163,16 +164,18 @@ export const Modal = () => {
                 {translate('links.title.languages')}
               </p>
               <nav>
-                {filteredLanguages.map((language: any, index: number) => (
-                  <CustomLink
-                    key={`language ${index}`}
-                    href=""
-                    Icon={<language.svg />}
-                    text={language.title}
-                    onClick={() => handleChangeLanguage(language.locale)}
-                    className="font-light text-muted-foreground"
-                  />
-                ))}
+                {filteredLanguages.map(
+                  (language: ILanguageProps, index: number) => (
+                    <CustomLink
+                      key={`language ${index}`}
+                      href=""
+                      Icon={<language.icon />}
+                      text={language.title}
+                      onClick={() => handleChangeLanguage(language.locale)}
+                      className="font-light text-muted-foreground"
+                    />
+                  ),
+                )}
               </nav>
             </>
           )}

@@ -50,16 +50,6 @@ export interface ITitle {
   title: string
 }
 
-export interface ISocialProps {
-  title: string
-  link: string
-  svg: LucideIcon
-}
-
-export interface ISocial {
-  social: ISocialProps
-}
-
 export interface IPathname {
   pathname?: string
 }
@@ -97,4 +87,36 @@ export interface INotificationProps {
 
 export interface IStacks {
   pauseOnHover?: boolean
+}
+
+export interface IWebSiteProps {
+  href: string
+  title: string
+  icon: LucideIcon
+}
+
+export interface IThemeProps {
+  theme: string
+  title: string
+  icon: LucideIcon
+}
+
+export interface ILanguageProps {
+  locale: string
+  title: string
+  icon: () => JSX.Element
+}
+
+export interface ISocialProps {
+  link: string
+  title: string
+  icon: LucideIcon
+}
+
+export interface ILINKS {
+  website: IWebSiteProps[]
+  mobile_website: IWebSiteProps[]
+  themes: IThemeProps[]
+  languages: ILanguageProps[]
+  socials: ISocialProps[]
 }
