@@ -1,7 +1,7 @@
 import { translate } from '@/i18n'
-import { Brazil } from '@/svgs/Brazil'
-import { EUA } from '@/svgs/EUA'
-import { Spain } from '@/svgs/Spain'
+import { Brazil } from '@/svgs/brazil'
+import { EUA } from '@/svgs/eua'
+import { Spain } from '@/svgs/spain'
 import {
   Home,
   CircleUserRound,
@@ -15,7 +15,7 @@ import {
   Laptop,
 } from 'lucide-react'
 
-const LINKS = {
+export const LINKS = {
   website: [
     {
       href: '',
@@ -107,5 +107,3 @@ const LINKS = {
     },
   ],
 }
-
-export { LINKS }

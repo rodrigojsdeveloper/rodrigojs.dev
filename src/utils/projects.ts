@@ -18,7 +18,7 @@ const createProject = (
   return { img, title, description, link }
 }
 
-const projects: IProjectProps[] = [
+export const projects: IProjectProps[] = [
   createProject(
     motorsShop,
     translate('projects.motors_shop.title'),
@@ -57,6 +57,4 @@ const projects: IProjectProps[] = [
   ),
 ]
 
-const initialHomeProjects: IProjectProps[] = [projects[0], projects[1]]
-
-export { projects, initialHomeProjects }
+export const initialHomeProjects: IProjectProps[] = [projects[0], projects[1]]

@@ -2,7 +2,7 @@ import { ICustomLink } from '@/interfaces'
 import { cn } from '@/utils/cn'
 import Link from 'next/link'
 
-const CustomLink = ({
+export const CustomLink = ({
   Icon,
   text,
   href,
@@ -36,5 +36,3 @@ const CustomLink = ({
     </button>
   )
 }
-
-export { CustomLink }

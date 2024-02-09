@@ -1,7 +1,7 @@
 import { ISocial } from '@/interfaces'
 import Link from 'next/link'
 
-const SocialMedia = ({ social }: ISocial) => {
+export const Social = ({ social }: ISocial) => {
   return (
     <li className="group cursor-pointer text-sm font-medium text-muted-foreground">
       <Link
@@ -14,5 +14,3 @@ const SocialMedia = ({ social }: ISocial) => {
     </li>
   )
 }
-
-export { SocialMedia }

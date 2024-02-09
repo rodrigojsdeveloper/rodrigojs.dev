@@ -1,13 +1,13 @@
 'use client'
 
-import { Paragraph } from '@/components/Paragraph'
+import { Paragraph } from '@/components/paragraph'
 import { projects } from '@/utils/projects'
-import { Project } from '@/components/Project'
-import { Title } from '@/components/Title'
-import { List } from '@/components/List'
+import { Project } from '@/components/project'
+import { Title } from '@/components/title'
+import { List } from '@/components/list'
 import { translate } from '@/i18n'
 
-const Projects = () => {
+export const Projects = () => {
   return (
     <div className="flex animate-up flex-col gap-y-4 sm:gap-y-6">
       <div className="flex flex-col gap-y-3 sm:gap-y-6">
@@ -22,5 +22,3 @@ const Projects = () => {
     </div>
   )
 }
-
-export { Projects }

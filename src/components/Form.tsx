@@ -1,12 +1,12 @@
 'use client'
 
 import { ChangeEvent } from 'react'
-import { Textarea } from './Textarea'
-import { Input } from './Input'
-import { notification } from './Notification'
+import { Textarea } from './textarea'
+import { Input } from './input'
+import { notification } from './notification'
 import { translate } from '@/i18n'
 
-const Form = () => {
+export const Form = () => {
   const handleSubmit = async (event: ChangeEvent<HTMLFormElement>) => {
     event.preventDefault()
     const form = event.target
@@ -67,5 +67,3 @@ const Form = () => {
     </form>
   )
 }
-
-export { Form }

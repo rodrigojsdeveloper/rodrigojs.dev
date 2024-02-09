@@ -1,17 +1,17 @@
 'use client'
 
 import { initialHomeProjects } from '@/utils/projects'
-import { Paragraph } from '@/components/Paragraph'
-import { SubTitle } from '@/components/SubTitle'
-import { Project } from '@/components/Project'
+import { Paragraph } from '@/components/paragraph'
+import { SubTitle } from '@/components/subtitle'
+import { Project } from '@/components/project'
 import { MoveRight } from 'lucide-react'
-import { Title } from '@/components/Title'
-import { Work } from '@/components/Work'
-import { List } from '@/components/List'
+import { Title } from '@/components/title'
+import { Work } from '@/components/work'
+import { List } from '@/components/list'
 import Link from 'next/link'
 import { translate } from '@/i18n'
 
-const Home = () => {
+export const Home = () => {
   return (
     <div className="flex animate-up flex-col gap-y-4 sm:gap-y-6">
       <Title title={translate('home.title')} />
@@ -42,5 +42,3 @@ const Home = () => {
     </div>
   )
 }
-
-export { Home }

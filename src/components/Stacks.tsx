@@ -1,14 +1,14 @@
 'use client'
 
 import { stacks } from '@/utils/stacks'
-import { SubTitle } from './SubTitle'
+import { SubTitle } from './subtitle'
 import { array } from '@/utils/array'
-import { Stack } from './Stack'
+import { Stack } from './stack'
 import { cn } from '@/utils/cn'
 import { IStacks } from '@/interfaces'
 import { translate } from '@/i18n'
 
-const Stacks = ({ pauseOnHover }: IStacks) => {
+export const Stacks = ({ pauseOnHover }: IStacks) => {
   return (
     <section className="flex w-full flex-col gap-2 rounded-radius sm:gap-6">
       <SubTitle title={translate('about.skills')} />
@@ -22,7 +22,7 @@ const Stacks = ({ pauseOnHover }: IStacks) => {
             )}
             data-testid={`slider-child-${index + 1}`}
           >
-            {stacks.map((stack, index) => (
+            {stacks.map((stack: any, index: number) => (
               <Stack Icon={<stack.svg />} bg={stack.bg} key={index} />
             ))}
           </ul>
@@ -32,5 +32,3 @@ const Stacks = ({ pauseOnHover }: IStacks) => {
     </section>
   )
 }
-
-export { Stacks }

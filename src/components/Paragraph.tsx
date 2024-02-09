@@ -1,7 +1,7 @@
 import { IParagraph } from '@/interfaces'
 import { cn } from '@/utils/cn'
 
-const Paragraph = ({ text, className }: IParagraph) => {
+export const Paragraph = ({ text, className }: IParagraph) => {
   return (
     <p
       className={cn(
@@ -13,5 +13,3 @@ const Paragraph = ({ text, className }: IParagraph) => {
     </p>
   )
 }
-
-export { Paragraph }

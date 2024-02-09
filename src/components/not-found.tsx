@@ -1,11 +1,11 @@
 'use client'
 
-import { CustomLink } from '@/components/CustomLink'
-import { Paragraph } from '@/components/Paragraph'
+import { CustomLink } from '@/components/custom-link'
+import { Paragraph } from '@/components/paragraph'
 import { translate } from '@/i18n'
 import { MoveLeft } from 'lucide-react'
 
-const NotFound = () => {
+export const NotFound = () => {
   return (
     <div className="flex h-full animate-up flex-col items-center gap-y-5 pt-8 lg:h-[30rem] lg:justify-center lg:pt-0">
       <Paragraph
@@ -29,5 +29,3 @@ const NotFound = () => {
     </div>
   )
 }
-
-export { NotFound }

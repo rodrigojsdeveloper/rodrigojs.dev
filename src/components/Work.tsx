@@ -1,9 +1,9 @@
 import { translate } from '@/i18n'
-import { Paragraph } from './Paragraph'
-import { SubTitle } from './SubTitle'
+import { Paragraph } from './paragraph'
+import { SubTitle } from './subtitle'
 import Link from 'next/link'
 
-const Work = () => {
+export const Work = () => {
   return (
     <section className="flex flex-col gap-y-2 rounded-radius border border-solid border-border p-5 sm:gap-y-4">
       <SubTitle title={translate('home.work.title')} />
@@ -19,5 +19,3 @@ const Work = () => {
     </section>
   )
 }
-
-export { Work }

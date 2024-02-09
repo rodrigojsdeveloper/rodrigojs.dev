@@ -36,7 +36,7 @@ const Notification = ({ description, error }: INotificationProps) => {
   )
 }
 
-const notification = ({ description, error }: INotificationProps) => {
+export const notification = ({ description, error }: INotificationProps) => {
   const notificationRoot = document.getElementById('notification-root')
   if (notificationRoot) {
     const root = createRoot(notificationRoot)
@@ -44,5 +44,3 @@ const notification = ({ description, error }: INotificationProps) => {
     setTimeout(() => root.unmount(), 4000)
   }
 }
-
-export { notification }

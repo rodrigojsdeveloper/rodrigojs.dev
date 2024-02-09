@@ -1,7 +1,5 @@
 import { Contact } from '.'
 
-const ContactPage = () => {
+export default function ContactPage() {
   return <Contact />
 }
-
-export default ContactPage

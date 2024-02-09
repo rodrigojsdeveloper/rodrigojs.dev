@@ -23,7 +23,7 @@ import {
   TypeScript,
 } from '@/svgs/stacks'
 
-const stacks = [
+export const stacks = [
   {
     svg: JavaScript,
     bg: '#F7DF1F20',
@@ -113,5 +113,3 @@ const stacks = [
     bg: '#0ACF8320',
   },
 ]
-
-export { stacks }

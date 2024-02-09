@@ -1,6 +1,6 @@
 import { InputProps } from '@/interfaces'
 
-const Input = ({ type, name, placeholder }: InputProps) => {
+export const Input = ({ type, name, placeholder }: InputProps) => {
   return (
     <input
       type={type}
@@ -12,5 +12,3 @@ const Input = ({ type, name, placeholder }: InputProps) => {
     />
   )
 }
-
-export { Input }

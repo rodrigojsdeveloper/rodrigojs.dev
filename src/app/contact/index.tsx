@@ -1,12 +1,12 @@
 'use client'
 
-import { SocialNetworks } from '@/components/SocialNetworks'
-import { Paragraph } from '@/components/Paragraph'
-import { Title } from '@/components/Title'
-import { Form } from '@/components/Form'
+import { Socials } from '@/components/socials'
+import { Paragraph } from '@/components/paragraph'
+import { Title } from '@/components/title'
+import { Form } from '@/components/form'
 import { translate } from '@/i18n'
 
-const Contact = () => {
+export const Contact = () => {
   return (
     <div className="flex animate-up flex-col gap-y-4 sm:gap-y-6">
       <div className="flex flex-col gap-y-3 sm:gap-y-6">
@@ -16,7 +16,7 @@ const Contact = () => {
       <div className="flex flex-col gap-y-3">
         <h2 className="leading-relaxed">{translate('contact.socials')}</h2>
 
-        <SocialNetworks />
+        <Socials />
       </div>
       <div className="flex flex-col gap-y-1.5 sm:gap-y-3">
         <h2 className="leading-relaxed">{translate('contact.send_email')}</h2>
@@ -27,5 +27,3 @@ const Contact = () => {
     </div>
   )
 }
-
-export { Contact }

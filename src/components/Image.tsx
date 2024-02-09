@@ -5,7 +5,7 @@ import NextImage from 'next/image'
 import { ImageProps } from '@/interfaces'
 import { cn } from '@/utils/cn'
 
-const Image = (props: ImageProps) => {
+export const Image = (props: ImageProps) => {
   const [isLoading, setIsLoading] = useState(true)
 
   const { zoomHover, className, src, alt, ...rest } = props
@@ -35,5 +35,3 @@ const Image = (props: ImageProps) => {
     </figure>
   )
 }
-
-export { Image }

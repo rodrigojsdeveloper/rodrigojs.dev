@@ -1,10 +1,10 @@
 import { IProject } from '@/interfaces'
-import { Paragraph } from './Paragraph'
-import { SubTitle } from './SubTitle'
-import { Image } from '@/components/Image'
+import { Paragraph } from './paragraph'
+import { SubTitle } from './subtitle'
+import { Image } from '@/components/image'
 import Link from 'next/link'
 
-const Project = ({ project }: IProject) => {
+export const Project = ({ project }: IProject) => {
   return (
     <li className="rounded-radius border border-solid border-border p-2 hover:bg-border">
       <Link href={project.link} target="_blank" className="rounded-radius">
@@ -26,5 +26,3 @@ const Project = ({ project }: IProject) => {
     </li>
   )
 }
-
-export { Project }

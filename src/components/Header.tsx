@@ -2,21 +2,21 @@
 
 import { useContext, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
-import { CustomLink } from './CustomLink'
-import { Copyright } from './Copyright'
-import { SubTitle } from './SubTitle'
+import { CustomLink } from './custom-link'
+import { Copyright } from './copyright'
+import { SubTitle } from './subtitle'
 import author from '@/assets/author.jpg'
-import { Image } from '@/components/Image'
+import { Image } from '@/components/image'
 import Link from 'next/link'
-import { Line } from './Line'
-import { Button } from './Button'
-import { Modal } from './Modal'
+import { Line } from './line'
+import { Button } from './button'
+import { Modal } from './modal'
 import { Context } from '@/contexts/context'
 import { LINKS } from '@/utils/links'
 import { MoreHorizontal } from 'lucide-react'
 import { translate } from '@/i18n'
 
-const Header = () => {
+export const Header = () => {
   const { openModal, handleOpenModal } = useContext(Context)
   const pathname = usePathname()
 
@@ -81,5 +81,3 @@ const Header = () => {
     </>
   )
 }
-
-export { Header }

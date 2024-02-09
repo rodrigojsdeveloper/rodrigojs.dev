@@ -1,4 +1,4 @@
-const Spain = () => {
+export const Spain = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -24,5 +24,3 @@ const Spain = () => {
     </svg>
   )
 }
-
-export { Spain }

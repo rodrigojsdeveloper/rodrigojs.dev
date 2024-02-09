@@ -1,12 +1,12 @@
 'use client'
 
-import { Paragraph } from '@/components/Paragraph'
-import { Stacks } from '@/components/Stacks'
-import { Title } from '@/components/Title'
+import { Paragraph } from '@/components/paragraph'
+import { Stacks } from '@/components/stacks'
+import { Title } from '@/components/title'
 import { translate } from '@/i18n'
 import Link from 'next/link'
 
-const About = () => {
+export const About = () => {
   return (
     <div className="flex animate-up flex-col gap-y-4 sm:gap-y-6">
       <div className="flex flex-col gap-y-3 sm:gap-y-6">
@@ -30,5 +30,3 @@ const About = () => {
     </div>
   )
 }
-
-export { About }

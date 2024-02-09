@@ -1,8 +1,8 @@
 import { PropsWithChildren } from 'react'
 import type { Metadata } from 'next'
-import { HeaderMobile } from '@/components/HeaderMobile'
-import ThemeProvider from '@/contexts/themeProvider'
-import { Header } from '@/components/Header'
+import { HeaderMobile } from '@/components/header-mobile'
+import ThemeProvider from '@/contexts/theme-provider'
+import { Header } from '@/components/header'
 import { Kanit } from 'next/font/google'
 import Providers from '@/contexts'
 import { cn } from '@/utils/cn'
@@ -10,7 +10,7 @@ import './globals.css'
 
 const kanit = Kanit({
   subsets: ['latin'],
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  weight: ['100', '300', '400', '500', '600', '700', '800', '900'],
   variable: '--font-kanit',
 })
 
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   description: 'My personal website.',
 }
 
-const RootLayout = ({ children }: PropsWithChildren) => {
+export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <Providers>
       <html
@@ -39,5 +39,3 @@ const RootLayout = ({ children }: PropsWithChildren) => {
     </Providers>
   )
 }
-
-export default RootLayout

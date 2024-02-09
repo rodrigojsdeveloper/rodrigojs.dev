@@ -3,10 +3,10 @@
 import { useContext, useEffect, useRef } from 'react'
 import { usePathname } from 'next/navigation'
 import { Context } from '@/contexts/context'
-import { CustomLink } from './CustomLink'
+import { CustomLink } from './custom-link'
 import { LINKS } from '@/utils/links'
 
-const DropDown = () => {
+export const DropDown = () => {
   const { handleOpenDropDown } = useContext(Context)
 
   const menuRef = useRef<HTMLDivElement>(null)
@@ -50,5 +50,3 @@ const DropDown = () => {
     </nav>
   )
 }
-
-export { DropDown }

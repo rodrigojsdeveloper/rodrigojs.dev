@@ -2,16 +2,16 @@
 
 import { useContext } from 'react'
 import author from '@/assets/author.jpg'
-import { Image } from '@/components/Image'
+import { Image } from '@/components/image'
 import Link from 'next/link'
-import { DropDown } from './DropDown'
-import { Button } from './Button'
-import { Modal } from './Modal'
+import { DropDown } from './dropdown'
+import { Button } from './button'
+import { Modal } from './modal'
 import { Context } from '@/contexts/context'
 import { X, Menu, MoreHorizontal } from 'lucide-react'
 import { translate } from '@/i18n'
 
-const HeaderMobile = () => {
+export const HeaderMobile = () => {
   const { openDropDown, openModal, handleOpenDropDown, handleOpenModal } =
     useContext(Context)
 
@@ -67,5 +67,3 @@ const HeaderMobile = () => {
     </>
   )
 }
-
-export { HeaderMobile }

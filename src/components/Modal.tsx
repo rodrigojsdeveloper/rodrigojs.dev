@@ -1,19 +1,19 @@
 'use client'
 
 import { useState, useContext } from 'react'
-import { Line } from './Line'
-import { Button } from './Button'
+import { Line } from './line'
+import { Button } from './button'
 import { LINKS } from '@/utils/links'
-import { CustomLink } from './CustomLink'
+import { CustomLink } from './custom-link'
 import { useTheme } from 'next-themes'
-import { copyLink } from '@/utils/copyLink'
+import { copyLink } from '@/utils/copy-link'
 import { Context } from '@/contexts/context'
-import { ModalBackground } from './ModalBackground'
+import { ModalBackground } from './modal-background'
 import { Code2, Link, Search, X } from 'lucide-react'
 import { translate } from '@/i18n'
 import { cn } from '@/utils/cn'
 
-const Modal = () => {
+export const Modal = () => {
   const { handleOpenModal, handleChangeLanguage } = useContext(Context)
   const { setTheme } = useTheme()
   const [searchValue, setSearchValue] = useState('')
@@ -210,5 +210,3 @@ const Modal = () => {
     </ModalBackground>
   )
 }
-
-export { Modal }

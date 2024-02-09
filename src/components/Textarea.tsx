@@ -1,6 +1,6 @@
 import { InputProps } from '@/interfaces'
 
-const Textarea = ({ name, placeholder }: InputProps) => {
+export const Textarea = ({ name, placeholder }: InputProps) => {
   return (
     <textarea
       name={name}
@@ -11,5 +11,3 @@ const Textarea = ({ name, placeholder }: InputProps) => {
     />
   )
 }
-
-export { Textarea }

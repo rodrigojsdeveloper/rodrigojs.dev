@@ -1,7 +1,7 @@
 import { IHandleState } from '@/interfaces'
 import { PropsWithChildren } from 'react'
 
-const Button = ({
+export const Button = ({
   handleState,
   arialLabel,
   children,
@@ -16,5 +16,3 @@ const Button = ({
     </button>
   )
 }
-
-export { Button }

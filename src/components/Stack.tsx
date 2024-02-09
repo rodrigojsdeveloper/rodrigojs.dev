@@ -1,7 +1,7 @@
 import { IStack } from '@/interfaces'
 import { cn } from '@/utils/cn'
 
-const Stack = ({ Icon, bg }: IStack) => {
+export const Stack = ({ Icon, bg }: IStack) => {
   return (
     <li
       style={{ backgroundColor: bg }}
@@ -14,5 +14,3 @@ const Stack = ({ Icon, bg }: IStack) => {
     </li>
   )
 }
-
-export { Stack }

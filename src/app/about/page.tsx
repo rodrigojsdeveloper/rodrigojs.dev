@@ -1,7 +1,5 @@
 import { About } from '.'
 
-const AboutPage = () => {
+export default function AboutPage() {
   return <About />
 }
-
-export default AboutPage

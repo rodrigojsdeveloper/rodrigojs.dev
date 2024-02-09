@@ -4,9 +4,9 @@ import { PropsWithChildren, createContext, useState } from 'react'
 import { IContextData } from '@/interfaces'
 import i18next from 'i18next'
 
-const Context = createContext({} as IContextData)
+export const Context = createContext({} as IContextData)
 
-const ContextProvider = ({ children }: PropsWithChildren) => {
+export const ContextProvider = ({ children }: PropsWithChildren) => {
   const [openDropDown, setOpenDropDown] = useState<boolean>(false)
   const [openModal, setOpenModal] = useState<boolean>(false)
 
@@ -35,5 +35,3 @@ const ContextProvider = ({ children }: PropsWithChildren) => {
 
   return <Context.Provider value={contextData}>{children}</Context.Provider>
 }
-
-export { ContextProvider, Context }
