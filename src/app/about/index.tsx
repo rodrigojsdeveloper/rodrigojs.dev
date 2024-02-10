@@ -23,7 +23,7 @@ export const About = () => {
       <Link
         target="_blank"
         href="https://rodrigojsdeveloper.github.io/cv"
-        className="group flex w-fit select-none items-center justify-center gap-2 rounded-radius border border-solid border-border px-4 py-3 text-sm text-foreground focus-visible:bg-border hover:bg-border"
+        className="group flex w-fit select-none items-center justify-center gap-2 rounded-radius border border-solid border-border px-4 py-3 text-sm text-foreground hover:bg-border focus-visible:bg-border"
       >
         <Download size={16} strokeWidth={2} /> {translate('about.download')}
       </Link>
