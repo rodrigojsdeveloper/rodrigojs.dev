@@ -12,7 +12,7 @@ export const Work = () => {
 
       <Link
         href="/contact"
-        className="group mt-1.5 flex h-[2.4rem] w-full max-w-[6.5rem] select-none items-center justify-center gap-1.5 rounded-radius border border-solid border-border text-sm text-foreground hover:bg-border sm:mt-0 sm:h-11 sm:max-w-[7.563rem] sm:text-base"
+        className="group mt-1.5 flex h-[2.4rem] w-full max-w-[6.5rem] select-none items-center justify-center gap-1.5 rounded-radius border border-solid border-border text-sm text-foreground hover:bg-border focus-visible:bg-border sm:mt-0 sm:h-11 sm:max-w-[7.563rem] sm:text-base"
       >
         {translate('home.work.link')}
       </Link>

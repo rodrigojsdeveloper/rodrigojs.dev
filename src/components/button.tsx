@@ -10,7 +10,7 @@ export const Button = ({
     <button
       onClick={handleState}
       aria-label={arialLabel}
-      className="group flex size-8 items-center justify-center rounded-radius border border-solid border-transparent p-1.5 hover:border-border"
+      className="group flex size-8 items-center justify-center rounded-radius border border-solid border-transparent p-1.5 hover:border-border focus-visible:border-border"
     >
       {children}
     </button>

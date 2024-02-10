@@ -48,7 +48,7 @@ export const Modal = () => {
 
   return (
     <Dialog.Root>
-      <Dialog.Trigger className="group flex size-8 items-center justify-center rounded-radius border border-solid border-transparent p-1.5 hover:border-border">
+      <Dialog.Trigger className="group flex size-8 items-center justify-center rounded-radius border border-solid border-transparent p-1.5 hover:border-border focus-visible:border-border">
         <MoreHorizontal size={20} className="stroke-muted-foreground" />
       </Dialog.Trigger>
 
@@ -56,7 +56,7 @@ export const Modal = () => {
         <Dialog.Overlay className="fixed inset-0 z-20 bg-shadow backdrop-blur-sm" />
         <Dialog.Content
           className={cn(
-            'fixed left-1/2 top-1/2 z-30 flex h-full max-h-[21rem] w-full max-w-lg -translate-x-1/2 -translate-y-1/2 animate-modal flex-col rounded-radius border border-solid border-border bg-background shadow-lg',
+            'fixed left-1/2 top-1/2 z-30 flex h-full max-h-[21rem] w-full max-w-lg -translate-x-1/2 -translate-y-1/2 animate-modal flex-col overflow-hidden rounded-radius border border-solid border-border bg-background shadow-lg',
             showSuggestions && 'h-[7.3rem]',
           )}
         >
@@ -75,7 +75,7 @@ export const Modal = () => {
               />
             </div>
 
-            <Dialog.Close className="group flex size-8 items-center justify-center rounded-radius border border-solid border-transparent p-1.5 hover:border-border">
+            <Dialog.Close className="group flex size-8 items-center justify-center rounded-radius border border-solid border-transparent p-1.5 hover:border-border focus-visible:border-border">
               <X
                 size={20}
                 strokeWidth={1.5}

@@ -28,7 +28,7 @@ export const Header = () => {
         <Link
           target="_blank"
           href="https://github.com/rodrigojsdeveloper"
-          className="select-none text-sm font-medium text-muted-foreground active:opacity-50"
+          className="select-none text-sm font-medium text-muted-foreground focus-visible:opacity-50 active:opacity-50"
         >
           &#x00040;rodrigojsdeveloper
         </Link>

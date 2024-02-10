@@ -20,7 +20,7 @@ export const CustomLink = ({
       suppressHydrationWarning={true}
       target={target}
       className={cn(
-        'row group flex w-full select-none items-center gap-2 rounded-radius border border-solid border-transparent px-2 py-2.5 text-sm hover:border-border',
+        'row group flex w-full select-none items-center gap-2 rounded-radius border border-solid border-transparent px-2 py-2.5 text-sm hover:border-border focus-visible:border-border',
         activeLink,
         className,
       )}
@@ -30,7 +30,7 @@ export const CustomLink = ({
   ) : (
     <button
       onClick={onClick}
-      className="row group flex w-full items-center gap-2 rounded-radius border border-solid border-transparent px-2 py-2.5 text-sm font-light text-muted-foreground hover:border-border"
+      className="row group flex w-full items-center gap-2 rounded-radius border border-solid border-transparent px-2 py-2.5 text-sm font-light text-muted-foreground hover:border-border focus-visible:border-border"
     >
       {Icon} {text}
     </button>

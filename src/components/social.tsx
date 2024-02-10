@@ -7,7 +7,7 @@ export const Social = ({ title, link }: ISocialProps) => {
       <Link
         target="_blank"
         href={link}
-        className="decoration-[0.094rem] underline-offset-4 group-hover:text-foreground group-hover:underline"
+        className="decoration-[0.094rem] underline-offset-4 group-focus-within:text-foreground group-focus-within:underline group-hover:text-foreground group-hover:underline"
       >
         {title}
       </Link>
