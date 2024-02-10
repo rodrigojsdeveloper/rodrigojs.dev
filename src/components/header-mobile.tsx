@@ -8,17 +8,15 @@ import { DropDown } from './dropdown'
 import { Button } from './button'
 import { Modal } from './modal'
 import { Context } from '@/contexts/context'
-import { X, Menu, MoreHorizontal } from 'lucide-react'
+import { X, Menu } from 'lucide-react'
 import { translate } from '@/i18n'
 
 export const HeaderMobile = () => {
-  const { openDropDown, openModal, handleOpenDropDown, handleOpenModal } =
-    useContext(Context)
+  const { openDropDown, handleOpenDropDown } = useContext(Context)
 
   return (
     <>
       {openDropDown ? <DropDown /> : null}
-      {openModal ? <Modal /> : null}
       <header className="fixed top-0 z-10 flex h-20 w-full flex-row items-center justify-between bg-background px-6 pt-2 sm:px-8 lg:hidden">
         <Link
           href="/"
@@ -32,12 +30,7 @@ export const HeaderMobile = () => {
         </Link>
 
         <div className="flex items-center gap-1">
-          <Button
-            handleState={handleOpenModal}
-            arialLabel={translate('links.arial_label.settings')}
-          >
-            <MoreHorizontal size={20} className="stroke-muted-foreground" />
-          </Button>
+          <Modal />
 
           {!openDropDown ? (
             <Button

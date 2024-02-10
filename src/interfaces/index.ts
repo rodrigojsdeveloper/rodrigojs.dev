@@ -61,11 +61,8 @@ export interface IHandleState {
 
 export interface IContextData {
   openDropDown: boolean
-  openModal: boolean
   handleOpenDropDown: () => void
-  handleOpenModal: () => void
   setOpenDropDown: Dispatch<SetStateAction<boolean>>
-  setOpenModal: Dispatch<SetStateAction<boolean>>
   handleChangeLanguage: (language: string) => void
 }
 
