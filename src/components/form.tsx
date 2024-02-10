@@ -3,8 +3,8 @@
 import { ChangeEvent } from 'react'
 import { Textarea } from './textarea'
 import { Input } from './input'
-import { notification } from './notification'
 import { translate } from '@/i18n'
+import { toast } from 'sonner'
 
 export const Form = () => {
   const handleSubmit = async (event: ChangeEvent<HTMLFormElement>) => {
@@ -20,15 +20,10 @@ export const Form = () => {
     })
 
     if (!response.ok) {
-      notification({
-        description: translate('notification.form.success'),
-        error: true,
-      })
+      toast.error(translate('notification.form.error'))
     } else {
       form.reset()
-      notification({
-        description: translate('notification.form.success'),
-      })
+      toast.success(translate('notification.form.success'))
     }
   }
 

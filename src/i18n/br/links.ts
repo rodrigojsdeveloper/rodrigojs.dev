@@ -21,7 +21,6 @@ export default {
   'links.placeholder': 'Digite para pesquisar ↵',
   'links.not_found': 'Nenhum resultado encontrado.',
 
-  'links.arial_label.settings': 'Botão Configurações',
   'links.arial_label.close': 'Botão Fechar',
   'links.arial_label.drop_down': 'Botão Suspenso',
 }

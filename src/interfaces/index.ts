@@ -77,11 +77,6 @@ export interface ISvg {
   width: string
 }
 
-export interface INotificationProps {
-  description: string
-  error?: boolean
-}
-
 export interface IStacks {
   pauseOnHover?: boolean
 }

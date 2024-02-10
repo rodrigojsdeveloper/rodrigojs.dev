@@ -21,7 +21,6 @@ export default {
   'links.placeholder': 'Escribe para buscar ↵',
   'links.not_found': 'Ningún resultado encontrado.',
 
-  'links.arial_label.settings': 'Botón Configuraciones',
   'links.arial_label.close': 'Botón Cerrar',
   'links.arial_label.drop_down': 'Botón Desplegar',
 }
