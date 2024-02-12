@@ -30,6 +30,10 @@ export const stacks: IStackProps[] = [
     bg: '#9013FE20',
   },
   {
+    icon: 'simple-icons:radixui',
+    bg: '#FFFFFF20',
+  },
+  {
     icon: 'logos:nodejs-icon',
     bg: '#83CD2920',
   },

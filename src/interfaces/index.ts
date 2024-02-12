@@ -60,9 +60,6 @@ export interface IHandleState {
 }
 
 export interface IContextData {
-  openDropDown: boolean
-  handleOpenDropDown: () => void
-  setOpenDropDown: Dispatch<SetStateAction<boolean>>
   handleChangeLanguage: (language: string) => void
 }
 
