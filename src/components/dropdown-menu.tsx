@@ -19,7 +19,7 @@ export const DropDownMenu = () => {
       <DropdownMenu.Portal>
         <DropdownMenu.Content
           sideOffset={5}
-          className="data-[side=top]:animate-slideDownAndFade data-[side=right]:animate-slideLeftAndFade data-[side=bottom]:animate-slideUpAndFade data-[side=left]:animate-slideRightAndFade fixed -right-4 z-20 min-w-[8.75rem] animate-down rounded-radius border border-solid border-border bg-background shadow-[0px_10px_38px_-10px_rgba(22,_23,_24,_0.35),_0px_10px_20px_-15px_rgba(22,_23,_24,_0.2)] will-change-[opacity,transform]"
+          className="fixed -right-4 z-20 min-w-[8.75rem] animate-down rounded-radius border border-solid border-border bg-background shadow-[0px_10px_38px_-10px_rgba(22,_23,_24,_0.35),_0px_10px_20px_-15px_rgba(22,_23,_24,_0.2)] will-change-[opacity,transform] data-[side=bottom]:animate-slideUpAndFade data-[side=left]:animate-slideRightAndFade data-[side=right]:animate-slideLeftAndFade data-[side=top]:animate-slideDownAndFade"
         >
           {LINKS.mobile_website.map((link, index) => (
             <DropdownMenu.Item
