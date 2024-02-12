@@ -13,10 +13,10 @@ const config: Config = {
       },
       colors: {
         background: 'hsl(var(--background))',
-        foreground: 'hsl(var(--foreground))',
         border: 'hsl(var(--border))',
         shadow: 'hsl(var(--shadow))',
         muted: {
+          DEFAULT: 'hsl(var(--foreground))',
           foreground: 'hsl(var(--muted-foreground))',
         },
       },

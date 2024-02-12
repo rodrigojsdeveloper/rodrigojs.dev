@@ -56,11 +56,11 @@ export const Modal = () => {
         <Dialog.Overlay className="fixed inset-0 z-20 bg-shadow backdrop-blur-sm" />
         <Dialog.Content
           className={cn(
-            'fixed left-1/2 top-1/2 z-30 flex h-full max-h-[21rem] w-full max-w-lg -translate-x-1/2 -translate-y-1/2 animate-modal flex-col overflow-hidden rounded-radius border border-solid border-border bg-background shadow-lg',
+            'fixed left-1/2 top-1/2 z-30 flex h-[95%] max-h-[21rem] w-[95%] max-w-lg -translate-x-1/2 -translate-y-1/2 animate-modal flex-col overflow-hidden rounded-radius border border-solid border-border bg-background shadow-lg',
             showSuggestions && 'h-[7.3rem]',
           )}
         >
-          <div className="flex h-[3.05rem] flex-row items-center justify-between py-3 pl-4 pr-2">
+          <div className="flex h-[3.05rem] flex-row items-center justify-between py-3 pl-3 pr-2">
             <div className="flex w-full flex-row items-center gap-3">
               <Search
                 size={20}
