@@ -1,8 +1,8 @@
-import { IStackProps } from '@/interfaces'
+import { StackProps } from '@/interfaces'
 import { Icon } from '@iconify/react'
 import { cn } from '@/utils/cn'
 
-export const Stack = ({ icon, bg }: IStackProps) => {
+export const Stack = ({ icon, bg }: StackProps) => {
   return (
     <li
       style={{ backgroundColor: bg }}

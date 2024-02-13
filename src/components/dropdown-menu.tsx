@@ -13,7 +13,7 @@ export const DropDownMenu = () => {
   return (
     <DropdownMenu.Root>
       <DropdownMenu.Trigger className="group flex size-8 items-center justify-center rounded-radius border border-solid border-transparent p-1.5 hover:border-border focus-visible:border-border">
-        <Menu size={20} strokeWidth={1.5} className="stroke-muted-foreground" />
+        <Menu size={20} strokeWidth={1.5} className="stroke-foreground-muted" />
       </DropdownMenu.Trigger>
 
       <DropdownMenu.Portal>
@@ -27,7 +27,7 @@ export const DropDownMenu = () => {
                 'row group flex w-full select-none items-center gap-2 px-2 py-2.5 text-sm',
                 pathname === `/${link.href}`
                   ? 'text-foreground'
-                  : 'bg-transparent text-muted-foreground',
+                  : 'bg-transparent text-foreground-muted',
               )}
               key={`website ${index}`}
               asChild

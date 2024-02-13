@@ -1,13 +1,13 @@
-import { ISocialProps } from '@/interfaces'
+import { SocialProps } from '@/interfaces'
 import Link from 'next/link'
 
-export const Social = ({ title, link }: ISocialProps) => {
+export const Social = ({ title, link }: SocialProps) => {
   return (
-    <li className="group cursor-pointer text-sm font-medium text-muted-foreground">
+    <li className="group cursor-pointer text-sm font-medium text-foreground-muted">
       <Link
         target="_blank"
         href={link}
-        className="group-focus-within:text-foreground group-hover:text-foreground decoration-[0.094rem] underline-offset-4 group-focus-within:underline group-hover:underline"
+        className="decoration-[0.094rem] underline-offset-4 group-focus-within:text-foreground group-focus-within:underline group-hover:text-foreground group-hover:underline"
       >
         {title}
       </Link>

@@ -15,9 +15,9 @@ const config: Config = {
         background: 'hsl(var(--background))',
         border: 'hsl(var(--border))',
         shadow: 'hsl(var(--shadow))',
-        muted: {
+        foreground: {
           DEFAULT: 'hsl(var(--foreground))',
-          foreground: 'hsl(var(--muted-foreground))',
+          muted: 'hsl(var(--foreground-muted))',
         },
       },
       backgroundImage: {

@@ -55,7 +55,7 @@ export const Form = () => {
 
       <button
         type="submit"
-        className="bg-foreground h-11 rounded-radius text-sm text-background hover:opacity-90 focus-visible:opacity-90"
+        className="h-11 rounded-radius bg-foreground text-sm text-background hover:opacity-90 focus-visible:opacity-90"
       >
         {translate('contact.form.send')}
       </button>

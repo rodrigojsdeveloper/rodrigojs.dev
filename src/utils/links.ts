@@ -1,4 +1,4 @@
-import { ILINKS } from '@/interfaces'
+import { LinksProps } from '@/interfaces'
 import { translate } from '@/i18n'
 import {
   Home,
@@ -14,7 +14,7 @@ import {
   Globe,
 } from 'lucide-react'
 
-export const LINKS: ILINKS = {
+export const LINKS: LinksProps = {
   website: [
     {
       href: '',

@@ -28,7 +28,7 @@ export const Header = () => {
         <Link
           target="_blank"
           href="https://github.com/rodrigojsdeveloper"
-          className="select-none text-sm font-medium text-muted-foreground focus-visible:opacity-50 active:opacity-50"
+          className="select-none text-sm font-medium text-foreground-muted focus-visible:opacity-50 active:opacity-50"
         >
           &#x00040;rodrigojsdeveloper
         </Link>
@@ -46,7 +46,7 @@ export const Header = () => {
             activeLink={
               pathname === `/${link.href}`
                 ? 'linkSelected text-foreground'
-                : 'border-transparent text-muted-foreground'
+                : 'border-transparent text-foreground-muted'
             }
             isLink
           />

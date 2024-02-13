@@ -16,7 +16,13 @@ export const Projects = () => {
       </div>
       <List>
         {projects.map((project, index) => (
-          <Project project={project} key={index} />
+          <Project
+            img={project.img}
+            title={project.title}
+            description={project.description}
+            link={project.link}
+            key={index}
+          />
         ))}
       </List>
     </div>

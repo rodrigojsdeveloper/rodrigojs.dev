@@ -1,10 +1,10 @@
 'use client'
 
 import { PropsWithChildren, createContext } from 'react'
-import { IContextData } from '@/interfaces'
+import { ContextDataProps } from '@/interfaces'
 import i18next from 'i18next'
 
-export const Context = createContext({} as IContextData)
+export const Context = createContext({} as ContextDataProps)
 
 export const ContextProvider = ({ children }: PropsWithChildren) => {
   const handleChangeLanguage = (language: string) => {
@@ -12,7 +12,7 @@ export const ContextProvider = ({ children }: PropsWithChildren) => {
     window.location.reload()
   }
 
-  const contextData: IContextData = {
+  const contextData: ContextDataProps = {
     handleChangeLanguage,
   }
 

@@ -24,7 +24,7 @@
   :root {
     --background: 60, 20%, 99%;
     --foreground: 240 10% 3.9%;
-    --muted-foreground: 45, 5%, 55%;
+    --foreground-muted: 45, 5%, 55%;
     --border: 0, 0%, 83%, 0.7;
     --shadow: 60, 20%, 99%, 0.3;
   }
@@ -32,7 +32,7 @@
   .dark {
     --background: 60, 3%, 6%;
     --foreground: 0 0% 98%;
-    --muted-foreground: 0, 0%, 49%;
+    --foreground-muted: 0, 0%, 49%;
     --border: 0, 0%, 15%;
     --shadow: 0, 0%, 4%, 0.8;
   }

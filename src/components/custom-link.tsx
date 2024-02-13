@@ -1,4 +1,4 @@
-import { ICustomLink } from '@/interfaces'
+import { CustomLinkProps } from '@/interfaces'
 import { cn } from '@/utils/cn'
 import Link from 'next/link'
 
@@ -12,7 +12,7 @@ export const CustomLink = ({
   externalLink,
   target,
   isLink,
-}: ICustomLink) => {
+}: CustomLinkProps) => {
   return isLink ? (
     <Link
       href={externalLink ? href : `/${href}`}
@@ -30,7 +30,7 @@ export const CustomLink = ({
   ) : (
     <button
       onClick={onClick}
-      className="row group flex w-full items-center gap-2 rounded-radius border border-solid border-transparent px-2 py-2.5 text-sm font-light text-muted-foreground hover:border-border focus-visible:border-border"
+      className="row group flex w-full items-center gap-2 rounded-radius border border-solid border-transparent px-2 py-2.5 text-sm font-light text-foreground-muted hover:border-border focus-visible:border-border"
     >
       {Icon} {text}
     </button>

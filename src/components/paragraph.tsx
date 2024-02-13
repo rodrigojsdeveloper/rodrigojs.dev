@@ -1,11 +1,11 @@
-import { IParagraph } from '@/interfaces'
+import { ParagraphProps } from '@/interfaces'
 import { cn } from '@/utils/cn'
 
-export const Paragraph = ({ text, className }: IParagraph) => {
+export const Paragraph = ({ text, className }: ParagraphProps) => {
   return (
     <p
       className={cn(
-        'text-pretty text-sm text-muted-foreground sm:text-base',
+        'text-pretty text-sm text-foreground-muted sm:text-base',
         className,
       )}
     >

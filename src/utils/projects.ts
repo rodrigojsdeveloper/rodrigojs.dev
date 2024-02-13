@@ -5,7 +5,7 @@ import geography from '@/assets/geography.png'
 import iweather from '@/assets/iweather.png'
 import dtMoney from '@/assets/dt-money.png'
 
-import { IProjectProps } from '@/interfaces'
+import { ProjectProps } from '@/interfaces'
 import { StaticImageData } from 'next/image'
 import { translate } from '@/i18n'
 
@@ -14,11 +14,11 @@ const createProject = (
   title: string,
   description: string,
   link: string,
-): IProjectProps => {
+): ProjectProps => {
   return { img, title, description, link }
 }
 
-export const projects: IProjectProps[] = [
+export const projects: ProjectProps[] = [
   createProject(
     motorsShop,
     translate('projects.motors_shop.title'),
@@ -57,4 +57,4 @@ export const projects: IProjectProps[] = [
   ),
 ]
 
-export const initialHomeProjects: IProjectProps[] = [projects[0], projects[1]]
+export const initialHomeProjects: ProjectProps[] = [projects[0], projects[1]]

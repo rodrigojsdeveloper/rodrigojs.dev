@@ -1,6 +1,6 @@
-import { IStackProps } from '@/interfaces'
+import { StackProps } from '@/interfaces'
 
-export const stacks: IStackProps[] = [
+export const stacks: StackProps[] = [
   {
     icon: 'logos:javascript',
     bg: '#F7DF1F20',

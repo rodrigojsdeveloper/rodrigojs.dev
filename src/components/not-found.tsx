@@ -2,8 +2,8 @@
 
 import { CustomLink } from '@/components/custom-link'
 import { Paragraph } from '@/components/paragraph'
-import { translate } from '@/i18n'
 import { MoveLeft } from 'lucide-react'
+import { translate } from '@/i18n'
 
 export const NotFound = () => {
   return (
@@ -23,7 +23,7 @@ export const NotFound = () => {
           />
         }
         text={translate('notFound.go_back')}
-        className="max-w-[7.563rem] justify-center text-muted-foreground"
+        className="max-w-[7.563rem] justify-center text-foreground-muted"
         isLink
       />
     </div>

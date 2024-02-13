@@ -1,13 +1,8 @@
-import React, {
-  Dispatch,
-  SetStateAction,
-  MouseEventHandler,
-  HTMLAttributeAnchorTarget,
-} from 'react'
+import React, { MouseEventHandler, HTMLAttributeAnchorTarget } from 'react'
 import NextImage, { StaticImageData } from 'next/image'
 import { LucideIcon } from 'lucide-react'
 
-export interface ICustomLink {
+export interface CustomLinkProps {
   Icon: React.ReactNode
   text: string
   href: string
@@ -19,23 +14,19 @@ export interface ICustomLink {
   isLink?: boolean
 }
 
-export interface IStackProps {
+export interface StackProps {
   icon: string
   bg: string
 }
 
-export interface IProjectProps {
+export interface ProjectProps {
   img: StaticImageData
   title: string
   description: string
   link: string
 }
 
-export interface IProject {
-  project: IProjectProps
-}
-
-export interface IParagraph {
+export interface ParagraphProps {
   text: string
   className?: string
 }
@@ -46,20 +37,11 @@ export interface InputProps {
   placeholder: string
 }
 
-export interface ITitle {
+export interface TitleProps {
   title: string
 }
 
-export interface IPathname {
-  pathname?: string
-}
-
-export interface IHandleState {
-  handleState: () => void
-  arialLabel: string
-}
-
-export interface IContextData {
+export interface ContextDataProps {
   handleChangeLanguage: (language: string) => void
 }
 
@@ -69,43 +51,38 @@ export interface ImageProps
   className?: string
 }
 
-export interface ISvg {
-  height: string
-  width: string
-}
-
-export interface IStacks {
+export interface StacksProps {
   pauseOnHover?: boolean
 }
 
-export interface IWebSiteProps {
+export interface WebSiteProps {
   href: string
   title: string
   icon: LucideIcon
 }
 
-export interface IThemeProps {
+export interface ThemeProps {
   theme: string
   title: string
   icon: LucideIcon
 }
 
-export interface ILanguageProps {
+export interface LanguageProps {
   locale: string
   title: string
   icon: LucideIcon
 }
 
-export interface ISocialProps {
+export interface SocialProps {
   link: string
   title: string
   icon: LucideIcon
 }
 
-export interface ILINKS {
-  website: IWebSiteProps[]
-  mobile_website: IWebSiteProps[]
-  themes: IThemeProps[]
-  languages: ILanguageProps[]
-  socials: ISocialProps[]
+export interface LinksProps {
+  website: WebSiteProps[]
+  mobile_website: WebSiteProps[]
+  themes: ThemeProps[]
+  languages: LanguageProps[]
+  socials: SocialProps[]
 }

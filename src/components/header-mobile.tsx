@@ -2,9 +2,9 @@
 
 import author from '@/assets/author.jpg'
 import { Image } from '@/components/image'
-import Link from 'next/link'
 import { DropDownMenu } from './dropdown-menu'
 import { Modal } from './modal'
+import Link from 'next/link'
 
 export const HeaderMobile = () => {
   return (

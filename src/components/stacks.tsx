@@ -5,10 +5,10 @@ import { SubTitle } from './subtitle'
 import { array } from '@/utils/array'
 import { Stack } from './stack'
 import { cn } from '@/utils/cn'
-import { IStacks } from '@/interfaces'
+import { StacksProps } from '@/interfaces'
 import { translate } from '@/i18n'
 
-export const Stacks = ({ pauseOnHover }: IStacks) => {
+export const Stacks = ({ pauseOnHover }: StacksProps) => {
   return (
     <section className="flex w-full flex-col gap-2 rounded-radius sm:gap-6">
       <SubTitle title={translate('about.skills')} />
