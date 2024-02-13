@@ -1,8 +1,8 @@
 /* eslint import/no-anonymous-default-export: [2, {"allowObject": true}] */
 export default {
-  'home.title': 'Desarrollador Full Stack',
+  'home.title': 'Ahora',
   'home.description':
-    'Como desarrollador full stack, concibo experiencias digitales que combinan perfectamente una estética elegante y funcionalidad, tanto en el front-end como en el back-end. Mis motivaciones incluyen la traducción de ideas en interfaces intuitivas y visualmente atractivas, asegurando eficiencia en los aspectos técnicos del sistema.',
+    'En este momento, ocupo el puesto de Desarrollador Full Stack en corelab, donde me enfoco en la creación de nuevos proyectos y en mejorar mis habilidades.',
   'home.recent_projects': 'Proyectos recientes',
   'home.see_all': 'Ver todos',
 

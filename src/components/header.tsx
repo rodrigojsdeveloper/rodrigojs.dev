@@ -1,7 +1,6 @@
 'use client'
 
 import { usePathname } from 'next/navigation'
-import Link from 'next/link'
 import author from '@/assets/author.jpg'
 import { LINKS } from '@/data/links'
 import { CustomLink } from './custom-link'
@@ -10,6 +9,7 @@ import { SubTitle } from './subtitle'
 import { Image } from './image'
 import { Line } from './line'
 import { Modal } from './modal'
+import { translate } from '@/i18n'
 
 export const Header = () => {
   const pathname = usePathname()
@@ -25,13 +25,10 @@ export const Header = () => {
 
       <div>
         <SubTitle title="Rodrigo Silva" />
-        <Link
-          target="_blank"
-          href="https://github.com/rodrigojsdeveloper"
-          className="select-none text-sm font-medium text-foreground-muted focus-visible:opacity-50 active:opacity-50"
-        >
-          &#x00040;rodrigojsdeveloper
-        </Link>
+
+        <p className="text-sm font-medium text-foreground-muted">
+          {translate('header.office')}
+        </p>
       </div>
 
       <Line />

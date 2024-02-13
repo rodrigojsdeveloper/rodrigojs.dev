@@ -19,6 +19,7 @@ const config: Config = {
           DEFAULT: 'hsl(var(--foreground))',
           muted: 'hsl(var(--foreground-muted))',
         },
+        hover: 'hsl(var(--hover))',
       },
       backgroundImage: {
         'fade-gradient':

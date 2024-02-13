@@ -5,6 +5,7 @@ import notFound from './es/not-found'
 import home from './es/home'
 import links from './es/links'
 import notification from './es/notification'
+import header from './es/header'
 
 /* eslint import/no-anonymous-default-export: [2, {"allowObject": true}] */
 export default {
@@ -15,4 +16,5 @@ export default {
   ...home,
   ...links,
   ...notification,
+  ...header,
 }

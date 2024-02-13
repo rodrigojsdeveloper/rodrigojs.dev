@@ -27,6 +27,7 @@
     --foreground-muted: 45, 5%, 55%;
     --border: 0, 0%, 83%, 0.7;
     --shadow: 60, 20%, 99%, 0.3;
+    --hover: 0, 0%, 95%;
   }
 
   .dark {
@@ -35,6 +36,7 @@
     --foreground-muted: 0, 0%, 49%;
     --border: 0, 0%, 15%;
     --shadow: 0, 0%, 4%, 0.8;
+    --hover: 60, 2%, 10%;
   }
 }
 
