@@ -57,4 +57,4 @@ export const projects: ProjectProps[] = [
   ),
 ]
 
-export const initialHomeProject: ProjectProps = projects[1]
+export const initialHomeProject: ProjectProps = projects[3]

@@ -21,7 +21,7 @@ export const Project = ({ img, title, description, link }: ProjectProps) => {
         </div>
       </Link>
 
-      <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-background to-transparent" />
+      <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-[80%] bg-gradient-to-t from-background to-transparent" />
     </li>
   )
 }
