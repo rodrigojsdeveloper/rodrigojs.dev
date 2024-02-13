@@ -5,6 +5,9 @@ export default {
   'links.projects': 'Proyectos',
   'links.contact': 'Contacto',
 
+  'links.arial_label.settings': 'Botón Configuraciones',
+  'links.arial_label.drop_down': 'Botón Desplegar',
+
   'links.title.socials': 'Redes sociales',
   'links.title.themes': 'Tema',
   'links.title.languages': 'Idioma',

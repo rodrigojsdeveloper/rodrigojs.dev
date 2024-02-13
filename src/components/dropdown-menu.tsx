@@ -6,14 +6,24 @@ import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
 import { Menu } from 'lucide-react'
 import { cn } from '@/utils/cn'
 import Link from 'next/link'
+import { translate } from '@/i18n'
 
 export const DropDownMenu = () => {
   const pathname = usePathname()
 
   return (
     <DropdownMenu.Root>
-      <DropdownMenu.Trigger className="group flex size-8 items-center justify-center rounded-radius border border-solid border-transparent p-1.5 hover:border-border focus-visible:border-border">
-        <Menu size={20} strokeWidth={1.5} className="stroke-foreground-muted" />
+      <DropdownMenu.Trigger asChild>
+        <button
+          aria-label={translate('links.arial_label.drop_down')}
+          className="group flex size-8 items-center justify-center rounded-radius border border-solid border-transparent p-1.5 hover:border-border focus-visible:border-border"
+        >
+          <Menu
+            size={20}
+            strokeWidth={1.5}
+            className="stroke-foreground-muted"
+          />
+        </button>
       </DropdownMenu.Trigger>
 
       <DropdownMenu.Portal>

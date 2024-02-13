@@ -48,8 +48,13 @@ export const Modal = () => {
 
   return (
     <Dialog.Root>
-      <Dialog.Trigger className="group flex size-8 items-center justify-center rounded-radius border border-solid border-transparent p-1.5 hover:border-border focus-visible:border-border">
-        <MoreHorizontal size={20} className="stroke-foreground-muted" />
+      <Dialog.Trigger asChild>
+        <button
+          arial-label={translate('links.arial_label.settings')}
+          className="items-centera group flex size-8 justify-center rounded-radius border border-solid border-transparent p-1.5 hover:border-border focus-visible:border-border"
+        >
+          <MoreHorizontal size={20} className="stroke-foreground-muted" />
+        </button>
       </Dialog.Trigger>
 
       <Dialog.Portal>
