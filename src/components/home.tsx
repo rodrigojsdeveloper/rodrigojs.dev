@@ -1,6 +1,6 @@
 'use client'
 
-import { initialHomeProjects } from '@/utils/projects'
+import { initialHomeProjects } from '@/data/projects'
 import { Paragraph } from '@/components/paragraph'
 import { SubTitle } from '@/components/subtitle'
 import { Project } from '@/components/project'

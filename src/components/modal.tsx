@@ -3,7 +3,7 @@
 import * as Dialog from '@radix-ui/react-dialog'
 import { useState, useContext } from 'react'
 import { Line } from './line'
-import { LINKS } from '@/utils/links'
+import { LINKS } from '@/data/links'
 import { CustomLink } from './custom-link'
 import { useTheme } from 'next-themes'
 import { Context } from '@/contexts/context'

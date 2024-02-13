@@ -1,6 +1,6 @@
 'use client'
 
-import { stacks } from '@/utils/stacks'
+import { stacks } from '@/data/stacks'
 import { SubTitle } from './subtitle'
 import { array } from '@/utils/array'
 import { Stack } from './stack'

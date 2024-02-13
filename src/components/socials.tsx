@@ -1,5 +1,5 @@
 import { Social } from './social'
-import { LINKS } from '@/utils/links'
+import { LINKS } from '@/data/links'
 
 export const Socials = () => {
   return (

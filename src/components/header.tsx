@@ -3,7 +3,7 @@
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import author from '@/assets/author.jpg'
-import { LINKS } from '@/utils/links'
+import { LINKS } from '@/data/links'
 import { CustomLink } from './custom-link'
 import { Copyright } from './copyright'
 import { SubTitle } from './subtitle'

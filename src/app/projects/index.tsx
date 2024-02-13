@@ -2,7 +2,7 @@
 
 import { Paragraph } from '@/components/paragraph'
 import { Project } from '@/components/project'
-import { projects } from '@/utils/projects'
+import { projects } from '@/data/projects'
 import { Title } from '@/components/title'
 import { List } from '@/components/list'
 import { translate } from '@/i18n'

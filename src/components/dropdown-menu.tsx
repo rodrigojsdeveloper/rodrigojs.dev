@@ -1,7 +1,7 @@
 'use client'
 
 import { usePathname } from 'next/navigation'
-import { LINKS } from '@/utils/links'
+import { LINKS } from '@/data/links'
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
 import { Menu } from 'lucide-react'
 import { cn } from '@/utils/cn'
