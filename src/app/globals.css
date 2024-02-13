@@ -83,7 +83,6 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-  border-radius: 0.4rem;
   background-color: hsl(var(--border));
 }
 

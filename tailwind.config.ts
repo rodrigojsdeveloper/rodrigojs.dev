@@ -33,14 +33,6 @@ const config: Config = {
           from: { opacity: '0', transform: 'translateY(1.25rem)' },
           to: { opacity: '1', transform: 'translateY(0)' },
         },
-        down: {
-          from: { opacity: '0', transform: 'translateY(-1.25rem)' },
-          to: { opacity: '1', transform: 'translateY(0)' },
-        },
-        modal: {
-          from: { opacity: '0' },
-          to: { opacity: '1' },
-        },
         slide: {
           from: { transform: 'translateX(0)' },
           to: { transform: 'translateX(calc(-100% - 1rem))' },
@@ -64,8 +56,6 @@ const config: Config = {
       },
       animation: {
         up: 'up 0.3s',
-        down: 'down 0.3s',
-        modal: 'modal 0.2s',
         slide: 'slide 40s linear infinite',
         slideDownAndFade:
           'slideDownAndFade 400ms cubic-bezier(0.16, 1, 0.3, 1)',

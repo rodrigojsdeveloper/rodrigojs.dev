@@ -3,7 +3,7 @@ export default {
   'home.title': 'Now',
   'home.description':
     'At the moment, I hold the position of Full Stack Developer at corelab, where I am focused on creating new projects and enhancing my skills.',
-  'home.recent_projects': 'Recent Projects',
+  'home.recent_projects': 'Recent Project',
   'home.see_all': 'See All',
 
   'home.work.title': "Let's Work Together!",

@@ -19,7 +19,7 @@ export const Header = () => {
       <Image
         src={author}
         alt="Rodrigo Silva"
-        zoomHover={true}
+        zoomHover
         className="size-20 rounded-full"
       />
 

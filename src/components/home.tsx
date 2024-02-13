@@ -1,13 +1,12 @@
 'use client'
 
-import { initialHomeProjects } from '@/data/projects'
+import { initialHomeProject } from '@/data/projects'
 import { Paragraph } from '@/components/paragraph'
 import { SubTitle } from '@/components/subtitle'
 import { Project } from '@/components/project'
 import { MoveRight } from 'lucide-react'
 import { Title } from '@/components/title'
 import { Work } from '@/components/work'
-import { List } from '@/components/list'
 import Link from 'next/link'
 import { translate } from '@/i18n'
 
@@ -32,17 +31,12 @@ export const Home = () => {
         </div>
       </div>
 
-      <List>
-        {initialHomeProjects.map((project, key) => (
-          <Project
-            img={project.img}
-            title={project.title}
-            description={project.description}
-            link={project.link}
-            key={key}
-          />
-        ))}
-      </List>
+      <Project
+        img={initialHomeProject.img}
+        title={initialHomeProject.title}
+        description={initialHomeProject.description}
+        link={initialHomeProject.link}
+      />
 
       <Work />
     </div>
