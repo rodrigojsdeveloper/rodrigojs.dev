@@ -4,7 +4,7 @@ import { initialHomeProject } from '@/data/projects'
 import { Paragraph } from '@/components/paragraph'
 import { SubTitle } from '@/components/subtitle'
 import { Project } from '@/components/project'
-import { MoveRight } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 import { Title } from '@/components/title'
 import { Work } from '@/components/work'
 import Link from 'next/link'
@@ -23,10 +23,10 @@ export const Home = () => {
 
           <Link
             href="/projects"
-            className="flex select-none items-center gap-1.5 text-xs font-medium text-foreground-muted focus-visible:opacity-50 active:opacity-50"
+            className="flex select-none items-center gap-1 text-xs font-medium text-foreground-muted focus-visible:opacity-50 active:opacity-50"
           >
             {translate('home.see_all')}{' '}
-            <MoveRight size={18} strokeWidth={1.5} />
+            <ArrowRight size={12} strokeWidth={1.5} />
           </Link>
         </div>
       </div>
