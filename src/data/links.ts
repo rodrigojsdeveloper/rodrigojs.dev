@@ -54,23 +54,6 @@ export const LINKS: LinksProps = {
       icon: MessageCircle,
     },
   ],
-  themes: [
-    {
-      theme: 'light',
-      title: translate('links.light'),
-      icon: Sun,
-    },
-    {
-      theme: 'dark',
-      title: translate('links.dark'),
-      icon: Moon,
-    },
-    {
-      theme: 'system',
-      title: translate('links.system'),
-      icon: Laptop,
-    },
-  ],
   languages: [
     {
       locale: 'pt-BR',
@@ -86,6 +69,23 @@ export const LINKS: LinksProps = {
       locale: 'es',
       title: translate('links.spanish'),
       icon: Globe,
+    },
+  ],
+  themes: [
+    {
+      theme: 'light',
+      title: translate('links.light'),
+      icon: Sun,
+    },
+    {
+      theme: 'dark',
+      title: translate('links.dark'),
+      icon: Moon,
+    },
+    {
+      theme: 'system',
+      title: translate('links.system'),
+      icon: Laptop,
     },
   ],
   socials: [

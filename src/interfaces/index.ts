@@ -41,10 +41,6 @@ export interface TitleProps {
   title: string
 }
 
-export interface ContextDataProps {
-  handleChangeLanguage: (language: string) => void
-}
-
 export interface ImageProps
   extends React.ComponentPropsWithoutRef<typeof NextImage> {
   zoomHover?: boolean
