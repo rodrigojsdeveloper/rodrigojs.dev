@@ -7,7 +7,7 @@ import { LINKS } from '@/data/links'
 import { CustomLink } from './custom-link'
 import { useTheme } from 'next-themes'
 import { Context } from '@/contexts/context'
-import { MoreHorizontal, Search, X } from 'lucide-react'
+import { Search, X } from 'lucide-react'
 import { translate } from '@/i18n'
 import { cn } from '@/utils/cn'
 import { LanguageProps, SocialProps, ThemeProps } from '@/interfaces'
@@ -53,7 +53,20 @@ export const Modal = () => {
           arial-label={translate('links.arial_label.settings')}
           className="items-centera group flex size-8 justify-center rounded-radius border border-solid border-transparent p-1.5 hover:border-border focus-visible:border-border"
         >
-          <MoreHorizontal size={20} className="stroke-foreground-muted" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 27"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="size-5 stroke-foreground-muted"
+          >
+            <path d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3"></path>
+          </svg>
         </button>
       </Dialog.Trigger>
 

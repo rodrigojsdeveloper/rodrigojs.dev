@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 export const Project = ({ img, title, description, link }: ProjectProps) => {
   return (
-    <li className="relative list-none overflow-hidden rounded-radius border border-solid border-border focus-within:bg-hover hover:bg-hover">
+    <li className="relative list-none overflow-hidden rounded-radius border border-solid border-border">
       <Link href={link} target="_blank" className="rounded-radius">
         <Image
           src={img}
