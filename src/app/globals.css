@@ -11,6 +11,8 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 
+  font-weight: 400;
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -52,21 +54,15 @@ body {
   background-color: hsl(var(--background));
 }
 
-button,
-a,
-li,
-img,
-textarea {
+:is(button, a, li, img, textarea) {
   transition: 0.3s;
 }
 
-button,
-img {
+:is(img, button, input, textarea) {
   user-select: none;
 }
 
-button,
-a {
+:is(button, a) {
   cursor: pointer;
 }
 
@@ -84,8 +80,4 @@ a {
 
 ::-webkit-scrollbar-thumb {
   background-color: hsl(var(--border));
-}
-
-.linkSelected {
-  border-color: hsl(var(--border)) !important;
 }

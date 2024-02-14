@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const Social = ({ title, link }: SocialProps) => {
   return (
-    <li className="group cursor-pointer text-sm font-medium text-foreground-muted">
+    <li className="group cursor-pointer text-sm text-foreground-muted">
       <Link
         target="_blank"
         href={link}

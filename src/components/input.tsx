@@ -8,7 +8,7 @@ export const Input = ({ type, name, placeholder }: InputProps) => {
       required={true}
       autoComplete="off"
       placeholder={placeholder}
-      className="h-10 w-full select-none rounded-radius border border-solid border-border bg-transparent p-2.5 text-sm placeholder:text-foreground-muted placeholder:focus:text-transparent"
+      className="h-10 w-full rounded-radius border border-solid border-border bg-transparent p-2.5 text-sm placeholder:text-foreground-muted placeholder:focus:text-transparent"
     />
   )
 }

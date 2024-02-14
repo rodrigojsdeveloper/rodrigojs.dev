@@ -26,7 +26,7 @@ export const Header = () => {
       <div>
         <SubTitle title="Rodrigo Silva" />
 
-        <p className="text-sm font-medium text-foreground-muted">
+        <p className="text-sm text-foreground-muted">
           {translate('header.office')}
         </p>
       </div>
@@ -42,7 +42,7 @@ export const Header = () => {
             text={link.title}
             activeLink={
               pathname === `/${link.href}`
-                ? 'linkSelected text-foreground'
+                ? 'border-border text-foreground'
                 : 'border-transparent text-foreground-muted'
             }
             isLink
