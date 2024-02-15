@@ -1,6 +1,5 @@
 import { ProjectProps } from '@/interfaces'
 import { Image } from '@/components/image'
-import { SubTitle } from './subtitle'
 import Link from 'next/link'
 
 export const Project = ({ img, title, link }: ProjectProps) => {
@@ -14,7 +13,7 @@ export const Project = ({ img, title, link }: ProjectProps) => {
         />
 
         <div className="absolute bottom-4 left-4 z-[1] flex w-full justify-center pr-4">
-          <SubTitle title={title} />
+          <h2 className="text-base sm:text-lg">{title}</h2>
         </div>
       </Link>
 

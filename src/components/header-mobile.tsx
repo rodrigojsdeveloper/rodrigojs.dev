@@ -3,7 +3,6 @@
 import author from '@/assets/author.jpg'
 import { Image } from '@/components/image'
 import { DropDownMenu } from './dropdown-menu'
-import { Modal } from './modal'
 import Link from 'next/link'
 
 export const HeaderMobile = () => {
@@ -17,10 +16,7 @@ export const HeaderMobile = () => {
         />
       </Link>
 
-      <div className="flex items-center gap-1">
-        <Modal />
-        <DropDownMenu />
-      </div>
+      <DropDownMenu />
     </header>
   )
 }

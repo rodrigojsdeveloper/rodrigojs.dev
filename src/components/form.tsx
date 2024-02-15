@@ -33,9 +33,9 @@ export const Form = () => {
       action="https://formspree.io/f/mlekpwdz"
       method="POST"
       onSubmit={handleSubmit}
-      className="flex flex-col gap-y-2.5 sm:gap-y-4"
+      className="flex flex-col gap-y-3"
     >
-      <div className="flex flex-row gap-2.5 sm:gap-4">
+      <div className="flex flex-row gap-3">
         <Input
           placeholder={translate('contact.form.name')}
           type="text"
