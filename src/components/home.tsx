@@ -34,7 +34,6 @@ export const Home = () => {
       <Project
         img={initialHomeProject.img}
         title={initialHomeProject.title}
-        description={initialHomeProject.description}
         link={initialHomeProject.link}
       />
 
