@@ -19,7 +19,6 @@ export const Projects = () => {
           <Project
             img={project.img}
             title={project.title}
-            description={project.description}
             link={project.link}
             key={index}
           />

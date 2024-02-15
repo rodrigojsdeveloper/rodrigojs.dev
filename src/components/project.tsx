@@ -1,10 +1,9 @@
 import { ProjectProps } from '@/interfaces'
-import { Paragraph } from './paragraph'
-import { SubTitle } from './subtitle'
 import { Image } from '@/components/image'
+import { SubTitle } from './subtitle'
 import Link from 'next/link'
 
-export const Project = ({ img, title, description, link }: ProjectProps) => {
+export const Project = ({ img, title, link }: ProjectProps) => {
   return (
     <li className="relative list-none overflow-hidden rounded-radius border border-solid border-border">
       <Link href={link} target="_blank" className="rounded-radius">
@@ -14,10 +13,8 @@ export const Project = ({ img, title, description, link }: ProjectProps) => {
           className="max-h-[24.373rem] rounded-radius"
         />
 
-        <div className="absolute bottom-4 left-4 z-[1] pr-4">
+        <div className="absolute bottom-4 left-4 z-[1] flex w-full justify-center pr-4">
           <SubTitle title={title} />
-
-          <Paragraph text={description} />
         </div>
       </Link>
 

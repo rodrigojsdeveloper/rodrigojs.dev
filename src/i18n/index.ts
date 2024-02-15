@@ -2,7 +2,6 @@ import i18next from 'i18next'
 import LanguageDetector from 'i18next-browser-languagedetector'
 import br from './br'
 import en from './en'
-import es from './es'
 
 i18next.use(LanguageDetector).init({
   fallbackLng: 'pt',
@@ -15,11 +14,6 @@ i18next.use(LanguageDetector).init({
     en: {
       translation: {
         ...en,
-      },
-    },
-    es: {
-      translation: {
-        ...es,
       },
     },
   },

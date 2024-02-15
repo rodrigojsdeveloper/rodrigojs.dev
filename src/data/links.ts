@@ -65,11 +65,6 @@ export const LINKS: LinksProps = {
       title: translate('links.english'),
       icon: Globe,
     },
-    {
-      locale: 'es',
-      title: translate('links.spanish'),
-      icon: Globe,
-    },
   ],
   themes: [
     {

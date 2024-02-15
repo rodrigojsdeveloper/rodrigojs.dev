@@ -22,7 +22,6 @@ export interface StackProps {
 export interface ProjectProps {
   img: StaticImageData
   title: string
-  description: string
   link: string
 }
 

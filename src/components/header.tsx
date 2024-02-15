@@ -31,8 +31,6 @@ export const Header = () => {
         </p>
       </div>
 
-      <Line />
-
       <nav className="flex flex-col gap-1">
         {LINKS.website.map((link, index) => (
           <CustomLink
