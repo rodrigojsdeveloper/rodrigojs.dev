@@ -4,9 +4,10 @@ import { Kanit } from 'next/font/google'
 import { HeaderMobile } from '@/components/header-mobile'
 import ThemeProvider from '@/contexts/theme-provider'
 import { Header } from '@/components/header'
+import { Modal } from '@/components/modal'
+import { Toaster } from 'sonner'
 import { cn } from '@/utils/cn'
 import './globals.css'
-import { Toaster } from 'sonner'
 
 const kanit = Kanit({
   subsets: ['latin'],
@@ -33,6 +34,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
           <ThemeProvider>
             <Header />
             <HeaderMobile />
+            <Modal />
             <main className="w-full lg:max-w-[50rem]">{children}</main>
           </ThemeProvider>
         </div>

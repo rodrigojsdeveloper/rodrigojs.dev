@@ -55,19 +55,19 @@ export const Modal = () => {
       <Dialog.Trigger asChild>
         <button
           arial-label={translate('links.arial_label.settings')}
-          className="items-centera group flex size-8 justify-center rounded-radius border border-solid border-transparent p-1.5 hover:border-border focus-visible:border-border"
+          className="group fixed bottom-4 left-2 z-[2] flex size-12 items-center justify-center rounded-full bg-foreground p-2 lg:left-4"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="20"
             height="20"
-            viewBox="0 0 24 27"
+            viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
-            className="size-5 stroke-foreground-muted"
+            className="size-5 stroke-background"
           >
             <path d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3"></path>
           </svg>

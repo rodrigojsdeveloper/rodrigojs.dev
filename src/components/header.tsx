@@ -8,7 +8,6 @@ import { Copyright } from './copyright'
 import { SubTitle } from './subtitle'
 import { Image } from './image'
 import { Line } from './line'
-import { Modal } from './modal'
 import { translate } from '@/i18n'
 
 export const Header = () => {
@@ -49,10 +48,7 @@ export const Header = () => {
       </nav>
 
       <Line />
-      <div className="flex items-center justify-between">
-        <Copyright />
-        <Modal />
-      </div>
+      <Copyright />
     </aside>
   )
 }
