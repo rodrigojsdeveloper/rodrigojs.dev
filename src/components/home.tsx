@@ -31,11 +31,13 @@ export const Home = () => {
         </div>
       </div>
 
-      <Project
-        img={initialHomeProject.img}
-        title={initialHomeProject.title}
-        link={initialHomeProject.link}
-      />
+      <ul>
+        <Project
+          img={initialHomeProject.img}
+          title={initialHomeProject.title}
+          link={initialHomeProject.link}
+        />
+      </ul>
 
       <Work />
     </div>

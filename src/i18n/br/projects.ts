@@ -10,4 +10,6 @@ export default {
   'projects.mathematical.title': 'Mathematical',
   'projects.iweather.title': 'iWeather',
   'projects.dtmoney.title': 'DT Money',
+
+  'projects.alt': 'Projeto',
 }

@@ -54,7 +54,7 @@ export const Modal = () => {
     <Dialog.Root>
       <Dialog.Trigger asChild>
         <button
-          arial-label={translate('links.arial_label.settings')}
+          aria-label={translate('links.arial_label.settings')}
           className="group fixed bottom-2 left-2 z-[2] flex size-12 items-center justify-center rounded-full bg-foreground p-2 duration-200 lg:bottom-4 lg:left-4"
         >
           <svg
