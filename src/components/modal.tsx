@@ -55,7 +55,7 @@ export const Modal = () => {
       <Dialog.Trigger asChild>
         <button
           arial-label={translate('links.arial_label.settings')}
-          className="group fixed bottom-4 left-2 z-[2] flex size-12 items-center justify-center rounded-full bg-foreground p-2 lg:left-4"
+          className="group fixed bottom-2 left-2 z-[2] flex size-12 items-center justify-center rounded-full bg-foreground p-2 duration-200 lg:bottom-4 lg:left-4"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -97,9 +97,9 @@ export const Modal = () => {
               />
             </div>
 
-            <Dialog.Close className="group flex size-8 items-center justify-center rounded-radius border border-solid border-transparent p-1.5 hover:border-border focus-visible:border-border">
+            <Dialog.Close className="group flex size-8 items-center justify-center rounded-radius border border-solid border-transparent p-1 hover:border-border focus-visible:border-border">
               <X
-                size={20}
+                size={16}
                 strokeWidth={1.5}
                 className="stroke-foreground-muted"
               />

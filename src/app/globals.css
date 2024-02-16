@@ -25,20 +25,22 @@
 @layer base {
   :root {
     --background: 60, 20%, 99%;
-    --foreground: 240 10% 3.9%;
+    --foreground: 240, 10%, 3.9%;
     --foreground-muted: 45, 5%, 55%;
-    --border: 0, 0%, 83%, 0.7;
+    --border: 0, 0%, 83%;
     --shadow: 60, 20%, 99%, 0.3;
     --hover: 0, 0%, 95%;
+    --scrollbar: 0, 0%, 64%;
   }
 
   .dark {
     --background: 60, 3%, 6%;
-    --foreground: 0 0% 98%;
-    --foreground-muted: 0, 0%, 49%;
-    --border: 0, 0%, 15%;
+    --foreground: 0, 0%, 98%;
+    --foreground-muted: 0, 0%, 45%;
+    --border: 0, 0%, 15%, 0.7;
     --shadow: 0, 0%, 4%, 0.8;
     --hover: 60, 2%, 10%;
+    --scrollbar: 0, 0%, 25%;
   }
 }
 
@@ -79,5 +81,6 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: hsl(var(--border));
+  border-radius: 1rem;
+  background-color: hsl(var(--scrollbar));
 }

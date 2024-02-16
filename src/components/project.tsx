@@ -12,12 +12,14 @@ export const Project = ({ img, title, link }: ProjectProps) => {
           className="max-h-[24.373rem] rounded-radius"
         />
 
-        <div className="absolute bottom-4 left-4 z-[1] flex w-full justify-center pr-4">
-          <h2 className="text-base sm:text-lg">{title}</h2>
+        <div className="absolute bottom-4 z-[1] flex w-full justify-center">
+          <h2 className="text-base font-light text-zinc-50 sm:text-lg">
+            {title}
+          </h2>
         </div>
       </Link>
 
-      <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-[80%] bg-gradient-to-t from-background to-transparent" />
+      <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-[80%] bg-gradient-to-t from-black/80 to-transparent" />
     </li>
   )
 }
