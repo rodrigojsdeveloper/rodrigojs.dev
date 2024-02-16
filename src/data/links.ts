@@ -4,7 +4,7 @@ import {
   Home,
   CircleUserRound,
   PanelsTopLeft,
-  MessageCircle,
+  MessageSquareMore,
   Linkedin,
   Instagram,
   Github,
@@ -34,7 +34,7 @@ export const LINKS: LinksProps = {
     {
       href: 'contact',
       title: translate('links.contact'),
-      icon: MessageCircle,
+      icon: MessageSquareMore,
     },
   ],
   mobile_website: [
@@ -51,7 +51,7 @@ export const LINKS: LinksProps = {
     {
       href: 'contact',
       title: translate('links.contact'),
-      icon: MessageCircle,
+      icon: MessageSquareMore,
     },
   ],
   languages: [

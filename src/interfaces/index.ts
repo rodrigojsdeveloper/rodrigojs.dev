@@ -1,4 +1,4 @@
-import React, { MouseEventHandler, HTMLAttributeAnchorTarget } from 'react'
+import React from 'react'
 import NextImage, { StaticImageData } from 'next/image'
 import { LucideIcon } from 'lucide-react'
 
@@ -7,10 +7,10 @@ export interface CustomLinkProps {
   text: string
   href: string
   activeLink?: string
-  onClick?: MouseEventHandler<HTMLElement>
+  onClick?: React.MouseEventHandler<HTMLElement>
   className?: string
   externalLink?: boolean
-  target?: HTMLAttributeAnchorTarget
+  target?: React.HTMLAttributeAnchorTarget
   isLink?: boolean
 }
 

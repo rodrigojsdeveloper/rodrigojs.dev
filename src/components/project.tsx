@@ -5,12 +5,8 @@ import Link from 'next/link'
 export const Project = ({ img, title, link }: ProjectProps) => {
   return (
     <li className="relative list-none overflow-hidden rounded-radius border border-solid border-border">
-      <Link href={link} target="_blank" className="rounded-radius">
-        <Image
-          src={img}
-          alt={title}
-          className="max-h-[24.373rem] rounded-radius"
-        />
+      <Link href={link} target="_blank">
+        <Image src={img} alt={title} className="max-h-[24.373rem]" />
 
         <div className="absolute bottom-4 z-[1] flex w-full justify-center">
           <h2 className="text-base font-light text-zinc-50 sm:text-lg">
@@ -19,7 +15,7 @@ export const Project = ({ img, title, link }: ProjectProps) => {
         </div>
       </Link>
 
-      <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-[80%] bg-gradient-to-t from-black/80 to-transparent" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[80%] bg-gradient-to-t from-black/80 to-transparent" />
     </li>
   )
 }
