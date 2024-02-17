@@ -16,13 +16,9 @@ export const DropDownMenu = () => {
       <DropdownMenu.Trigger asChild>
         <button
           aria-label={translate('links.arial_label.drop_down')}
-          className="group flex size-8 items-center justify-center rounded-radius border border-solid border-transparent p-1.5 hover:border-border focus-visible:border-border"
+          className="group flex items-center justify-center rounded-md p-1 text-foreground-muted focus-visible:ring-1 focus-visible:ring-border"
         >
-          <Menu
-            size={20}
-            strokeWidth={1.5}
-            className="stroke-foreground-muted"
-          />
+          <Menu size={20} strokeWidth={1.5} />
         </button>
       </DropdownMenu.Trigger>
 

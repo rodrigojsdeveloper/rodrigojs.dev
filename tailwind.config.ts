@@ -26,7 +26,7 @@ const config: Config = {
           'linear-gradient(90deg, hsl(var(--background)), transparent 20%, transparent 80%, hsl(var(--background)))',
       },
       borderRadius: {
-        radius: '0.6rem',
+        radius: '0.7rem',
       },
       keyframes: {
         up: {

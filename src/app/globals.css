@@ -7,17 +7,12 @@
   margin: 0;
   padding: 0;
   outline: 0 !important;
-  resize: none;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 
   font-weight: 400;
-
   font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
 
   -webkit-tap-highlight-color: transparent;
 }
@@ -56,7 +51,7 @@ body {
   background-color: hsl(var(--background));
 }
 
-:is(button, a, li, img, textarea) {
+:is(button, a, li) {
   transition: 0.3s;
 }
 
