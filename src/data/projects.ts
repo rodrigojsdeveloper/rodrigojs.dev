@@ -1,13 +1,12 @@
+import { StaticImageData } from 'next/image'
+import { ProjectProps } from '@/interfaces'
+
 import mathematical from '@/assets/mathematical.png'
 import motorsShop from '@/assets/motors-shop.png'
 import devFinder from '@/assets/devfinder.png'
 import geography from '@/assets/geography.png'
 import iweather from '@/assets/iweather.png'
 import dtMoney from '@/assets/dt-money.png'
-
-import { ProjectProps } from '@/interfaces'
-import { StaticImageData } from 'next/image'
-import { translate } from '@/i18n'
 
 const createProject = (
   img: StaticImageData,
@@ -20,32 +19,32 @@ const createProject = (
 export const projects: ProjectProps[] = [
   createProject(
     motorsShop,
-    translate('projects.motors_shop.title'),
+    'Motors Shop',
     'https://github.com/rodrigojsdeveloper/motors-shop',
   ),
   createProject(
     geography,
-    translate('projects.geography.title'),
+    'Geography',
     'https://github.com/rodrigojsdeveloper/geography',
   ),
   createProject(
     devFinder,
-    translate('projects.devfinder.title'),
+    'devFinder',
     'https://github.com/rodrigojsdeveloper/devfinder',
   ),
   createProject(
     mathematical,
-    translate('projects.mathematical.title'),
+    'Mathematical',
     'https://github.com/rodrigojsdeveloper/mathematical',
   ),
   createProject(
     iweather,
-    translate('projects.iweather.title'),
+    'iWeather',
     'https://github.com/rodrigojsdeveloper/iweather',
   ),
   createProject(
     dtMoney,
-    translate('projects.dtmoney.title'),
+    'DT Money',
     'https://github.com/rodrigojsdeveloper/dt-money',
   ),
 ]

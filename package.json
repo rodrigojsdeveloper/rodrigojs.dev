@@ -16,11 +16,9 @@
     "i18next-browser-languagedetector": "^7.2.0",
     "lucide-react": "^0.321.0",
     "next": "13.5.4",
-    "next-i18next": "^15.2.0",
     "next-themes": "^0.2.1",
     "react": "^18",
     "react-dom": "^18",
-    "react-i18next": "^14.0.5",
     "sonner": "^1.4.0",
     "tailwind-merge": "^2.2.1"
   },

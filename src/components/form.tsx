@@ -35,7 +35,7 @@ export const Form = () => {
       onSubmit={handleSubmit}
       className="flex flex-col gap-y-3"
     >
-      <div className="flex flex-row gap-3">
+      <div className="flex flex-col gap-3 sm:flex-row">
         <Input
           placeholder={translate('contact.form.name')}
           type="text"
