@@ -13,7 +13,7 @@ export const Project = ({ img, title, link }: ProjectProps) => {
           className="max-h-[24.373rem]"
         />
 
-        <div className="absolute bottom-4 z-[1] flex w-full justify-center">
+        <div className="absolute bottom-2 z-[1] flex w-full justify-center">
           <h2 className="text-base font-light text-zinc-50 sm:text-lg">
             {title}
           </h2>
