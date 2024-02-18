@@ -3,7 +3,7 @@ import { StackProps } from '@/interfaces'
 export const stacks: StackProps[] = [
   {
     icon: 'logos:javascript',
-    bg: '#F7DF1F20',
+    bg: '#F7DF1E20',
   },
   {
     icon: 'devicon:typescript',
@@ -23,7 +23,7 @@ export const stacks: StackProps[] = [
   },
   {
     icon: 'logos:sass',
-    bg: '#CD679920',
+    bg: '#CB669920',
   },
   {
     icon: 'devicon:bootstrap',
@@ -34,8 +34,12 @@ export const stacks: StackProps[] = [
     bg: '#FFFFFF20',
   },
   {
+    icon: 'logos:redux',
+    bg: '#764ABC20',
+  },
+  {
     icon: 'logos:nodejs-icon',
-    bg: '#83CD2920',
+    bg: '#539E4320',
   },
   {
     icon: 'devicon:express',
@@ -43,14 +47,14 @@ export const stacks: StackProps[] = [
   },
   {
     icon: 'devicon:prisma',
-    bg: '#2d374820',
+    bg: '#2D374820',
   },
   {
     icon: 'logos:nestjs',
     bg: '#E0234E20',
   },
   {
-    icon: 'logos:jest',
+    icon: 'vscode-icons:file-type-jest-snapshot',
     bg: '#99425B20',
   },
   {
@@ -67,7 +71,7 @@ export const stacks: StackProps[] = [
   },
   {
     icon: 'logos:mysql-icon',
-    bg: '#00618A20',
+    bg: '#00546B20',
   },
   {
     icon: 'logos:mongodb-icon',
@@ -86,11 +90,7 @@ export const stacks: StackProps[] = [
     bg: '#252F3E20',
   },
   {
-    icon: 'devicon:git',
-    bg: '#F34F2920',
-  },
-  {
     icon: 'logos:figma',
-    bg: '#0ACF8320',
+    bg: '#2C2C2C20',
   },
 ]
