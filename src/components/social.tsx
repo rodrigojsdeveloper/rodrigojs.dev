@@ -1,5 +1,5 @@
-import { SocialProps } from '@/interfaces'
 import Link from 'next/link'
+import { SocialProps } from '@/interfaces'
 
 export const Social = ({ title, link }: SocialProps) => {
   return (

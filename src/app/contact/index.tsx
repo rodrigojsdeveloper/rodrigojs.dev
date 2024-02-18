@@ -15,12 +15,10 @@ export const Contact = () => {
       </div>
       <div className="flex flex-col gap-y-3">
         <h2 className="leading-relaxed">{translate('contact.socials')}</h2>
-
         <Socials />
       </div>
       <div className="flex flex-col gap-y-1.5 sm:gap-y-3">
         <h2 className="leading-relaxed">{translate('contact.send_email')}</h2>
-
         <Paragraph text={translate('contact.work')} />
       </div>
       <Form />

@@ -14,9 +14,7 @@ export const About = () => {
         <Title title={translate('about.title')} />
         <div className="flex flex-col gap-3">
           <Paragraph text={translate('about.first.paragraph')} />
-
           <Paragraph text={translate('about.second.paragraph')} />
-
           <Paragraph text={translate('about.third.paragraph')} />
         </div>
       </div>

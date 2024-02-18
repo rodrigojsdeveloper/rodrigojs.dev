@@ -52,7 +52,6 @@ export const Form = () => {
         type="text"
         name="message"
       />
-
       <button
         type="submit"
         className="h-11 rounded-radius bg-foreground text-sm text-background hover:opacity-90 focus-visible:opacity-90"

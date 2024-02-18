@@ -1,6 +1,5 @@
 import { StaticImageData } from 'next/image'
 import { ProjectProps } from '@/interfaces'
-
 import mathematical from '@/assets/mathematical.png'
 import motorsShop from '@/assets/motors-shop.png'
 import devFinder from '@/assets/devfinder.png'

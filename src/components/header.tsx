@@ -21,15 +21,12 @@ export const Header = () => {
         zoomHover
         className="size-20 rounded-full"
       />
-
       <div>
         <SubTitle title="Rodrigo Silva" />
-
         <p className="text-sm text-foreground-muted">
           {translate('header.office')}
         </p>
       </div>
-
       <nav className="flex flex-col gap-1">
         {LINKS.website.map((link, index) => (
           <CustomLink
@@ -46,7 +43,6 @@ export const Header = () => {
           />
         ))}
       </nav>
-
       <Line />
       <Copyright />
     </aside>

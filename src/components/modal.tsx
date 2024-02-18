@@ -1,11 +1,11 @@
 'use client'
 
-import * as Dialog from '@radix-ui/react-dialog'
 import { useState } from 'react'
+import { useTheme } from 'next-themes'
+import * as Dialog from '@radix-ui/react-dialog'
 import { Line } from './line'
 import { LINKS } from '@/data/links'
 import { CustomLink } from './custom-link'
-import { useTheme } from 'next-themes'
 import { Search, X } from 'lucide-react'
 import { translate } from '@/i18n'
 import { cn } from '@/utils/cn'
@@ -29,8 +29,10 @@ export const Modal = () => {
     }
   }
 
-  const filterLinks = (links: any) => {
-    return links.filter((link: any) => {
+  const filterLinks = (
+    links: SocialProps[] | ThemeProps[] | LanguageProps[],
+  ) => {
+    return links.filter((link: SocialProps | ThemeProps | LanguageProps) => {
       const searchText = searchValue.toLowerCase()
       return link.title.toLowerCase().includes(searchText)
     })
@@ -101,9 +103,7 @@ export const Modal = () => {
               <X size={16} strokeWidth={1.5} />
             </Dialog.Close>
           </div>
-
           <Line />
-
           <div
             className={cn(
               'overflow-y-auto px-3 pb-2 pt-1.5',
@@ -116,29 +116,31 @@ export const Modal = () => {
                   {translate('links.title.languages')}
                 </p>
                 <nav>
-                  {filteredLanguages.map(
-                    (language: LanguageProps, index: number) => (
-                      <CustomLink
-                        key={`language ${index}`}
-                        href=""
-                        Icon={<language.icon size={20} strokeWidth={2} />}
-                        text={language.title}
-                        onClick={() => handleChangeLanguage(language.locale)}
-                      />
-                    ),
-                  )}
+                  {filteredLanguages.map((language, index: number) => (
+                    <CustomLink
+                      key={`language ${index}`}
+                      href=""
+                      Icon={<language.icon size={20} strokeWidth={2} />}
+                      text={language.title}
+                      onClick={() =>
+                        handleChangeLanguage((language as LanguageProps).locale)
+                      }
+                    />
+                  ))}
                 </nav>
               </>
             )}
-
             {filteredThemes.length > 0 && (
               <>
                 <p className="text-pretty px-1 py-2 text-xs text-foreground-muted">
                   {translate('links.title.themes')}
                 </p>
                 <nav>
-                  {filteredThemes.map((theme: ThemeProps, index: number) => {
-                    const newTheme = { ...theme, theme: getTheme(theme.theme) }
+                  {filteredThemes.map((theme, index: number) => {
+                    const newTheme = {
+                      ...theme,
+                      theme: getTheme((theme as ThemeProps).theme),
+                    }
 
                     return (
                       <CustomLink
@@ -154,17 +156,16 @@ export const Modal = () => {
                 </nav>
               </>
             )}
-
             {filteredSocials.length > 0 && (
               <>
                 <p className="text-pretty px-1 py-2 text-xs text-foreground-muted">
                   {translate('links.title.socials')}
                 </p>
                 <nav>
-                  {filteredSocials.map((social: SocialProps, index: number) => (
+                  {filteredSocials.map((social, index: number) => (
                     <CustomLink
                       key={`media ${index}`}
-                      href={social.link}
+                      href={(social as SocialProps).link}
                       Icon={<social.icon size={20} strokeWidth={2} />}
                       text={social.title}
                       className="font-light"
@@ -176,7 +177,6 @@ export const Modal = () => {
                 </nav>
               </>
             )}
-
             {showSuggestions && (
               <p className="text-center text-sm text-foreground-muted">
                 {translate('links.not_found')}

@@ -1,9 +1,9 @@
 'use client'
 
+import Link from 'next/link'
 import author from '@/assets/author.jpg'
 import { Image } from '@/components/image'
 import { DropDownMenu } from './dropdown-menu'
-import Link from 'next/link'
 
 export const HeaderMobile = () => {
   return (
@@ -15,7 +15,6 @@ export const HeaderMobile = () => {
           className="h-11 w-11 rounded-full"
         />
       </Link>
-
       <DropDownMenu />
     </header>
   )

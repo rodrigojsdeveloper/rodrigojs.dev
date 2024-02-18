@@ -12,7 +12,6 @@ export const NotFound = () => {
         text={translate('notFound.description')}
         className="text-center"
       />
-
       <CustomLink
         href=""
         Icon={
