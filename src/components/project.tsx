@@ -5,7 +5,7 @@ import { translate } from '@/i18n'
 
 export const Project = ({ img, title, link }: ProjectProps) => {
   return (
-    <li className="relative list-none overflow-hidden rounded-radius border border-solid border-border focus-within:border-foreground">
+    <li className="relative list-none overflow-hidden rounded-radius border border-solid border-border focus-within:ring-1 focus-within:ring-border ">
       <Link href={link} target="_blank">
         <Image
           src={img}

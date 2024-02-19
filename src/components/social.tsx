@@ -3,14 +3,18 @@ import { SocialProps } from '@/interfaces'
 
 export const Social = ({ title, link }: SocialProps) => {
   return (
-    <li className="group cursor-pointer text-sm text-foreground-muted">
-      <Link
-        target="_blank"
-        href={link}
-        className="decoration-[0.094rem] underline-offset-4 group-focus-within:text-foreground group-focus-within:underline group-hover:text-foreground group-hover:underline"
-      >
+    <Link
+      href={link}
+      target="_blank"
+      className="group relative overflow-hidden"
+    >
+      <span className="invisible">{title}</span>
+      <span className="absolute left-0 top-0 cursor-pointer text-foreground-muted transition-transform duration-500 ease-in-out hover:duration-300 group-hover:-translate-y-full">
         {title}
-      </Link>
-    </li>
+      </span>
+      <span className="absolute left-0 top-0 translate-y-full text-foreground-muted transition-transform duration-500 ease-in-out hover:duration-300 group-hover:translate-y-0">
+        {title}
+      </span>
+    </Link>
   )
 }
