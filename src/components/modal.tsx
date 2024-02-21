@@ -3,7 +3,6 @@
 import { useState } from 'react'
 import { useTheme } from 'next-themes'
 import * as Dialog from '@radix-ui/react-dialog'
-import { Line } from './line'
 import { LINKS } from '@/data/links'
 import { CustomLink } from './custom-link'
 import { Search, X } from 'lucide-react'
@@ -80,30 +79,29 @@ export const Modal = () => {
         <Dialog.Overlay className="fixed inset-0 z-20 bg-shadow backdrop-blur-sm" />
         <Dialog.Content
           className={cn(
-            'fixed left-1/2 top-1/2 z-30 flex h-[95%] max-h-[21rem] w-[95%] max-w-lg -translate-x-1/2 -translate-y-1/2 flex-col overflow-hidden rounded-radius border border-solid border-border bg-background shadow-lg duration-200 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%]',
+            'fixed left-1/2 top-1/2 z-30 flex h-[95%] max-h-[21rem] w-[95%] max-w-lg -translate-x-1/2 -translate-y-1/2 flex-col overflow-hidden rounded-radius border border-solid border-border/50 bg-background shadow-lg duration-200 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%]',
             showSuggestions && 'h-[7.3rem]',
           )}
         >
-          <div className="flex h-[3.05rem] flex-row items-center justify-between py-3 pl-3 pr-2">
+          <div className="flex h-[3.05rem] flex-row items-center justify-between border-b border-solid border-border/50 py-3 pl-3 pr-2">
             <div className="flex w-full flex-row items-center gap-2.5">
               <Search
                 size={20}
                 strokeWidth={2}
-                className="text-foreground-muted"
+                className="text-foreground-muted/50"
               />
               <input
                 placeholder={translate('links.placeholder')}
-                className="w-full bg-transparent text-sm font-light text-foreground-muted placeholder:text-foreground-muted focus:placeholder:text-transparent"
+                className="w-full bg-transparent text-sm font-light text-foreground-muted/50 placeholder:text-foreground-muted/50 focus:placeholder:text-transparent"
                 value={searchValue}
                 onChange={(e) => setSearchValue(e.target.value)}
               />
             </div>
 
-            <Dialog.Close className="group flex items-center justify-center rounded-md p-1 text-foreground-muted hover:text-foreground focus-visible:ring-1 focus-visible:ring-border">
+            <Dialog.Close className="group flex items-center justify-center rounded-md p-1 text-foreground-muted/50 hover:text-foreground focus-visible:ring-1 focus-visible:ring-border/50">
               <X size={16} strokeWidth={1.5} />
             </Dialog.Close>
           </div>
-          <Line />
           <div
             className={cn(
               'overflow-y-auto px-3 pb-2 pt-1.5',
@@ -112,7 +110,7 @@ export const Modal = () => {
           >
             {filteredLanguages.length > 0 && (
               <>
-                <p className="text-pretty px-1 py-2 text-xs text-foreground-muted">
+                <p className="text-pretty px-1 py-2 text-xs text-foreground-muted/50">
                   {translate('links.title.languages')}
                 </p>
                 <nav>
@@ -132,7 +130,7 @@ export const Modal = () => {
             )}
             {filteredThemes.length > 0 && (
               <>
-                <p className="text-pretty px-1 py-2 text-xs text-foreground-muted">
+                <p className="text-pretty px-1 py-2 text-xs text-foreground-muted/50">
                   {translate('links.title.themes')}
                 </p>
                 <nav>
@@ -149,7 +147,6 @@ export const Modal = () => {
                         Icon={<newTheme.icon size={20} strokeWidth={2} />}
                         text={newTheme.title}
                         onClick={() => setTheme(newTheme.theme)}
-                        className="font-light"
                       />
                     )
                   })}
@@ -158,7 +155,7 @@ export const Modal = () => {
             )}
             {filteredSocials.length > 0 && (
               <>
-                <p className="text-pretty px-1 py-2 text-xs text-foreground-muted">
+                <p className="text-pretty px-1 py-2 text-xs text-foreground-muted/50">
                   {translate('links.title.socials')}
                 </p>
                 <nav>
@@ -168,7 +165,7 @@ export const Modal = () => {
                       href={(social as SocialProps).link}
                       Icon={<social.icon size={20} strokeWidth={2} />}
                       text={social.title}
-                      className="font-light"
+                      className="font-light text-foreground-muted/50 hover:border-border/50 focus-visible:border-border/50"
                       externalLink
                       target="_blank"
                       isLink
@@ -178,7 +175,7 @@ export const Modal = () => {
               </>
             )}
             {showSuggestions && (
-              <p className="text-center text-sm text-foreground-muted">
+              <p className="text-center text-sm text-foreground-muted/50">
                 {translate('links.not_found')}
               </p>
             )}

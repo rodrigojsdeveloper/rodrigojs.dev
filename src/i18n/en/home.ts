@@ -1,6 +1,6 @@
 /* eslint import/no-anonymous-default-export: [2, {"allowObject": true}] */
 export default {
-  'home.title': 'Now',
+  'home.title': 'Today',
   'home.description':
     'At the moment, I hold the position of Full Stack Developer at corelab, where I am focused on creating new projects and enhancing my skills.',
   'home.recent_projects': 'Recent Project',

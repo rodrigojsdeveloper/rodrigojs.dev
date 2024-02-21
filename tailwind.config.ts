@@ -14,10 +14,13 @@ const config: Config = {
       colors: {
         background: 'hsl(var(--background))',
         border: 'hsl(var(--border))',
+        'border/50': 'hsl(var(--border-50))',
+
         shadow: 'hsl(var(--shadow))',
         foreground: {
           DEFAULT: 'hsl(var(--foreground))',
           muted: 'hsl(var(--foreground-muted))',
+          'muted/50': 'hsl(var(--foreground-muted-50))',
         },
         hover: 'hsl(var(--hover))',
       },

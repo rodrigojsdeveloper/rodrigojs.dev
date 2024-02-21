@@ -23,7 +23,9 @@
     --background: 60, 20%, 99%;
     --foreground: 240, 10%, 3.9%;
     --foreground-muted: 49, 5%, 43%;
+    --foreground-muted-50: 0, 0%, 45%;
     --border: 0, 0%, 83%;
+    --border-50: 0, 0%, 83%, 0.7;
     --shadow: 60, 20%, 99%, 0.3;
     --hover: 0, 0%, 95%;
     --scrollbar: 0, 0%, 64%;
@@ -31,9 +33,11 @@
 
   .dark {
     --background: 60, 3%, 6%;
-    --foreground: 0, 0%, 98%;
-    --foreground-muted: 0, 0%, 50%;
+    --foreground: 60, 6%, 93%;
+    --foreground-muted: 45, 5%, 69%;
+    --foreground-muted-50: 0, 0%, 45%;
     --border: 0, 0%, 15%, 0.7;
+    --border-50: 0, 0%, 15%, 0.5;
     --shadow: 0, 0%, 4%, 0.8;
     --hover: 60, 2%, 10%;
     --scrollbar: 0, 0%, 25%;
