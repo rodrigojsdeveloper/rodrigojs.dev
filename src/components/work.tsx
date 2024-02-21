@@ -5,7 +5,7 @@ import { SubTitle } from './subtitle'
 
 export const Work = () => {
   return (
-    <section className="flex flex-col gap-y-2 rounded-radius border border-solid border-border p-5 sm:gap-y-4">
+    <section className="flex flex-col gap-y-2 rounded-radius border border-solid border-border p-4 sm:gap-y-4 sm:p-5">
       <SubTitle title={translate('home.work.title')} />
       <Paragraph text={translate('home.work.description')} />
       <Link
