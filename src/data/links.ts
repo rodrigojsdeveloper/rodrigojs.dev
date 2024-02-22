@@ -90,7 +90,7 @@ export const LINKS: LinksProps = {
       icon: Github,
     },
     {
-      link: 'https://www.linkedin.com/in/rodrigo-de-jesus-silva',
+      link: 'https://www.linkedin.com/in/rodrigojsdeveloper',
       title: 'LinkedIn',
       icon: Linkedin,
     },
