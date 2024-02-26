@@ -11,6 +11,7 @@ export default {
   'links.title.socials': 'Redes sociais',
   'links.title.themes': 'Tema',
   'links.title.languages': 'Idioma',
+  'links.title.lastest_projects': 'Últimos projetos',
 
   'links.portuguese': 'Português',
   'links.english': 'Inglês',

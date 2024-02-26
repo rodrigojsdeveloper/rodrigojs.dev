@@ -29,22 +29,24 @@ export const Modal = () => {
   }
 
   const filterLinks = (
-    links: SocialProps[] | ThemeProps[] | LanguageProps[],
+    links: LanguageProps[] | ThemeProps[] | SocialProps[],
   ) => {
-    return links.filter((link: SocialProps | ThemeProps | LanguageProps) => {
+    return links.filter((link: LanguageProps | ThemeProps | SocialProps) => {
       const searchText = searchValue.toLowerCase()
       return link.title.toLowerCase().includes(searchText)
     })
   }
 
-  const filteredSocials = filterLinks(LINKS.socials)
-  const filteredThemes = filterLinks(LINKS.themes)
   const filteredLanguages = filterLinks(LINKS.languages)
+  const filteredThemes = filterLinks(LINKS.themes)
+  const filteredLastestProjects = filterLinks(LINKS.lastest_projects)
+  const filteredSocials = filterLinks(LINKS.socials)
 
   const showSuggestions =
-    filteredSocials.length === 0 &&
     filteredThemes.length === 0 &&
-    filteredLanguages.length === 0
+    filteredLanguages.length === 0 &&
+    filteredLastestProjects.length === 0 &&
+    filteredSocials.length === 0
 
   const handleChangeLanguage = (language: string) => {
     i18next.changeLanguage(language)
@@ -92,7 +94,7 @@ export const Modal = () => {
               />
               <input
                 placeholder={translate('links.placeholder')}
-                className="w-full bg-transparent text-sm font-light text-foreground-muted/50 placeholder:text-foreground-muted/50 focus:placeholder:text-transparent"
+                className="w-full bg-transparent text-sm font-light text-foreground-muted/50 placeholder:text-foreground-muted/50"
                 value={searchValue}
                 onChange={(e) => setSearchValue(e.target.value)}
               />
@@ -153,6 +155,27 @@ export const Modal = () => {
                 </nav>
               </>
             )}
+            {filteredLastestProjects.length > 0 && (
+              <>
+                <p className="text-pretty px-1 py-2 text-xs text-foreground-muted/50">
+                  {translate('links.title.lastest_projects')}
+                </p>
+                <nav>
+                  {filteredLastestProjects.map((project, index: number) => (
+                    <CustomLink
+                      key={`media ${index}`}
+                      href={(project as SocialProps).link}
+                      Icon={<project.icon size={20} strokeWidth={2} />}
+                      text={project.title}
+                      className="text-foreground-muted/50 hover:border-border/50 focus-visible:border-border/50"
+                      externalLink
+                      target="_blank"
+                      isLink
+                    />
+                  ))}
+                </nav>
+              </>
+            )}
             {filteredSocials.length > 0 && (
               <>
                 <p className="text-pretty px-1 py-2 text-xs text-foreground-muted/50">
@@ -165,7 +188,7 @@ export const Modal = () => {
                       href={(social as SocialProps).link}
                       Icon={<social.icon size={20} strokeWidth={2} />}
                       text={social.title}
-                      className="font-light text-foreground-muted/50 hover:border-border/50 focus-visible:border-border/50"
+                      className="text-foreground-muted/50 hover:border-border/50 focus-visible:border-border/50"
                       externalLink
                       target="_blank"
                       isLink
