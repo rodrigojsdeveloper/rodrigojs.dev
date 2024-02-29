@@ -1,7 +1,7 @@
 /* eslint import/no-anonymous-default-export: [2, {"allowObject": true}] */
 export default {
   'projects.title': 'Projetos',
-  'projects.description': 'Explore meus projetos e veja o que desenvolvi.',
+  'projects.description': 'Apresento aqui alguns dos meus projetos recentes. Explore esta variedade e descubra os resultados do meu trabalho de desenvolvimento.',
 
   'projects.alt': 'Projeto',
 }
