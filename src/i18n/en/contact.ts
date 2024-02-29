@@ -1,12 +1,10 @@
 /* eslint import/no-anonymous-default-export: [2, {"allowObject": true}] */
 export default {
   'contact.title': 'Contact',
-  'contact.description':
-    "Feel free to get in touch, and we'll discuss how we can work together.",
   'contact.socials': 'My Social Media',
   'contact.send_email': 'Send me an email',
   'contact.work':
-    "If my work has caught your attention or if you want to share feedback, let's talk!",
+    "If my work has piqued your interest or if you'd like to share feedback on this website, I'd be happy to exchange ideas.",
 
   'contact.form.name': 'Name',
   'contact.form.email': 'Email',
