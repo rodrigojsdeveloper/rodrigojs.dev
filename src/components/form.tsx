@@ -33,25 +33,27 @@ export const Form = () => {
       action="https://formspree.io/f/mlekpwdz"
       method="POST"
       onSubmit={handleSubmit}
-      className="flex flex-col gap-y-3"
+      className="flex flex-col gap-y-4"
     >
-      <div className="flex flex-col gap-3 sm:flex-row">
-        <Input
-          placeholder={translate('connect.form.name')}
+      <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3 sm:flex-row">
+          <Input
+            placeholder={translate('connect.form.name')}
+            type="text"
+            name="name"
+          />
+          <Input
+            placeholder={translate('connect.form.email')}
+            type="email"
+            name="email"
+          />
+        </div>
+        <Textarea
+          placeholder={translate('connect.form.message')}
           type="text"
-          name="name"
-        />
-        <Input
-          placeholder={translate('connect.form.email')}
-          type="email"
-          name="email"
+          name="message"
         />
       </div>
-      <Textarea
-        placeholder={translate('connect.form.message')}
-        type="text"
-        name="message"
-      />
       <button
         type="submit"
         className="h-11 rounded-radius bg-foreground text-sm text-background hover:opacity-90 focus-visible:opacity-90"
