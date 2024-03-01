@@ -7,7 +7,7 @@ export const Textarea = ({ name, placeholder }: InputProps) => {
       required={true}
       autoComplete="off"
       placeholder={placeholder}
-      className="h-32 w-full resize-none rounded-radius border border-solid border-border bg-transparent p-3 text-sm font-light placeholder:text-foreground-muted placeholder:focus:text-transparent"
+      className="h-44 w-full resize-none rounded-radius border border-solid border-border bg-transparent p-3 text-sm font-light placeholder:text-foreground-muted placeholder:focus:text-transparent"
     />
   )
 }

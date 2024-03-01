@@ -1,5 +1,5 @@
 import about from './en/about'
-import contact from './en/contact'
+import connect from './en/connect'
 import projects from './en/projects'
 import notFound from './en/not-found'
 import home from './en/home'
@@ -10,7 +10,7 @@ import header from './en/header'
 /* eslint import/no-anonymous-default-export: [2, {"allowObject": true}] */
 export default {
   ...about,
-  ...contact,
+  ...connect,
   ...projects,
   ...notFound,
   ...home,

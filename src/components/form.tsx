@@ -37,18 +37,18 @@ export const Form = () => {
     >
       <div className="flex flex-col gap-3 sm:flex-row">
         <Input
-          placeholder={translate('contact.form.name')}
+          placeholder={translate('connect.form.name')}
           type="text"
           name="name"
         />
         <Input
-          placeholder={translate('contact.form.email')}
+          placeholder={translate('connect.form.email')}
           type="email"
           name="email"
         />
       </div>
       <Textarea
-        placeholder={translate('contact.form.message')}
+        placeholder={translate('connect.form.message')}
         type="text"
         name="message"
       />
@@ -56,7 +56,7 @@ export const Form = () => {
         type="submit"
         className="h-11 rounded-radius bg-foreground text-sm text-background hover:opacity-90 focus-visible:opacity-90"
       >
-        {translate('contact.form.send')}
+        {translate('connect.form.send')}
       </button>
     </form>
   )

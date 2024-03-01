@@ -3,7 +3,7 @@ export default {
   'links.home': 'Início',
   'links.about': 'Sobre',
   'links.projects': 'Projetos',
-  'links.contact': 'Contato',
+  'links.connect': 'Conecte',
 
   'links.arial_label.settings': 'Botão Configurações',
   'links.arial_label.drop_down': 'Botão Suspenso',

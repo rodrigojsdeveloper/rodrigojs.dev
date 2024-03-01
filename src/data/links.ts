@@ -4,7 +4,7 @@ import {
   Home,
   CircleUserRound,
   PanelsTopLeft,
-  MessageSquareMore,
+  ArrowUpRight,
   Linkedin,
   Instagram,
   Github,
@@ -35,9 +35,9 @@ export const LINKS: LinksProps = {
       icon: PanelsTopLeft,
     },
     {
-      href: 'contact',
-      title: translate('links.contact'),
-      icon: MessageSquareMore,
+      href: 'connect',
+      title: translate('links.connect'),
+      icon: ArrowUpRight,
     },
   ],
   mobile_website: [
@@ -52,9 +52,9 @@ export const LINKS: LinksProps = {
       icon: PanelsTopLeft,
     },
     {
-      href: 'contact',
-      title: translate('links.contact'),
-      icon: MessageSquareMore,
+      href: 'connect',
+      title: translate('links.connect'),
+      icon: ArrowUpRight,
     },
   ],
   languages: [
