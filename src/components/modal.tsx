@@ -112,7 +112,7 @@ export const Modal = () => {
           >
             {filteredLanguages.length > 0 && (
               <>
-                <p className="text-pretty px-1 py-2 text-xs text-foreground-muted/50">
+                <p className="select-none text-pretty px-1 py-2 text-xs text-foreground-muted/50">
                   {translate('links.title.languages')}
                 </p>
                 <nav>
@@ -132,7 +132,7 @@ export const Modal = () => {
             )}
             {filteredThemes.length > 0 && (
               <>
-                <p className="text-pretty px-1 py-2 text-xs text-foreground-muted/50">
+                <p className="select-none text-pretty px-1 py-2 text-xs text-foreground-muted/50">
                   {translate('links.title.themes')}
                 </p>
                 <nav>
@@ -157,7 +157,7 @@ export const Modal = () => {
             )}
             {filteredLastestProjects.length > 0 && (
               <>
-                <p className="text-pretty px-1 py-2 text-xs text-foreground-muted/50">
+                <p className="select-none text-pretty px-1 py-2 text-xs text-foreground-muted/50">
                   {translate('links.title.lastest_projects')}
                 </p>
                 <nav>
@@ -178,7 +178,7 @@ export const Modal = () => {
             )}
             {filteredSocials.length > 0 && (
               <>
-                <p className="text-pretty px-1 py-2 text-xs text-foreground-muted/50">
+                <p className="select-none text-pretty px-1 py-2 text-xs text-foreground-muted/50">
                   {translate('links.title.socials')}
                 </p>
                 <nav>

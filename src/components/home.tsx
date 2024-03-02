@@ -12,7 +12,7 @@ import { translate } from '@/i18n'
 
 export const Home = () => {
   return (
-    <div className="flex animate-up flex-col gap-y-4 sm:gap-y-6">
+    <div className="flex animate-up flex-col gap-y-4 sm:gap-y-5">
       <Title title={translate('home.title')} />
       <Paragraph text={translate('home.description')} />
       <div className="flex flex-col gap-y-3">
