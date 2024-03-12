@@ -12,9 +12,7 @@ import {
   Moon,
   Laptop,
   Globe,
-  Globe2,
-  Church,
-  PlusCircle,
+  Download,
 } from 'lucide-react'
 
 export const LINKS: LinksProps = {
@@ -86,24 +84,12 @@ export const LINKS: LinksProps = {
       icon: Laptop,
     },
   ],
-  lastest_projects: [
-    {
-      link: 'https://catholiccommunity.social',
-      title: 'Catholic Community',
-      icon: Church,
-    },
-    {
-      link: 'https://geography-plus.vercel.app',
-      title: 'Geography',
-      icon: Globe2,
-    },
-    {
-      link: 'https://mathematical.vercel.app',
-      title: 'Mathematical',
-      icon: PlusCircle,
-    },
-  ],
   socials: [
+    {
+      link: 'https://rodrigojsdeveloper.github.io/cv',
+      title: translate('about.download'),
+      icon: Download,
+    },
     {
       link: 'https://github.com/rodrigojsdeveloper',
       title: 'GitHub',

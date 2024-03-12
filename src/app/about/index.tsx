@@ -1,10 +1,8 @@
 'use client'
 
-import Link from 'next/link'
 import { Paragraph } from '@/components/paragraph'
 import { Stacks } from '@/components/stacks'
 import { Title } from '@/components/title'
-import { Download } from 'lucide-react'
 import { translate } from '@/i18n'
 
 export const About = () => {
@@ -16,13 +14,6 @@ export const About = () => {
         <Paragraph text={translate('about.second.paragraph')} />
         <Paragraph text={translate('about.third.paragraph')} />
       </div>
-      <Link
-        target="_blank"
-        href="https://rodrigojsdeveloper.github.io/cv"
-        className="group flex w-fit select-none items-center justify-center gap-2 rounded-radius border border-solid border-border px-4 py-3 text-sm text-foreground hover:bg-hover focus-visible:bg-hover"
-      >
-        <Download size={16} strokeWidth={2} /> {translate('about.download')}
-      </Link>
       <Stacks pauseOnHover />
     </div>
   )

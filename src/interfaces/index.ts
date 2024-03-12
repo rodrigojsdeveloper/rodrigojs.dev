@@ -79,6 +79,5 @@ export interface LinksProps {
   mobile_website: WebSiteProps[]
   languages: LanguageProps[]
   themes: ThemeProps[]
-  lastest_projects: SocialProps[]
   socials: SocialProps[]
 }
