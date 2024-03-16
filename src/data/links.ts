@@ -87,7 +87,7 @@ export const LINKS: LinksProps = {
   socials: [
     {
       link: 'https://rodrigojsdeveloper.github.io/cv',
-      title: translate('about.download'),
+      title: 'CV',
       icon: Download,
     },
     {

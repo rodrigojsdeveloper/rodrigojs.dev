@@ -73,7 +73,7 @@ a {
 }
 
 ::-webkit-scrollbar {
-  width: 0.25rem;
+  width: 0.65rem;
 }
 
 ::-webkit-scrollbar-track {
@@ -83,4 +83,6 @@ a {
 ::-webkit-scrollbar-thumb {
   border-radius: 1rem;
   background-color: hsl(var(--scrollbar));
+  border: 3px solid transparent;
+  background-clip: padding-box;
 }

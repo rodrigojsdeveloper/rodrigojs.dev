@@ -3,7 +3,7 @@ import { LINKS } from '@/data/links'
 
 export const Socials = () => {
   return (
-    <nav className="flex flex-wrap gap-4 sm:gap-5">
+    <nav className="flex flex-wrap gap-5">
       {LINKS.socials.map((social, index) => (
         <Social
           key={index}
