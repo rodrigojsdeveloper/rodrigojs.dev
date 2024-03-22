@@ -12,7 +12,7 @@ import {
   Moon,
   Laptop,
   Globe,
-  Download,
+  FileSpreadsheet,
 } from 'lucide-react'
 
 export const LINKS: LinksProps = {
@@ -88,7 +88,7 @@ export const LINKS: LinksProps = {
     {
       link: 'https://rodrigojsdeveloper.github.io/cv',
       title: 'CV',
-      icon: Download,
+      icon: FileSpreadsheet,
     },
     {
       link: 'https://github.com/rodrigojsdeveloper',

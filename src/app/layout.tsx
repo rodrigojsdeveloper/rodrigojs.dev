@@ -23,6 +23,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="pt">
+      <head>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1"
+        />
+      </head>
       <body
         className={cn(
           'px-6 pb-5 pt-24 font-kanit antialiased sm:px-8 lg:pb-10 lg:pt-28',
@@ -34,7 +40,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
             <Header />
             <HeaderMobile />
             <Modal />
-            <main className="w-full lg:max-w-[50rem]">{children}</main>
+            <main className="w-full lg:max-w-2xl">{children}</main>
           </ThemeProvider>
         </div>
         <Toaster />
